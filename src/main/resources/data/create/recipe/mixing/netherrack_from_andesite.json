@@ -1,0 +1,17 @@
+{
+    "type": "create:mixing",
+    "ingredients": [
+      {
+        "tag": "c:stones"
+      },
+      {
+        "item": "minecraft:nether_wart"
+      }
+    ],
+    "results": [
+      {
+        "count": 1,
+        "id": "minecraft:netherrack"
+      }
+    ]
+}
