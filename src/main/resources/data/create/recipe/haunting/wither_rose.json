@@ -1,0 +1,14 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "tag": "minecraft:small_flowers"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.15,
+      "id": "minecraft:wither_rose"
+    }
+  ]
+}
