@@ -1,8 +1,11 @@
 package com.KanasakiTechnologics.CreateAssembly;
 
+import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
+import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -39,6 +42,8 @@ public class CreateAssembly {
         NeoForge.EVENT_BUS.register(this);
         REGISTRATE.registerEventListeners(modEventBus);
         AsmItems.register(modEventBus);
+        AsmBlocks.register(modEventBus);
+        LightBlocks.register(modEventBus);
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -55,6 +60,42 @@ public class CreateAssembly {
             event.insertAfter(AllItems.SHADOW_STEEL.asStack(),AllItems.REFINED_RADIANCE.asStack(),CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.insertAfter(AllBlocks.RAILWAY_CASING.asStack(), AllBlocks.REFINED_RADIANCE_CASING.asStack(),CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.insertAfter(AllBlocks.REFINED_RADIANCE_CASING.asStack(),AllBlocks.SHADOW_STEEL_CASING.asStack(),CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS){
+            event.accept(LightBlocks.WHITE_LIGHT_BLOCK);
+            event.accept(LightBlocks.LIGHT_GRAY_LIGHT_BLOCK);
+            event.accept(LightBlocks.GRAY_LIGHT_BLOCK);
+            event.accept(LightBlocks.BLACK_LIGHT_BLOCK);
+            event.accept(LightBlocks.BROWN_LIGHT_BLOCK);
+            event.accept(LightBlocks.RED_LIGHT_BLOCK);
+            event.accept(LightBlocks.ORANGE_LIGHT_BLOCK);
+            event.accept(LightBlocks.YELLOW_LIGHT_BLOCK);
+            event.accept(LightBlocks.LIME_LIGHT_BLOCK);
+            event.accept(LightBlocks.GREEN_LIGHT_BLOCK);
+            event.accept(LightBlocks.CYAN_LIGHT_BLOCK);
+            event.accept(LightBlocks.LIGHT_BLUE_LIGHT_BLOCK);
+            event.accept(LightBlocks.BLUE_LIGHT_BLOCK);
+            event.accept(LightBlocks.PURPLE_LIGHT_BLOCK);
+            event.accept(LightBlocks.MAGENTA_LIGHT_BLOCK);
+            event.accept(LightBlocks.PINK_LIGHT_BLOCK);
+
+            event.accept(LightBlocks.WHITE_GLASS_LIGHT_BLOCK);
+            event.accept(LightBlocks.LIGHT_GRAY_GLASS_LIGHT_BLOCK);
+            event.accept(LightBlocks.GRAY_GLASS_LIGHT_BLOCK);
+            event.accept(LightBlocks.BLACK_GLASS_LIGHT_BLOCK);
+            event.accept(LightBlocks.BROWN_GLASS_LIGHT_BLOCK);
+            event.accept(LightBlocks.RED_GLASS_LIGHT_BLOCK);
+            event.accept(LightBlocks.ORANGE_GLASS_LIGHT_BLOCK);
+            event.accept(LightBlocks.YELLOW_GLASS_LIGHT_BLOCK);
+            event.accept(LightBlocks.LIME_GLASS_LIGHT_BLOCK);
+            event.accept(LightBlocks.GREEN_GLASS_LIGHT_BLOCK);
+            event.accept(LightBlocks.CYAN_GLASS_LIGHT_BLOCK);
+            event.accept(LightBlocks.LIGHT_BLUE_GLASS_LIGHT_BLOCK);
+            event.accept(LightBlocks.BLUE_GLASS_LIGHT_BLOCK);
+            event.accept(LightBlocks.PURPLE_GLASS_LIGHT_BLOCK);
+            event.accept(LightBlocks.MAGENTA_GLASS_LIGHT_BLOCK);
+            event.accept(LightBlocks.PINK_GLASS_LIGHT_BLOCK);
         }
     }
 
