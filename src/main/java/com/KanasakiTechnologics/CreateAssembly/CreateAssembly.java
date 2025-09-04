@@ -62,6 +62,32 @@ public class CreateAssembly {
             event.insertAfter(AllBlocks.REFINED_RADIANCE_CASING.asStack(),AllBlocks.SHADOW_STEEL_CASING.asStack(),CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
 
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(AsmBlocks.TIN_ORE);
+            event.accept(AsmBlocks.SILVER_ORE);
+            event.accept(AsmBlocks.RAW_TIN_BLOCK);
+            event.accept(AsmBlocks.RAW_SILVER_BLOCK);
+            event.accept(AsmBlocks.DEEPSLATE_TIN_ORE);
+            event.accept(AsmBlocks.DEEPSLATE_SILVER_ORE);
+            event.accept(AsmBlocks.ENDER_ORE);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(AsmBlocks.TIN_BLOCK);
+            event.accept(AsmBlocks.SILVER_BLOCK);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(AsmItems.SILVER_INGOT);
+            event.accept(AsmItems.TIN_INGOT);
+            event.accept(AsmItems.RAW_TIN);
+            event.accept(AsmItems.TIN_NUGGET);
+            event.accept(AsmItems.RAW_SILVER);
+            event.accept(AsmItems.SILVER_NUGGET);
+            event.accept(AsmItems.ENDER_PEARL_FRAGMENT);
+            event.accept(AsmItems.NETHER_STAR_SHARD);
+        }
+
         if (event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS){
             event.accept(LightBlocks.WHITE_LIGHT_BLOCK);
             event.accept(LightBlocks.LIGHT_GRAY_LIGHT_BLOCK);

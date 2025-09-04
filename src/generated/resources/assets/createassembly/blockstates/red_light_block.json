@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createassembly:block/red_light_block"
+    }
+  }
+}

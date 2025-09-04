@@ -25,6 +25,9 @@ public class DataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider>lookupProvider = event.getLookupProvider();
 
+        generator.addProvider(event.includeClient(), new AsmItemModelProvider(packOutput, existingFileHelper));
+        //generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
+
         BlockTagsProvider blockTagsProvider = new AsmBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
         generator.addProvider(event.includeServer(),blockTagsProvider);
         generator.addProvider(event.includeServer(), new AsmLightsBlockRProvider(packOutput,lookupProvider));

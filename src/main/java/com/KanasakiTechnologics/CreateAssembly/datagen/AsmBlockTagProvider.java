@@ -2,6 +2,7 @@ package com.KanasakiTechnologics.CreateAssembly.datagen;
 
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
+import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
 import com.KanasakiTechnologics.CreateAssembly.block.util.AsmBlockTags;
 import com.simibubi.create.AllTags.AllBlockTags;
@@ -56,7 +57,17 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(LightBlocks.PURPLE_LIGHT_BLOCK.get())
                 .add(LightBlocks.RED_LIGHT_BLOCK.get())
                 .add(LightBlocks.WHITE_LIGHT_BLOCK.get())
-                .add(LightBlocks.YELLOW_LIGHT_BLOCK.get());
+                .add(LightBlocks.YELLOW_LIGHT_BLOCK.get())
+
+                .add(AsmBlocks.ENDER_ORE.get())
+                .add(AsmBlocks.TIN_BLOCK.get())
+                .add(AsmBlocks.TIN_ORE.get())
+                .add(AsmBlocks.RAW_TIN_BLOCK.get())
+                .add(AsmBlocks.SILVER_BLOCK.get())
+                .add(AsmBlocks.SILVER_ORE.get())
+                .add(AsmBlocks.RAW_SILVER_BLOCK.get())
+                .add(AsmBlocks.DEEPSLATE_TIN_ORE.get())
+                .add(AsmBlocks.DEEPSLATE_SILVER_ORE.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(LightBlocks.BLACK_GLASS_LIGHT_BLOCK.get())
@@ -127,6 +138,17 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(LightBlocks.RED_LIGHT_BLOCK.get())
                 .add(LightBlocks.WHITE_LIGHT_BLOCK.get())
                 .add(LightBlocks.YELLOW_LIGHT_BLOCK.get());
+
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(AsmBlocks.ENDER_ORE.get())
+                .add(AsmBlocks.TIN_BLOCK.get())
+                .add(AsmBlocks.TIN_ORE.get())
+                .add(AsmBlocks.RAW_TIN_BLOCK.get())
+                .add(AsmBlocks.SILVER_BLOCK.get())
+                .add(AsmBlocks.SILVER_ORE.get())
+                .add(AsmBlocks.RAW_SILVER_BLOCK.get())
+                .add(AsmBlocks.DEEPSLATE_TIN_ORE.get())
+                .add(AsmBlocks.DEEPSLATE_SILVER_ORE.get());
 
     }
 

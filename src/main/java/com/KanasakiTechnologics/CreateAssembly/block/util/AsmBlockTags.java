@@ -10,4 +10,9 @@ public class AsmBlockTags {
             Registries.BLOCK,
             ResourceLocation.fromNamespaceAndPath("create", "wrench_pickup")
     );
+
+    public static final TagKey<Block> NEEDS_NETHERITE_TOOL = TagKey.create(
+            Registries.BLOCK,
+            ResourceLocation.fromNamespaceAndPath("neoforge", "needs_netherite_tool")
+    );
 }

@@ -1,6 +1,7 @@
 package com.KanasakiTechnologics.CreateAssembly.datagen;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
+import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
@@ -50,6 +51,17 @@ public class AsmBlockStateProvider extends BlockStateProvider {
         glassWithItem(LightBlocks.PURPLE_GLASS_LIGHT_BLOCK);
         glassWithItem(LightBlocks.MAGENTA_GLASS_LIGHT_BLOCK);
         glassWithItem(LightBlocks.PINK_GLASS_LIGHT_BLOCK);
+
+        blockWithItem(AsmBlocks.ENDER_ORE);
+        blockWithItem(AsmBlocks.BEDROCK);
+        blockWithItem(AsmBlocks.SILVER_BLOCK);
+        blockWithItem(AsmBlocks.TIN_BLOCK);
+        blockWithItem(AsmBlocks.RAW_SILVER_BLOCK);
+        blockWithItem(AsmBlocks.RAW_TIN_BLOCK);
+        blockWithItem(AsmBlocks.TIN_ORE);
+        blockWithItem(AsmBlocks.DEEPSLATE_TIN_ORE);
+        blockWithItem(AsmBlocks.SILVER_ORE);
+        blockWithItem(AsmBlocks.DEEPSLATE_SILVER_ORE);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

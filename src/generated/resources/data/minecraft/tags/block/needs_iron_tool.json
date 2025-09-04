@@ -1,0 +1,13 @@
+{
+  "values": [
+    "createassembly:ender_ore",
+    "createassembly:tin_block",
+    "createassembly:tin_ore",
+    "createassembly:raw_tin_block",
+    "createassembly:silver_block",
+    "createassembly:silver_ore",
+    "createassembly:raw_silver_block",
+    "createassembly:deepslate_tin_ore",
+    "createassembly:deepslate_silver_ore"
+  ]
+}

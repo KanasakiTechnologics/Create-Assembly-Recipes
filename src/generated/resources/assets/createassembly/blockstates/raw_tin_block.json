@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createassembly:block/raw_tin_block"
+    }
+  }
+}
