@@ -1,0 +1,4 @@
+// 1.21.1	2025-09-04T10:38:05.8525284	Tags for minecraft:block mod id createassembly
+658dd3d45af97902fade9382a5fa518f8a64c6f0 data/create/tags/block/wrench_pickup.json
+658dd3d45af97902fade9382a5fa518f8a64c6f0 data/minecraft/tags/block/mineable/pickaxe.json
+658dd3d45af97902fade9382a5fa518f8a64c6f0 data/minecraft/tags/block/needs_stone_tool.json

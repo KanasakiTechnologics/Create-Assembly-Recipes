@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createassembly:block/green_glass_light_block"
+    }
+  }
+}

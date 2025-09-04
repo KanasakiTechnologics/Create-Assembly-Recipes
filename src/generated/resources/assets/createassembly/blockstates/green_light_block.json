@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createassembly:block/green_light_block"
+    }
+  }
+}
