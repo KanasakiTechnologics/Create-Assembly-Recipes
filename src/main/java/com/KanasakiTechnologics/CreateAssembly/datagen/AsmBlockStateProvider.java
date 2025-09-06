@@ -70,10 +70,16 @@ public class AsmBlockStateProvider extends BlockStateProvider {
 
     private void glassWithItem(DeferredBlock<?> deferredBlock) {
         Block block = deferredBlock.get();
-        ModelFile model = models().cubeAll(name(block), modLoc("block/" + name(block))).renderType("minecraft:translucent");
+        String blockName = block.getDescriptionId().replace("block." + CreateAssembly.MOD_ID + ".", "");
+
+        ModelFile model = models()
+                .cubeAll(blockName, modLoc("block/" + blockName))
+                .renderType("minecraft:translucent"); // <--- important for glass
+
         simpleBlock(block, model);
         simpleBlockItem(block, model);
     }
+
 
     private static String name(Block block) {
         return block.getDescriptionId().replace("block." + CreateAssembly.MOD_ID + ".", "");

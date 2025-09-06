@@ -3,6 +3,8 @@ package com.KanasakiTechnologics.CreateAssembly;
 import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -135,6 +137,25 @@ public class CreateAssembly {
     static class ClientModEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
+            event.enqueueWork(() -> {
+                // Glass Light Blocks
+                ItemBlockRenderTypes.setRenderLayer(LightBlocks.WHITE_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(LightBlocks.LIGHT_GRAY_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(LightBlocks.GRAY_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(LightBlocks.BLACK_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(LightBlocks.BROWN_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(LightBlocks.RED_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(LightBlocks.ORANGE_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(LightBlocks.YELLOW_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(LightBlocks.LIME_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(LightBlocks.GREEN_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(LightBlocks.CYAN_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(LightBlocks.LIGHT_BLUE_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(LightBlocks.BLUE_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(LightBlocks.PURPLE_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(LightBlocks.MAGENTA_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(LightBlocks.PINK_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+            });
 
         }
     }
