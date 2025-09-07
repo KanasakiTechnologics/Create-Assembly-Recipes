@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "createassembly:item/glow_ink_bucket"
+  }
+}

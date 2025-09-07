@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {
+      "type": "single",
+      "resource": "createassembly:fluid/glow_ink_still"
+    },
+    {
+      "type": "single",
+      "resource": "createassembly:fluid/glow_ink_flow"
+    }
+  ]
+}

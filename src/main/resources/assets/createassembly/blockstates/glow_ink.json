@@ -1,0 +1,11 @@
+{
+  "variants": {},
+  "multipart": [
+    {
+      "apply": {
+        "model": "createassembly:block/ominous_bile",
+        "uvlock": true
+      }
+    }
+  ]
+}

@@ -1,7 +1,9 @@
 package com.KanasakiTechnologics.CreateAssembly;
 
 import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
+import com.KanasakiTechnologics.CreateAssembly.block.AsmFluidType;
 import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
+import com.KanasakiTechnologics.CreateAssembly.block.AsmFluid;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -43,9 +45,13 @@ public class CreateAssembly {
 
         NeoForge.EVENT_BUS.register(this);
         REGISTRATE.registerEventListeners(modEventBus);
+        AsmFluidType.register(modEventBus);
+        AsmFluid.register(modEventBus);
         AsmItems.register(modEventBus);
         AsmBlocks.register(modEventBus);
         LightBlocks.register(modEventBus);
+
+
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
