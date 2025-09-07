@@ -27,6 +27,7 @@ public class DataGenerators {
 
         generator.addProvider(event.includeClient(), new AsmItemModelProvider(packOutput, existingFileHelper));
         //generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
+        generator.addProvider(event.includeServer(), new AsmDatapackProvider(packOutput, lookupProvider));
 
         BlockTagsProvider blockTagsProvider = new AsmBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
         generator.addProvider(event.includeServer(),blockTagsProvider);
