@@ -1,7 +1,7 @@
 package com.KanasakiTechnologics.CreateAssembly.item;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
-import com.KanasakiTechnologics.CreateAssembly.block.AsmFluid;
+import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;

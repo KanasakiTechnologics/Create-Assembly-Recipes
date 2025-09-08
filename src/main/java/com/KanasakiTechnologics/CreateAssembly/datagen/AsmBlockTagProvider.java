@@ -4,11 +4,12 @@ package com.KanasakiTechnologics.CreateAssembly.datagen;
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
 import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
-import com.KanasakiTechnologics.CreateAssembly.block.util.AsmBlockTags;
-import com.simibubi.create.AllTags.AllBlockTags;
+import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -104,7 +105,43 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(LightBlocks.WHITE_LIGHT_BLOCK.get())
                 .add(LightBlocks.YELLOW_LIGHT_BLOCK.get());
 
-        tag(AsmBlockTags.CREATE_WRENCH_PICKUP)
+        tag(AsmTags.BlockTags.COLORED_GLASS.tag)
+                .add(Blocks.WHITE_STAINED_GLASS)
+                .add(Blocks.ORANGE_STAINED_GLASS)
+                .add(Blocks.MAGENTA_STAINED_GLASS)
+                .add(Blocks.LIGHT_BLUE_STAINED_GLASS)
+                .add(Blocks.YELLOW_STAINED_GLASS)
+                .add(Blocks.LIME_STAINED_GLASS)
+                .add(Blocks.PINK_STAINED_GLASS)
+                .add(Blocks.GRAY_STAINED_GLASS)
+                .add(Blocks.LIGHT_GRAY_STAINED_GLASS)
+                .add(Blocks.CYAN_STAINED_GLASS)
+                .add(Blocks.PURPLE_STAINED_GLASS)
+                .add(Blocks.BLUE_STAINED_GLASS)
+                .add(Blocks.BROWN_STAINED_GLASS)
+                .add(Blocks.GREEN_STAINED_GLASS)
+                .add(Blocks.RED_STAINED_GLASS)
+                .add(Blocks.BLACK_STAINED_GLASS);
+
+        tag(AsmTags.BlockTags.COLOURED_CONCRETE.tag)
+                .add(Blocks.WHITE_CONCRETE)
+                .add(Blocks.ORANGE_CONCRETE)
+                .add(Blocks.MAGENTA_CONCRETE)
+                .add(Blocks.LIGHT_BLUE_CONCRETE)
+                .add(Blocks.YELLOW_CONCRETE)
+                .add(Blocks.LIME_CONCRETE)
+                .add(Blocks.PINK_CONCRETE)
+                .add(Blocks.GRAY_CONCRETE)
+                .add(Blocks.LIGHT_GRAY_CONCRETE)
+                .add(Blocks.CYAN_CONCRETE)
+                .add(Blocks.PURPLE_CONCRETE)
+                .add(Blocks.BLUE_CONCRETE)
+                .add(Blocks.BROWN_CONCRETE)
+                .add(Blocks.GREEN_CONCRETE)
+                .add(Blocks.RED_CONCRETE)
+                .add(Blocks.BLACK_CONCRETE);
+
+        tag(AsmTags.BlockTags.CREATE_WRENCH_PICKUP.tag)
                 .add(LightBlocks.BLACK_GLASS_LIGHT_BLOCK.get())
                 .add(LightBlocks.BLUE_GLASS_LIGHT_BLOCK.get())
                 .add(LightBlocks.BROWN_GLASS_LIGHT_BLOCK.get())

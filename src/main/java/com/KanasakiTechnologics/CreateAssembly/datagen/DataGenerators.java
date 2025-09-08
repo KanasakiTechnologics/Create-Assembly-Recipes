@@ -16,24 +16,31 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
+
 @EventBusSubscriber(modid = CreateAssembly.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
     @SubscribeEvent
-    public static void gatherData(GatherDataEvent event){
+    public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
-        CompletableFuture<HolderLookup.Provider>lookupProvider = event.getLookupProvider();
+        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
+
 
         generator.addProvider(event.includeClient(), new AsmItemModelProvider(packOutput, existingFileHelper));
-        //generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
-        generator.addProvider(event.includeServer(), new AsmDatapackProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeClient(), new AsmBlockStateProvider(packOutput, existingFileHelper));
+
 
         BlockTagsProvider blockTagsProvider = new AsmBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
-        generator.addProvider(event.includeServer(),blockTagsProvider);
-        generator.addProvider(event.includeServer(), new AsmLightsBlockRProvider(packOutput,lookupProvider));
-        generator.addProvider(event.includeClient(), new AsmBlockStateProvider(packOutput, existingFileHelper));
-        generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(),
-                List.of(new LootTableProvider.SubProviderEntry(AsmLootTableProvider::new, LootContextParamSets.BLOCK)),lookupProvider));
+        generator.addProvider(event.includeServer(), blockTagsProvider);
+
+
+        generator.addProvider(event.includeServer(), new AsmFluidTagProvider(packOutput, lookupProvider, existingFileHelper));
+        generator.addProvider(event.includeServer(), new AsmDatapackProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new AsmLightsBlockRProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new AsmGlowingFanRecipeProvider(packOutput,lookupProvider));
+
+
+        generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(AsmLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
     }
 }

@@ -1,6 +1,7 @@
-package com.KanasakiTechnologics.CreateAssembly.block;
+package com.KanasakiTechnologics.CreateAssembly.fluid;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
+import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.material.Fluid;

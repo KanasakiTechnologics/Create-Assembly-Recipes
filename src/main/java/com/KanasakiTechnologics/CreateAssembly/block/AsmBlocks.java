@@ -1,6 +1,7 @@
 package com.KanasakiTechnologics.CreateAssembly.block;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
+import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -46,8 +47,7 @@ public class AsmBlocks {
     public static final DeferredBlock<Block> DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
-    public static final DeferredBlock<LiquidBlock> GLOW_INK = registerBlock("glow_ink",
-            ()-> new LiquidBlock((FlowingFluid) AsmFluid.GLOW_INK.get(),BlockBehaviour.Properties.of().mapColor(MapColor.WATER).noCollission().strength(100f).noLootTable().replaceable()));
+    public static final DeferredBlock<LiquidBlock> GLOW_INK = registerBlock("glow_ink",GlowInkBlock::new);
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

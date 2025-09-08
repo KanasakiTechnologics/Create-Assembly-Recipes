@@ -6,7 +6,7 @@
       "item": "minecraft:glow_ink_sac"
     },
     "X": {
-      "tag": "minecraft:glass_blocks"
+      "item": "minecraft:green_stained_glass"
     }
   },
   "pattern": [

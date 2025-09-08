@@ -1,4 +1,4 @@
-package com.KanasakiTechnologics.CreateAssembly.block;
+package com.KanasakiTechnologics.CreateAssembly.fluid;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
 import net.neoforged.bus.api.IEventBus;

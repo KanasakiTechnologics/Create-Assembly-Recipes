@@ -1,17 +1,22 @@
 package com.KanasakiTechnologics.CreateAssembly;
 
 import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
-import com.KanasakiTechnologics.CreateAssembly.block.AsmFluidType;
+import com.KanasakiTechnologics.CreateAssembly.content.recipes.AsmRecipeTypes;
+import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluidType;
 import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
-import com.KanasakiTechnologics.CreateAssembly.block.AsmFluid;
+import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
+import com.KanasakiTechnologics.CreateAssembly.util.AsmAttributeTypes;
+import com.KanasakiTechnologics.CreateAssembly.util.AsmFanProcessingTypes;
+import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.neoforged.neoforge.registries.RegisterEvent;
 import org.slf4j.Logger;
-
 import com.mojang.logging.LogUtils;
 
 import net.neoforged.api.distmarker.Dist;
@@ -32,42 +37,50 @@ import com.simibubi.create.AllCreativeModeTabs;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 
+
 @Mod(CreateAssembly.MOD_ID)
 public class CreateAssembly {
     public static final String MOD_ID = "createassembly";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-
     public CreateAssembly(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
-
-
         NeoForge.EVENT_BUS.register(this);
         REGISTRATE.registerEventListeners(modEventBus);
+        AsmTags.init();
         AsmFluidType.register(modEventBus);
         AsmFluid.register(modEventBus);
         AsmItems.register(modEventBus);
         AsmBlocks.register(modEventBus);
+        AsmRecipeTypes.register(modEventBus);
         LightBlocks.register(modEventBus);
 
-
         modEventBus.addListener(this::addCreative);
+        modEventBus.addListener(CreateAssembly::onRegister);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
+    public static void onRegister(final RegisterEvent event){
+        AsmFanProcessingTypes.init();
+        AsmAttributeTypes.init();
+    }
     private void commonSetup(FMLCommonSetupEvent event) {}
+
     public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MOD_ID)
             .defaultCreativeTab((ResourceKey<CreativeModeTab>) null);
 
+    public static ResourceLocation loc(String path) {
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+    }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == AllCreativeModeTabs.BASE_CREATIVE_TAB.getKey()){
-            event.insertAfter(AllItems.BRASS_INGOT.asStack(),AllItems.CHROMATIC_COMPOUND.asStack(),CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            event.insertAfter(AllItems.CHROMATIC_COMPOUND.asStack(),AllItems.SHADOW_STEEL.asStack(),CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            event.insertAfter(AllItems.SHADOW_STEEL.asStack(),AllItems.REFINED_RADIANCE.asStack(),CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            event.insertAfter(AllBlocks.RAILWAY_CASING.asStack(), AllBlocks.REFINED_RADIANCE_CASING.asStack(),CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            event.insertAfter(AllBlocks.REFINED_RADIANCE_CASING.asStack(),AllBlocks.SHADOW_STEEL_CASING.asStack(),CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        if (event.getTabKey() == AllCreativeModeTabs.BASE_CREATIVE_TAB.getKey()) {
+            event.insertAfter(AllItems.BRASS_INGOT.asStack(), AllItems.CHROMATIC_COMPOUND.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(AllItems.CHROMATIC_COMPOUND.asStack(), AllItems.SHADOW_STEEL.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(AllItems.SHADOW_STEEL.asStack(), AllItems.REFINED_RADIANCE.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(AllBlocks.RAILWAY_CASING.asStack(), AllBlocks.REFINED_RADIANCE_CASING.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(AllBlocks.REFINED_RADIANCE_CASING.asStack(), AllBlocks.SHADOW_STEEL_CASING.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
 
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
@@ -96,7 +109,7 @@ public class CreateAssembly {
             event.accept(AsmItems.NETHER_STAR_SHARD);
         }
 
-        if (event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS){
+        if (event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
             event.accept(LightBlocks.WHITE_LIGHT_BLOCK);
             event.accept(LightBlocks.LIGHT_GRAY_LIGHT_BLOCK);
             event.accept(LightBlocks.GRAY_LIGHT_BLOCK);
@@ -134,17 +147,13 @@ public class CreateAssembly {
     }
 
     @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
+    public void onServerStarting(ServerStartingEvent event) {}
 
-    }
-
-    
     @EventBusSubscriber(modid = CreateAssembly.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     static class ClientModEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
             event.enqueueWork(() -> {
-                // Glass Light Blocks
                 ItemBlockRenderTypes.setRenderLayer(LightBlocks.WHITE_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
                 ItemBlockRenderTypes.setRenderLayer(LightBlocks.LIGHT_GRAY_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
                 ItemBlockRenderTypes.setRenderLayer(LightBlocks.GRAY_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
@@ -162,7 +171,6 @@ public class CreateAssembly {
                 ItemBlockRenderTypes.setRenderLayer(LightBlocks.MAGENTA_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
                 ItemBlockRenderTypes.setRenderLayer(LightBlocks.PINK_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
             });
-
         }
     }
 }

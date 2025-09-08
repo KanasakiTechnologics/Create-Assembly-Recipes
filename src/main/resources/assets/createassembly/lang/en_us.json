@@ -112,5 +112,7 @@
   "block.createassembly.refined_radiance_block": "Refined Radiance Block",
   "block.createassembly.shadow_steel_block": "Shadow Steel Block",
 
+  "create.recipe.fan_glowing": "Bulk Glowing",
+
   "creativetab.createassembly.create_formulation_tab": "Create Formulation Recipes"
 }

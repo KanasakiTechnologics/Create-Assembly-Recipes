@@ -1,4 +1,4 @@
-package com.KanasakiTechnologics.CreateAssembly.block;
+package com.KanasakiTechnologics.CreateAssembly.fluid;
 
 
 import net.neoforged.neoforge.fluids.BaseFlowingFluid;

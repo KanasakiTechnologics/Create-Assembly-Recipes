@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "C": {
-      "tag": "minecraft:concrete"
+      "item": "minecraft:purple_concrete"
     },
     "G": {
       "item": "minecraft:glow_ink_sac"
