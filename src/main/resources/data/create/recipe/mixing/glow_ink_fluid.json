@@ -3,16 +3,16 @@
   "heat_requirement": "heated",
   "ingredients": [
     {
-      "item": "minecraft.glow_ink_sac"
+      "item": "minecraft:glow_ink_sac"
     },
     {
-      "item": "minecraft.glow_ink_sac"
+      "item": "minecraft:glow_ink_sac"
     },
     {
-      "item": "minecraft.glow_ink_sac"
+      "item": "minecraft:glow_ink_sac"
     },
     {
-      "item": "minecraft.glow_ink_sac"
+      "item": "minecraft:glow_ink_sac"
     },
     {
       "type": "fluid_stack",

@@ -113,6 +113,7 @@
   "block.createassembly.shadow_steel_block": "Shadow Steel Block",
 
   "create.recipe.fan_glowing": "Bulk Glowing",
+  "fluid_type.createassembly.glow_ink_type": "Glow Ink",
 
   "creativetab.createassembly.create_formulation_tab": "Create Formulation Recipes"
 }
