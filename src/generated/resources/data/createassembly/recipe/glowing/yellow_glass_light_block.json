@@ -1,0 +1,13 @@
+{
+  "type": "createassembly:glowing",
+  "ingredients": [
+    {
+      "item": "minecraft:yellow_stained_glass"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:yellow_glass_light_block"
+    }
+  ]
+}

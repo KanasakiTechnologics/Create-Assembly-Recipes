@@ -1,0 +1,13 @@
+{
+  "type": "createassembly:glowing",
+  "ingredients": [
+    {
+      "item": "minecraft:gray_concrete"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:gray_light_block"
+    }
+  ]
+}
