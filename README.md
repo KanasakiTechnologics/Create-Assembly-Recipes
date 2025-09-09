@@ -10,4 +10,9 @@ Dependancies
 3.Create Enchantment Industry <br>
 4.Create Crafts and Additions
 
+Aditional Notes
+========
+Some of Recipes maybe cheated and some of texture pack come from another create addons mod since I don't know how to make it i just copy paste it :( .<br>
+This Mod just for Fun only.<br>
+Support Their Create Addons Content.
 
