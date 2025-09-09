@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "createassembly:sulfur_chunk"
+    },
+    {
+      "item": "createassembly:sulfur_chunk"
+    },
+    {
+      "item": "createassembly:sulfur_chunk"
+    },
+    {
+      "item": "createassembly:sulfur_chunk"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:sulfur"
+    }
+  ]
+}

@@ -21,6 +21,28 @@ public class AsmItemModelProvider extends ItemModelProvider {
         basicItem(AsmItems.RAW_SILVER.get());
         basicItem(AsmItems.SILVER_NUGGET.get());
         basicItem(AsmItems.NETHER_STAR_SHARD.get());
-
+        basicItem(AsmItems.ABSTRUSE_MECHANISM.get());
+        basicItem(AsmItems.CALCULATION_MECHANISM.get());
+        basicItem(AsmItems.INFERNAL_MECHANISM.get());
+        basicItem(AsmItems.INTEGRATED_CIRCUIT.get());
+        basicItem(AsmItems.INTEGRATED_MECHANISM.get());
+        basicItem(AsmItems.KINETIC_MECHANISM.get());
+        basicItem(AsmItems.SEALED_MECHANISM.get());
+        basicItem(AsmItems.INCOMPLETE_ABSTRUSE_MECHANISM.get());
+        basicItem(AsmItems.INCOMPLETE_CALCULATION_MECHANISM.get());
+        basicItem(AsmItems.INCOMPLETE_INFERNAL_MECHANISM.get());
+        basicItem(AsmItems.INCOMPLETE_INTEGRATED_CIRCUIT.get());
+        basicItem(AsmItems.INCOMPLETE_INTEGRATED_MECHANISM.get());
+        basicItem(AsmItems.INCOMPLETE_KINETIC_MECHANISM.get());
+        basicItem(AsmItems.INCOMPLETE_SEALED_MECHANISM.get());
+        basicItem(AsmItems.SULFUR_CHUNK.get());
+        basicItem(AsmItems.SULFUR.get());
+        basicItem(AsmItems.TIN_SHEET.get());
+        basicItem(AsmItems.ENDERIUM_ALLOY.get());
+        basicItem(AsmItems.ENDERIUM_ROD.get());
+        basicItem(AsmItems.LAPIS_ALLOY.get());
+        basicItem(AsmItems.LAPIS_SHEET.get());
+        basicItem(AsmItems.COAL_ROD.get());
+        basicItem(AsmItems.SAP.get());
     }
 }

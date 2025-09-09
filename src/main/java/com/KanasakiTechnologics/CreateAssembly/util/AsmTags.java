@@ -30,12 +30,17 @@ public class AsmTags {
         return optionalTag(registry, ResourceLocation.fromNamespaceAndPath("c", path));
     }
 
+    public static<T>TagKey<T> minecraftTag(Registry<T> registry, String path){
+        return optionalTag(registry, ResourceLocation.fromNamespaceAndPath("minecraft", path));
+    }
+
     public static <T> TagKey<T> modTag(Registry<T> registry, String path) {
         return optionalTag(registry, ResourceLocation.fromNamespaceAndPath(MOD_ID, path));
     }
 
     public static TagKey<Block> commonBlockTag(String path) {return commonTag(BuiltInRegistries.BLOCK, path);}
     public static TagKey<Item> commonItemTag(String path) {return commonTag(BuiltInRegistries.ITEM, path);}
+    public static TagKey<Item> minecraftItemTag(String path) {return minecraftTag(BuiltInRegistries.ITEM, path);}
     public static TagKey<Fluid> commonFluidTag(String path) {return commonTag(BuiltInRegistries.FLUID, path);}
     public static TagKey<Block> modBlockTag(String path) {return modTag(BuiltInRegistries.BLOCK, path);}
     public static TagKey<Item> modItemTag(String path) {return modTag(BuiltInRegistries.ITEM, path);}
@@ -64,10 +69,20 @@ public class AsmTags {
 
     public enum BlockTags {
         CREATE_WRENCH_PICKUP(NameSpace.CREATE, "wrench_pickup"),
+        TIN_ORES(NameSpace.COMMON,"ores/tin"),
+        SILVER_ORES(NameSpace.COMMON,"ores/silver"),
         NEEDS_NETHERITE_TOOL(NameSpace.NEOFORGE, "needs_netherite_tool"),
         COLORED_GLASS(NameSpace.MOD,"colored_glass"),
         COLOURED_CONCRETE(NameSpace.MOD,"colored_concrete"),
+        ORES(NameSpace.COMMON,"ores"),
+        LIFE_CORALS(NameSpace.MOD,"life_corals"),
+        PRISMARINE_BUILDING_BLOCK(NameSpace.MOD,"prismarine_building_block"),
+        RAW_TIN(NameSpace.COMMON,"storage_blocks/raw_tin"),
+        TIN(NameSpace.COMMON,"storage_blocks/tin"),
+        RAW_SILVER(NameSpace.COMMON,"storage_blocks/raw_silver"),
+        SILVER(NameSpace.COMMON,"storage_blocks/silver"),
         FAN_PROCESSING_CATALYSTS_GLOWING(NameSpace.MOD, "fan_processing_catalysts/glowing");
+
 
         public final TagKey<Block> tag;
         public final boolean alwaysDatagen;
@@ -93,7 +108,27 @@ public class AsmTags {
     }
 
     public enum ItemTags {
-        FAN_PROCESSING_CATALYSTS_GLOWING(NameSpace.MOD, "fan_processing_catalysts/glowing");
+        COMPLEX_MECHANISM(NameSpace.MOD,"complex_mechanism"),
+        TIN_PLATES(NameSpace.COMMON,"plates/tin"),
+        LIFE_CORALS(NameSpace.MOD,"life_corals"),
+        LAPIS_PLATES(NameSpace.COMMON,"plates/lapis"),
+        PRISMARINE_BUILDING_BLOCK(NameSpace.MOD,"prismarine_building_block"),
+        PLATES(NameSpace.COMMON,"plates"),
+        All_METAL(NameSpace.COMMON,"rods/all_metal"),
+        ENDERIUM_ALLOY(NameSpace.COMMON,"rods/enderium_alloy"),
+        RODS(NameSpace.COMMON,"rods"),
+        ORES(NameSpace.COMMON,"ores"),
+        RAW_TIN(NameSpace.COMMON,"storage_blocks/raw_tin"),
+        RAW_TIN2(NameSpace.COMMON,"raw_materials/tin"),
+        TIN(NameSpace.COMMON,"storage_blocks/tin"),
+        RAW_SILVER(NameSpace.COMMON,"storage_blocks/raw_silver"),
+        RAW_SILVER2(NameSpace.COMMON,"raw_materials/silver"),
+        SILVER(NameSpace.COMMON,"storage_blocks/silver"),
+        TIN_INGOT(NameSpace.COMMON,"ingots/tin"),
+        TIN_NUGGET(NameSpace.COMMON,"nuggets/tin"),
+        SILVER_INGOT(NameSpace.COMMON,"ingots/silver"),
+        SILVER_NUGGET(NameSpace.COMMON,"nuggets/silver"),
+        ENDER_POWDER(NameSpace.MOD,"ender_powder");
 
         public final TagKey<Item> tag;
         public final boolean alwaysDatagen;

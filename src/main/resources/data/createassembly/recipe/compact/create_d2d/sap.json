@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create_d2d"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "createassembly:sap"
+    },
+    {
+      "item": "createassembly:sap"
+    },
+    {
+      "item": "createassembly:sap"
+    },
+    {
+      "item": "createassembly:sap"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "id": "create_d2d:sap"
+    }
+  ]
+}

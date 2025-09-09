@@ -3,7 +3,7 @@
   "multipart": [
     {
       "apply": {
-        "model": "createassembly:block/ominous_bile",
+        "model": "createassembly:block/glow_ink",
         "uvlock": true
       }
     }

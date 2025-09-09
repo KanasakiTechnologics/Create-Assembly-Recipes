@@ -44,6 +44,7 @@
   "block.createassembly.sap": "Sap",
   "fluid.createassembly.sap": "Sap",
   "item.createassembly.glow_ink_bucket": "Glow Ink Bucket",
+  "item.createassembly.sulfuric_acid_bucket": "Sulfuric Acid Bucket",
 
   "block.createassembly.deepslate_silver_ore": "Deepslate Silver Ore",
   "block.createassembly.silver_ore": "Silver Ore",
@@ -66,6 +67,7 @@
   "block.createassembly.snad": "Snad",
   "block.createassembly.soul_snad": "Soul Snad",
   "block.createassembly.ender_ore": "Ender Ore",
+  "block.createassembly.sulfur_ore": "Sulfur Ore",
 
   "item.createassembly.incomplete_blaze_rod": "Incomplete Blaze Rod",
   "item.createassembly.coal_rod": "Coal Rod",
@@ -112,8 +114,16 @@
   "block.createassembly.refined_radiance_block": "Refined Radiance Block",
   "block.createassembly.shadow_steel_block": "Shadow Steel Block",
 
+  "item.createassembly.sulfur": "Sulfur",
+  "item.createassembly.sulfur_chunk": "Sulfur chunk",
+
   "create.recipe.fan_glowing": "Bulk Glowing",
+  "block.createassembly.glow_ink": "Glow Ink",
   "fluid_type.createassembly.glow_ink_type": "Glow Ink",
+  "fluid_type.createassembly.sulfuric_acid_type": "Sulfuric Acid",
+  "block.createassembly.sulfuric_acid": "Sulfuric Acid",
+  "creativetab.createassembly.dndesires_mechanisms": "DNDesire Mechanisms",
+  "creativetab.createassembly.create_assembly": "Create Assembly [Ingredients]",
 
   "creativetab.createassembly.create_formulation_tab": "Create Formulation Recipes"
 }

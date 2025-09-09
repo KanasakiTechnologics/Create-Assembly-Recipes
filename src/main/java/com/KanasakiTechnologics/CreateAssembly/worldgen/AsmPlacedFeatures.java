@@ -15,11 +15,11 @@ import net.minecraft.world.level.levelgen.placement.PlacementModifier;
 import java.util.List;
 
 public class AsmPlacedFeatures {
-    public static final ResourceKey<PlacedFeature> SILVER_ORE_PLACED_KEY = registerKey("silver_ore_placed");
+    public static final ResourceKey<PlacedFeature>SILVER_ORE_PLACED_KEY = registerKey("silver_ore_placed");
     public static final ResourceKey<PlacedFeature>TIN_ORE_PLACED_KEY = registerKey("tin_ore_placed");
     public static final ResourceKey<PlacedFeature>ENDER_ORE_PLACED_KEY = registerKey("ender_ore_placed");
-    public static final ResourceKey<PlacedFeature>BEDROCK_PLACED_KEY = registerKey("bedrock_placed");
-    public static final ResourceKey<PlacedFeature>NETHER_BEDROCK_PLACED_KEY = registerKey("nether_bedrock_placed");
+    public static final ResourceKey<PlacedFeature>SULFUR_ORE_PLACED_KEY = registerKey("sulfur_ore_placed");
+
 
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
@@ -33,12 +33,8 @@ public class AsmPlacedFeatures {
 
         register(context, ENDER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(AsmConfiguredFeatures.OVERWORLD_ENDER_ORE_KEY),
                 AsmOrePlacement.commonOrePlacement(12, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-
-        register(context, BEDROCK_PLACED_KEY, configuredFeatures.getOrThrow(AsmConfiguredFeatures.OVERWORLD_BEDROCK_KEY),
-                AsmOrePlacement.commonOrePlacement(12, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-60))));
-
-        register(context, NETHER_BEDROCK_PLACED_KEY, configuredFeatures.getOrThrow(AsmConfiguredFeatures.NETHER_BEDROCK_KEY),
-                AsmOrePlacement.commonOrePlacement(12, HeightRangePlacement.uniform(VerticalAnchor.absolute(122), VerticalAnchor.absolute(127))));
+        register(context, SULFUR_ORE_PLACED_KEY, configuredFeatures.getOrThrow(AsmConfiguredFeatures.OVERWORLD_SULFUR_ORE_KEY),
+                AsmOrePlacement.commonOrePlacement(12, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
     }
 

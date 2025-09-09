@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aquaculture"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "createassembly:prismarine_building_block"
+    }
+  ],
+  "processing_time": 250,
+  "results": [
+    {
+      "chance": 0.2,
+      "id": "minecraft:prismarine_shard"
+    },
+    {
+      "chance": 0.2,
+      "id": "minecraft:prismarine_crystals"
+    },
+    {
+      "chance": 0.10,
+      "id": "aquaculture:neptunium_nugget"
+    }
+  ]
+}

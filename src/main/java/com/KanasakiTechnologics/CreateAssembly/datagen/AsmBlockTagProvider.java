@@ -10,6 +10,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -61,6 +62,7 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(LightBlocks.YELLOW_LIGHT_BLOCK.get())
 
                 .add(AsmBlocks.ENDER_ORE.get())
+                .add(AsmBlocks.SULFUR_ORE.get())
                 .add(AsmBlocks.TIN_BLOCK.get())
                 .add(AsmBlocks.TIN_ORE.get())
                 .add(AsmBlocks.RAW_TIN_BLOCK.get())
@@ -71,6 +73,7 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(AsmBlocks.DEEPSLATE_SILVER_ORE.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(AsmBlocks.SULFUR_ORE.get())
                 .add(LightBlocks.BLACK_GLASS_LIGHT_BLOCK.get())
                 .add(LightBlocks.BLUE_GLASS_LIGHT_BLOCK.get())
                 .add(LightBlocks.BROWN_GLASS_LIGHT_BLOCK.get())
@@ -186,6 +189,57 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(AsmBlocks.RAW_SILVER_BLOCK.get())
                 .add(AsmBlocks.DEEPSLATE_TIN_ORE.get())
                 .add(AsmBlocks.DEEPSLATE_SILVER_ORE.get());
+
+        tag(AsmTags.BlockTags.SILVER_ORES.tag)
+                .add(AsmBlocks.SILVER_ORE.get())
+                .add(AsmBlocks.DEEPSLATE_SILVER_ORE.get());
+
+        tag(AsmTags.BlockTags.TIN_ORES.tag)
+                .add(AsmBlocks.TIN_ORE.get())
+                .add(AsmBlocks.DEEPSLATE_TIN_ORE.get());
+
+        tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE)
+                .add(AsmBlocks.DEEPSLATE_SILVER_ORE.get())
+                .add(AsmBlocks.DEEPSLATE_TIN_ORE.get());
+
+        tag(Tags.Blocks.ORES_IN_GROUND_STONE)
+                .add(AsmBlocks.SILVER_ORE.get())
+                .add(AsmBlocks.TIN_ORE.get());
+
+        tag(Tags.Blocks.STORAGE_BLOCKS)
+                .add(AsmBlocks.RAW_SILVER_BLOCK.get())
+                .add(AsmBlocks.RAW_TIN_BLOCK.get())
+                .add(AsmBlocks.SILVER_BLOCK.get())
+                .add(AsmBlocks.TIN_BLOCK.get());
+
+        tag(AsmTags.BlockTags.RAW_SILVER.tag)
+                .add(AsmBlocks.RAW_SILVER_BLOCK.get());
+        tag(AsmTags.BlockTags.RAW_TIN.tag)
+                .add(AsmBlocks.RAW_TIN_BLOCK.get());
+        tag(AsmTags.BlockTags.SILVER.tag)
+                .add(AsmBlocks.SILVER_BLOCK.get());
+        tag(AsmTags.BlockTags.TIN.tag)
+                .add(AsmBlocks.TIN_BLOCK.get());
+
+        tag(AsmTags.BlockTags.PRISMARINE_BUILDING_BLOCK.tag)
+                .add(Blocks.PRISMARINE)
+                .add(Blocks.PRISMARINE_SLAB)
+                .add(Blocks.PRISMARINE_BRICKS)
+                .add(Blocks.PRISMARINE_STAIRS)
+                .add(Blocks.PRISMARINE_BRICK_STAIRS)
+                .add(Blocks.PRISMARINE_BRICK_SLAB)
+                .add(Blocks.DARK_PRISMARINE)
+                .add(Blocks.DARK_PRISMARINE_SLAB)
+                .add(Blocks.DARK_PRISMARINE_STAIRS);
+
+
+        tag(AsmTags.BlockTags.LIFE_CORALS.tag)
+                .add(Blocks.BRAIN_CORAL_BLOCK)
+                .add(Blocks.BUBBLE_CORAL_BLOCK)
+                .add(Blocks.FIRE_CORAL_BLOCK)
+                .add(Blocks.TUBE_CORAL_BLOCK)
+                .add(Blocks.HORN_CORAL_BLOCK);
+
 
     }
 

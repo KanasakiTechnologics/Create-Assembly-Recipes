@@ -32,6 +32,25 @@ public class AsmFluid {
                 .explosionResistance(0f);
     }
 
+    public static final DeferredHolder<Fluid,Fluid> SULFURIC_ACID = FLUIDS.register("sulfuric_acid",
+            ()-> new SulfuricAcidFluid.Source(getSulfuricAcidProperties()));
+    public static final DeferredHolder<Fluid,Fluid> FLOWING_SULFURIC_ACID = FLUIDS.register("flowing_sulfuric_acid",
+            ()-> new SulfuricAcidFluid.Flowing(getSulfuricAcidProperties()));
+
+    private static BaseFlowingFluid.Properties getSulfuricAcidProperties() {
+        return new BaseFlowingFluid.Properties(
+                () -> AsmFluidType.SULFURIC_ACID_TYPE.get(),
+                () -> SULFURIC_ACID.get(),
+                () -> FLOWING_SULFURIC_ACID.get()
+        )
+                .bucket(() -> AsmItems.SULFURIC_ACID_BUCKET.get())
+                .block(() -> AsmBlocks.SULFURIC_ACID.get())
+                .tickRate(10)
+                .levelDecreasePerBlock(2)
+                .slopeFindDistance(2)
+                .explosionResistance(0f);
+    }
+
     public static void register(IEventBus eventBus)
     {
         FLUIDS.register(eventBus);

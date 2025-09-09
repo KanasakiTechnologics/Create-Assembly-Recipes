@@ -1,0 +1,47 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "create:cinder_flour"
+    },
+    {
+      "item": "create:cinder_flour"
+    },
+    {
+      "item": "create:cinder_flour"
+    },
+    {
+      "item": "enderio:grains_of_infinity"
+    },
+    {
+      "item": "enderio:grains_of_infinity"
+    },
+    {
+      "item": "enderio:grains_of_infinity"
+    },
+    {
+      "item": "enderio:grains_of_infinity"
+    },
+    {
+      "item": "enderio:grains_of_infinity"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:alchemist_dust"
+    }
+  ]
+}

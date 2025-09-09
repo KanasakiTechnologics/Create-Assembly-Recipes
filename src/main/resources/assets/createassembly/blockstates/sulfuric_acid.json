@@ -1,0 +1,11 @@
+{
+  "variants": {},
+  "multipart": [
+    {
+      "apply": {
+        "model": "createassembly:block/sulfuric_acid",
+        "uvlock": true
+      }
+    }
+  ]
+}

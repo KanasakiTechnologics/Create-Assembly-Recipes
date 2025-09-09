@@ -5,6 +5,7 @@ import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.LiquidBlock;
@@ -25,6 +26,8 @@ public class AsmBlocks {
 
     public static final DeferredBlock<Block> ENDER_ORE = registerBlock("ender_ore",
             () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> SULFUR_ORE = registerBlock("sulfur_ore",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> BEDROCK = registerBlock("bedrock",
             () -> new Block(BlockBehaviour.Properties.of().strength(7f).noLootTable().requiresCorrectToolForDrops().sound(SoundType.STONE)));
@@ -37,6 +40,9 @@ public class AsmBlocks {
             () -> new DropExperienceBlock(UniformInt.of(2, 4),BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> DEEPSLATE_TIN_ORE = registerBlock("deepslate_tin_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 6),BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final Supplier<ItemLike> TIN_ORE_ITEM = () -> AsmBlocks.TIN_ORE.get().asItem();
+    public static final Supplier<ItemLike> DEEPSLATE_TIN_ORE_ITEM = () -> AsmBlocks.DEEPSLATE_TIN_ORE.get().asItem();
+
 
     public static final DeferredBlock<Block> SILVER_BLOCK = registerBlock("silver_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
@@ -46,8 +52,11 @@ public class AsmBlocks {
             () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final Supplier<ItemLike> SILVER_ORE_ITEM = () -> AsmBlocks.SILVER_ORE.get().asItem();
+    public static final Supplier<ItemLike> DEEPSLATE_SILVER_ORE_ITEM = () -> AsmBlocks.DEEPSLATE_SILVER_ORE.get().asItem();
 
     public static final DeferredBlock<LiquidBlock> GLOW_INK = registerBlock("glow_ink",GlowInkBlock::new);
+    public static final DeferredBlock<LiquidBlock> SULFURIC_ACID = registerBlock("sulfuric_acid",SulfuricAcidBlock::new);
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

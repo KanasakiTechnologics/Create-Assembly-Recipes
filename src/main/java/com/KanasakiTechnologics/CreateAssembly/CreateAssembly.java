@@ -7,6 +7,7 @@ import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
 import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmAttributeTypes;
+import com.KanasakiTechnologics.CreateAssembly.util.AsmCreativeModTab;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmFanProcessingTypes;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -31,6 +32,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import com.mrh0.createaddition.index.*;
 
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllCreativeModeTabs;
@@ -55,6 +57,7 @@ public class CreateAssembly {
         AsmBlocks.register(modEventBus);
         AsmRecipeTypes.register(modEventBus);
         LightBlocks.register(modEventBus);
+        AsmCreativeModTab.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
         modEventBus.addListener(CreateAssembly::onRegister);
@@ -81,6 +84,7 @@ public class CreateAssembly {
             event.insertAfter(AllItems.SHADOW_STEEL.asStack(), AllItems.REFINED_RADIANCE.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.insertAfter(AllBlocks.RAILWAY_CASING.asStack(), AllBlocks.REFINED_RADIANCE_CASING.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.insertAfter(AllBlocks.REFINED_RADIANCE_CASING.asStack(), AllBlocks.SHADOW_STEEL_CASING.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(AllItems.CRUSHED_TIN.asStack(), AllItems.CRUSHED_SILVER.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
 
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
@@ -91,6 +95,7 @@ public class CreateAssembly {
             event.accept(AsmBlocks.DEEPSLATE_TIN_ORE);
             event.accept(AsmBlocks.DEEPSLATE_SILVER_ORE);
             event.accept(AsmBlocks.ENDER_ORE);
+            event.accept(AsmBlocks.SULFUR_ORE);
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
@@ -106,6 +111,8 @@ public class CreateAssembly {
             event.accept(AsmItems.RAW_SILVER);
             event.accept(AsmItems.SILVER_NUGGET);
             event.accept(AsmItems.ENDER_PEARL_FRAGMENT);
+            event.accept(AsmItems.SULFUR_CHUNK);
+            event.accept(AsmItems.SAP);
             event.accept(AsmItems.NETHER_STAR_SHARD);
         }
 

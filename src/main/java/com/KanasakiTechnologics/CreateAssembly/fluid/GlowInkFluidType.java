@@ -21,7 +21,7 @@ public class GlowInkFluidType extends FluidType {
 
     public GlowInkFluidType(Properties properties) {
         super(properties
-                .lightLevel(10) // Makes the fluid glow
+                .lightLevel(10)
                 .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
                 .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
         );
@@ -42,7 +42,6 @@ public class GlowInkFluidType extends FluidType {
         });
     }
 
-    // Custom fluid particle effect
     public void animateTick(Level level, BlockPos pos, FluidState state, RandomSource random) {
         if (random.nextFloat() < 0.25F) { // 25% chance each tick
             double x = pos.getX() + random.nextDouble();

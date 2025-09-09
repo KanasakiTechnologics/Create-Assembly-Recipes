@@ -1,6 +1,9 @@
 package com.KanasakiTechnologics.CreateAssembly.datagen;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
+import com.KanasakiTechnologics.CreateAssembly.datagen.create.AsmCrushingRecipeProvider;
+import com.KanasakiTechnologics.CreateAssembly.datagen.create.AsmPolishingRecipeProvider;
+import com.KanasakiTechnologics.CreateAssembly.datagen.create.AsmPressingRecipeProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -37,10 +40,13 @@ public class DataGenerators {
 
         generator.addProvider(event.includeServer(), new AsmFluidTagProvider(packOutput, lookupProvider, existingFileHelper));
         generator.addProvider(event.includeServer(), new AsmDatapackProvider(packOutput, lookupProvider));
-        generator.addProvider(event.includeServer(), new AsmLightsBlockRProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new AsmVanillaRecipesProvider(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), new AsmGlowingFanRecipeProvider(packOutput,lookupProvider));
+        generator.addProvider(event.includeServer(), new AsmPressingRecipeProvider(packOutput,lookupProvider));
+        generator.addProvider(event.includeServer(), new AsmPolishingRecipeProvider(packOutput,lookupProvider));
+        generator.addProvider(event.includeServer(), new AsmCrushingRecipeProvider(packOutput,lookupProvider));
 
-
+        generator.addProvider(event.includeServer(), new AsmItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
         generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(AsmLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
     }
 }
