@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "group": "lapis",
+  "ingredient": {
+    "tag": "c:plates/lapis"
+  },
+  "result": {
+    "count": 1,
+    "id": "createassembly:lapis_alloy"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "createassembly:lapis_alloy"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:lapis_sheet"
+    }
+  ]
+}

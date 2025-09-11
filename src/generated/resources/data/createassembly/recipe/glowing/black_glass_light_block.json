@@ -1,0 +1,13 @@
+{
+  "type": "createassembly:glowing",
+  "ingredients": [
+    {
+      "item": "minecraft:black_stained_glass"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:black_glass_light_block"
+    }
+  ]
+}

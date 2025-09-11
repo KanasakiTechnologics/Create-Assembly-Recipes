@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sap_saplings": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:saplings"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "createassembly:sap_from_blasting_sap_saplings"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sap_saplings"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "createassembly:sap_from_blasting_sap_saplings"
+    ]
+  }
+}

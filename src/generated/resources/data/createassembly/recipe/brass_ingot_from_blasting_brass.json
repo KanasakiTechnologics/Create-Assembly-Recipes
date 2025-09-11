@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "group": "brass",
+  "ingredient": {
+    "tag": "c:plates/brass"
+  },
+  "result": {
+    "count": 1,
+    "id": "create:brass_ingot"
+  }
+}

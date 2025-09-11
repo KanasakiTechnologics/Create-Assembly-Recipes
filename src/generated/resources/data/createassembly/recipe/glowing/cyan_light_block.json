@@ -1,0 +1,13 @@
+{
+  "type": "createassembly:glowing",
+  "ingredients": [
+    {
+      "item": "minecraft:cyan_concrete"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:cyan_light_block"
+    }
+  ]
+}

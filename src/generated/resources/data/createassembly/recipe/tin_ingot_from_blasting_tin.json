@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "group": "tin",
+  "ingredient": {
+    "tag": "c:plates/tin"
+  },
+  "result": {
+    "count": 1,
+    "id": "createassembly:tin_ingot"
+  }
+}
