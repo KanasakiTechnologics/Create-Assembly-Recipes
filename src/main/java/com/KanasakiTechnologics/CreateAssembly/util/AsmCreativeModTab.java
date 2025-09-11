@@ -1,6 +1,7 @@
 package com.KanasakiTechnologics.CreateAssembly.util;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
+import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -33,10 +34,21 @@ public class AsmCreativeModTab {
                     .displayItems((itemDisplayParameters, output) ->{
                         output.accept(AsmItems.ENDERIUM_ALLOY);
                         output.accept(AsmItems.LAPIS_ALLOY);
+                        output.accept(AsmItems.LAPIS_SHEET);
                         output.accept(AsmItems.ENDERIUM_ROD);
                         output.accept(AsmItems.COAL_ROD);
-                        output.accept(AsmItems.LAPIS_SHEET);
+                        output.accept(AsmItems.ROUGH_DIAMOND);
+                        output.accept(AsmItems.ELECTRUM_JEWEL);
+                        output.accept(AsmItems.SILVER_JEWEL);
+                        output.accept(AsmItems.POLISHED_DIAMOND);
+                        output.accept(AsmItems.ALCHEMIST_DUST);
+                        output.accept(AsmItems.FUSED_BLEND);
+                        output.accept(AsmItems.NETHERITE_DUST);
+                        output.accept(AsmItems.NETHERRACK_SHARD);
                         output.accept(AsmItems.SULFUR);
+                        output.accept(AsmBlocks.HOT_COAL);
+                        output.accept(AsmBlocks.COMPRESSED_COAL);
+                        output.accept(AsmBlocks.FUSED_COMPRESSED_COAL);
                         output.accept(AsmItems.GLOW_INK_BUCKET);
                         output.accept(AsmItems.SULFURIC_ACID_BUCKET);
                     }).build());

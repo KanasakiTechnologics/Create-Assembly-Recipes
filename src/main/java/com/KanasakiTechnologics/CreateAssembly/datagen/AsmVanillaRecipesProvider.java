@@ -1,13 +1,10 @@
 package com.KanasakiTechnologics.CreateAssembly.datagen;
 
-import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
 import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
-import com.simibubi.create.api.data.recipe.PressingRecipeGen;
 import com.simibubi.create.AllItems;
-import com.simibubi.create.api.data.recipe.BaseRecipeProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -16,16 +13,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.BlastingRecipe;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraft.world.item.crafting.SmeltingRecipe;
+import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
+
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -118,7 +112,7 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
         oreRecycling(recipeOutput, ItemTags.LEAVES,RecipeCategory.MISC,AsmItems.SAP.get(),0.25f,100,"sap_leaves");
         oreRecycling(recipeOutput, ItemTags.SAPLINGS,RecipeCategory.MISC,AsmItems.SAP.get(),0.25f,100,"sap_saplings");
 
-
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.NETHERRACK),RecipeCategory.MISC,AsmItems.NETHERRACK_SHARD,2).unlockedBy("has_netherrack",has(Blocks.NETHERRACK)).save(recipeOutput);
 
         concreteLight(recipeOutput, Items.WHITE_CONCRETE, LightBlocks.WHITE_LIGHT_BLOCK.get());
         concreteLight(recipeOutput, Items.LIGHT_GRAY_CONCRETE, LightBlocks.LIGHT_GRAY_LIGHT_BLOCK.get());
@@ -165,7 +159,6 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
     protected static void oreRecycling(RecipeOutput recipeOutput, TagKey<Item> inputTag, RecipeCategory category, ItemLike result, float experience, int cookingTime, String group) {
         SimpleCookingRecipeBuilder.generic(Ingredient.of(inputTag),category, result, experience, cookingTime, RecipeSerializer.BLASTING_RECIPE, BlastingRecipe::new).group(group).unlockedBy("has_" + group, has(inputTag)).save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MOD_ID, getItemName(result) + "_from_blasting_" + group));
     }
-
 
 
     private static void concreteLight(RecipeOutput out, Item concrete, Block result) {

@@ -70,10 +70,18 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(AsmBlocks.SILVER_ORE.get())
                 .add(AsmBlocks.RAW_SILVER_BLOCK.get())
                 .add(AsmBlocks.DEEPSLATE_TIN_ORE.get())
-                .add(AsmBlocks.DEEPSLATE_SILVER_ORE.get());
+                .add(AsmBlocks.DEEPSLATE_SILVER_ORE.get())
+                .add(AsmBlocks.HOT_COAL.get())
+                .add(AsmBlocks.COMPRESSED_COAL.get())
+                .add(AsmBlocks.FUSED_COMPRESSED_COAL.get())
+                .add(AsmBlocks.HOT_COMPRESSED_COAL.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(AsmBlocks.SULFUR_ORE.get())
+                .add(AsmBlocks.HOT_COAL.get())
+                .add(AsmBlocks.COMPRESSED_COAL.get())
+                .add(AsmBlocks.FUSED_COMPRESSED_COAL.get())
+                .add(AsmBlocks.HOT_COMPRESSED_COAL.get())
                 .add(LightBlocks.BLACK_GLASS_LIGHT_BLOCK.get())
                 .add(LightBlocks.BLUE_GLASS_LIGHT_BLOCK.get())
                 .add(LightBlocks.BROWN_GLASS_LIGHT_BLOCK.get())

@@ -5,6 +5,7 @@ import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import org.checkerframework.checker.units.qual.A;
 
 public class AsmItemModelProvider extends ItemModelProvider {
     public AsmItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -44,5 +45,15 @@ public class AsmItemModelProvider extends ItemModelProvider {
         basicItem(AsmItems.LAPIS_SHEET.get());
         basicItem(AsmItems.COAL_ROD.get());
         basicItem(AsmItems.SAP.get());
+        basicItem(AsmItems.ROUGH_DIAMOND.get());
+        basicItem(AsmItems.POLISHED_DIAMOND.get());
+        basicItem(AsmItems.SILVER_JEWEL.get());
+        basicItem(AsmItems.ELECTRUM_JEWEL.get());
+        basicItem(AsmItems.ALCHEMIST_DUST.get());
+        basicItem(AsmItems.FUSED_BLEND.get());
+        basicItem(AsmItems.NETHERITE_DUST.get());
+        basicItem(AsmItems.NETHERRACK_SHARD.get());
+        basicItem(AsmItems.UNCOMPLETED_NETHERITE_TEMPLATE.get());
+        basicItem(AsmItems.UNPROCESSED_NETHERITE_DUST.get());
     }
 }

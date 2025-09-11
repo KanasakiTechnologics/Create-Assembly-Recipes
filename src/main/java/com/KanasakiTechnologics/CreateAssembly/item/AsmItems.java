@@ -108,5 +108,35 @@ public class AsmItems {
     public static final DeferredItem<Item> SAP = ITEMS.register("sap",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> ROUGH_DIAMOND = ITEMS.register("rough_diamond",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> POLISHED_DIAMOND = ITEMS.register("polished_diamond",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> SILVER_JEWEL = ITEMS.register("silver_jewel",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> ELECTRUM_JEWEL = ITEMS.register("electrum_jewel",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> ALCHEMIST_DUST = ITEMS.register("alchemist_dust",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> FUSED_BLEND = ITEMS.register("fused_blend",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> NETHERITE_DUST = ITEMS.register("netherite_dust",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> UNPROCESSED_NETHERITE_DUST = ITEMS.register("unprocessed_netherite_dust",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> NETHERRACK_SHARD = ITEMS.register("netherrack_shard",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> UNCOMPLETED_NETHERITE_TEMPLATE = ITEMS.register("uncompleted_template",
+            () -> new Item(new Item.Properties()));
+
+
+
     public static void register(IEventBus eventBus){ITEMS.register(eventBus);}
 }

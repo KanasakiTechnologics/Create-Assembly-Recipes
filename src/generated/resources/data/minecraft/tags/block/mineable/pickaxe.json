@@ -41,6 +41,10 @@
     "createassembly:silver_ore",
     "createassembly:raw_silver_block",
     "createassembly:deepslate_tin_ore",
-    "createassembly:deepslate_silver_ore"
+    "createassembly:deepslate_silver_ore",
+    "createassembly:hot_coal_block",
+    "createassembly:compressed_coal_block",
+    "createassembly:fused_compressed_coal_block",
+    "createassembly:hot_compressed_coal_block"
   ]
 }

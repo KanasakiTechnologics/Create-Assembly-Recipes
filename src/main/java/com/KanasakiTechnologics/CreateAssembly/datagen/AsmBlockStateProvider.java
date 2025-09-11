@@ -63,6 +63,11 @@ public class AsmBlockStateProvider extends BlockStateProvider {
         blockWithItem(AsmBlocks.DEEPSLATE_TIN_ORE);
         blockWithItem(AsmBlocks.SILVER_ORE);
         blockWithItem(AsmBlocks.DEEPSLATE_SILVER_ORE);
+
+        blockWithItem(AsmBlocks.HOT_COAL);
+        blockWithItem(AsmBlocks.COMPRESSED_COAL);
+        blockWithItem(AsmBlocks.FUSED_COMPRESSED_COAL);
+        blockWithItem(AsmBlocks.HOT_COMPRESSED_COAL);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

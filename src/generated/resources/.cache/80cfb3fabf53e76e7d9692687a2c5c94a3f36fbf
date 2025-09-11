@@ -1,2 +1,5 @@
-// 1.21.1	2025-09-10T19:39:47.3077786	createassembly's processing recipes: sandpaper_polishing
+// 1.21.1	2025-09-11T19:55:09.9988627	createassembly's processing recipes: sandpaper_polishing
 ca5a4acc33998d1274d8732c22953132883b2aa5 data/createassembly/recipe/sandpaper_polishing/coal_rod.json
+9c4f30c6d81e0920291b91f92a3d342bcf484de6 data/create/recipe/sandpaper_polishing/electrum_ingot.json
+7d2444ec1048ac45747c3c6bf6c3e9e9db083745 data/create/recipe/sandpaper_polishing/rough_diamond.json
+45ae11fd0c10025c7a2527e4c1fc52a173d05f9c data/create/recipe/sandpaper_polishing/silver_ingot.json

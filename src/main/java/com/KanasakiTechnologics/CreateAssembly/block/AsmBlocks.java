@@ -58,6 +58,16 @@ public class AsmBlocks {
     public static final DeferredBlock<LiquidBlock> GLOW_INK = registerBlock("glow_ink",GlowInkBlock::new);
     public static final DeferredBlock<LiquidBlock> SULFURIC_ACID = registerBlock("sulfuric_acid",SulfuricAcidBlock::new);
 
+
+    public static final DeferredBlock<Block> HOT_COAL = registerBlock("hot_coal_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).noLootTable().requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> COMPRESSED_COAL = registerBlock("compressed_coal_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).noLootTable().requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> FUSED_COMPRESSED_COAL = registerBlock("fused_compressed_coal_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).noLootTable().requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> HOT_COMPRESSED_COAL = registerBlock("hot_compressed_coal_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).noLootTable().requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
