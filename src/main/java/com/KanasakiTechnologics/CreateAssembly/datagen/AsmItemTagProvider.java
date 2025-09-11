@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.minecraft.resources.ResourceLocation;
+import org.checkerframework.checker.units.qual.A;
 import org.jetbrains.annotations.Nullable;
 import java.util.concurrent.CompletableFuture;
 
@@ -44,11 +45,14 @@ public class AsmItemTagProvider extends ItemTagsProvider {
 
         tag(Tags.Items.INGOTS)
                 .add(AsmItems.SILVER_INGOT.get())
-                .add(AsmItems.TIN_INGOT.get());
+                .add(AsmItems.TIN_INGOT.get())
+                .add(AsmItems.ENDERIUM_ALLOY.get());
         tag(AsmTags.ItemTags.SILVER_INGOT.tag)
                 .add(AsmItems.SILVER_INGOT.get());
         tag(AsmTags.ItemTags.TIN_INGOT.tag)
                 .add(AsmItems.TIN_INGOT.get());
+        tag(AsmTags.ItemTags.ENDERIUM_ALLOY2.tag)
+                .add(AsmItems.ENDERIUM_ALLOY.get());
 
         tag(Tags.Items.NUGGETS)
                 .add(AsmItems.SILVER_NUGGET.get())

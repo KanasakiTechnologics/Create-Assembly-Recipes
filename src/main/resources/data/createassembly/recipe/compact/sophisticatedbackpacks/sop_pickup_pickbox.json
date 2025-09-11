@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "sophisticatedbackpacks"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "fxntstorage"
+    }
+
+  ],
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:lapis_lazuli"
+  },
+  "base": {
+    "item": "fxntstorage:backpack_blank_upgrade"
+  },
+  "result": {
+    "count": 1,
+    "id": "fxntstorage:backpack_pickbox_upgrade"
+  },
+  "template": {
+    "item": "sophisticatedbackpacks:advanced_pickup_upgrade"
+  }
+}

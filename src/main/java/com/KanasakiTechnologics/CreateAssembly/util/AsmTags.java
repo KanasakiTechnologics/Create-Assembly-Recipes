@@ -115,7 +115,7 @@ public class AsmTags {
         PRISMARINE_BUILDING_BLOCK(NameSpace.MOD,"prismarine_building_block"),
         PLATES(NameSpace.COMMON,"plates"),
         All_METAL(NameSpace.COMMON,"rods/all_metal"),
-        ENDERIUM_ALLOY(NameSpace.COMMON,"rods/enderium_alloy"),
+        ENDERIUM_ALLOY(NameSpace.COMMON,"rods/enderium"),
         RODS(NameSpace.COMMON,"rods"),
         ORES(NameSpace.COMMON,"ores"),
         RAW_TIN(NameSpace.COMMON,"storage_blocks/raw_tin"),
@@ -128,7 +128,9 @@ public class AsmTags {
         TIN_NUGGET(NameSpace.COMMON,"nuggets/tin"),
         SILVER_INGOT(NameSpace.COMMON,"ingots/silver"),
         SILVER_NUGGET(NameSpace.COMMON,"nuggets/silver"),
-        ENDER_POWDER(NameSpace.MOD,"ender_powder");
+        ENDER_POWDER(NameSpace.MOD,"ender_powder"),
+        ENDERIUM_ALLOY2(NameSpace.COMMON,"ingots/enderium");
+
 
         public final TagKey<Item> tag;
         public final boolean alwaysDatagen;

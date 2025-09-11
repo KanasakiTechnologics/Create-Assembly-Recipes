@@ -1,0 +1,14 @@
+{
+  "type": "createaddition:rolling",
+  "ingredients": [
+    {
+      "tag": "c:ingots/enderium"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "createassembly:enderium_rod"
+    }
+  ]
+}

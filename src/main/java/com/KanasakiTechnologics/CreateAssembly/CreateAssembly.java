@@ -84,7 +84,7 @@ public class CreateAssembly {
             event.insertAfter(AllItems.SHADOW_STEEL.asStack(), AllItems.REFINED_RADIANCE.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.insertAfter(AllBlocks.RAILWAY_CASING.asStack(), AllBlocks.REFINED_RADIANCE_CASING.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.insertAfter(AllBlocks.REFINED_RADIANCE_CASING.asStack(), AllBlocks.SHADOW_STEEL_CASING.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            event.insertAfter(AllItems.CRUSHED_TIN.asStack(), AllItems.CRUSHED_SILVER.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(AllItems.CRUSHED_ZINC.asStack(), AllItems.CRUSHED_SILVER.asStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
 
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
