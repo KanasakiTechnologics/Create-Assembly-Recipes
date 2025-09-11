@@ -1,0 +1,13 @@
+{
+  "type": "createassembly:glowing",
+  "ingredients": [
+    {
+      "item": "minecraft:red_concrete"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:red_light_block"
+    }
+  ]
+}

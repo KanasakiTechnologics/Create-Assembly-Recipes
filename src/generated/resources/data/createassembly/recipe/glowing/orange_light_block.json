@@ -1,0 +1,13 @@
+{
+  "type": "createassembly:glowing",
+  "ingredients": [
+    {
+      "item": "minecraft:orange_concrete"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:orange_light_block"
+    }
+  ]
+}

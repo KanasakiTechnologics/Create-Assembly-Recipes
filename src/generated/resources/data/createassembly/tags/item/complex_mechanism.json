@@ -1,0 +1,12 @@
+{
+  "values": [
+    "createassembly:abstruse_mechanism",
+    "createassembly:calculation_mechanism",
+    "createassembly:infernal_mechanism",
+    "createassembly:integrated_circuit",
+    "createassembly:integrated_mechanism",
+    "createassembly:kinetic_mechanism",
+    "create:precision_mechanism",
+    "createassembly:sealed_mechanism"
+  ]
+}

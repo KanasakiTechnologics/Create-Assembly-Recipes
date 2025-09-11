@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "createassembly:tin_sheet"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:tin_sheet"
+    }
+  ]
+}

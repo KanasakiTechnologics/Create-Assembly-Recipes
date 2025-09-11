@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "minecraft:light_blue_concrete"
+    },
+    "G": {
+      "item": "minecraft:glow_ink_sac"
+    }
+  },
+  "pattern": [
+    " G ",
+    "GCG",
+    " G "
+  ],
+  "result": {
+    "count": 1,
+    "id": "createassembly:light_blue_light_block"
+  }
+}

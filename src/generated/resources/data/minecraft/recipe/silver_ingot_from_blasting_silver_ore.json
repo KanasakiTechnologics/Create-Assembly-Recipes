@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "group": "silver",
+  "ingredient": {
+    "item": "createassembly:silver_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "createassembly:silver_ingot"
+  }
+}

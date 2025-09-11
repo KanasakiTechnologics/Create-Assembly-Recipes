@@ -1,0 +1,13 @@
+{
+  "type": "createassembly:glowing",
+  "ingredients": [
+    {
+      "item": "minecraft:pink_concrete"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:pink_light_block"
+    }
+  ]
+}

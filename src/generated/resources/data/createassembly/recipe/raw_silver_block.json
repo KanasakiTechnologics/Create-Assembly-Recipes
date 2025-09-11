@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "createassembly:raw_silver"
+    },
+    {
+      "item": "createassembly:raw_silver"
+    },
+    {
+      "item": "createassembly:raw_silver"
+    },
+    {
+      "item": "createassembly:raw_silver"
+    },
+    {
+      "item": "createassembly:raw_silver"
+    },
+    {
+      "item": "createassembly:raw_silver"
+    },
+    {
+      "item": "createassembly:raw_silver"
+    },
+    {
+      "item": "createassembly:raw_silver"
+    },
+    {
+      "item": "createassembly:raw_silver"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "createassembly:raw_silver_block"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "createassembly:tin_ingot"
+    },
+    {
+      "item": "createassembly:tin_ingot"
+    },
+    {
+      "item": "createassembly:tin_ingot"
+    },
+    {
+      "item": "createassembly:tin_ingot"
+    },
+    {
+      "item": "createassembly:tin_ingot"
+    },
+    {
+      "item": "createassembly:tin_ingot"
+    },
+    {
+      "item": "createassembly:tin_ingot"
+    },
+    {
+      "item": "createassembly:tin_ingot"
+    },
+    {
+      "item": "createassembly:tin_ingot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "createassembly:tin_block"
+  }
+}

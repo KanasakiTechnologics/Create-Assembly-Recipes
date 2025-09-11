@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lapis": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:plates/lapis"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "createassembly:lapis_alloy_from_blasting_lapis"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lapis"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "createassembly:lapis_alloy_from_blasting_lapis"
+    ]
+  }
+}

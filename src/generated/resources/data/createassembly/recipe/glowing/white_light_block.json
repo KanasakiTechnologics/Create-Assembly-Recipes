@@ -1,0 +1,13 @@
+{
+  "type": "createassembly:glowing",
+  "ingredients": [
+    {
+      "item": "minecraft:white_concrete"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:white_light_block"
+    }
+  ]
+}

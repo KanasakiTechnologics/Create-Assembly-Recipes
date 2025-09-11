@@ -1,0 +1,13 @@
+{
+  "values": [
+    "createassembly:ender_pearl_fragment",
+    {
+      "id": "enderio:powdered_ender_pearl",
+      "required": false
+    },
+    {
+      "id": "ae2:ender_dust",
+      "required": false
+    }
+  ]
+}
