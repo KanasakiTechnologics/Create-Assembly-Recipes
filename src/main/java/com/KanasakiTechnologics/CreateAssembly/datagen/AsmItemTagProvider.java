@@ -4,6 +4,7 @@ import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
 import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
+import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -42,6 +43,10 @@ public class AsmItemTagProvider extends ItemTagsProvider {
                 .add(AsmBlocks.TIN_ORE.asItem())
                 .add(AsmBlocks.DEEPSLATE_TIN_ORE.asItem())
                 .add(AsmBlocks.DEEPSLATE_SILVER_ORE.asItem());
+
+        tag(AsmTags.ItemTags.GEARBOXES.tag)
+                .add(AllItems.VERTICAL_GEARBOX.get())
+                .add(AllBlocks.GEARBOX.asItem());
 
         tag(Tags.Items.INGOTS)
                 .add(AsmItems.SILVER_INGOT.get())

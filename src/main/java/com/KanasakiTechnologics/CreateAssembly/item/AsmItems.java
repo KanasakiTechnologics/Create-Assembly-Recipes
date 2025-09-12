@@ -35,7 +35,14 @@ public class AsmItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> NETHER_STAR_SHARD = ITEMS.register("nether_star_shard",
+            () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+
+    public static final DeferredItem<Item> BLANK_CATALYST = ITEMS.register("blank_catalyst",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
+    public static final DeferredItem<Item> SHADOW_CATALYST = ITEMS.register("shadow_catalyst",
+            () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final DeferredItem<Item> RADIANT_CATALYST = ITEMS.register("radiant_catalyst",
+            () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
 
     public static final DeferredItem<Item> ENDER_PEARL_FRAGMENT = ITEMS.register("ender_pearl_fragment",
             () -> new Item(new Item.Properties()));
@@ -104,6 +111,8 @@ public class AsmItems {
 
     public static final DeferredItem<Item> COAL_ROD = ITEMS.register("coal_rod",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> INCOMPLETE_BLAZE_ROD = ITEMS.register("incomplete_blaze_rod",
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> SAP = ITEMS.register("sap",
             () -> new Item(new Item.Properties()));
@@ -118,6 +127,8 @@ public class AsmItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> ELECTRUM_JEWEL = ITEMS.register("electrum_jewel",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> UNCOMPLETED_TOTEM_OF_UNDYING = ITEMS.register("uncompleted_totem_of_undying",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> ALCHEMIST_DUST = ITEMS.register("alchemist_dust",
@@ -136,7 +147,9 @@ public class AsmItems {
     public static final DeferredItem<Item> UNCOMPLETED_NETHERITE_TEMPLATE = ITEMS.register("uncompleted_template",
             () -> new Item(new Item.Properties()));
 
-
-
+    public static final DeferredItem<Item> RAW_RUBBER = ITEMS.register("raw_rubber",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RUBBER = ITEMS.register("rubber",
+            () -> new Item(new Item.Properties()));
     public static void register(IEventBus eventBus){ITEMS.register(eventBus);}
 }

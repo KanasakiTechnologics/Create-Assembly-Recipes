@@ -117,6 +117,10 @@
   "item.createassembly.sulfur": "Sulfur",
   "item.createassembly.sulfur_chunk": "Sulfur chunk",
 
+  "item.createassembly.blank_catalyst": "Blank Catalyst",
+  "item.createassembly.shadow_catalyst": "Shadow Catalyst",
+  "item.createassembly.radiant_catalyst": "Radiant Catalyst",
+
   "create.recipe.fan_glowing": "Bulk Glowing",
   "block.createassembly.glow_ink": "Glow Ink",
   "fluid_type.createassembly.glow_ink_type": "Glow Ink",

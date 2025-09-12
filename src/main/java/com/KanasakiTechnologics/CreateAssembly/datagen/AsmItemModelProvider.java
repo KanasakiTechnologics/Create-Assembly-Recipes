@@ -55,5 +55,12 @@ public class AsmItemModelProvider extends ItemModelProvider {
         basicItem(AsmItems.NETHERRACK_SHARD.get());
         basicItem(AsmItems.UNCOMPLETED_NETHERITE_TEMPLATE.get());
         basicItem(AsmItems.UNPROCESSED_NETHERITE_DUST.get());
+        basicItem(AsmItems.UNCOMPLETED_TOTEM_OF_UNDYING.get());
+        basicItem(AsmItems.INCOMPLETE_BLAZE_ROD.get());
+        basicItem(AsmItems.BLANK_CATALYST.get());
+        basicItem(AsmItems.SHADOW_CATALYST.get());
+        basicItem(AsmItems.RADIANT_CATALYST.get());
+        basicItem(AsmItems.RAW_RUBBER.get());
+        basicItem(AsmItems.RUBBER.get());
     }
 }

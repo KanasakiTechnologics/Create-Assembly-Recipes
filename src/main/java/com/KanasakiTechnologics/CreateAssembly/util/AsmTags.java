@@ -84,6 +84,7 @@ public class AsmTags {
         FAN_PROCESSING_CATALYSTS_GLOWING(NameSpace.MOD, "fan_processing_catalysts/glowing");
 
 
+
         public final TagKey<Block> tag;
         public final boolean alwaysDatagen;
 
@@ -129,7 +130,8 @@ public class AsmTags {
         SILVER_INGOT(NameSpace.COMMON,"ingots/silver"),
         SILVER_NUGGET(NameSpace.COMMON,"nuggets/silver"),
         ENDER_POWDER(NameSpace.MOD,"ender_powder"),
-        ENDERIUM_ALLOY2(NameSpace.COMMON,"ingots/enderium");
+        ENDERIUM_ALLOY2(NameSpace.COMMON,"ingots/enderium"),
+        GEARBOXES(NameSpace.CREATE,"gearboxes");
 
 
         public final TagKey<Item> tag;

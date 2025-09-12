@@ -4,6 +4,7 @@ import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
+import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -36,6 +37,177 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllItems.VERTICAL_GEARBOX,6)
+                .pattern(" G ")
+                .pattern(" K ")
+                .pattern("   ")
+                .define('G', AsmTags.ItemTags.GEARBOXES.tag)
+                .define('K', AsmItems.KINETIC_MECHANISM)
+                .unlockedBy("has_kinetic_mechanism",has(AsmItems.KINETIC_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.GEARBOX,6)
+                .pattern("   ")
+                .pattern("GK ")
+                .pattern("   ")
+                .define('G', AsmTags.ItemTags.GEARBOXES.tag)
+                .define('K', AsmItems.KINETIC_MECHANISM)
+                .unlockedBy("has_kinetic_mechanism",has(AsmItems.KINETIC_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.CRUSHING_WHEEL,2)
+                .pattern(" K ")
+                .pattern(" C ")
+                .pattern(" S ")
+                .define('C', AllBlocks.CRUSHING_WHEEL)
+                .define('K', AsmItems.KINETIC_MECHANISM)
+                .define('S', Ingredient.of(AsmTags.commonItemTag("stones")))
+                .unlockedBy("has_kinetic_mechanism",has(AsmItems.KINETIC_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.DEPLOYER,3)
+                .pattern(" K ")
+                .pattern(" A ")
+                .pattern(" B ")
+                .define('A', AllBlocks.ANDESITE_CASING)
+                .define('K', AsmItems.KINETIC_MECHANISM)
+                .define('B', AllItems.BRASS_HAND)
+                .unlockedBy("has_kinetic_mechanism",has(AsmItems.KINETIC_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.REDSTONE_CONTACT,4)
+                .pattern(" B ")
+                .pattern(" A ")
+                .pattern(" K ")
+                .define('A', AllBlocks.ANDESITE_CASING)
+                .define('K', AsmItems.KINETIC_MECHANISM)
+                .define('B', ItemTags.BUTTONS)
+                .unlockedBy("has_kinetic_mechanism",has(AsmItems.KINETIC_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.MECHANICAL_ROLLER,3)
+                .pattern(" K ")
+                .pattern(" A ")
+                .pattern(" C ")
+                .define('A', AllBlocks.ANDESITE_CASING)
+                .define('K', AsmItems.KINETIC_MECHANISM)
+                .define('C', AllBlocks.CRUSHING_WHEEL)
+                .unlockedBy("has_kinetic_mechanism",has(AsmItems.KINETIC_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.PORTABLE_STORAGE_INTERFACE,4)
+                .pattern("   ")
+                .pattern("AK ")
+                .pattern("   ")
+                .define('A', AllBlocks.ANDESITE_CASING)
+                .define('K', AsmItems.KINETIC_MECHANISM)
+                .unlockedBy("has_kinetic_mechanism",has(AsmItems.KINETIC_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.STEAM_ENGINE,6)
+                .pattern(" G ")
+                .pattern(" S ")
+                .pattern(" C ")
+                .define('G', AllItems.GOLDEN_SHEET)
+                .define('S', AsmItems.SEALED_MECHANISM)
+                .define('C', Blocks.COPPER_BLOCK)
+                .unlockedBy("has_sealed_mechanism",has(AsmItems.SEALED_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.SPOUT,6)
+                .pattern("   ")
+                .pattern(" C ")
+                .pattern(" S ")
+                .define('S', AsmItems.SEALED_MECHANISM)
+                .define('C', AllBlocks.COPPER_CASING)
+                .unlockedBy("has_sealed_mechanism",has(AsmItems.SEALED_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.PORTABLE_FLUID_INTERFACE,4)
+                .pattern("   ")
+                .pattern("CS ")
+                .pattern("   ")
+                .define('S', AsmItems.SEALED_MECHANISM)
+                .define('C', AllBlocks.COPPER_CASING)
+                .unlockedBy("has_sealed_mechanism",has(AsmItems.SEALED_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.MECHANICAL_CRAFTER,5)
+                .pattern(" I ")
+                .pattern(" B ")
+                .pattern(" C ")
+                .define('B', AllBlocks.BRASS_CASING)
+                .define('C', Blocks.CRAFTER)
+                .define('I', AsmItems.INTEGRATED_MECHANISM)
+                .unlockedBy("has_integrated_mechanism",has(AsmItems.INTEGRATED_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllItems.TRANSMITTER,3)
+                .pattern(" L ")
+                .pattern("CCC")
+                .pattern(" I ")
+                .define('L', Blocks.LIGHTNING_ROD)
+                .define('C', AllItems.COPPER_SHEET)
+                .define('I',AsmItems.INTEGRATED_MECHANISM)
+                .unlockedBy("has_integrated_mechanism",has(AsmItems.INTEGRATED_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.CONTRAPTION_CONTROLS,3)
+                .pattern(" L ")
+                .pattern(" T ")
+                .pattern(" I ")
+                .define('L', Items.LEVER)
+                .define('T', AllBlocks.RAILWAY_CASING)
+                .define('I',AsmItems.INTEGRATED_MECHANISM)
+                .unlockedBy("has_integrated_mechanism",has(AsmItems.INTEGRATED_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.MECHANICAL_ARM,3)
+                .pattern("BBA")
+                .pattern("B  ")
+                .pattern("IC ")
+                .define('B', AllItems.BRASS_SHEET)
+                .define('A', AllItems.ANDESITE_ALLOY)
+                .define('I',AsmItems.INTEGRATED_MECHANISM)
+                .define('C',AllBlocks.BRASS_CASING)
+                .unlockedBy("has_integrated_mechanism",has(AsmItems.INTEGRATED_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.DISPLAY_BOARD,12)
+                .pattern("   ")
+                .pattern("LCL")
+                .pattern("   ")
+                .define('L', AsmItems.LAPIS_ALLOY)
+                .define('C', AsmItems.CALCULATION_MECHANISM)
+                .unlockedBy("has_calculation_mechanism",has(AsmItems.CALCULATION_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.DISPLAY_BOARD,8)
+                .pattern("   ")
+                .pattern("ACA")
+                .pattern("   ")
+                .define('A', AllItems.ANDESITE_ALLOY)
+                .define('C', AsmItems.CALCULATION_MECHANISM)
+                .unlockedBy("has_calculation_mechanism",has(AsmItems.CALCULATION_MECHANISM)).save(recipeOutput,"minecraft:display_board_8");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.CRAFTER,2)
+                .pattern(" D ")
+                .pattern(" C ")
+                .pattern(" T ")
+                .define('D', Blocks.DROPPER)
+                .define('T', Blocks.CRAFTING_TABLE)
+                .define('C', AsmItems.CALCULATION_MECHANISM)
+                .unlockedBy("has_calculation_mechanism",has(AsmItems.CALCULATION_MECHANISM)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, AllBlocks.FACTORY_GAUGE,6)
+                .requires(AllItems.TRANSMITTER)
+                .requires(AsmItems.CALCULATION_MECHANISM)
+                .unlockedBy("has_calculation_mechanism",has(AsmItems.CALCULATION_MECHANISM))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.ENDER_CHEST,2)
+                .pattern("OAO")
+                .pattern("OCO")
+                .pattern("OOO")
+                .define('A', AsmItems.ABSTRUSE_MECHANISM)
+                .define('C', Blocks.CHEST)
+                .define('O', Blocks.OBSIDIAN)
+                .unlockedBy("has_abstruce_mechanism",has(AsmItems.ABSTRUSE_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.BLAZE_BURNER)
+                .pattern("BBB")
+                .pattern("BSB")
+                .pattern("BEB")
+                .define('B', Items.BLAZE_ROD)
+                .define('S', Blocks.SOUL_SAND)
+                .define('E',AllItems.EMPTY_BLAZE_BURNER)
+                .unlockedBy("has_blaze_rod",has(Items.BLAZE_ROD)).save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.CHEST,4)
                 .pattern("LLL")
                 .pattern("L L")
@@ -43,9 +215,37 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .define('L', ItemTags.LOGS)
                 .unlockedBy("has_logs",has(ItemTags.LOGS)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.ENDER_PEARL)
+                .pattern("FFF")
+                .pattern("F F")
+                .pattern("FFF")
+                .define('F', AsmItems.ENDER_PEARL_FRAGMENT)
+                .unlockedBy("has_ender_pearl_fragment",has(AsmItems.ENDER_PEARL_FRAGMENT)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.ENDER_EYE)
+                .pattern("FFF")
+                .pattern("FBF")
+                .pattern("FFF")
+                .define('F', AsmItems.ENDER_PEARL_FRAGMENT)
+                .define('B', Items.BLAZE_POWDER)
+                .unlockedBy("has_ender_pearl_fragment",has(AsmItems.ENDER_PEARL_FRAGMENT)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,AsmItems.BLANK_CATALYST,2)
+                .pattern("SSS")
+                .pattern("SBS")
+                .pattern("SSS")
+                .define('S', AsmItems.NETHER_STAR_SHARD)
+                .define('B', AsmItems.BLANK_CATALYST)
+                .unlockedBy("has_catalyst",has(AsmItems.BLANK_CATALYST)).save(recipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,Items.STRING,2)
                 .requires(Ingredient.of(ItemTags.LEAVES),3)
                 .unlockedBy("has_leaves",has(ItemTags.LEAVES))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,AsmItems.NETHER_STAR_SHARD,4)
+                .requires(Ingredient.of(Items.NETHER_STAR))
+                .unlockedBy("has_nether_star",has(Items.NETHER_STAR))
                 .save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, AsmBlocks.RAW_SILVER_BLOCK)

@@ -37,6 +37,9 @@ public class AsmCreativeModTab {
                         output.accept(AsmItems.LAPIS_SHEET);
                         output.accept(AsmItems.ENDERIUM_ROD);
                         output.accept(AsmItems.COAL_ROD);
+                        output.accept(AsmItems.BLANK_CATALYST);
+                        output.accept(AsmItems.SHADOW_CATALYST);
+                        output.accept(AsmItems.RADIANT_CATALYST);
                         output.accept(AsmItems.ROUGH_DIAMOND);
                         output.accept(AsmItems.ELECTRUM_JEWEL);
                         output.accept(AsmItems.SILVER_JEWEL);
@@ -45,6 +48,8 @@ public class AsmCreativeModTab {
                         output.accept(AsmItems.FUSED_BLEND);
                         output.accept(AsmItems.NETHERITE_DUST);
                         output.accept(AsmItems.NETHERRACK_SHARD);
+                        output.accept(AsmItems.RAW_RUBBER);
+                        output.accept(AsmItems.RUBBER);
                         output.accept(AsmItems.SULFUR);
                         output.accept(AsmBlocks.HOT_COAL);
                         output.accept(AsmBlocks.COMPRESSED_COAL);
