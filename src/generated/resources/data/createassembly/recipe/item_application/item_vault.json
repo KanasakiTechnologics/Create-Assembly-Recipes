@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:chest"
+    },
+    {
+      "item": "create:iron_sheet"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:item_vault"
+    }
+  ]
+}

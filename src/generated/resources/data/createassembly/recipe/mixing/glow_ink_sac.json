@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "amount": 250,
+      "fluid": "createassembly:glow_ink"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:glow_ink_sac"
+    }
+  ]
+}

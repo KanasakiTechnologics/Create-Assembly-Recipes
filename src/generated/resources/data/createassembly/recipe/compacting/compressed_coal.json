@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "createassembly:hot_coal_block"
+    },
+    {
+      "item": "createassembly:hot_coal_block"
+    },
+    {
+      "item": "createassembly:hot_coal_block"
+    },
+    {
+      "item": "createassembly:hot_coal_block"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:compressed_coal_block"
+    }
+  ]
+}

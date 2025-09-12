@@ -1,0 +1,5 @@
+// 1.21.1	2025-09-11T20:12:12.9059594	createassembly's processing recipes: item_application
+cdd3634cd6573f1415b61f0cd1618b1ee5006bef data/createassembly/recipe/item_application/fluid_tank.json
+fdfa8db1557a1f905e5e69311de52a37387b30da data/createassembly/recipe/item_application/item_vault.json
+597670ac2975cc7637f5deb390a805c9e4d00a03 data/createassembly/recipe/item_application/radiance_casing.json
+d1aba045714ecb8854239c2f9ed8e2cbeac4ab41 data/createassembly/recipe/item_application/shadow_casing.json

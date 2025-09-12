@@ -1,0 +1,13 @@
+{
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "createassembly:rough_diamond"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:diamond"
+    }
+  ]
+}

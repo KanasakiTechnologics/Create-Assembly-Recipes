@@ -1,0 +1,82 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createassembly:netherrack_shard"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "minecraft:netherite_upgrade_smithing_template"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createassembly:uncompleted_template"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 250,
+          "fluid": "minecraft:lava"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:uncompleted_template"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:uncompleted_template"
+        },
+        {
+          "item": "createassembly:polished_diamond"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:uncompleted_template"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createassembly:uncompleted_template"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 250,
+          "fluid": "create_enchantment_industry:experience"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:uncompleted_template"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createassembly:uncompleted_template"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:uncompleted_template"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createassembly:uncompleted_template"
+  }
+}

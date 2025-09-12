@@ -1,0 +1,13 @@
+{
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "createassembly:silver_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:silver_jewel"
+    }
+  ]
+}

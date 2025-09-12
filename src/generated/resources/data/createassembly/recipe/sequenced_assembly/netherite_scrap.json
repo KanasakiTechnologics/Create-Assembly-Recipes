@@ -1,0 +1,75 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createassembly:netherite_dust"
+  },
+  "loops": 5,
+  "results": [
+    {
+      "chance": 79.0,
+      "id": "minecraft:netherite_scrap"
+    },
+    {
+      "chance": 13.0,
+      "id": "create:powdered_obsidian"
+    },
+    {
+      "chance": 13.0,
+      "id": "create:cinder_flour"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createassembly:unprocessed_netherite_dust"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 250,
+          "fluid": "create_enchantment_industry:experience"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:unprocessed_netherite_dust"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createassembly:unprocessed_netherite_dust"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 250,
+          "fluid": "minecraft:lava"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:unprocessed_netherite_dust"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createassembly:unprocessed_netherite_dust"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:unprocessed_netherite_dust"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createassembly:unprocessed_netherite_dust"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "tag": "c:nuggets/tin"
+    },
+    {
+      "tag": "c:nuggets/tin"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:lapis_alloy"
+    }
+  ]
+}

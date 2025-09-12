@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createassembly:block/fused_compressed_coal_block"
+    }
+  }
+}

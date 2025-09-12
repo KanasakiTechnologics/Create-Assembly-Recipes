@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "create:powdered_obsidian"
+    },
+    {
+      "item": "create:cinder_flour"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:netherite_dust"
+    }
+  ]
+}

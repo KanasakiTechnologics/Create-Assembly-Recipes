@@ -1,0 +1,13 @@
+{
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "createaddition:electrum_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:electrum_jewel"
+    }
+  ]
+}
