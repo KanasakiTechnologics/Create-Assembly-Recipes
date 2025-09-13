@@ -1,0 +1,111 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createassembly:electrum_jewel"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "minecraft:totem_of_undying"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "createassembly:uncompleted_totem_of_undying"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:uncompleted_totem_of_undying"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:uncompleted_totem_of_undying"
+        },
+        {
+          "item": "minecraft:end_crystal"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:uncompleted_totem_of_undying"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createassembly:uncompleted_totem_of_undying"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 1000,
+          "fluid": "minecraft:lava"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:uncompleted_totem_of_undying"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:uncompleted_totem_of_undying"
+        },
+        {
+          "item": "minecraft:emerald"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:uncompleted_totem_of_undying"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createassembly:uncompleted_totem_of_undying"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:uncompleted_totem_of_undying"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createassembly:uncompleted_totem_of_undying"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 500,
+          "fluid": "create_enchantment_industry:experience"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:uncompleted_totem_of_undying"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createassembly:uncompleted_totem_of_undying"
+  }
+}

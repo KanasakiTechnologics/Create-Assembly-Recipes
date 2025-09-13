@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "createassembly:ender_pearl_fragment"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "F F",
+    "FFF"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:ender_pearl"
+  }
+}

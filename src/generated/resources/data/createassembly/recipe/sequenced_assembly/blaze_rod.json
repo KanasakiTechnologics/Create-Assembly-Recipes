@@ -1,0 +1,61 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createassembly:coal_rod"
+  },
+  "loops": 3,
+  "results": [
+    {
+      "id": "minecraft:blaze_rod"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_blaze_rod"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 500,
+          "fluid": "minecraft:lava"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_blaze_rod"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_blaze_rod"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_blaze_rod"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_blaze_rod"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_blaze_rod"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createassembly:incomplete_blaze_rod"
+  }
+}

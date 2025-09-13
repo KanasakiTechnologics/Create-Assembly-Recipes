@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "tag": "create:gearboxes"
+    },
+    "K": {
+      "item": "createassembly:kinetic_mechanism"
+    }
+  },
+  "pattern": [
+    "   ",
+    "GK ",
+    "   "
+  ],
+  "result": {
+    "count": 6,
+    "id": "create:gearbox"
+  }
+}

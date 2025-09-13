@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "create:brass_casing"
+    },
+    "C": {
+      "item": "minecraft:crafter"
+    },
+    "I": {
+      "item": "createassembly:integrated_mechanism"
+    }
+  },
+  "pattern": [
+    " I ",
+    " B ",
+    " C "
+  ],
+  "result": {
+    "count": 5,
+    "id": "create:mechanical_crafter"
+  }
+}

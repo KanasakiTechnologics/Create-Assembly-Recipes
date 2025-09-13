@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "C": {
+      "item": "createassembly:calculation_mechanism"
+    }
+  },
+  "pattern": [
+    "   ",
+    "ACA",
+    "   "
+  ],
+  "result": {
+    "count": 8,
+    "id": "create:display_board"
+  }
+}

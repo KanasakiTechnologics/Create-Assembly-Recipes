@@ -1,0 +1,82 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:brass_sheet"
+  },
+  "loops": 4,
+  "results": [
+    {
+      "chance": 128.0,
+      "id": "createassembly:integrated_mechanism"
+    },
+    {
+      "chance": 7.0,
+      "id": "create:electron_tube"
+    },
+    {
+      "chance": 5.0,
+      "id": "createassembly:integrated_circuit"
+    },
+    {
+      "chance": 5.0,
+      "id": "create:brass_sheet"
+    },
+    {
+      "chance": 5.0,
+      "id": "create:cogwheel"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_integrated_mechanism"
+        },
+        {
+          "item": "createassembly:integrated_circuit"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_integrated_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_integrated_mechanism"
+        },
+        {
+          "item": "create:cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_integrated_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_integrated_mechanism"
+        },
+        {
+          "item": "create:electron_tube"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_integrated_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createassembly:incomplete_integrated_mechanism"
+  }
+}

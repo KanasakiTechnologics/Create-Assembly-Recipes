@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_abstruce_mechanism": {
+      "conditions": {
+        "items": [
+          {
+            "items": "createassembly:abstruse_mechanism"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:ender_chest"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_abstruce_mechanism"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:ender_chest"
+    ]
+  }
+}

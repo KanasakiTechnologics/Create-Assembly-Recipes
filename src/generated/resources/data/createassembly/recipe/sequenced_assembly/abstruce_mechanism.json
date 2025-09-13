@@ -1,0 +1,98 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:sturdy_sheet"
+  },
+  "loops": 4,
+  "results": [
+    {
+      "chance": 120.0,
+      "id": "createassembly:abstruse_mechanism"
+    },
+    {
+      "chance": 5.0,
+      "id": "createassembly:integrated_circuit"
+    },
+    {
+      "chance": 5.0,
+      "id": "minecraft:redstone"
+    },
+    {
+      "chance": 10.0,
+      "id": "minecraft:amethyst_shard"
+    },
+    {
+      "chance": 10.0,
+      "id": "create:sturdy_sheet"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_abstruse_mechanism"
+        },
+        {
+          "item": "createassembly:integrated_circuit"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_abstruse_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_abstruse_mechanism"
+        },
+        {
+          "item": "minecraft:amethyst_shard"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_abstruse_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_abstruse_mechanism"
+        },
+        {
+          "item": "minecraft:redstone"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_abstruse_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_abstruse_mechanism"
+        },
+        {
+          "item": "create:cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_abstruse_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createassembly:incomplete_abstruse_mechanism"
+  }
+}

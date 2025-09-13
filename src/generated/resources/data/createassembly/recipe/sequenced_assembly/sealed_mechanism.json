@@ -1,0 +1,98 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createassembly:rubber"
+  },
+  "loops": 4,
+  "results": [
+    {
+      "chance": 120.0,
+      "id": "createassembly:sealed_mechanism"
+    },
+    {
+      "chance": 5.0,
+      "id": "create:copper_sheet"
+    },
+    {
+      "chance": 5.0,
+      "id": "minecraft:dried_kelp"
+    },
+    {
+      "chance": 10.0,
+      "id": "minecraft:glass"
+    },
+    {
+      "chance": 10.0,
+      "id": "createassembly:rubber"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_sealed_mechanism"
+        },
+        {
+          "item": "create:cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_sealed_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_sealed_mechanism"
+        },
+        {
+          "item": "minecraft:dried_kelp"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_sealed_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_sealed_mechanism"
+        },
+        {
+          "item": "create:copper_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_sealed_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_sealed_mechanism"
+        },
+        {
+          "tag": "c:glass_blocks/colorless"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_sealed_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createassembly:incomplete_sealed_mechanism"
+  }
+}

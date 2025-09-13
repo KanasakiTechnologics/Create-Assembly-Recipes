@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "createassembly:integrated_mechanism"
+    },
+    "L": {
+      "item": "minecraft:lever"
+    },
+    "T": {
+      "item": "create:railway_casing"
+    }
+  },
+  "pattern": [
+    " L ",
+    " T ",
+    " I "
+  ],
+  "result": {
+    "count": 3,
+    "id": "create:contraption_controls"
+  }
+}

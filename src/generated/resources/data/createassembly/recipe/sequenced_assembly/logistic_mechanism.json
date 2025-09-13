@@ -1,0 +1,98 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:iron_sheet"
+  },
+  "loops": 4,
+  "results": [
+    {
+      "chance": 128.0,
+      "id": "createassembly:kinetic_mechanism"
+    },
+    {
+      "chance": 7.0,
+      "id": "create:zinc_nugget"
+    },
+    {
+      "chance": 5.0,
+      "id": "create:andesite_alloy"
+    },
+    {
+      "chance": 5.0,
+      "id": "minecraft:slime_ball"
+    },
+    {
+      "chance": 5.0,
+      "id": "create:cogwheel"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_kinetic_mechanism"
+        },
+        {
+          "item": "create:andesite_alloy"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_kinetic_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_kinetic_mechanism"
+        },
+        {
+          "item": "create:zinc_nugget"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_kinetic_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_kinetic_mechanism"
+        },
+        {
+          "item": "create:cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_kinetic_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_kinetic_mechanism"
+        },
+        {
+          "item": "minecraft:slime_ball"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_kinetic_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createassembly:incomplete_kinetic_mechanism"
+  }
+}

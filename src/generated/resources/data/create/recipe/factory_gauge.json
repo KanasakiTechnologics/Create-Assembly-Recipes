@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "create:transmitter"
+    },
+    {
+      "item": "createassembly:calculation_mechanism"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "id": "create:factory_gauge"
+  }
+}

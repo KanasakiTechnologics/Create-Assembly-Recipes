@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_calculation_mechanism": {
+      "conditions": {
+        "items": [
+          {
+            "items": "createassembly:calculation_mechanism"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:display_board_8"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_calculation_mechanism"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:display_board_8"
+    ]
+  }
+}

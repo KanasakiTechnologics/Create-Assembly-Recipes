@@ -1,0 +1,98 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createassembly:tin_sheet"
+  },
+  "loops": 4,
+  "results": [
+    {
+      "chance": 120.0,
+      "id": "createassembly:calculation_mechanism"
+    },
+    {
+      "chance": 5.0,
+      "id": "createassembly:integrated_circuit"
+    },
+    {
+      "chance": 5.0,
+      "id": "create:cogwheel"
+    },
+    {
+      "chance": 10.0,
+      "id": "minecraft:iron_nugget"
+    },
+    {
+      "chance": 10.0,
+      "id": "create:copper_nugget"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_calculation_mechanism"
+        },
+        {
+          "item": "createassembly:integrated_circuit"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_calculation_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_calculation_mechanism"
+        },
+        {
+          "item": "create:cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_calculation_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_calculation_mechanism"
+        },
+        {
+          "item": "create:copper_nugget"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_calculation_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_calculation_mechanism"
+        },
+        {
+          "item": "minecraft:iron_nugget"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_calculation_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createassembly:incomplete_calculation_mechanism"
+  }
+}

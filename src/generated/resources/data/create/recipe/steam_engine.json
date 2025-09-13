@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_block"
+    },
+    "G": {
+      "item": "create:golden_sheet"
+    },
+    "S": {
+      "item": "createassembly:sealed_mechanism"
+    }
+  },
+  "pattern": [
+    " G ",
+    " S ",
+    " C "
+  ],
+  "result": {
+    "count": 6,
+    "id": "create:steam_engine"
+  }
+}

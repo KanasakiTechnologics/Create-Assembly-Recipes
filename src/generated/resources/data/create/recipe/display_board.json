@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "createassembly:calculation_mechanism"
+    },
+    "L": {
+      "item": "createassembly:lapis_alloy"
+    }
+  },
+  "pattern": [
+    "   ",
+    "LCL",
+    "   "
+  ],
+  "result": {
+    "count": 12,
+    "id": "create:display_board"
+  }
+}
