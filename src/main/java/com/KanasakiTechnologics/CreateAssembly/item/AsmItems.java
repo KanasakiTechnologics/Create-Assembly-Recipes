@@ -2,16 +2,21 @@ package com.KanasakiTechnologics.CreateAssembly.item;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
 import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
-import net.minecraft.world.item.BucketItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.Rarity;
+import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class AsmItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(CreateAssembly.MOD_ID);
+
+    public static final DeferredItem<PickaxeItem> SHADOW_PICKAXE = ITEMS.register("shadow_steel_pickaxe",ShadowPickaxe::new);
+    public static final DeferredItem<PickaxeItem> SHADOW_SWORD = ITEMS.register("shadow_steel_sword",
+            () -> new PickaxeItem(AsmTags.SHADOW_TIER,new Item.Properties().attributes(PickaxeItem.createAttributes(AsmTags.SHADOW_TIER,10, 3.0f))));
+    public static final DeferredItem<ShadowMattock> SHADOW_MATTOCK = ITEMS.register("shadow_steel_mattock",
+            () -> new ShadowMattock(AsmTags.SHADOW_TIER, new Item.Properties().attributes(ShadowMattock.createAttributes(AsmTags.SHADOW_TIER, 15.0F, -3.0F))));
+
 
     public static final DeferredItem<Item> TIN_INGOT = ITEMS.register("tin_ingot",
             () -> new Item(new Item.Properties()));
@@ -46,9 +51,7 @@ public class AsmItems {
 
     public static final DeferredItem<Item> ENDER_PEARL_FRAGMENT = ITEMS.register("ender_pearl_fragment",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> ENDERIUM_ALLOY = ITEMS.register("enderium_alloy",
-            () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> ENDERIUM_ROD = ITEMS.register("enderium_rod",
+    public static final DeferredItem<Item> RADIANT_HANDLE = ITEMS.register("radiant_handle",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> GLOW_INK_BUCKET = ITEMS.register("glow_ink_bucket",

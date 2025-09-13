@@ -71,10 +71,11 @@
 
   "item.createassembly.incomplete_blaze_rod": "Incomplete Blaze Rod",
   "item.createassembly.coal_rod": "Coal Rod",
-  "item.createassembly.enderium_rod": "Enderium Rod",
-  "item.createassembly.enderium_alloy": "Enderium Alloy",
+  "item.createassembly.radiant_handle": "Radiant Handle",
   "item.createassembly.nether_star_shard": "Nether Star Shard",
   "item.createassembly.shadow_steel_pickaxe": "Shadow Steel Pickaxe",
+  "item.createassembly.shadow_steel_mattock": "Shadow Steel Mattock",
+  "item.createassembly.shadow_steel_sword": "Shadow Steel Sword",
   "block.createassembly.bedrock":"Bedrock",
 
   "block.createassembly.white_glass_light_block": "White Glass Light Block",
@@ -113,6 +114,8 @@
   "block.createassembly.chromatic_compound_block": "Chromatic Compound Block",
   "block.createassembly.refined_radiance_block": "Refined Radiance Block",
   "block.createassembly.shadow_steel_block": "Shadow Steel Block",
+
+  "message.createassembly.bedrock_breaker.desc": "Needs redstone power",
 
   "item.createassembly.sulfur": "Sulfur",
   "item.createassembly.sulfur_chunk": "Sulfur chunk",

@@ -1,5 +1,7 @@
 {
   "values": [
+    "minecraft:bedrock",
+    "createassembly:bedrock",
     "createassembly:black_glass_light_block",
     "createassembly:blue_glass_light_block",
     "createassembly:brown_glass_light_block",

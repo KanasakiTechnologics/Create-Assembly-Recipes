@@ -54,7 +54,6 @@ public class AsmBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(AsmBlocks.ENDER_ORE);
         blockWithItem(AsmBlocks.SULFUR_ORE);
-        blockWithItem(AsmBlocks.BEDROCK);
         blockWithItem(AsmBlocks.SILVER_BLOCK);
         blockWithItem(AsmBlocks.TIN_BLOCK);
         blockWithItem(AsmBlocks.RAW_SILVER_BLOCK);
@@ -68,6 +67,8 @@ public class AsmBlockStateProvider extends BlockStateProvider {
         blockWithItem(AsmBlocks.COMPRESSED_COAL);
         blockWithItem(AsmBlocks.FUSED_COMPRESSED_COAL);
         blockWithItem(AsmBlocks.HOT_COMPRESSED_COAL);
+        blockWithItemVanillaTexture(AsmBlocks.BEDROCK, "minecraft:block/bedrock");
+
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
@@ -85,6 +86,17 @@ public class AsmBlockStateProvider extends BlockStateProvider {
         simpleBlock(block, model);
         simpleBlockItem(block, model);
     }
+
+    private void blockWithItemVanillaTexture(DeferredBlock<?> deferredBlock, String vanillaTexturePath) {
+        Block block = deferredBlock.get();
+        String blockName = block.getDescriptionId().replace("block." + CreateAssembly.MOD_ID + ".", "");
+
+        ModelFile model = models().cubeAll(blockName, mcLoc(vanillaTexturePath));
+        simpleBlock(block, model);
+        simpleBlockItem(block, model);
+    }
+
+
 
 
     private static String name(Block block) {

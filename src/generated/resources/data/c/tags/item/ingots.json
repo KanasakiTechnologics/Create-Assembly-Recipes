@@ -2,6 +2,6 @@
   "values": [
     "createassembly:silver_ingot",
     "createassembly:tin_ingot",
-    "createassembly:enderium_alloy"
+    "create:refined_radiance"
   ]
 }

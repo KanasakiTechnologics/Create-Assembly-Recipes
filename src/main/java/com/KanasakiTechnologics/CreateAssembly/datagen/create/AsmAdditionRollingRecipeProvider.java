@@ -22,6 +22,6 @@ public class AsmAdditionRollingRecipeProvider extends RollingRecipeGen {
                 .output(rod, 2));
     }
 
-    GeneratedRecipe ENDERIUM_ROD = rodRolling(AsmItems.ENDERIUM_ROD.get(), "enderium");
+    GeneratedRecipe RADIANT_ROD = rodRolling(AsmItems.RADIANT_HANDLE.get(), "radiant");
 
 }

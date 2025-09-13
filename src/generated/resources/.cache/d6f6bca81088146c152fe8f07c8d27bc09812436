@@ -1,11 +1,11 @@
-// 1.21.1	2025-09-13T22:53:18.1205282	Tags for minecraft:item mod id createassembly
+// 1.21.1	2025-09-27T23:02:36.3341195	Tags for minecraft:item mod id createassembly
 f86ed06ac6958b7557a9fee1e1aa4a43a5d7ef2d data/createassembly/tags/item/complex_mechanism.json
 fcc9cc8a4a0b40964b0ce5e89795d52fd4d5b5b3 data/createassembly/tags/item/ender_powder.json
 a4300afc626c013fcf6ff808300792e063bf2f13 data/createassembly/tags/item/life_corals.json
 c54c7c9c885a90233ab46702be8c322aa5a08ed6 data/createassembly/tags/item/prismarine_building_block.json
 0b2df930c57daf0530c37d83a4fdd1e31e4ef4ca data/create/tags/item/gearboxes.json
-4487d125fd53f2204bb07cfae22012ec7050adc1 data/c/tags/item/ingots.json
-872c3d735e3112f35365d6f0de2d0970891ad8e9 data/c/tags/item/ingots/enderium.json
+d3954950b53a6d7372bbe89e033a6329ea4670d2 data/c/tags/item/ingots.json
+1acf8c8ed194ea8e5c76b0226e6c65b02bce6a9c data/c/tags/item/ingots/radiant.json
 c97f0eea9486d81187e17c98d3aecd25a5fa2f18 data/c/tags/item/ingots/silver.json
 e8c94329b07e4dd3192e84c361343f9ba4784870 data/c/tags/item/ingots/tin.json
 2a47aface157b5a995d0c5a84d5af96189a77f0e data/c/tags/item/nuggets.json
@@ -20,11 +20,12 @@ a367c8aa1312f933df9ca2b157b41ad78ebf555c data/c/tags/item/plates/lapis.json
 172eb8a98cc2699d60ab72ef9700ee026ffc6b82 data/c/tags/item/raw_materials.json
 18ee56ce915134ab9091c0ef41704f2fc88e4904 data/c/tags/item/raw_materials/silver.json
 161047052842fcde8796a3c9cd0ddf34b872c67d data/c/tags/item/raw_materials/tin.json
-9ffabd09bdde3a8303416331eb3452f06b5228c3 data/c/tags/item/rods.json
-9ffabd09bdde3a8303416331eb3452f06b5228c3 data/c/tags/item/rods/all_metal.json
-9ffabd09bdde3a8303416331eb3452f06b5228c3 data/c/tags/item/rods/enderium.json
+bc29eb3d8815733d4b42173f43ab5127dca2bcfd data/c/tags/item/rods.json
+bc29eb3d8815733d4b42173f43ab5127dca2bcfd data/c/tags/item/rods/all_metal.json
+bc29eb3d8815733d4b42173f43ab5127dca2bcfd data/c/tags/item/rods/radiant.json
 82f01cb6b5eb5197de099b6d76897509eea60227 data/c/tags/item/storage_blocks.json
 99789bb956e9181f8a0dbccfc9fd642c26c4a23c data/c/tags/item/storage_blocks/raw_silver.json
 0069a35a55dc46b10316ab9daf06c0cd19e02f10 data/c/tags/item/storage_blocks/raw_tin.json
 46631f12ca822b91cf54a372c1e28c5f39af291f data/c/tags/item/storage_blocks/silver.json
 ae682650171baf3a8f74171d6cc93c75e72fc09d data/c/tags/item/storage_blocks/tin.json
+1364d803c3c79b238c89e1fa3036d482b9f03660 data/minecraft/tags/item/pickaxes.json

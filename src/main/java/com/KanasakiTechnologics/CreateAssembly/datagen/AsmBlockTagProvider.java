@@ -8,7 +8,9 @@ import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
 import com.simibubi.create.AllBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
@@ -28,6 +30,8 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(Blocks.BEDROCK)
+                .add(AsmBlocks.BEDROCK.get())
                 .add(LightBlocks.BLACK_GLASS_LIGHT_BLOCK.get())
                 .add(LightBlocks.BLUE_GLASS_LIGHT_BLOCK.get())
                 .add(LightBlocks.BROWN_GLASS_LIGHT_BLOCK.get())
@@ -248,6 +252,24 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(Blocks.FIRE_CORAL_BLOCK)
                 .add(Blocks.TUBE_CORAL_BLOCK)
                 .add(Blocks.HORN_CORAL_BLOCK);
+
+        tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(Blocks.BEDROCK)
+                .add(AsmBlocks.BEDROCK.get());
+
+        tag(AsmTags.BlockTags.NEEDS_SHADOW_TOOL.tag)
+                .add(Blocks.BEDROCK)
+                .add(AsmBlocks.BEDROCK.get())
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        tag(AsmTags.BlockTags.INCORRECT_FOR_SHADOW_TOOL.tag)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(AsmTags.BlockTags.NEEDS_SHADOW_TOOL.tag);
+
+        tag(AsmTags.BlockTags.MINEABLE_WITH_SHADOW_MATTOCK.tag)
+                .addTag(BlockTags.MINEABLE_WITH_AXE)
+                .addTag(BlockTags.MINEABLE_WITH_HOE)
+                .addTag(BlockTags.MINEABLE_WITH_SHOVEL);
 
 
     }

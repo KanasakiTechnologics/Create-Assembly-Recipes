@@ -9,6 +9,7 @@ import com.simibubi.create.AllItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -28,6 +29,9 @@ public class AsmItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        tag(ItemTags.PICKAXES)
+                .add(AsmItems.SHADOW_PICKAXE.get());
+
         tag(AsmTags.ItemTags.COMPLEX_MECHANISM.tag)
                 .add(AsmItems.ABSTRUSE_MECHANISM.get())
                 .add(AsmItems.CALCULATION_MECHANISM.get())
@@ -51,13 +55,13 @@ public class AsmItemTagProvider extends ItemTagsProvider {
         tag(Tags.Items.INGOTS)
                 .add(AsmItems.SILVER_INGOT.get())
                 .add(AsmItems.TIN_INGOT.get())
-                .add(AsmItems.ENDERIUM_ALLOY.get());
+                .add(AllItems.REFINED_RADIANCE.get());
         tag(AsmTags.ItemTags.SILVER_INGOT.tag)
                 .add(AsmItems.SILVER_INGOT.get());
+        tag(AsmTags.ItemTags.REFINED_RADIANCE2.tag)
+                .add(AllItems.REFINED_RADIANCE.get());
         tag(AsmTags.ItemTags.TIN_INGOT.tag)
                 .add(AsmItems.TIN_INGOT.get());
-        tag(AsmTags.ItemTags.ENDERIUM_ALLOY2.tag)
-                .add(AsmItems.ENDERIUM_ALLOY.get());
 
         tag(Tags.Items.NUGGETS)
                 .add(AsmItems.SILVER_NUGGET.get())
@@ -106,12 +110,12 @@ public class AsmItemTagProvider extends ItemTagsProvider {
                 .add(AsmItems.TIN_SHEET.get())
                 .add(AsmItems.LAPIS_SHEET.get());
 
-        tag(AsmTags.ItemTags.ENDERIUM_ALLOY.tag)
-                .add(AsmItems.ENDERIUM_ROD.get());
+        tag(AsmTags.ItemTags.REFINED_RADIANCE.tag)
+                .add(AsmItems.RADIANT_HANDLE.get());
         tag(AsmTags.ItemTags.All_METAL.tag)
-                .add(AsmItems.ENDERIUM_ROD.get());
+                .add(AsmItems.RADIANT_HANDLE.get());
         tag(AsmTags.ItemTags.RODS.tag)
-                .add(AsmItems.ENDERIUM_ROD.get());
+                .add(AsmItems.RADIANT_HANDLE.get());
 
         tag(AsmTags.ItemTags.LIFE_CORALS.tag)
                 .add(Blocks.BRAIN_CORAL_BLOCK.asItem())

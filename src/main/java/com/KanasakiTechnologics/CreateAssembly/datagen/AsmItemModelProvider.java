@@ -3,8 +3,11 @@ package com.KanasakiTechnologics.CreateAssembly.datagen;
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredItem;
 import org.checkerframework.checker.units.qual.A;
 
 public class AsmItemModelProvider extends ItemModelProvider {
@@ -39,8 +42,7 @@ public class AsmItemModelProvider extends ItemModelProvider {
         basicItem(AsmItems.SULFUR_CHUNK.get());
         basicItem(AsmItems.SULFUR.get());
         basicItem(AsmItems.TIN_SHEET.get());
-        basicItem(AsmItems.ENDERIUM_ALLOY.get());
-        basicItem(AsmItems.ENDERIUM_ROD.get());
+        basicItem(AsmItems.RADIANT_HANDLE.get());
         basicItem(AsmItems.LAPIS_ALLOY.get());
         basicItem(AsmItems.LAPIS_SHEET.get());
         basicItem(AsmItems.COAL_ROD.get());
@@ -62,5 +64,15 @@ public class AsmItemModelProvider extends ItemModelProvider {
         basicItem(AsmItems.RADIANT_CATALYST.get());
         basicItem(AsmItems.RAW_RUBBER.get());
         basicItem(AsmItems.RUBBER.get());
+
+        handheldItem(AsmItems.SHADOW_PICKAXE.get());
+        handheldItem(AsmItems.SHADOW_MATTOCK.get());
+        handheldItem(AsmItems.SHADOW_SWORD.get());
+    }
+
+    private ItemModelBuilder handheldItem(DeferredItem<?> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(CreateAssembly.MOD_ID,"item/" + item.getId().getPath()));
     }
 }

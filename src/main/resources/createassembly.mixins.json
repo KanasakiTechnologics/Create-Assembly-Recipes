@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "com.KanasakiTechnologics.createassembly.mixins",
+  "package": "com.KanasakiTechnologics.CreateAssembly.mixins",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "ChromaticCompoundItemMixin",

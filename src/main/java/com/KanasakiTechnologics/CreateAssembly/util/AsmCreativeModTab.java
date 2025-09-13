@@ -32,10 +32,12 @@ public class AsmCreativeModTab {
             ()->CreativeModeTab.builder().icon(()->new ItemStack(AsmItems.GLOW_INK_BUCKET.get()))
                     .title(Component.translatable("creativetab.createassembly.create_assembly"))
                     .displayItems((itemDisplayParameters, output) ->{
-                        output.accept(AsmItems.ENDERIUM_ALLOY);
+                        output.accept(AsmItems.SHADOW_PICKAXE);
+                        output.accept(AsmItems.SHADOW_MATTOCK);
+                        output.accept(AsmItems.SHADOW_SWORD);
+                        output.accept(AsmItems.RADIANT_HANDLE);
                         output.accept(AsmItems.LAPIS_ALLOY);
                         output.accept(AsmItems.LAPIS_SHEET);
-                        output.accept(AsmItems.ENDERIUM_ROD);
                         output.accept(AsmItems.COAL_ROD);
                         output.accept(AsmItems.BLANK_CATALYST);
                         output.accept(AsmItems.SHADOW_CATALYST);

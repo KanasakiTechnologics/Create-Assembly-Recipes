@@ -1,9 +1,12 @@
-// 1.21.1	2025-09-11T20:40:26.663922	Tags for minecraft:block mod id createassembly
+// 1.21.1	2025-09-26T02:33:17.280521	Tags for minecraft:block mod id createassembly
 c882f1fc924c7ace24f2ece6ec48f727ede793e9 data/createassembly/tags/block/colored_concrete.json
 b628d70e4fe477242d507bd905a0080bc3546047 data/createassembly/tags/block/colored_glass.json
 a4300afc626c013fcf6ff808300792e063bf2f13 data/createassembly/tags/block/life_corals.json
+65f1bfdc55caebad2bab58408e9503138a1ea76e data/createassembly/tags/block/mineable_with_shadow_mattock.json
 c54c7c9c885a90233ab46702be8c322aa5a08ed6 data/createassembly/tags/block/prismarine_building_block.json
 658dd3d45af97902fade9382a5fa518f8a64c6f0 data/create/tags/block/wrench_pickup.json
+9de90a876b1543e03679daeac47ae533b0b34b8e data/c/tags/block/incorrect_for_shadow_tool.json
+5eb2a7a6ee5e43434a16da644d3411f290e95db7 data/c/tags/block/needs_shadow_tool.json
 e616c17ece0926d1f47af71d23d62fed78627f1a data/c/tags/block/ores/silver.json
 a4649b55927517d07943704eb3f45c52631d1c93 data/c/tags/block/ores/tin.json
 6bfe3a0e26c2ad15a37fc63f7cc3371621a9ab34 data/c/tags/block/ores_in_ground/deepslate.json
@@ -13,6 +16,7 @@ a4649b55927517d07943704eb3f45c52631d1c93 data/c/tags/block/ores/tin.json
 0069a35a55dc46b10316ab9daf06c0cd19e02f10 data/c/tags/block/storage_blocks/raw_tin.json
 46631f12ca822b91cf54a372c1e28c5f39af291f data/c/tags/block/storage_blocks/silver.json
 ae682650171baf3a8f74171d6cc93c75e72fc09d data/c/tags/block/storage_blocks/tin.json
-39e6baaa2a3fa1dfd2d7286d3b6b5958b47baf19 data/minecraft/tags/block/mineable/pickaxe.json
+d4f1a10720dcb59cec8a52add0bf3985e8e8c641 data/minecraft/tags/block/mineable/pickaxe.json
+996e4a2b5344f8f66d398fd00ee5d72240c42b58 data/minecraft/tags/block/needs_diamond_tool.json
 a22a475bd055760c4053b0c69fd6f860bed61441 data/minecraft/tags/block/needs_iron_tool.json
 1263b2db030084df7a0dc51255bf888bbf205bd2 data/minecraft/tags/block/needs_stone_tool.json

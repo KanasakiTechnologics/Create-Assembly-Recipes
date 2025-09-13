@@ -9,13 +9,17 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.ExplosionCondition;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 import java.util.Set;
@@ -28,6 +32,10 @@ public class AsmLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        dropSelf(AsmBlocks.HOT_COAL.get());
+        dropSelf(AsmBlocks.COMPRESSED_COAL.get());
+        dropSelf(AsmBlocks.FUSED_COMPRESSED_COAL.get());
+        dropSelf(AsmBlocks.HOT_COMPRESSED_COAL.get());
         dropSelf(LightBlocks.WHITE_LIGHT_BLOCK.get());
         dropSelf(LightBlocks.LIGHT_GRAY_LIGHT_BLOCK.get());
         dropSelf(LightBlocks.GRAY_LIGHT_BLOCK.get());
@@ -67,6 +75,7 @@ public class AsmLootTableProvider extends BlockLootSubProvider {
         dropSelf(AsmBlocks.TIN_BLOCK.get());
         dropSelf(AsmBlocks.RAW_TIN_BLOCK.get());
 
+        add(AsmBlocks.BEDROCK.get(), block -> LootTable.lootTable().withPool(createPoolForBedrock()));
         add(AsmBlocks.TIN_ORE.get(),block -> createOreDrop(AsmBlocks.TIN_ORE.get(), AsmItems.RAW_TIN.get()));
         add(AsmBlocks.DEEPSLATE_TIN_ORE.get(),block -> createOreDrop(AsmBlocks.DEEPSLATE_TIN_ORE.get(), AsmItems.RAW_TIN.get()));
         add(AsmBlocks.SILVER_ORE.get(),block -> createOreDrop(AsmBlocks.SILVER_ORE.get(), AsmItems.RAW_SILVER.get()));
@@ -82,6 +91,14 @@ public class AsmLootTableProvider extends BlockLootSubProvider {
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
                         .apply(ApplyBonusCount.addOreBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))));
     }
+
+    private LootPool.Builder createPoolForBedrock() {
+        return LootPool.lootPool()
+                .setRolls(ConstantValue.exactly(1))
+                .add(LootItem.lootTableItem(Items.BEDROCK))
+                .when(ExplosionCondition.survivesExplosion());
+    }
+
 
     @Override
     protected Iterable<Block> getKnownBlocks() {

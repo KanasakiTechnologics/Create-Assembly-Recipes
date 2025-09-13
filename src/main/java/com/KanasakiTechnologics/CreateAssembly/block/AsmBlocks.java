@@ -1,7 +1,6 @@
 package com.KanasakiTechnologics.CreateAssembly.block;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
-import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -11,10 +10,9 @@ import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.FlowingFluid;
-import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -29,8 +27,8 @@ public class AsmBlocks {
     public static final DeferredBlock<Block> SULFUR_ORE = registerBlock("sulfur_ore",
             () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
-    public static final DeferredBlock<Block> BEDROCK = registerBlock("bedrock",
-            () -> new Block(BlockBehaviour.Properties.of().strength(7f).noLootTable().requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<FakeBedrock> BEDROCK = BLOCKS.register("bedrock", FakeBedrock::new);
+    public static final DeferredItem<BlockItem> BEDROCK_ITEM = ITEMS.register("bedrock", () -> new BlockItem(BEDROCK.get(), new Item.Properties()));
 
     public static final DeferredBlock<Block> TIN_BLOCK = registerBlock("tin_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
@@ -60,13 +58,13 @@ public class AsmBlocks {
 
 
     public static final DeferredBlock<Block> HOT_COAL = registerBlock("hot_coal_block",
-            () -> new Block(BlockBehaviour.Properties.of().strength(2f).noLootTable().requiresCorrectToolForDrops().sound(SoundType.STONE)));
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> COMPRESSED_COAL = registerBlock("compressed_coal_block",
-            () -> new Block(BlockBehaviour.Properties.of().strength(2f).noLootTable().requiresCorrectToolForDrops().sound(SoundType.STONE)));
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> FUSED_COMPRESSED_COAL = registerBlock("fused_compressed_coal_block",
-            () -> new Block(BlockBehaviour.Properties.of().strength(2f).noLootTable().requiresCorrectToolForDrops().sound(SoundType.STONE)));
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> HOT_COMPRESSED_COAL = registerBlock("hot_compressed_coal_block",
-            () -> new Block(BlockBehaviour.Properties.of().strength(2f).noLootTable().requiresCorrectToolForDrops().sound(SoundType.STONE)));
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

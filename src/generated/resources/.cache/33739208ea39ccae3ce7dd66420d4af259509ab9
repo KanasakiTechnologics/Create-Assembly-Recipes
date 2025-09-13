@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-11T20:40:26.663922	Block States: createassembly
+// 1.21.1	2025-09-26T01:35:03.5531614	Block States: createassembly
 d0449c4eb981e44f4d0cc1a9b4aef18ef946d243 assets/createassembly/blockstates/bedrock.json
 27fc0258fa20bf931ff5a2580d6c8992438e6030 assets/createassembly/blockstates/black_glass_light_block.json
 16191637af700eee7981521a37306d78ce4d89fc assets/createassembly/blockstates/black_light_block.json
@@ -46,7 +46,7 @@ a581ea42897bf9148bc62dc742d9831e28ec0606 assets/createassembly/blockstates/white
 6a9f212704a03711b0220de6688b5cc150090047 assets/createassembly/blockstates/white_light_block.json
 0867b2c592f42adf50e7a3d5bef9f57f8b74afba assets/createassembly/blockstates/yellow_glass_light_block.json
 46e371a3d39cfe0630687bdf7214415c844048ff assets/createassembly/blockstates/yellow_light_block.json
-963125b84d99b1b1d625ba8a240da86e4d15d40d assets/createassembly/models/block/bedrock.json
+6fb36e99202827b44aaab9ec6bef5ad2c09e1179 assets/createassembly/models/block/bedrock.json
 b1939d69afa7fe9a0b97988a70e6b42dbd44511f assets/createassembly/models/block/black_glass_light_block.json
 a8fcf4d8962407e8e145ad6dc4f3dfa7e43c37e5 assets/createassembly/models/block/black_light_block.json
 44ad8e8fcc5c457a4de788a672b8f360b4efb5db assets/createassembly/models/block/blue_glass_light_block.json

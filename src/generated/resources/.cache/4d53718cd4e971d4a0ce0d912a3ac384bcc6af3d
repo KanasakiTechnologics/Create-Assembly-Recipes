@@ -1,12 +1,10 @@
-// 1.21.1	2025-09-13T20:57:34.3113126	Item Models: createassembly
+// 1.21.1	2025-09-27T22:57:15.1148418	Item Models: createassembly
 b3ccab5a814c9162ac2aaf58d67933b06942985c assets/createassembly/models/item/abstruse_mechanism.json
 4ea4de641a591b6e97bae39c1f6228be27621591 assets/createassembly/models/item/alchemist_dust.json
 f037ba6c1c654e358c27d257cd28654a709586d8 assets/createassembly/models/item/blank_catalyst.json
 0b3df8c3910cb3bdbb134f354561d0392653b14c assets/createassembly/models/item/calculation_mechanism.json
 0770a62dc3e217cd23bcde05a96e04526a8e3b19 assets/createassembly/models/item/coal_rod.json
 3bc6832c83f1dc26680a4ea2d7c50db7de6e54dd assets/createassembly/models/item/electrum_jewel.json
-409789de1c6f1843b758f0b89b5bfb94ad72048b assets/createassembly/models/item/enderium_alloy.json
-20f50756d8296bf1a7f3ac575109306e36450d4d assets/createassembly/models/item/enderium_rod.json
 b61cbcf19dcb6f6539e8699e3fcb27d9b402feac assets/createassembly/models/item/ender_pearl_fragment.json
 59eccd617b4f03f7897457a95eea2f8bfbd574d3 assets/createassembly/models/item/fused_blend.json
 e769766e6798d5ae7655750e740bb97a09bf10d1 assets/createassembly/models/item/incomplete_abstruse_mechanism.json
@@ -28,6 +26,7 @@ d9e224ba10c994a99617d5e8c698b82e32750572 assets/createassembly/models/item/nethe
 29c1864dd3b53617560a5ca8e64c74e6d618a602 assets/createassembly/models/item/nether_star_shard.json
 aa6730976c9c9c0a818830750c4ab0d72adc8e18 assets/createassembly/models/item/polished_diamond.json
 a804f52676df07c2bd53a878923dceebbbd92dee assets/createassembly/models/item/radiant_catalyst.json
+332620f1c96dd6538d53ec37bc9e34026ad3b08c assets/createassembly/models/item/radiant_handle.json
 76a9941a3177a5b8990a137e84fa6aa67fd16e62 assets/createassembly/models/item/raw_rubber.json
 4a2f096afcb0c5234a1b51b137a32e1f4d0483e4 assets/createassembly/models/item/raw_silver.json
 d177f6188f02dd8cb858adde8d27226364bbdb32 assets/createassembly/models/item/raw_tin.json
@@ -36,6 +35,9 @@ d177f6188f02dd8cb858adde8d27226364bbdb32 assets/createassembly/models/item/raw_t
 d0dfa917830f84585e0645f471956ec6fa3bae23 assets/createassembly/models/item/sap.json
 d047b4adf6137e7619cd70e36cc3163bd56c07e8 assets/createassembly/models/item/sealed_mechanism.json
 d9d5fa3b5c53d03d2acb51cd14d5d63f85682815 assets/createassembly/models/item/shadow_catalyst.json
+f335cedd52a2a30f4dab4f95fdc58708d6dc5648 assets/createassembly/models/item/shadow_steel_mattock.json
+a0888147ed8ae25e21cd3432ddf23798e6916080 assets/createassembly/models/item/shadow_steel_pickaxe.json
+fab8ad973cbee73674ee4a2bf062cf783aa958ea assets/createassembly/models/item/shadow_steel_sword.json
 e49ac173c82fedef016a5ddc8c3b5f1097c33143 assets/createassembly/models/item/silver_ingot.json
 97910d483f0baf3e35fc33e3341e694c1636de5d assets/createassembly/models/item/silver_jewel.json
 467ac13d152262e5ae7ae7f34376ed0fb85ab427 assets/createassembly/models/item/silver_nugget.json
