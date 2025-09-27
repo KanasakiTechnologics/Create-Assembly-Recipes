@@ -1,0 +1,7 @@
+{
+  "values": [
+    "minecraft:bedrock",
+    "createassembly:bedrock",
+    "#minecraft:needs_diamond_tool"
+  ]
+}
