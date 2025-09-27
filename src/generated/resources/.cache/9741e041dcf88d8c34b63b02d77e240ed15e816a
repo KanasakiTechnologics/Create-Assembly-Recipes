@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-26T02:33:17.280521	Tags for minecraft:block mod id createassembly
+// 1.21.1	2025-09-29T00:22:28.693569	Tags for minecraft:block mod id createassembly
 c882f1fc924c7ace24f2ece6ec48f727ede793e9 data/createassembly/tags/block/colored_concrete.json
 b628d70e4fe477242d507bd905a0080bc3546047 data/createassembly/tags/block/colored_glass.json
 a4300afc626c013fcf6ff808300792e063bf2f13 data/createassembly/tags/block/life_corals.json
@@ -20,3 +20,4 @@ d4f1a10720dcb59cec8a52add0bf3985e8e8c641 data/minecraft/tags/block/mineable/pick
 996e4a2b5344f8f66d398fd00ee5d72240c42b58 data/minecraft/tags/block/needs_diamond_tool.json
 a22a475bd055760c4053b0c69fd6f860bed61441 data/minecraft/tags/block/needs_iron_tool.json
 1263b2db030084df7a0dc51255bf888bbf205bd2 data/minecraft/tags/block/needs_stone_tool.json
+d5aebde1fd1141df86b6ed4ace3f720504b32ab2 data/minecraft/tags/block/nether_soul.json

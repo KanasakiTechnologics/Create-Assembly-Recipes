@@ -6,6 +6,7 @@ import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllItems;
+import com.simibubi.create.AllTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -71,6 +72,11 @@ public class AsmItemTagProvider extends ItemTagsProvider {
         tag(AsmTags.ItemTags.TIN_NUGGET.tag)
                 .add(AsmItems.TIN_NUGGET.get());
 
+        tag(AsmTags.ItemTags.UPRIGHT_ON_BELT.tag)
+                .add(AsmItems.INACTIVE_BLAZE_CORE.get())
+                .add(AsmItems.BLAZE_CORE.get())
+                .add(AsmItems.SUPERHEATED_BLAZE_CORE.get());
+
         tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE)
                 .add(AsmBlocks.DEEPSLATE_SILVER_ORE.asItem())
                 .add(AsmBlocks.DEEPSLATE_TIN_ORE.asItem());
@@ -93,6 +99,12 @@ public class AsmItemTagProvider extends ItemTagsProvider {
                 .add(AsmBlocks.SILVER_BLOCK.asItem())
                 .add(AsmBlocks.TIN_BLOCK.asItem());
 
+        tag(AllTags.AllItemTags.BLAZE_BURNER_FUEL_SPECIAL.tag)
+                .add(AsmItems.SUPERHEATED_BLAZE_CORE.get());
+
+        tag(AllTags.AllItemTags.BLAZE_BURNER_FUEL_REGULAR.tag)
+                .add(AsmItems.BLAZE_CORE.get());
+
         tag(AsmTags.ItemTags.RAW_SILVER.tag)
                 .add(AsmBlocks.RAW_SILVER_BLOCK.asItem());
         tag(AsmTags.ItemTags.RAW_TIN.tag)
@@ -109,6 +121,10 @@ public class AsmItemTagProvider extends ItemTagsProvider {
         tag(AsmTags.ItemTags.PLATES.tag)
                 .add(AsmItems.TIN_SHEET.get())
                 .add(AsmItems.LAPIS_SHEET.get());
+
+        tag(AsmTags.ItemTags.NETHER_SOUL.tag)
+                .add(Blocks.SOUL_SAND.asItem())
+                .add(Blocks.SOUL_SOIL.asItem());
 
         tag(AsmTags.ItemTags.REFINED_RADIANCE.tag)
                 .add(AsmItems.RADIANT_HANDLE.get());

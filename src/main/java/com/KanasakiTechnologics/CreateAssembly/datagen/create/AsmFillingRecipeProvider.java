@@ -1,15 +1,20 @@
 package com.KanasakiTechnologics.CreateAssembly.datagen.create;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
+import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
+import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
+import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
 import com.simibubi.create.api.data.recipe.FillingRecipeGen;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.foundation.block.CopperBlockSet;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.WeatheringCopper.WeatherState;
 import net.minecraft.world.level.material.Fluids;
+import net.neoforged.neoforge.common.Tags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -34,6 +39,13 @@ public final class AsmFillingRecipeProvider extends FillingRecipeGen {
         registerCopperSet(AllBlocks.COPPER_SHINGLES);
         registerCopperSet(AllBlocks.COPPER_TILES);
     }
+
+    GeneratedRecipe SUPERHEATED_BLAZE_CORE = create("superheated_blaze_core", b -> b.require(AsmFluid.SOUL_LAVA.get(), 1000)
+            .require(AsmItems.INACTIVE_BLAZE_CORE)
+            .output(AsmItems.SUPERHEATED_BLAZE_CORE));
+    GeneratedRecipe BLAZE_CORE = create("blaze_core", b -> b.require(Fluids.LAVA, 1000)
+            .require(AsmItems.INACTIVE_BLAZE_CORE)
+            .output(AsmItems.BLAZE_CORE));
 
     // For vanilla
     private void copperOxidation(String baseName, Block normal, Block exposed, Block weathered, Block oxidized) {

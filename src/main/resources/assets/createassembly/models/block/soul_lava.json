@@ -1,0 +1,7 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "createassembly:block/soul_lava_still",
+    "all": "createassembly:block/soul_lava_still"
+  }
+}

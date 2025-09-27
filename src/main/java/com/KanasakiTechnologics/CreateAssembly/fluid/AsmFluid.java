@@ -51,6 +51,25 @@ public class AsmFluid {
                 .explosionResistance(0f);
     }
 
+    public static final DeferredHolder<Fluid,Fluid> SOUL_LAVA = FLUIDS.register("soul_lava",
+            ()-> new SulfuricAcidFluid.Source(getSoulLavaProperties()));
+    public static final DeferredHolder<Fluid,Fluid> FLOWING_SOUL_LAVA = FLUIDS.register("flowing_soul_lava",
+            ()-> new SulfuricAcidFluid.Flowing(getSoulLavaProperties()));
+
+    private static BaseFlowingFluid.Properties getSoulLavaProperties() {
+        return new BaseFlowingFluid.Properties(
+                () -> AsmFluidType.SOUL_LAVA_TYPE.get(),
+                () -> SOUL_LAVA.get(),
+                () -> FLOWING_SOUL_LAVA.get()
+        )
+                .bucket(() -> AsmItems.SOUL_LAVA_BUCKET.get())
+                .block(() -> AsmBlocks.SOUL_LAVA.get())
+                .tickRate(10)
+                .levelDecreasePerBlock(2)
+                .slopeFindDistance(2)
+                .explosionResistance(0f);
+    }
+
     public static void register(IEventBus eventBus)
     {
         FLUIDS.register(eventBus);

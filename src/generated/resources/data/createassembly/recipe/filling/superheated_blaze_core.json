@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createassembly:inactive_blaze_core"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 1000,
+      "fluid": "createassembly:soul_lava"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:superheated_blaze_core"
+    }
+  ]
+}

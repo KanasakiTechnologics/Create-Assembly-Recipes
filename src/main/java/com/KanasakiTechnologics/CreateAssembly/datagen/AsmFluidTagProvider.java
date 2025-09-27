@@ -21,5 +21,9 @@ public class AsmFluidTagProvider extends FluidTagsProvider {
         tag(AsmTags.FluidTags.FAN_PROCESSING_CATALYSTS_GLOWING.tag)
                 .add(AsmFluid.GLOW_INK.get())
                 .add(AsmFluid.FLOWING_GLOW_INK.get());
+
+        tag(AsmTags.FluidTags.SOUL_LAVA.tag)
+                .add(AsmFluid.SOUL_LAVA.get())
+                .add(AsmFluid.FLOWING_SOUL_LAVA.get());
     }
 }

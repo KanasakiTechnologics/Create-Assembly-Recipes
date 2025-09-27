@@ -45,6 +45,7 @@
   "fluid.createassembly.sap": "Sap",
   "item.createassembly.glow_ink_bucket": "Glow Ink Bucket",
   "item.createassembly.sulfuric_acid_bucket": "Sulfuric Acid Bucket",
+  "item.createassembly.soul_lava_bucket": "Soul Lava Bucket",
 
   "block.createassembly.deepslate_silver_ore": "Deepslate Silver Ore",
   "block.createassembly.silver_ore": "Silver Ore",
@@ -52,6 +53,12 @@
   "block.createassembly.raw_silver_block": "Raw Silver Block",
   "item.createassembly.silver_nugget": "Silver Nugget",
   "item.createassembly.raw_silver": "Raw Silver",
+
+  "item.createassembly.inactive_blaze_core": "Inactive Blaze Core",
+  "item.createassembly.superheated_blaze_core.description_0": "§7Can be refueled after use",
+  "item.createassembly.superheated_blaze_core": "Superheated Blaze Core",
+  "item.createassembly.blaze_core": "Blaze Core",
+  "item.createassembly.blaze_core.description_0": "§7Can be refueled after use",
 
   "block.createassembly.deepslate_tin_ore": "Deepslate Tin Ore",
   "block.createassembly.tin_ore": "Tin Ore",
@@ -129,8 +136,12 @@
   "fluid_type.createassembly.glow_ink_type": "Glow Ink",
   "fluid_type.createassembly.sulfuric_acid_type": "Sulfuric Acid",
   "block.createassembly.sulfuric_acid": "Sulfuric Acid",
+  "fluid_type.createassembly.soul_lava_type": "Soul Lava",
+  "block.createassembly.soul_lava": "Soul Lava",
+
   "creativetab.createassembly.dndesires_mechanisms": "DNDesire Mechanisms",
   "creativetab.createassembly.create_assembly": "Create Assembly [Ingredients]",
-
+  "creativetab.createassembly.blaze_burner_fuel": "Blaze Burner Fuel [Ported]",
+  "creativetab.createassembly.create_shadow_steel_tool": "Shadow Steel Tool [Create 1.14]",
   "creativetab.createassembly.create_formulation_tab": "Create Formulation Recipes"
 }

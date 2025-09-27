@@ -53,6 +53,7 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new AsmFillingRecipeProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new AsmSequencedAssemblyRecipeProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new AsmMechanicalCraftingRecipeProvider(packOutput,lookupProvider));
+        generator.addProvider(event.includeServer(), new AsmFuelBurningRecipeProvider(packOutput,lookupProvider));
 
         generator.addProvider(event.includeServer(), new AsmItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
         generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(AsmLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));

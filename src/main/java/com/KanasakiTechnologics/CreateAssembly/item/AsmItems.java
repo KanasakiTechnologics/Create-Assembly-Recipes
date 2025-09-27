@@ -56,6 +56,8 @@ public class AsmItems {
 
     public static final DeferredItem<Item> GLOW_INK_BUCKET = ITEMS.register("glow_ink_bucket",
             ()-> new BucketItem(AsmFluid.GLOW_INK.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));
+    public static final DeferredItem<Item> SOUL_LAVA_BUCKET = ITEMS.register("soul_lava_bucket",
+            ()-> new BucketItem(AsmFluid.SOUL_LAVA.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));
     public static final DeferredItem<Item> SULFURIC_ACID_BUCKET = ITEMS.register("sulfuric_acid_bucket",
             ()-> new BucketItem(AsmFluid.SULFURIC_ACID.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));
 
@@ -154,5 +156,15 @@ public class AsmItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RUBBER = ITEMS.register("rubber",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> INACTIVE_BLAZE_CORE = ITEMS.register("inactive_blaze_core",
+            () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON)));
+
+    public static final DeferredItem<Item> BLAZE_CORE = ITEMS.register("blaze_core",
+            () -> new BlazeCore(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON)));
+
+    public static final DeferredItem<Item> SUPERHEATED_BLAZE_CORE = ITEMS.register("superheated_blaze_core",
+            () -> new BlazeCore(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON)));
+
     public static void register(IEventBus eventBus){ITEMS.register(eventBus);}
 }

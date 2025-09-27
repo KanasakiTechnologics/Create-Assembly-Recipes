@@ -1,0 +1,30 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+    "C": {
+      "item": "createassembly:alchemist_dust"
+    },
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "T": {
+      "item": "minecraft:tinted_glass"
+    }
+  },
+  "pattern": [
+    " S ",
+    "SBS",
+    "TCT",
+    "SBS",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "createassembly:inactive_blaze_core"
+  }
+}

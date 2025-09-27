@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-11T21:07:51.0990636	createassembly's processing recipes: mixing
+// 1.21.1	2025-09-29T00:27:47.4553202	createassembly's processing recipes: mixing
 898890072bb442e85cf84475a681d2b641914b51 data/createassembly/recipe/mixing/amethyst_block.json
 50716fef789ea140ec81bff6698b97865050facb data/createassembly/recipe/mixing/chromatic_compound.json
 b25ef256d6b8ecbcfc918de89d5b2192cb0786cb data/createassembly/recipe/mixing/diorite.json
@@ -11,4 +11,5 @@ cdae8c97bdb6180157ceec282a8422b2e3fdd6d7 data/createassembly/recipe/mixing/glow_
 d6ea3ab05add71b50500801bccaf991157b34179 data/createassembly/recipe/mixing/netherack.json
 cd945505990695763a51ca3eaf197f3e84d05c7c data/createassembly/recipe/mixing/netherite_dust.json
 ea54eae97b62fdf784f6d65747eeb2079a132d0c data/createassembly/recipe/mixing/rooted_dirt.json
+6897e6658e2ddb1e4b57aaba31f28e1795cab6f7 data/createassembly/recipe/mixing/soul_lava.json
 4e3ca755add09b21a5a34e1650e10d98e041a2bb data/createassembly/recipe/mixing/tuff.json

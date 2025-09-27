@@ -11,6 +11,7 @@ import com.simibubi.create.content.processing.recipe.HeatCondition;
 import com.simibubi.create.foundation.data.recipe.CreateRecipeProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
@@ -37,8 +38,7 @@ public final class AsmMixingRecipeProvider extends MixingRecipeGen {
     GeneratedRecipe NETHERACK = create("netherack",b -> b.requiresHeat(HeatCondition.HEATED).require(Tags.Items.STONES).require(Items.NETHER_WART).output(Blocks.NETHERRACK));
     GeneratedRecipe ROOTED_DIRT = create("rooted_dirt",b -> b.require(Blocks.DIRT).require(Items.HANGING_ROOTS).output(Blocks.ROOTED_DIRT));
     GeneratedRecipe TUFF = create("tuff",b -> b.require(Blocks.ANDESITE).require(Blocks.DIORITE).require(Fluids.LAVA,100).output(Blocks.TUFF).output(Blocks.TUFF));
-
-
+    GeneratedRecipe SOUL_LAVA = create("soul_lava",b -> b.requiresHeat(HeatCondition.SUPERHEATED).require(Fluids.LAVA,1000).require(AsmTags.ItemTags.NETHER_SOUL.tag).require(AsmTags.ItemTags.NETHER_SOUL.tag).require(AsmTags.ItemTags.NETHER_SOUL.tag).require(Items.BLAZE_POWDER).require(Items.BLAZE_POWDER).output(AsmFluid.SOUL_LAVA.get(),500));
 
 
 }

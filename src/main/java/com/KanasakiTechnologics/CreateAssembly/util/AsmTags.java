@@ -82,6 +82,7 @@ public class AsmTags {
         MOD(MOD_ID, false, true),
         COMMON("c"),
         CREATE("create"),
+        MINECRAFT("minecraft"),
         NEOFORGE("neoforge");
 
         public final String id;
@@ -116,6 +117,7 @@ public class AsmTags {
         NEEDS_SHADOW_TOOL(NameSpace.COMMON, "needs_shadow_tool"),
         INCORRECT_FOR_SHADOW_TOOL(NameSpace.COMMON, "incorrect_for_shadow_tool"),
         MINEABLE_WITH_SHADOW_MATTOCK(NameSpace.MOD,"mineable_with_shadow_mattock"),
+        NETHER_SOUL(NameSpace.MINECRAFT,"nether_soul"),
         FAN_PROCESSING_CATALYSTS_GLOWING(NameSpace.MOD, "fan_processing_catalysts/glowing");
 
         public final TagKey<Block> tag;
@@ -172,6 +174,7 @@ public class AsmTags {
 
     public enum ItemTags {
         COMPLEX_MECHANISM(NameSpace.MOD, "complex_mechanism"),
+        UPRIGHT_ON_BELT(NameSpace.CREATE,"upright_on_belt"),
         TIN_PLATES(NameSpace.COMMON, "plates/tin"),
         LIFE_CORALS(NameSpace.MOD, "life_corals"),
         LAPIS_PLATES(NameSpace.COMMON, "plates/lapis"),
@@ -182,6 +185,7 @@ public class AsmTags {
         RODS(NameSpace.COMMON, "rods"),
         ORES(NameSpace.COMMON, "ores"),
         RAW_TIN(NameSpace.COMMON, "storage_blocks/raw_tin"),
+        NETHER_SOUL(NameSpace.MINECRAFT,"nether_soul"),
         RAW_TIN2(NameSpace.COMMON, "raw_materials/tin"),
         TIN(NameSpace.COMMON, "storage_blocks/tin"),
         RAW_SILVER(NameSpace.COMMON, "storage_blocks/raw_silver"),
@@ -236,7 +240,8 @@ public class AsmTags {
     }
 
     public enum FluidTags {
-        FAN_PROCESSING_CATALYSTS_GLOWING(NameSpace.MOD, "fan_processing_catalysts/glowing");
+        FAN_PROCESSING_CATALYSTS_GLOWING(NameSpace.MOD, "fan_processing_catalysts/glowing"),
+        SOUL_LAVA(NameSpace.COMMON,"soul_lava");
 
         public final TagKey<Fluid> tag;
         public final boolean alwaysDatagen;

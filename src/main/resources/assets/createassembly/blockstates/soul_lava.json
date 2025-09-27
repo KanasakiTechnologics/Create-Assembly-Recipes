@@ -1,0 +1,11 @@
+{
+  "variants": {},
+  "multipart": [
+    {
+      "apply": {
+        "model": "createassembly:block/soul_lava",
+        "uvlock": true
+      }
+    }
+  ]
+}

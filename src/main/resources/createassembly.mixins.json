@@ -4,7 +4,9 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "ChromaticCompoundItemMixin",
-    "MysteriousItemConversionCategoryMixin"
+    "MysteriousItemConversionCategoryMixin",
+    "BlazeBurnerBlockEntityMixin",
+    "BlazeBurnerAccessor"
   ],
   "client": [],
   "injectors": {

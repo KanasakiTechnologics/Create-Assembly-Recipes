@@ -211,6 +211,10 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(AsmBlocks.TIN_ORE.get())
                 .add(AsmBlocks.DEEPSLATE_TIN_ORE.get());
 
+        tag(AsmTags.BlockTags.NETHER_SOUL.tag)
+                .add(Blocks.SOUL_SAND)
+                .add(Blocks.SOUL_SOIL);
+
         tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE)
                 .add(AsmBlocks.DEEPSLATE_SILVER_ORE.get())
                 .add(AsmBlocks.DEEPSLATE_TIN_ORE.get());

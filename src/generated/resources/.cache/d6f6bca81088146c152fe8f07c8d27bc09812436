@@ -1,9 +1,12 @@
-// 1.21.1	2025-09-27T23:02:36.3341195	Tags for minecraft:item mod id createassembly
+// 1.21.1	2025-09-29T00:26:37.0290486	Tags for minecraft:item mod id createassembly
 f86ed06ac6958b7557a9fee1e1aa4a43a5d7ef2d data/createassembly/tags/item/complex_mechanism.json
 fcc9cc8a4a0b40964b0ce5e89795d52fd4d5b5b3 data/createassembly/tags/item/ender_powder.json
 a4300afc626c013fcf6ff808300792e063bf2f13 data/createassembly/tags/item/life_corals.json
 c54c7c9c885a90233ab46702be8c322aa5a08ed6 data/createassembly/tags/item/prismarine_building_block.json
+30e273830e307428bd59d8d4f2d2712aff675889 data/create/tags/item/blaze_burner_fuel/regular.json
+09e75b08cd63a487603cea020dd611c36830161f data/create/tags/item/blaze_burner_fuel/special.json
 0b2df930c57daf0530c37d83a4fdd1e31e4ef4ca data/create/tags/item/gearboxes.json
+8f98585858391d83e0e3fc16e1dec0468c2c7098 data/create/tags/item/upright_on_belt.json
 d3954950b53a6d7372bbe89e033a6329ea4670d2 data/c/tags/item/ingots.json
 1acf8c8ed194ea8e5c76b0226e6c65b02bce6a9c data/c/tags/item/ingots/radiant.json
 c97f0eea9486d81187e17c98d3aecd25a5fa2f18 data/c/tags/item/ingots/silver.json
@@ -28,4 +31,5 @@ bc29eb3d8815733d4b42173f43ab5127dca2bcfd data/c/tags/item/rods/radiant.json
 0069a35a55dc46b10316ab9daf06c0cd19e02f10 data/c/tags/item/storage_blocks/raw_tin.json
 46631f12ca822b91cf54a372c1e28c5f39af291f data/c/tags/item/storage_blocks/silver.json
 ae682650171baf3a8f74171d6cc93c75e72fc09d data/c/tags/item/storage_blocks/tin.json
+d5aebde1fd1141df86b6ed4ace3f720504b32ab2 data/minecraft/tags/item/nether_soul.json
 1364d803c3c79b238c89e1fa3036d482b9f03660 data/minecraft/tags/item/pickaxes.json
