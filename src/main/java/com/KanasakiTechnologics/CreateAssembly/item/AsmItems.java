@@ -125,8 +125,10 @@ public class AsmItems {
     public static final DeferredItem<Item> INCOMPLETE_BLAZE_ROD = ITEMS.register("incomplete_blaze_rod",
             () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> SAP = ITEMS.register("sap",
+    public static final DeferredItem<Item> SAP_DROP = ITEMS.register("sap_drop",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SAP_BUCKET = ITEMS.register("sap_bucket",
+            ()-> new BucketItem(AsmFluid.SAP.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));
 
     public static final DeferredItem<Item> ROUGH_DIAMOND = ITEMS.register("rough_diamond",
             () -> new Item(new Item.Properties()));

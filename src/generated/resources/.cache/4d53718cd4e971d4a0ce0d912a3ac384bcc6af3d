@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-29T15:38:54.7136309	Item Models: createassembly
+// 1.21.1	2025-09-29T21:25:36.4127875	Item Models: createassembly
 b3ccab5a814c9162ac2aaf58d67933b06942985c assets/createassembly/models/item/abstruse_mechanism.json
 4ea4de641a591b6e97bae39c1f6228be27621591 assets/createassembly/models/item/alchemist_dust.json
 f037ba6c1c654e358c27d257cd28654a709586d8 assets/createassembly/models/item/blank_catalyst.json
@@ -34,7 +34,7 @@ a804f52676df07c2bd53a878923dceebbbd92dee assets/createassembly/models/item/radia
 d177f6188f02dd8cb858adde8d27226364bbdb32 assets/createassembly/models/item/raw_tin.json
 666ff65ae32844cdfaad17951a6665b4129e474c assets/createassembly/models/item/rough_diamond.json
 51f518d168e28e6a73de23a62dd2ea2c9820143c assets/createassembly/models/item/rubber.json
-d0dfa917830f84585e0645f471956ec6fa3bae23 assets/createassembly/models/item/sap.json
+4dea0f618d16a5b5989ad51172f7aa72f59cd28f assets/createassembly/models/item/sap_drop.json
 d047b4adf6137e7619cd70e36cc3163bd56c07e8 assets/createassembly/models/item/sealed_mechanism.json
 d9d5fa3b5c53d03d2acb51cd14d5d63f85682815 assets/createassembly/models/item/shadow_catalyst.json
 f335cedd52a2a30f4dab4f95fdc58708d6dc5648 assets/createassembly/models/item/shadow_steel_mattock.json

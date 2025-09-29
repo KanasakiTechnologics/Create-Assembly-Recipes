@@ -1,0 +1,7 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "createassembly:block/sap_still",
+    "all": "createassembly:block/sap_still"
+  }
+}

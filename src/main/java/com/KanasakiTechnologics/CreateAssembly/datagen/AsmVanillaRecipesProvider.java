@@ -30,6 +30,7 @@ import static com.KanasakiTechnologics.CreateAssembly.CreateAssembly.MOD_ID;
 public class AsmVanillaRecipesProvider extends RecipeProvider implements IConditionBuilder {
     List<ItemLike> TIN_SMELTABLES = List.of(AsmItems.RAW_TIN, AsmBlocks.TIN_ORE,AsmBlocks.DEEPSLATE_TIN_ORE);
     List<ItemLike> SILVER_SMELTABLES = List.of(AsmItems.RAW_SILVER, AsmBlocks.SILVER_ORE,AsmBlocks.DEEPSLATE_SILVER_ORE);
+    List<ItemLike> RAW_RUBBER = List.of(AsmItems.RAW_RUBBER);
 
     public AsmVanillaRecipesProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries);
@@ -328,7 +329,9 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
 
         oreSmelting(recipeOutput,TIN_SMELTABLES,RecipeCategory.MISC,AsmItems.TIN_INGOT.get(),0.25f,200,"tin");
         oreSmelting(recipeOutput,SILVER_SMELTABLES,RecipeCategory.MISC,AsmItems.SILVER_INGOT.get(),0.25f,200,"silver");
+        oreSmelting(recipeOutput,RAW_RUBBER,RecipeCategory.MISC,AsmItems.RUBBER.get(),0.25f,200,"silver");
         oreBlasting(recipeOutput,TIN_SMELTABLES,RecipeCategory.MISC,AsmItems.TIN_INGOT.get(),0.50f,100,"tin");
+        oreBlasting(recipeOutput,RAW_RUBBER,RecipeCategory.MISC,AsmItems.RUBBER.get(),0.50f,100,"tin");
         oreBlasting(recipeOutput,SILVER_SMELTABLES,RecipeCategory.MISC,AsmItems.SILVER_INGOT.get(),0.50f,100,"silver");
 
         oreRecycling(recipeOutput, AsmTags.commonItemTag("plates/tin"),RecipeCategory.MISC,AsmItems.TIN_INGOT.get(),0.50f,100,"tin");
@@ -337,8 +340,8 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
         oreRecycling(recipeOutput, AsmTags.commonItemTag("plates/lapis"),RecipeCategory.MISC,AsmItems.LAPIS_ALLOY.get(),0.50f,100,"lapis");
         oreRecycling(recipeOutput, AsmTags.commonItemTag("plates/copper"),RecipeCategory.MISC,Items.COPPER_INGOT,0.50f,100,"copper");
         oreRecycling(recipeOutput, AsmTags.commonItemTag("plates/iron"),RecipeCategory.MISC,Items.COPPER_INGOT,0.50f,100,"iron");
-        oreRecycling(recipeOutput, ItemTags.LEAVES,RecipeCategory.MISC,AsmItems.SAP.get(),0.25f,100,"sap_leaves");
-        oreRecycling(recipeOutput, ItemTags.SAPLINGS,RecipeCategory.MISC,AsmItems.SAP.get(),0.25f,100,"sap_saplings");
+        oreRecycling(recipeOutput, ItemTags.LEAVES,RecipeCategory.MISC,AsmItems.SAP_DROP.get(),0.25f,100,"sap_leaves");
+        oreRecycling(recipeOutput, ItemTags.SAPLINGS,RecipeCategory.MISC,AsmItems.SAP_DROP.get(),0.25f,100,"sap_saplings");
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Blocks.NETHERRACK),RecipeCategory.MISC,AsmItems.NETHERRACK_SHARD,2).unlockedBy("has_netherrack",has(Blocks.NETHERRACK)).save(recipeOutput);
 

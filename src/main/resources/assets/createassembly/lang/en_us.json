@@ -7,7 +7,7 @@
   "item.createassembly.polished_diamond": "Polished Diamond",
   "item.createassembly.raw_rubber": "Raw Rubber",
   "item.createassembly.rubber": "Rubber",
-  "item.createassembly.sap": "Sap",
+  "item.createassembly.sap_drop": "Sap",
   "item.createassembly.sealed_mechanism": "Sealed Mechanism",
   "item.createassembly.silver_ingot": "Silver Ingot",
   "item.createassembly.silver_jewel": "Silver Jewel",
@@ -42,7 +42,8 @@
 
   "item.createassembly.sap_bucket": "Sap Bucket",
   "block.createassembly.sap": "Sap",
-  "fluid.createassembly.sap": "Sap",
+  "fluid_type.createassembly.sap": "Sap",
+
   "item.createassembly.glow_ink_bucket": "Glow Ink Bucket",
   "item.createassembly.sulfuric_acid_bucket": "Sulfuric Acid Bucket",
   "item.createassembly.soul_lava_bucket": "Soul Lava Bucket",

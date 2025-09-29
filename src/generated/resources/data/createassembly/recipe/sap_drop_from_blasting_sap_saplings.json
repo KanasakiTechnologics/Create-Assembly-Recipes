@@ -3,12 +3,12 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.25,
-  "group": "sap_leaves",
+  "group": "sap_saplings",
   "ingredient": {
-    "tag": "minecraft:leaves"
+    "tag": "minecraft:saplings"
   },
   "result": {
     "count": 1,
-    "id": "createassembly:sap"
+    "id": "createassembly:sap_drop"
   }
 }

@@ -8,15 +8,15 @@
   "type": "create:filling",
   "ingredients": [
     {
-      "item": "createfr:alchemist_dust"
+      "item": "createassembly:alchemist_dust"
     },
     {
       "type": "fluid_stack",
-      "amount": 50,
+      "amount": 750,
       "components": {
         "create:potion_fluid_bottle_type": "regular",
         "minecraft:potion_contents": {
-          "potion": "minecraft:harming"
+          "potion": "minecraft:night_vision"
         }
       },
       "fluid": "create:potion"
@@ -25,7 +25,7 @@
   "results": [
     {
       "count": 3,
-      "id": "minecraft:gunpowder"
+      "id": "minecraft:glowstone_dust"
     }
   ]
 }

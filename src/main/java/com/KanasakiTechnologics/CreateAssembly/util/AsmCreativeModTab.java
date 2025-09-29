@@ -66,6 +66,7 @@ public class AsmCreativeModTab {
                         output.accept(AsmItems.FUSED_BLEND);
                         output.accept(AsmItems.NETHERITE_DUST);
                         output.accept(AsmItems.NETHERRACK_SHARD);
+                        output.accept(AsmItems.SAP_DROP);
                         output.accept(AsmItems.RAW_RUBBER);
                         output.accept(AsmItems.RUBBER);
                         output.accept(AsmItems.SULFUR);
@@ -75,6 +76,7 @@ public class AsmCreativeModTab {
                         output.accept(AsmItems.GLOW_INK_BUCKET);
                         output.accept(AsmItems.SOUL_LAVA_BUCKET);
                         output.accept(AsmItems.SULFURIC_ACID_BUCKET);
+                        output.accept(AsmItems.SAP_BUCKET);
                     }).build());
 
     public static void register(IEventBus eventBus){

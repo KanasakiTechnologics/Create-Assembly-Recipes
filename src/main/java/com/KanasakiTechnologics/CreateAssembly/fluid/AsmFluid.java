@@ -70,6 +70,25 @@ public class AsmFluid {
                 .explosionResistance(0f);
     }
 
+    public static final DeferredHolder<Fluid,Fluid> SAP = FLUIDS.register("sap",
+            ()-> new SapFluid.Source(getSapProperties()));
+    public static final DeferredHolder<Fluid,Fluid> FLOWING_SAP = FLUIDS.register("flowing_sap",
+            ()-> new SapFluid.Flowing(getSapProperties()));
+
+    private static BaseFlowingFluid.Properties getSapProperties() {
+        return new BaseFlowingFluid.Properties(
+                () -> AsmFluidType.SAP_TYPE.get(),
+                () -> SAP.get(),
+                () -> FLOWING_SAP.get()
+        )
+                .bucket(() -> AsmItems.SAP_BUCKET.get())
+                .block(() -> AsmBlocks.SAP.get())
+                .tickRate(10)
+                .levelDecreasePerBlock(2)
+                .slopeFindDistance(2)
+                .explosionResistance(0f);
+    }
+
     public static void register(IEventBus eventBus)
     {
         FLUIDS.register(eventBus);

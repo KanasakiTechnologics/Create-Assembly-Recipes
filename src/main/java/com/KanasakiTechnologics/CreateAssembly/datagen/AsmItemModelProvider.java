@@ -48,7 +48,7 @@ public class AsmItemModelProvider extends ItemModelProvider {
         basicItem(AsmItems.LAPIS_ALLOY.get());
         basicItem(AsmItems.LAPIS_SHEET.get());
         basicItem(AsmItems.COAL_ROD.get());
-        basicItem(AsmItems.SAP.get());
+        basicItem(AsmItems.SAP_DROP.get());
         basicItem(AsmItems.ROUGH_DIAMOND.get());
         basicItem(AsmItems.POLISHED_DIAMOND.get());
         basicItem(AsmItems.SILVER_JEWEL.get());

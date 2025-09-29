@@ -9,13 +9,10 @@
   "heat_requirement": "heated",
   "ingredients": [
     {
-      "item": "minecraft:blaze_powder"
+      "item": "create:powdered_obsidian"
     },
     {
-      "item": "minecraft:blaze_powder"
-    },
-    {
-      "item": "create:cinder_flour"
+      "item": "create:powdered_obsidian"
     },
     {
       "item": "create:cinder_flour"
@@ -24,7 +21,7 @@
       "item": "create:cinder_flour"
     },
     {
-      "item": "enderio:grains_of_infinity"
+      "item": "create:cinder_flour"
     },
     {
       "item": "enderio:grains_of_infinity"
@@ -41,7 +38,8 @@
   ],
   "results": [
     {
-      "id": "createassembly:alchemist_dust"
+      "count": 3,
+      "id": "createassembly:fused_blend"
     }
   ]
 }

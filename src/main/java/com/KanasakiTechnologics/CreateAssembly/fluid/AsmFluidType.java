@@ -13,7 +13,9 @@ public class AsmFluidType {
             ()-> new GlowInkFluidType(FluidType.Properties.create().lightLevel(10).viscosity(1000).density(1000).canDrown(false).supportsBoating(true)));
     public static final DeferredHolder<FluidType,FluidType>SULFURIC_ACID_TYPE = FLUID_TYPE.register("sulfuric_acid_type",
             ()-> new SulfuricAcidFluidType(FluidType.Properties.create().density(1000).viscosity(1000).canDrown(false)));
-        public static final DeferredHolder<FluidType, FluidType> SOUL_LAVA_TYPE = FLUID_TYPE.register("soul_lava_type",
+    public static final DeferredHolder<FluidType,FluidType>SAP_TYPE = FLUID_TYPE.register("sap_type",
+            ()-> new SapFluidType(FluidType.Properties.create().density(3000).viscosity(4000).canDrown(false)));
+    public static final DeferredHolder<FluidType, FluidType> SOUL_LAVA_TYPE = FLUID_TYPE.register("soul_lava_type",
             ()-> new SoulLavaFluidType(FluidType.Properties.create().lightLevel(10).temperature(1300).viscosity(4000).density(3000).canDrown(true).supportsBoating(false)));
 
     public static void register(IEventBus eventBus)

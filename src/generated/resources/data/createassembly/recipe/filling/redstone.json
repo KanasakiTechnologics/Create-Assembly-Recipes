@@ -8,11 +8,11 @@
   "type": "create:filling",
   "ingredients": [
     {
-      "item": "createfr:alchemist_dust"
+      "item": "createassembly:alchemist_dust"
     },
     {
       "type": "fluid_stack",
-      "amount": 50,
+      "amount": 750,
       "components": {
         "create:potion_fluid_bottle_type": "regular",
         "minecraft:potion_contents": {

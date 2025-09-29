@@ -4,12 +4,14 @@ import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
 import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
+import com.KanasakiTechnologics.CreateAssembly.util.AsmMods;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.api.data.recipe.MixingRecipeGen;
 import com.simibubi.create.content.processing.recipe.HeatCondition;
 import com.simibubi.create.foundation.data.recipe.CreateRecipeProvider;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.Items;
@@ -39,6 +41,9 @@ public final class AsmMixingRecipeProvider extends MixingRecipeGen {
     GeneratedRecipe ROOTED_DIRT = create("rooted_dirt",b -> b.require(Blocks.DIRT).require(Items.HANGING_ROOTS).output(Blocks.ROOTED_DIRT));
     GeneratedRecipe TUFF = create("tuff",b -> b.require(Blocks.ANDESITE).require(Blocks.DIORITE).require(Fluids.LAVA,100).output(Blocks.TUFF).output(Blocks.TUFF));
     GeneratedRecipe SOUL_LAVA = create("soul_lava",b -> b.requiresHeat(HeatCondition.SUPERHEATED).require(Fluids.LAVA,1000).require(AsmTags.ItemTags.NETHER_SOUL.tag).require(AsmTags.ItemTags.NETHER_SOUL.tag).require(AsmTags.ItemTags.NETHER_SOUL.tag).require(Items.BLAZE_POWDER).require(Items.BLAZE_POWDER).output(AsmFluid.SOUL_LAVA.get(),500));
+    GeneratedRecipe SAP = create("sap",b -> b.requiresHeat(HeatCondition.HEATED).require(AsmItems.SAP_DROP).require(AsmItems.SAP_DROP).require(AsmItems.SAP_DROP).require(AsmItems.SAP_DROP).output(AsmFluid.SAP.get(),100));
+    GeneratedRecipe ALCHEMIST_DUST = create("alchemist_dust",b -> b.requiresHeat(HeatCondition.HEATED).require(AllItems.CINDER_FLOUR).require(AllItems.CINDER_FLOUR).require(AllItems.CINDER_FLOUR).require(Items.BLAZE_POWDER).require(Items.BLAZE_POWDER).require(BuiltInRegistries.ITEM.get(AsmMods.ENDERIO.asResource("grains_of_infinity"))).require(BuiltInRegistries.ITEM.get(AsmMods.ENDERIO.asResource("grains_of_infinity"))).require(BuiltInRegistries.ITEM.get(AsmMods.ENDERIO.asResource("grains_of_infinity"))).require(BuiltInRegistries.ITEM.get(AsmMods.ENDERIO.asResource("grains_of_infinity"))).output(AsmItems.ALCHEMIST_DUST,3).whenModLoaded(AsmMods.ENDERIO.getId()));
+    GeneratedRecipe FUSED_BLEND = create("fused_blend",b -> b.requiresHeat(HeatCondition.HEATED).require(AllItems.POWDERED_OBSIDIAN).require(AllItems.POWDERED_OBSIDIAN).require(AllItems.CINDER_FLOUR).require(AllItems.CINDER_FLOUR).require(AllItems.CINDER_FLOUR).require(BuiltInRegistries.ITEM.get(AsmMods.ENDERIO.asResource("grains_of_infinity"))).require(BuiltInRegistries.ITEM.get(AsmMods.ENDERIO.asResource("grains_of_infinity"))).require(BuiltInRegistries.ITEM.get(AsmMods.ENDERIO.asResource("grains_of_infinity"))).require(BuiltInRegistries.ITEM.get(AsmMods.ENDERIO.asResource("grains_of_infinity"))).output(AsmItems.FUSED_BLEND,3).whenModLoaded(AsmMods.ENDERIO.getId()));
 
 
 }

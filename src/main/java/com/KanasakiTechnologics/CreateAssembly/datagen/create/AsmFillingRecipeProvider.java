@@ -3,13 +3,16 @@ package com.KanasakiTechnologics.CreateAssembly.datagen.create;
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
 import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
+import com.KanasakiTechnologics.CreateAssembly.util.AsmMods;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
 import com.simibubi.create.api.data.recipe.FillingRecipeGen;
 import com.simibubi.create.AllBlocks;
+import com.simibubi.create.content.fluids.potion.PotionFluidHandler;
 import com.simibubi.create.foundation.block.CopperBlockSet;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.WeatheringCopper.WeatherState;
@@ -46,6 +49,21 @@ public final class AsmFillingRecipeProvider extends FillingRecipeGen {
     GeneratedRecipe BLAZE_CORE = create("blaze_core", b -> b.require(Fluids.LAVA, 1000)
             .require(AsmItems.INACTIVE_BLAZE_CORE)
             .output(AsmItems.BLAZE_CORE));
+    GeneratedRecipe GUNPOWDER = create("gunpowder",b -> b.require(PotionFluidHandler.potionIngredient(Potions.HARMING,750))
+            .require(AsmItems.ALCHEMIST_DUST)
+            .output(Items.GUNPOWDER,3)
+            .whenModLoaded(AsmMods.ENDERIO.getId())
+    );
+    GeneratedRecipe GLOWSTONE = create("glowstone",b -> b.require(PotionFluidHandler.potionIngredient(Potions.NIGHT_VISION,750))
+            .require(AsmItems.ALCHEMIST_DUST)
+            .output(Items.GLOWSTONE_DUST,3)
+            .whenModLoaded(AsmMods.ENDERIO.getId())
+    );
+    GeneratedRecipe REDSTONE = create("redstone",b -> b.require(PotionFluidHandler.potionIngredient(Potions.STRENGTH,750))
+            .require(AsmItems.ALCHEMIST_DUST)
+            .output(Items.REDSTONE,3)
+            .whenModLoaded(AsmMods.ENDERIO.getId())
+    );
 
     // For vanilla
     private void copperOxidation(String baseName, Block normal, Block exposed, Block weathered, Block oxidized) {

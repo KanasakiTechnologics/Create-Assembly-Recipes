@@ -2,7 +2,7 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "createaddition"
+      "modid": "create_sa"
     },
     {
       "type": "neoforge:mod_loaded",

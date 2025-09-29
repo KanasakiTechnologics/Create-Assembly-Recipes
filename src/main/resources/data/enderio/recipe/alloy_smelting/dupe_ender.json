@@ -11,11 +11,11 @@
   "inputs": [
     {
       "count": 1,
-      "tag": "c:ender_powder"
+      "tag": "createassembly:ender_powder"
     },
     {
       "count": 2,
-      "item": "createfr:fused_blend"
+      "item": "createassembly:fused_blend"
     }
   ],
   "output": {

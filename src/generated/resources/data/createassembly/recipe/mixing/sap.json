@@ -1,0 +1,24 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "createassembly:sap_drop"
+    },
+    {
+      "item": "createassembly:sap_drop"
+    },
+    {
+      "item": "createassembly:sap_drop"
+    },
+    {
+      "item": "createassembly:sap_drop"
+    }
+  ],
+  "results": [
+    {
+      "amount": 100,
+      "id": "createassembly:sap"
+    }
+  ]
+}

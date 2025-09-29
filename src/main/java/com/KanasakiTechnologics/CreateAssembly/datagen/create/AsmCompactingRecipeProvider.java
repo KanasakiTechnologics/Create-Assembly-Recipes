@@ -2,14 +2,18 @@ package com.KanasakiTechnologics.CreateAssembly.datagen.create;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
 import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
+import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
+import com.KanasakiTechnologics.CreateAssembly.util.AsmMods;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.api.data.recipe.CompactingRecipeGen;
 import com.simibubi.create.content.decoration.palettes.AllPaletteBlocks;
 import com.simibubi.create.content.decoration.palettes.AllPaletteStoneTypes;
 import com.simibubi.create.content.processing.recipe.HeatCondition;
+import com.simibubi.create.foundation.data.recipe.Mods;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
@@ -33,4 +37,7 @@ public final class AsmCompactingRecipeProvider extends CompactingRecipeGen {
     GeneratedRecipe VERIDIUM = create("veridium",b -> b.require(Items.GRAVEL).require(Items.GRAVEL).require(Items.GRAVEL).require(AllItems.COPPER_NUGGET).require(AllItems.COPPER_NUGGET).require(AllItems.COPPER_NUGGET).require(AllItems.COPPER_NUGGET).require(Fluids.LAVA,250).output(AllPaletteStoneTypes.VERIDIUM.getBaseBlock().get()));
     GeneratedRecipe OCHRUM  = create("ochrum",b -> b.require(Items.GRAVEL).require(Items.GRAVEL).require(Items.GRAVEL).require(Items.GOLD_NUGGET).require(Items.GOLD_NUGGET).require(Items.GOLD_NUGGET).require(Items.GOLD_NUGGET).require(Fluids.LAVA,250).output(AllPaletteStoneTypes.OCHRUM.getBaseBlock().get()));
     GeneratedRecipe ASURINE  = create("asurine",b -> b.require(Items.GRAVEL).require(Items.GRAVEL).require(Items.GRAVEL).require(AllItems.ZINC_NUGGET).require(AllItems.ZINC_NUGGET).require(AllItems.ZINC_NUGGET).require(AllItems.ZINC_NUGGET).require(Fluids.LAVA,250).output(AllPaletteStoneTypes.ASURINE.getBaseBlock().get()));
+    GeneratedRecipe SLIME  = create("slime",b -> b.require(AsmFluid.SAP.get(),125).output(Items.SLIME_BALL,3));
+    GeneratedRecipe RAW_RUBBER  = create("raw_rubber",b -> b.require(AsmFluid.SAP.get(),250).output(AsmItems.RAW_RUBBER));
+    GeneratedRecipe COAL_BLOCK  = create("coal_block",b -> b.require(BuiltInRegistries.ITEM.get(Mods.MEK.asResource("block_charcoal"))).require(BuiltInRegistries.ITEM.get(Mods.MEK.asResource("block_charcoal"))).require(BuiltInRegistries.ITEM.get(Mods.MEK.asResource("block_charcoal"))).require(BuiltInRegistries.ITEM.get(Mods.MEK.asResource("block_charcoal"))).output(Blocks.COAL_BLOCK).whenModLoaded(Mods.MEK.getId()));
 }

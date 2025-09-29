@@ -56,6 +56,7 @@ public class AsmBlocks {
     public static final DeferredBlock<LiquidBlock> GLOW_INK = registerBlock("glow_ink",GlowInkBlock::new);
     public static final DeferredBlock<LiquidBlock> SULFURIC_ACID = registerBlock("sulfuric_acid",SulfuricAcidBlock::new);
     public static final DeferredBlock<LiquidBlock> SOUL_LAVA = registerBlock("soul_lava", SoulLavaBlock::new);
+    public static final DeferredBlock<LiquidBlock> SAP = registerBlock("sap", SapBlock::new);
 
 
     public static final DeferredBlock<Block> HOT_COAL = registerBlock("hot_coal_block",

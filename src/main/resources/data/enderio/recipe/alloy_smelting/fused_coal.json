@@ -11,15 +11,15 @@
   "inputs": [
     {
       "count": 1,
-      "item": "createfr:compressed_coal_block"
+      "item": "createassembly:compressed_coal_block"
     },
     {
       "count": 2,
-      "item": "createfr:fused_blend"
+      "item": "createassembly:fused_blend"
     }
   ],
   "output": {
     "count": 1,
-    "id": "createfr:fused_compressed_coal_block"
+    "id": "createassembly:fused_compressed_coal_block"
   }
 }
