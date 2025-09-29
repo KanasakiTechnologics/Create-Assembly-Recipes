@@ -223,6 +223,30 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .define('F', AsmItems.ENDER_PEARL_FRAGMENT)
                 .unlockedBy("has_ender_pearl_fragment",has(AsmItems.ENDER_PEARL_FRAGMENT)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, AsmItems.SHADOW_PICKAXE)
+                .pattern("SSS")
+                .pattern(" R ")
+                .pattern(" R ")
+                .define('S', AllItems.SHADOW_STEEL)
+                .define('R', AsmItems.RADIANT_HANDLE)
+                .unlockedBy("has_shadow_steel",has(AllItems.SHADOW_STEEL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, AsmItems.SHADOW_MATTOCK)
+                .pattern("SSS")
+                .pattern("SR ")
+                .pattern(" R ")
+                .define('S', AllItems.SHADOW_STEEL)
+                .define('R', AsmItems.RADIANT_HANDLE)
+                .unlockedBy("has_shadow_steel",has(AllItems.SHADOW_STEEL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, AsmItems.SHADOW_SWORD)
+                .pattern(" S ")
+                .pattern(" S ")
+                .pattern(" R ")
+                .define('S', AllItems.SHADOW_STEEL)
+                .define('R', AsmItems.RADIANT_HANDLE)
+                .unlockedBy("has_shadow_steel",has(AllItems.SHADOW_STEEL)).save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.ENDER_EYE)
                 .pattern("FFF")
                 .pattern("FBF")

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_shadow_steel": {
+      "conditions": {
+        "items": [
+          {
+            "items": "create:shadow_steel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "createassembly:shadow_steel_mattock"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_shadow_steel"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "createassembly:shadow_steel_mattock"
+    ]
+  }
+}
