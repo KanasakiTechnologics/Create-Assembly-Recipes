@@ -1,8 +1,9 @@
-// 1.21.1	2025-09-27T22:57:15.1148418	Item Models: createassembly
+// 1.21.1	2025-09-29T15:38:54.7136309	Item Models: createassembly
 b3ccab5a814c9162ac2aaf58d67933b06942985c assets/createassembly/models/item/abstruse_mechanism.json
 4ea4de641a591b6e97bae39c1f6228be27621591 assets/createassembly/models/item/alchemist_dust.json
 f037ba6c1c654e358c27d257cd28654a709586d8 assets/createassembly/models/item/blank_catalyst.json
 0b3df8c3910cb3bdbb134f354561d0392653b14c assets/createassembly/models/item/calculation_mechanism.json
+ef44dc06cace3be21a7f10565f031f1d8f6295d7 assets/createassembly/models/item/cloning_template.json
 0770a62dc3e217cd23bcde05a96e04526a8e3b19 assets/createassembly/models/item/coal_rod.json
 3bc6832c83f1dc26680a4ea2d7c50db7de6e54dd assets/createassembly/models/item/electrum_jewel.json
 b61cbcf19dcb6f6539e8699e3fcb27d9b402feac assets/createassembly/models/item/ender_pearl_fragment.json
@@ -10,6 +11,7 @@ b61cbcf19dcb6f6539e8699e3fcb27d9b402feac assets/createassembly/models/item/ender
 e769766e6798d5ae7655750e740bb97a09bf10d1 assets/createassembly/models/item/incomplete_abstruse_mechanism.json
 aa52c49f21968e8d7f36013f2c89195b699b139c assets/createassembly/models/item/incomplete_blaze_rod.json
 44082e79e1f931106631216e9f336235fe297260 assets/createassembly/models/item/incomplete_calculation_mechanism.json
+6dbbf14aecec2e8ca875a76bed7f5d8a22b237de assets/createassembly/models/item/incomplete_elytra.json
 6bc65ed11c8fa505ce4bf8b7d6655374b7a38100 assets/createassembly/models/item/incomplete_infernal_mechanism.json
 70360ea7f7e05fc287d8341445ee316e2b4052d3 assets/createassembly/models/item/incomplete_integrated_circuit.json
 160f7c0091a9562791b69d570ed2b48cf7ff7dc0 assets/createassembly/models/item/incomplete_integrated_mechanism.json

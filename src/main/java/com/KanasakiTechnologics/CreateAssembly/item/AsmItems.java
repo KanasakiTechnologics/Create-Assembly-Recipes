@@ -103,10 +103,16 @@ public class AsmItems {
     public static final DeferredItem<Item> INCOMPLETE_SEALED_MECHANISM = ITEMS.register("incomplete_sealed_mechanism",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> INCOMPLETE_ELYTRA = ITEMS.register("incomplete_elytra",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> SULFUR = ITEMS.register("sulfur",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> SULFUR_CHUNK = ITEMS.register("sulfur_chunk",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> CLONING_TEMPLATE = ITEMS.register("cloning_template",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> LAPIS_ALLOY = ITEMS.register("lapis_alloy",

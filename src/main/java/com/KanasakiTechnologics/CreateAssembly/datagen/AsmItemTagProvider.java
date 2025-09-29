@@ -126,6 +126,10 @@ public class AsmItemTagProvider extends ItemTagsProvider {
                 .add(Blocks.SOUL_SAND.asItem())
                 .add(Blocks.SOUL_SOIL.asItem());
 
+        tag(AsmTags.ItemTags.CHROMATIC_REWARDS.tag)
+                .add(AllItems.SHADOW_STEEL.get())
+                .add(AllItems.REFINED_RADIANCE.get());
+
         tag(AsmTags.ItemTags.REFINED_RADIANCE.tag)
                 .add(AsmItems.RADIANT_HANDLE.get());
         tag(AsmTags.ItemTags.All_METAL.tag)

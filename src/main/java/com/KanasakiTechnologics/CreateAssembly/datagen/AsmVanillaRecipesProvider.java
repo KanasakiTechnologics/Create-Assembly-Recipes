@@ -238,6 +238,14 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .define('B', AsmItems.BLANK_CATALYST)
                 .unlockedBy("has_catalyst",has(AsmItems.BLANK_CATALYST)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,AsmItems.CLONING_TEMPLATE,2)
+                .pattern("CCC")
+                .pattern("CBC")
+                .pattern("CCC")
+                .define('C', AsmTags.ItemTags.CHROMATIC_REWARDS.tag)
+                .define('B', AsmItems.CLONING_TEMPLATE)
+                .unlockedBy("has_template",has(AsmItems.CLONING_TEMPLATE)).save(recipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,Items.STRING,2)
                 .requires(Ingredient.of(ItemTags.LEAVES),3)
                 .unlockedBy("has_leaves",has(ItemTags.LEAVES))
@@ -297,6 +305,26 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .requires(AsmItems.TIN_INGOT)
                 .unlockedBy("has_tin",has(AsmItems.TIN_INGOT))
                 .save(recipeOutput);
+
+        templateduplicate(recipeOutput, Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, Items.SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE, Items.SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, Items.DUNE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.DUNE_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, Items.COAST_ARMOR_TRIM_SMITHING_TEMPLATE, Items.COAST_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, Items.WILD_ARMOR_TRIM_SMITHING_TEMPLATE, Items.WILD_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, Items.WARD_ARMOR_TRIM_SMITHING_TEMPLATE, Items.WARD_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, Items.EYE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.EYE_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, Items.VEX_ARMOR_TRIM_SMITHING_TEMPLATE, Items.VEX_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, Items.TIDE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.TIDE_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, Items.SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE, Items.SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, Items.RIB_ARMOR_TRIM_SMITHING_TEMPLATE, Items.RIB_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, Items.SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, Items.WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE, Items.WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, Items.SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE, Items.SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, Items.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, Items.RAISER_ARMOR_TRIM_SMITHING_TEMPLATE, Items.RAISER_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, Items.HOST_ARMOR_TRIM_SMITHING_TEMPLATE, Items.HOST_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, AsmItems.SHADOW_CATALYST.get(), AsmItems.SHADOW_CATALYST.get());
+        templateduplicate(recipeOutput, AsmItems.RADIANT_CATALYST.get(), AsmItems.RADIANT_CATALYST.get());
 
         oreSmelting(recipeOutput,TIN_SMELTABLES,RecipeCategory.MISC,AsmItems.TIN_INGOT.get(),0.25f,200,"tin");
         oreSmelting(recipeOutput,SILVER_SMELTABLES,RecipeCategory.MISC,AsmItems.SILVER_INGOT.get(),0.25f,200,"silver");
@@ -370,6 +398,14 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .pattern(" G ")
                 .unlockedBy("has_glow_ink", has(Items.GLOW_INK_SAC))
                 .save(out, id("light_block", result));
+    }
+
+    public static void templateduplicate(RecipeOutput out, Item template, Item result){
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,result,2)
+                .requires(Ingredient.of(AsmItems.CLONING_TEMPLATE))
+                .requires(Ingredient.of(template))
+                .unlockedBy("has_template",has(AsmItems.CLONING_TEMPLATE))
+                .save(out, ResourceLocation.fromNamespaceAndPath(MOD_ID, "template_duplication_" + BuiltInRegistries.ITEM.getKey(result).getPath()));
     }
 
     private static void glassLight(RecipeOutput out, Item glass, Block result) {

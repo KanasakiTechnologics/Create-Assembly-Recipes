@@ -39,8 +39,10 @@ public class AsmItemModelProvider extends ItemModelProvider {
         basicItem(AsmItems.INCOMPLETE_INTEGRATED_MECHANISM.get());
         basicItem(AsmItems.INCOMPLETE_KINETIC_MECHANISM.get());
         basicItem(AsmItems.INCOMPLETE_SEALED_MECHANISM.get());
+        basicItem(AsmItems.INCOMPLETE_ELYTRA.get());
         basicItem(AsmItems.SULFUR_CHUNK.get());
         basicItem(AsmItems.SULFUR.get());
+        basicItem(AsmItems.CLONING_TEMPLATE.get());
         basicItem(AsmItems.TIN_SHEET.get());
         basicItem(AsmItems.RADIANT_HANDLE.get());
         basicItem(AsmItems.LAPIS_ALLOY.get());

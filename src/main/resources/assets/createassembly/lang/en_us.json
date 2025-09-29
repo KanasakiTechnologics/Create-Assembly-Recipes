@@ -53,6 +53,7 @@
   "block.createassembly.raw_silver_block": "Raw Silver Block",
   "item.createassembly.silver_nugget": "Silver Nugget",
   "item.createassembly.raw_silver": "Raw Silver",
+  "item.createassembly.cloning_template": "Cloning Template",
 
   "item.createassembly.inactive_blaze_core": "Inactive Blaze Core",
   "item.createassembly.superheated_blaze_core.description_0": "§7Can be refueled after use",
@@ -118,10 +119,6 @@
   "block.createassembly.green_light_block": "Green Light Block",
   "block.createassembly.red_light_block": "Red Light Block",
   "block.createassembly.black_light_block": "Black Light Block",
-  "block.createassembly.chromatic_compound_block": "Chromatic Compound Block",
-  "block.createassembly.refined_radiance_block": "Refined Radiance Block",
-  "block.createassembly.shadow_steel_block": "Shadow Steel Block",
-
 
   "item.createassembly.sulfur": "Sulfur",
   "item.createassembly.sulfur_chunk": "Sulfur chunk",

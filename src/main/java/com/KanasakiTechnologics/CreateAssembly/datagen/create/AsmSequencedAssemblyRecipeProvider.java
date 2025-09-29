@@ -4,9 +4,11 @@ import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
 import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import com.simibubi.create.AllBlocks;
+import com.simibubi.create.AllFluids;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.AllTags;
 import com.simibubi.create.api.data.recipe.SequencedAssemblyRecipeGen;
+import com.simibubi.create.content.fluids.potion.PotionFluidHandler;
 import com.simibubi.create.content.fluids.transfer.FillingRecipe;
 import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe;
 import com.simibubi.create.content.kinetics.press.PressingRecipe;
@@ -16,6 +18,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
@@ -80,6 +83,18 @@ public final class AsmSequencedAssemblyRecipeProvider extends SequencedAssemblyR
             .loops(5)
             .addStep(FillingRecipe::new,rb -> rb.require(CEIFluids.EXPERIENCE.get(),250))
             .addStep(FillingRecipe::new,rb ->rb.require(Fluids.LAVA,250))
+            .addStep(PressingRecipe::new,rb -> rb)
+    );
+
+    GeneratedRecipe ELYTRA = create("elytra", b -> b.require(Items.PHANTOM_MEMBRANE)
+            .transitionTo(AsmItems.INCOMPLETE_ELYTRA)
+            .addOutput(Items.ELYTRA,75)
+            .addOutput(Items.PHANTOM_MEMBRANE,15)
+            .loops(5)
+            .addStep(DeployerApplicationRecipe::new,rb->rb.require(Items.PAPER))
+            .addStep(DeployerApplicationRecipe::new,rb->rb.require(Items.FEATHER))
+            .addStep(FillingRecipe::new,rb->rb.require(PotionFluidHandler.potionIngredient(Potions.SLOW_FALLING,250)))
+            .addStep(DeployerApplicationRecipe::new,rb->rb.require(Items.GUNPOWDER))
             .addStep(PressingRecipe::new,rb -> rb)
     );
 

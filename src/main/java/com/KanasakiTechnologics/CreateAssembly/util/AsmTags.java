@@ -197,6 +197,7 @@ public class AsmTags {
         SILVER_INGOT(NameSpace.COMMON, "ingots/silver"),
         SILVER_NUGGET(NameSpace.COMMON, "nuggets/silver"),
         ENDER_POWDER(NameSpace.MOD, "ender_powder"),
+        CHROMATIC_REWARDS(NameSpace.CREATE,"chromoatic_rewards"),
         GEARBOXES(NameSpace.CREATE, "gearboxes");
 
         public final TagKey<Item> tag;

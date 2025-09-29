@@ -1,0 +1,107 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:phantom_membrane"
+  },
+  "loops": 5,
+  "results": [
+    {
+      "chance": 75.0,
+      "id": "minecraft:elytra"
+    },
+    {
+      "chance": 15.0,
+      "id": "minecraft:phantom_membrane"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_elytra"
+        },
+        {
+          "item": "minecraft:paper"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_elytra"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_elytra"
+        },
+        {
+          "item": "minecraft:feather"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_elytra"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_elytra"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 250,
+          "components": {
+            "create:potion_fluid_bottle_type": "regular",
+            "minecraft:potion_contents": {
+              "potion": "minecraft:slow_falling"
+            }
+          },
+          "fluid": "create:potion"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_elytra"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_elytra"
+        },
+        {
+          "item": "minecraft:gunpowder"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_elytra"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_elytra"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_elytra"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createassembly:incomplete_elytra"
+  }
+}
