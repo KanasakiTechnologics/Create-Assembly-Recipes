@@ -122,7 +122,6 @@
   "block.createassembly.refined_radiance_block": "Refined Radiance Block",
   "block.createassembly.shadow_steel_block": "Shadow Steel Block",
 
-  "message.createassembly.bedrock_breaker.desc": "Needs redstone power",
 
   "item.createassembly.sulfur": "Sulfur",
   "item.createassembly.sulfur_chunk": "Sulfur chunk",
