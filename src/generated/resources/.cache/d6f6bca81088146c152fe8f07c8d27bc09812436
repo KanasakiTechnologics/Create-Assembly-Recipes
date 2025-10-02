@@ -1,5 +1,7 @@
-// 1.21.1	2025-09-29T15:36:21.9831304	Tags for minecraft:item mod id createassembly
+// 1.21.1	2025-10-12T18:25:49.8335404	Tags for minecraft:item mod id createassembly
 f86ed06ac6958b7557a9fee1e1aa4a43a5d7ef2d data/createassembly/tags/item/complex_mechanism.json
+1c00bf4ef743530083949f0dbd0d1550b7709ac5 data/createassembly/tags/item/compressed_cobblestone.json
+00071bb0fd4887a15b9415989200cd8f90bddeb2 data/createassembly/tags/item/compressed_sand.json
 fcc9cc8a4a0b40964b0ce5e89795d52fd4d5b5b3 data/createassembly/tags/item/ender_powder.json
 a4300afc626c013fcf6ff808300792e063bf2f13 data/createassembly/tags/item/life_corals.json
 c54c7c9c885a90233ab46702be8c322aa5a08ed6 data/createassembly/tags/item/prismarine_building_block.json
@@ -21,16 +23,24 @@ f06e6bee4e8f79a219b20c797d9de7db7a373848 data/c/tags/item/nuggets/tin.json
 43cdd877a86128570e622f822a0022fc6524c8f0 data/c/tags/item/plates.json
 a367c8aa1312f933df9ca2b157b41ad78ebf555c data/c/tags/item/plates/lapis.json
 0ca9204dfe7437d752f84593788c1053878ebdad data/c/tags/item/plates/tin.json
+1acf8c8ed194ea8e5c76b0226e6c65b02bce6a9c data/c/tags/item/radiance_catalyst_required.json
 172eb8a98cc2699d60ab72ef9700ee026ffc6b82 data/c/tags/item/raw_materials.json
 18ee56ce915134ab9091c0ef41704f2fc88e4904 data/c/tags/item/raw_materials/silver.json
 161047052842fcde8796a3c9cd0ddf34b872c67d data/c/tags/item/raw_materials/tin.json
 bc29eb3d8815733d4b42173f43ab5127dca2bcfd data/c/tags/item/rods.json
 bc29eb3d8815733d4b42173f43ab5127dca2bcfd data/c/tags/item/rods/all_metal.json
 bc29eb3d8815733d4b42173f43ab5127dca2bcfd data/c/tags/item/rods/radiant.json
-82f01cb6b5eb5197de099b6d76897509eea60227 data/c/tags/item/storage_blocks.json
+9f55aa064b233b3f612f05614050fc81f86591c3 data/c/tags/item/shadow_catalyst_required.json
+266fe53b0d8989f32d67a27796f68276141fd9cc data/c/tags/item/storage_blocks.json
+4561e6649b5d46628727928264005eaf277bb761 data/c/tags/item/storage_blocks/cobbled_deepslate.json
+d5beacff958f0bb72e473da3fbdbe9a1170b5cb9 data/c/tags/item/storage_blocks/cobblestone.json
+9f429d68e81f882821b172837335c1bb69467fd5 data/c/tags/item/storage_blocks/gravel.json
 99789bb956e9181f8a0dbccfc9fd642c26c4a23c data/c/tags/item/storage_blocks/raw_silver.json
 0069a35a55dc46b10316ab9daf06c0cd19e02f10 data/c/tags/item/storage_blocks/raw_tin.json
+a51740624683f2b33eff07fa8b9be55b9a3954f2 data/c/tags/item/storage_blocks/red_sand.json
+2fe48a79dc137aa22a8ab95baf533435b0ac29be data/c/tags/item/storage_blocks/sand.json
 46631f12ca822b91cf54a372c1e28c5f39af291f data/c/tags/item/storage_blocks/silver.json
+43ce164d3b64237729e516ff929a4096c6decceb data/c/tags/item/storage_blocks/soul_sand.json
 ae682650171baf3a8f74171d6cc93c75e72fc09d data/c/tags/item/storage_blocks/tin.json
 d5aebde1fd1141df86b6ed4ace3f720504b32ab2 data/minecraft/tags/item/nether_soul.json
 1364d803c3c79b238c89e1fa3036d482b9f03660 data/minecraft/tags/item/pickaxes.json

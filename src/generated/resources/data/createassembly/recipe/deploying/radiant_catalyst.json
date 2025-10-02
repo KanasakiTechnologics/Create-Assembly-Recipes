@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createassembly:blank_catalyst"
+    },
+    {
+      "item": "createassembly:radiant_catalyst"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:radiant_catalyst"
+    }
+  ]
+}

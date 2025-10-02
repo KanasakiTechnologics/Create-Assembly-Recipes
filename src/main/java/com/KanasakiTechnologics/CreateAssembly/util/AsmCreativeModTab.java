@@ -26,6 +26,18 @@ public class AsmCreativeModTab {
                         output.accept(AsmItems.RADIANT_HANDLE);
                     }).build());
 
+    public static final Supplier<CreativeModeTab> COMPRESSED_CREATE_BASIC_MATERIAL= CREATIVE_MODE_TAB.register("compressed_create_basic_material",
+            ()->CreativeModeTab.builder().icon(()->new ItemStack(AsmBlocks.COMPRESSED_COBBLESTONE.get()))
+                    .title(Component.translatable("creativetab.createassembly.compressed_create_basic_material"))
+                    .displayItems((itemDisplayParameters, output) ->{
+                        output.accept(AsmBlocks.COMPRESSED_COBBLESTONE);
+                        output.accept(AsmBlocks.COMPRESSED_COBBLED_DEEPSLATE);
+                        output.accept(AsmBlocks.COMPRESSED_GRAVEL);
+                        output.accept(AsmBlocks.COMPRESSED_SAND);
+                        output.accept(AsmBlocks.COMPRESSED_RED_SAND);
+                        output.accept(AsmBlocks.COMPRESSED_SOUL_SAND);
+                    }).build());
+
     public static final Supplier<CreativeModeTab> DNDESIRES_MECHANISMS = CREATIVE_MODE_TAB.register("dndesires_mechanism",
             ()->CreativeModeTab.builder().icon(()->new ItemStack(AsmItems.INTEGRATED_CIRCUIT.get()))
                     .title(Component.translatable("creativetab.createassembly.dndesires_mechanisms"))

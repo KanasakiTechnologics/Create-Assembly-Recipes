@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-26T01:44:57.9577098	Loot Tables
+// 1.21.1	2025-10-12T17:00:18.7952974	Loot Tables
 9abdaeaf60f90484b6f156437d0eb136fd0ea03b data/createassembly/loot_table/blocks/bedrock.json
 a0eae0efbc68f57be020f9f483d476623b97f93b data/createassembly/loot_table/blocks/black_glass_light_block.json
 2e24a4f2593b1d83fd2279ada92623ab123d07c2 data/createassembly/loot_table/blocks/black_light_block.json
@@ -7,6 +7,12 @@ a8e149299218bb208aba33314feaa2f49898d2e3 data/createassembly/loot_table/blocks/b
 4c587ed47a898cadb35c7ef80aee78dd3b041324 data/createassembly/loot_table/blocks/brown_glass_light_block.json
 c604d6770906450c4c55854ab789d4ed2d34f88c data/createassembly/loot_table/blocks/brown_light_block.json
 c3117147508745895eb65802097d13e9979859b5 data/createassembly/loot_table/blocks/compressed_coal_block.json
+99107542089b936989d7b074187abfefb07efa57 data/createassembly/loot_table/blocks/compressed_cobbled_deepslate.json
+954a3304110df357de69b426a1fce70f13e50761 data/createassembly/loot_table/blocks/compressed_cobblestone.json
+710bd1b7c5031712c47d007760828ad0b8c51a2c data/createassembly/loot_table/blocks/compressed_gravel.json
+a893f0033adccb8ee58b759b90a74343b710c48a data/createassembly/loot_table/blocks/compressed_red_sand.json
+4d5ec1c048e1d0956d582ac02f069aabe722a9c3 data/createassembly/loot_table/blocks/compressed_sand.json
+aaf3e20a79ff9ae4b88a4b868dba33d2891fd6e8 data/createassembly/loot_table/blocks/compressed_soul_sand.json
 fdb40ac7d294d0533a8224645b65d84fd1ff2cc7 data/createassembly/loot_table/blocks/cyan_glass_light_block.json
 73b35bfe87b316d82b4d70795baaaea132c356a4 data/createassembly/loot_table/blocks/cyan_light_block.json
 67d8d04246b61037db3f78bb842ff9dc3cd37e21 data/createassembly/loot_table/blocks/deepslate_silver_ore.json

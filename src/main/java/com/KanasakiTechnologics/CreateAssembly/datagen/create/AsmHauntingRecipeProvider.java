@@ -1,6 +1,8 @@
 package com.KanasakiTechnologics.CreateAssembly.datagen.create;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
+import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
+import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
 import com.simibubi.create.api.data.recipe.HauntingRecipeGen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -20,5 +22,6 @@ public final class AsmHauntingRecipeProvider extends HauntingRecipeGen {
     GeneratedRecipe ROTTEN_FLESH = convert(() -> Ingredient.of(Tags.Items.FOODS_RAW_MEAT),() -> Items.ROTTEN_FLESH);
     GeneratedRecipe PHANTOM_MEMBRANE = convert(() -> Ingredient.of(Items.FEATHER),() -> Items.PHANTOM_MEMBRANE);
     GeneratedRecipe WITHER_ROSE = convert(() -> Ingredient.of(ItemTags.SMALL_FLOWERS),() -> Items.WITHER_ROSE);
+    GeneratedRecipe COMPRESSED_SOUL_SAND = convert(() -> Ingredient.of(AsmTags.ItemTags.COMPRESSED_SAND.tag),() ->(AsmBlocks.COMPRESSED_SOUL_SAND));
 
 }

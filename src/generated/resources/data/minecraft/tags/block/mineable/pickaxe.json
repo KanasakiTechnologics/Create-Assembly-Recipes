@@ -47,6 +47,8 @@
     "createassembly:hot_coal_block",
     "createassembly:compressed_coal_block",
     "createassembly:fused_compressed_coal_block",
+    "createassembly:compressed_cobblestone",
+    "createassembly:compressed_cobbled_deepslate",
     "createassembly:hot_compressed_coal_block"
   ]
 }

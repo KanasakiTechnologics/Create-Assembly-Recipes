@@ -1,7 +1,9 @@
-// 1.21.1	2025-09-29T23:03:16.6996196	createassembly's processing recipes: compacting
+// 1.21.1	2025-10-12T17:14:24.2948943	createassembly's processing recipes: compacting
 4362aa8ac65a0aa5b0a31c85dbaf48abe36cc669 data/createassembly/recipe/compacting/asurine.json
 c4197c31e6e96ecc853ad6a28c0f5f4f99c4c869 data/createassembly/recipe/compacting/coal_block.json
 ba038b8aaf6afa4dfebb8c48dd4603e1de2f252d data/createassembly/recipe/compacting/coal_from_charcoal.json
+986c0bc3b09287454ffe6650466ad576aacacbe2 data/createassembly/recipe/compacting/cobbled_deepslate.json
+701ffe1086279681f6fbc4c6a342faefe36922f0 data/createassembly/recipe/compacting/cobblestone.json
 9849799444766009b79f7de4fcbe5ffd833d3afd data/createassembly/recipe/compacting/compact_brown_mushroom.json
 60f833517d7711dc2051375cdff7257ba119fba6 data/createassembly/recipe/compacting/compact_red_mushroom.json
 603c9af8009cc62857329ce4fe331e0dbe5c2d4c data/createassembly/recipe/compacting/compressed_coal.json
@@ -9,6 +11,9 @@ ba038b8aaf6afa4dfebb8c48dd4603e1de2f252d data/createassembly/recipe/compacting/c
 7c46300d9094e0c8f004213f3a0ebc140d6ae328 data/createassembly/recipe/compacting/leather_from_flesh.json
 ad1cd4d57cfc09d5555b5a0e7e1969c2591d0009 data/createassembly/recipe/compacting/ochrum.json
 f298c1156653ea0f03e0638af9be363a94be155a data/createassembly/recipe/compacting/raw_rubber.json
+17c4158e7fea3513b7e445d91f2a9f1bc9ff9149 data/createassembly/recipe/compacting/red_sand.json
+af547e39ce85d1ba01a3d9f81d8e8e99f1e4e7c3 data/createassembly/recipe/compacting/sand.json
 d2bc88176bcd25d5e99b51f0d3e2ff3d6e264fe9 data/createassembly/recipe/compacting/slime.json
+d6a992a28ced06b8e3a70ef1c412dff0f206179a data/createassembly/recipe/compacting/soul_sand.json
 f8a6bd3dec80d278954e4b96a51a5b27e0c19253 data/createassembly/recipe/compacting/sulfur.json
 b32e41e2b29c24d2000a03ddf66cdddb83bc25d6 data/createassembly/recipe/compacting/veridium.json

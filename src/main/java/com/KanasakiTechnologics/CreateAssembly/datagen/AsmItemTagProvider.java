@@ -53,6 +53,11 @@ public class AsmItemTagProvider extends ItemTagsProvider {
                 .add(AllItems.VERTICAL_GEARBOX.get())
                 .add(AllBlocks.GEARBOX.asItem());
 
+        tag(AsmTags.ItemTags.RADIANCE_CATALYST_REQUIRED.tag)
+                .add(AllItems.REFINED_RADIANCE.get());
+        tag(AsmTags.ItemTags.SHADOW_CATALYST_REQUIRED.tag)
+                .add(AllItems.SHADOW_STEEL.get());
+
         tag(Tags.Items.INGOTS)
                 .add(AsmItems.SILVER_INGOT.get())
                 .add(AsmItems.TIN_INGOT.get())
@@ -97,7 +102,13 @@ public class AsmItemTagProvider extends ItemTagsProvider {
                 .add(AsmBlocks.RAW_SILVER_BLOCK.asItem())
                 .add(AsmBlocks.RAW_TIN_BLOCK.asItem())
                 .add(AsmBlocks.SILVER_BLOCK.asItem())
-                .add(AsmBlocks.TIN_BLOCK.asItem());
+                .add(AsmBlocks.TIN_BLOCK.asItem())
+                .add(AsmBlocks.COMPRESSED_GRAVEL.asItem())
+                .add(AsmBlocks.COMPRESSED_SAND.asItem())
+                .add(AsmBlocks.COMPRESSED_RED_SAND.asItem())
+                .add(AsmBlocks.COMPRESSED_COBBLESTONE.asItem())
+                .add(AsmBlocks.COMPRESSED_COBBLED_DEEPSLATE.asItem())
+                .add(AsmBlocks.COMPRESSED_SOUL_SAND.asItem());
 
         tag(AllTags.AllItemTags.BLAZE_BURNER_FUEL_SPECIAL.tag)
                 .add(AsmItems.SUPERHEATED_BLAZE_CORE.get());
@@ -113,6 +124,27 @@ public class AsmItemTagProvider extends ItemTagsProvider {
                 .add(AsmBlocks.SILVER_BLOCK.asItem());
         tag(AsmTags.ItemTags.TIN.tag)
                 .add(AsmBlocks.TIN_BLOCK.asItem());
+
+        tag(AsmTags.ItemTags.SAND.tag)
+                .add(AsmBlocks.COMPRESSED_SAND.asItem());
+        tag(AsmTags.ItemTags.RED_SAND.tag)
+                .add(AsmBlocks.COMPRESSED_RED_SAND.asItem());
+        tag(AsmTags.ItemTags.SOUL_SAND.tag)
+                .add(AsmBlocks.COMPRESSED_SOUL_SAND.asItem());
+        tag(AsmTags.ItemTags.GRAVEL.tag)
+                .add(AsmBlocks.COMPRESSED_GRAVEL.asItem());
+        tag(AsmTags.ItemTags.COBBLESTONE.tag)
+                .add(AsmBlocks.COMPRESSED_COBBLESTONE.asItem());
+        tag(AsmTags.ItemTags.COBBLED_DEEPSLATE.tag)
+                .add(AsmBlocks.COMPRESSED_COBBLED_DEEPSLATE.asItem());
+
+        tag(AsmTags.ItemTags.COMPRESSED_SAND.tag)
+                .add(AsmBlocks.COMPRESSED_SAND.asItem())
+                .add(AsmBlocks.COMPRESSED_RED_SAND.asItem());
+
+        tag(AsmTags.ItemTags.COMPRESSED_COBBLESTONE.tag)
+                .add(AsmBlocks.COMPRESSED_COBBLESTONE.asItem())
+                .add(AsmBlocks.COMPRESSED_COBBLED_DEEPSLATE.asItem());
 
         tag(AsmTags.ItemTags.TIN_PLATES.tag)
                         .add(AsmItems.TIN_SHEET.get());

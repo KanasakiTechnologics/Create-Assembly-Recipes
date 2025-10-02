@@ -2,7 +2,9 @@ package com.KanasakiTechnologics.CreateAssembly.datagen.create;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
 import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
+import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
+import com.KanasakiTechnologics.CreateAssembly.util.AsmMods;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllFluids;
 import com.simibubi.create.AllItems;
@@ -14,6 +16,7 @@ import com.simibubi.create.content.kinetics.deployer.DeployerApplicationRecipe;
 import com.simibubi.create.content.kinetics.press.PressingRecipe;
 import com.simibubi.create.content.kinetics.saw.CuttingRecipe;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
@@ -22,6 +25,7 @@ import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
+import plus.dragons.createdragonsplus.common.registry.CDPFluids;
 import plus.dragons.createenchantmentindustry.common.registry.CEIFluids;
 
 import java.util.concurrent.CompletableFuture;
@@ -201,5 +205,45 @@ public final class AsmSequencedAssemblyRecipeProvider extends SequencedAssemblyR
             .addStep(DeployerApplicationRecipe::new,rb -> rb.require(Items.AMETHYST_SHARD))
             .addStep(DeployerApplicationRecipe::new,rb -> rb.require(Items.REDSTONE))
             .addStep(DeployerApplicationRecipe::new, rb -> rb.require(AllBlocks.COGWHEEL))
+    );
+
+    GeneratedRecipe SHADOW_STEEL = create("shadow_steel",b -> b.require(AllItems.CHROMATIC_COMPOUND)
+            .transitionTo(AllItems.CHROMATIC_COMPOUND)
+            .addOutput(AllItems.SHADOW_STEEL,1)
+            .loops(3)
+            .addStep(FillingRecipe::new,rb ->rb.require(Fluids.LAVA,250))
+            .addStep(DeployerApplicationRecipe::new, rb -> rb.require(AsmItems.SHADOW_CATALYST))
+            .addStep(FillingRecipe::new,rb -> rb.require(CEIFluids.EXPERIENCE.get(),250))
+            .addStep(PressingRecipe::new,rb -> rb)
+    );
+
+    GeneratedRecipe REFINED_RADIANCE = create("refined_radiance",b -> b.require(AllItems.CHROMATIC_COMPOUND)
+            .transitionTo(AllItems.CHROMATIC_COMPOUND)
+            .addOutput(AllItems.REFINED_RADIANCE,1)
+            .loops(3)
+            .addStep(FillingRecipe::new,rb ->rb.require(Fluids.LAVA,250))
+            .addStep(DeployerApplicationRecipe::new, rb -> rb.require(AsmItems.RADIANT_CATALYST))
+            .addStep(FillingRecipe::new,rb -> rb.require(CEIFluids.EXPERIENCE.get(),250))
+            .addStep(PressingRecipe::new,rb -> rb)
+    );
+
+    GeneratedRecipe RADIANT_CATALYST = create("radiant_catalyst",b ->b.require(AsmItems.BLANK_CATALYST)
+            .transitionTo(AsmItems.BLANK_CATALYST)
+            .addOutput(AsmItems.RADIANT_CATALYST,1)
+            .loops(1)
+            .addStep(FillingRecipe::new,rb ->rb.require(Fluids.LAVA,250))
+            .addStep(FillingRecipe::new,rb -> rb.require(AsmFluid.GLOW_INK.get(),250))
+            .addStep(DeployerApplicationRecipe::new,rb -> rb.require(AllItems.EXP_NUGGET))
+            .addStep(PressingRecipe::new,rb -> rb)
+    );
+
+    GeneratedRecipe SHADOW_CATALYST = create("shadow_catalyst",b ->b.require(AsmItems.BLANK_CATALYST)
+            .transitionTo(AsmItems.BLANK_CATALYST)
+            .addOutput(AsmItems.SHADOW_CATALYST,1)
+            .loops(1)
+            .addStep(FillingRecipe::new,rb ->rb.require(Fluids.LAVA,250))
+            .addStep(FillingRecipe::new,rb -> rb.require(BuiltInRegistries.FLUID.get(AsmMods.TRIALNERROR.asResource("ominous_bile")),250).whenModLoaded(AsmMods.TRIALNERROR.getId()))
+            .addStep(DeployerApplicationRecipe::new,rb -> rb.require(AllItems.EXP_NUGGET))
+            .addStep(PressingRecipe::new,rb -> rb)
     );
 }

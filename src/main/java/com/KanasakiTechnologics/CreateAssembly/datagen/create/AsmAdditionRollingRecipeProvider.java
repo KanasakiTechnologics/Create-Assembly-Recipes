@@ -11,7 +11,7 @@ import net.minecraft.world.item.Item;
 import java.util.concurrent.CompletableFuture;
 
 @SuppressWarnings("unused")
-public class AsmAdditionRollingRecipeProvider extends RollingRecipeGen {
+public final class AsmAdditionRollingRecipeProvider extends RollingRecipeGen {
     public AsmAdditionRollingRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, CreateAssembly.MOD_ID);
     }

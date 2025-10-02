@@ -1,4 +1,5 @@
-// 1.21.1	2025-09-11T19:41:14.8571902	createassembly's processing recipes: haunting
+// 1.21.1	2025-10-12T18:25:49.8335404	createassembly's processing recipes: haunting
+cf9a9fd94bf02aae2f6501882f997b74b4681e8e data/createassembly/recipe/haunting/compressed_soul_sand.json
 db3248b2f255c115840c4476f02303b4dd9fecd1 data/createassembly/recipe/haunting/phantom_membrane.json
 eb612001389359f72810c46293eab0a5a2397451 data/createassembly/recipe/haunting/rotten_flesh.json
 9e60d39ac8944d1a2535725d0e445a65619095d1 data/createassembly/recipe/haunting/wither_rose.json

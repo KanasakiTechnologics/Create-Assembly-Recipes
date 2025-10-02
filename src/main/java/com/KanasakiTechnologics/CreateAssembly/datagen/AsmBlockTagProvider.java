@@ -29,6 +29,12 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(AsmBlocks.COMPRESSED_GRAVEL.get())
+                .add(AsmBlocks.COMPRESSED_SAND.get())
+                .add(AsmBlocks.COMPRESSED_RED_SAND.get())
+                .add(AsmBlocks.COMPRESSED_SOUL_SAND.get());
+
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(Blocks.BEDROCK)
                 .add(AsmBlocks.BEDROCK.get())
@@ -79,6 +85,8 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(AsmBlocks.HOT_COAL.get())
                 .add(AsmBlocks.COMPRESSED_COAL.get())
                 .add(AsmBlocks.FUSED_COMPRESSED_COAL.get())
+                .add(AsmBlocks.COMPRESSED_COBBLESTONE.get())
+                .add(AsmBlocks.COMPRESSED_COBBLED_DEEPSLATE.get())
                 .add(AsmBlocks.HOT_COMPRESSED_COAL.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
@@ -227,7 +235,13 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(AsmBlocks.RAW_SILVER_BLOCK.get())
                 .add(AsmBlocks.RAW_TIN_BLOCK.get())
                 .add(AsmBlocks.SILVER_BLOCK.get())
-                .add(AsmBlocks.TIN_BLOCK.get());
+                .add(AsmBlocks.TIN_BLOCK.get())
+                .add(AsmBlocks.COMPRESSED_GRAVEL.get())
+                .add(AsmBlocks.COMPRESSED_SAND.get())
+                .add(AsmBlocks.COMPRESSED_RED_SAND.get())
+                .add(AsmBlocks.COMPRESSED_COBBLESTONE.get())
+                .add(AsmBlocks.COMPRESSED_COBBLED_DEEPSLATE.get())
+                .add(AsmBlocks.COMPRESSED_SOUL_SAND.get());
 
         tag(AsmTags.BlockTags.RAW_SILVER.tag)
                 .add(AsmBlocks.RAW_SILVER_BLOCK.get());
@@ -237,6 +251,27 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(AsmBlocks.SILVER_BLOCK.get());
         tag(AsmTags.BlockTags.TIN.tag)
                 .add(AsmBlocks.TIN_BLOCK.get());
+
+        tag(AsmTags.BlockTags.SAND.tag)
+                .add(AsmBlocks.COMPRESSED_SAND.get());
+        tag(AsmTags.BlockTags.RED_SAND.tag)
+                .add(AsmBlocks.COMPRESSED_RED_SAND.get());
+        tag(AsmTags.BlockTags.SOUL_SAND.tag)
+                .add(AsmBlocks.COMPRESSED_SOUL_SAND.get());
+        tag(AsmTags.BlockTags.GRAVEL.tag)
+                .add(AsmBlocks.COMPRESSED_GRAVEL.get());
+        tag(AsmTags.BlockTags.COBBLESTONE.tag)
+                .add(AsmBlocks.COMPRESSED_COBBLESTONE.get());
+        tag(AsmTags.BlockTags.COBBLED_DEEPSLATE.tag)
+                .add(AsmBlocks.COMPRESSED_COBBLED_DEEPSLATE.get());
+
+        tag(AsmTags.BlockTags.COMPRESSED_SAND.tag)
+                .add(AsmBlocks.COMPRESSED_SAND.get())
+                .add(AsmBlocks.COMPRESSED_RED_SAND.get());
+
+        tag(AsmTags.BlockTags.COMPRESSED_COBBLESTONE.tag)
+                .add(AsmBlocks.COMPRESSED_COBBLESTONE.get())
+                .add(AsmBlocks.COMPRESSED_COBBLED_DEEPSLATE.get());
 
         tag(AsmTags.BlockTags.PRISMARINE_BUILDING_BLOCK.tag)
                 .add(Blocks.PRISMARINE)

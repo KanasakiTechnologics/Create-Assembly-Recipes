@@ -3,6 +3,12 @@
     "createassembly:raw_silver_block",
     "createassembly:raw_tin_block",
     "createassembly:silver_block",
-    "createassembly:tin_block"
+    "createassembly:tin_block",
+    "createassembly:compressed_gravel",
+    "createassembly:compressed_sand",
+    "createassembly:compressed_red_sand",
+    "createassembly:compressed_cobblestone",
+    "createassembly:compressed_cobbled_deepslate",
+    "createassembly:compressed_soul_sand"
   ]
 }

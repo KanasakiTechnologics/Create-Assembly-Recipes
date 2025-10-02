@@ -45,9 +45,9 @@ public class AsmItems {
     public static final DeferredItem<Item> BLANK_CATALYST = ITEMS.register("blank_catalyst",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
     public static final DeferredItem<Item> SHADOW_CATALYST = ITEMS.register("shadow_catalyst",
-            () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+            () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1).durability(100)));
     public static final DeferredItem<Item> RADIANT_CATALYST = ITEMS.register("radiant_catalyst",
-            () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+            () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1).durability(100)));
 
     public static final DeferredItem<Item> ENDER_PEARL_FRAGMENT = ITEMS.register("ender_pearl_fragment",
             () -> new Item(new Item.Properties()));
@@ -173,6 +173,7 @@ public class AsmItems {
 
     public static final DeferredItem<Item> SUPERHEATED_BLAZE_CORE = ITEMS.register("superheated_blaze_core",
             () -> new BlazeCore(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON)));
+
 
     public static void register(IEventBus eventBus){ITEMS.register(eventBus);}
 }

@@ -348,8 +348,13 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
         templateduplicate(recipeOutput, Items.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE);
         templateduplicate(recipeOutput, Items.RAISER_ARMOR_TRIM_SMITHING_TEMPLATE, Items.RAISER_ARMOR_TRIM_SMITHING_TEMPLATE);
         templateduplicate(recipeOutput, Items.HOST_ARMOR_TRIM_SMITHING_TEMPLATE, Items.HOST_ARMOR_TRIM_SMITHING_TEMPLATE);
-        templateduplicate(recipeOutput, AsmItems.SHADOW_CATALYST.get(), AsmItems.SHADOW_CATALYST.get());
-        templateduplicate(recipeOutput, AsmItems.RADIANT_CATALYST.get(), AsmItems.RADIANT_CATALYST.get());
+
+        recompressed(recipeOutput,AsmBlocks.COMPRESSED_COBBLESTONE.get(),Blocks.COBBLESTONE);
+        recompressed(recipeOutput,AsmBlocks.COMPRESSED_SAND.get(),Blocks.SAND);
+        recompressed(recipeOutput,AsmBlocks.COMPRESSED_SOUL_SAND.get(),Blocks.SOUL_SAND);
+        recompressed(recipeOutput,AsmBlocks.COMPRESSED_RED_SAND.get(),Blocks.RED_SAND);
+        recompressed(recipeOutput,AsmBlocks.COMPRESSED_COBBLED_DEEPSLATE.get(),Blocks.COBBLED_DEEPSLATE);
+        recompressed(recipeOutput,AsmBlocks.COMPRESSED_GRAVEL.get(),Blocks.GRAVEL);
 
         oreSmelting(recipeOutput,TIN_SMELTABLES,RecipeCategory.MISC,AsmItems.TIN_INGOT.get(),0.25f,200,"tin");
         oreSmelting(recipeOutput,SILVER_SMELTABLES,RecipeCategory.MISC,AsmItems.SILVER_INGOT.get(),0.25f,200,"silver");
@@ -435,6 +440,13 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .save(out, ResourceLocation.fromNamespaceAndPath(MOD_ID, "template_duplication_" + BuiltInRegistries.ITEM.getKey(result).getPath()));
     }
 
+    public static void recompressed(RecipeOutput out, Block compressed, Block result){
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,result,9)
+                .requires(Ingredient.of(compressed))
+                .unlockedBy("has_cobblestone",has(Blocks.COBBLESTONE))
+                .save(out, ResourceLocation.fromNamespaceAndPath(MOD_ID, "recompressed_" + BuiltInRegistries.BLOCK.getKey(result).getPath()));
+    }
+
     private static void glassLight(RecipeOutput out, Item glass, Block result) {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, result)
                 .define('G', Items.GLOW_INK_SAC)
@@ -445,6 +457,7 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .unlockedBy("has_glow_ink", has(Items.GLOW_INK_SAC))
                 .save(out, id("light_glass_block", result));
     }
+
 
     private static ResourceLocation id(String folder, Block result) {
         ResourceLocation key = BuiltInRegistries.BLOCK.getKey(result);

@@ -67,6 +67,12 @@ public class AsmBlockStateProvider extends BlockStateProvider {
         blockWithItem(AsmBlocks.COMPRESSED_COAL);
         blockWithItem(AsmBlocks.FUSED_COMPRESSED_COAL);
         blockWithItem(AsmBlocks.HOT_COMPRESSED_COAL);
+        blockWithItem(AsmBlocks.COMPRESSED_COBBLESTONE);
+        blockWithItem(AsmBlocks.COMPRESSED_COBBLED_DEEPSLATE);
+        blockWithItem(AsmBlocks.COMPRESSED_GRAVEL);
+        blockWithItem(AsmBlocks.COMPRESSED_SAND);
+        blockWithItem(AsmBlocks.COMPRESSED_RED_SAND);
+        blockWithItem(AsmBlocks.COMPRESSED_SOUL_SAND);
         blockWithItemVanillaTexture(AsmBlocks.BEDROCK, "minecraft:block/bedrock");
 
     }

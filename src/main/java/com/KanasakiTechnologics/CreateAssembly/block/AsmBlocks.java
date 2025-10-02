@@ -1,15 +1,15 @@
 package com.KanasakiTechnologics.CreateAssembly.block;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
+import net.minecraft.util.ColorRGBA;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.LiquidBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -21,6 +21,19 @@ import static com.KanasakiTechnologics.CreateAssembly.item.AsmItems.ITEMS;
 
 public class AsmBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(CreateAssembly.MOD_ID);
+
+    public static final DeferredBlock<Block> COMPRESSED_SAND = registerBlock("compressed_sand",
+            () -> new ColoredFallingBlock(new ColorRGBA(14406560),BlockBehaviour.Properties.of().mapColor(MapColor.SAND).instrument(NoteBlockInstrument.SNARE).strength(1.0f).sound(SoundType.SAND)));
+    public static final DeferredBlock<Block> COMPRESSED_RED_SAND = registerBlock("compressed_red_sand",
+            () -> new ColoredFallingBlock(new ColorRGBA(11098145),BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.SNARE).strength(1.0f).sound(SoundType.SAND)));
+    public static final DeferredBlock<Block> COMPRESSED_GRAVEL = registerBlock("compressed_gravel",
+            () -> new ColoredFallingBlock(new ColorRGBA(-8356741),BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.SNARE).strength(1.0f).sound(SoundType.SAND)));
+    public static final DeferredBlock<Block> COMPRESSED_SOUL_SAND = registerBlock("compressed_soul_sand",
+            () -> new SoulSandBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.COW_BELL).speedFactor(0.8F).strength(1.0f).sound(SoundType.SOUL_SAND)));
+    public static final DeferredBlock<Block> COMPRESSED_COBBLESTONE = registerBlock("compressed_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(2.0F, 6.0F)));
+    public static final DeferredBlock<Block> COMPRESSED_COBBLED_DEEPSLATE = registerBlock("compressed_cobbled_deepslate",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
 
     public static final DeferredBlock<Block> ENDER_ORE = registerBlock("ender_ore",
             () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));

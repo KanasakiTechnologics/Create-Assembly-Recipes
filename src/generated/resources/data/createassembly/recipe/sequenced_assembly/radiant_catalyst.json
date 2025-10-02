@@ -1,0 +1,82 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createassembly:blank_catalyst"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "createassembly:radiant_catalyst"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createassembly:blank_catalyst"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 250,
+          "fluid": "minecraft:lava"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:blank_catalyst"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createassembly:blank_catalyst"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 250,
+          "fluid": "createassembly:glow_ink"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:blank_catalyst"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:blank_catalyst"
+        },
+        {
+          "item": "create:experience_nugget"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:blank_catalyst"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createassembly:blank_catalyst"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:blank_catalyst"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createassembly:blank_catalyst"
+  }
+}

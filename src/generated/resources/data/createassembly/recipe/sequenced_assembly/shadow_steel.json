@@ -1,0 +1,82 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:chromatic_compound"
+  },
+  "loops": 3,
+  "results": [
+    {
+      "id": "create:shadow_steel"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create:chromatic_compound"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 250,
+          "fluid": "minecraft:lava"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:chromatic_compound"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:chromatic_compound"
+        },
+        {
+          "item": "createassembly:shadow_catalyst"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:chromatic_compound"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create:chromatic_compound"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 250,
+          "fluid": "create_enchantment_industry:experience"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:chromatic_compound"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create:chromatic_compound"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:chromatic_compound"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create:chromatic_compound"
+  }
+}

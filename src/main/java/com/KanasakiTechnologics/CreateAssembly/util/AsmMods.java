@@ -6,7 +6,8 @@ import net.minecraft.resources.ResourceLocation;
 public enum AsmMods {
     ENDERIO("enderio"),
     CREATE_D2D("create_d2d"),
-    AQUACULTURE("aquaculture")
+    AQUACULTURE("aquaculture"),
+    TRIALNERROR("trialanderror")
     ;
 
     private final String id;
