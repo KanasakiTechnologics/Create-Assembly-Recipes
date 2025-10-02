@@ -2,10 +2,12 @@ package com.KanasakiTechnologics.CreateAssembly;
 
 import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
+import com.KanasakiTechnologics.CreateAssembly.block.entity.AsmBlockEntities;
 import com.KanasakiTechnologics.CreateAssembly.content.recipes.AsmRecipeTypes;
 import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluidType;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
+import com.KanasakiTechnologics.CreateAssembly.screen.AsmMenuTypes;
 import com.KanasakiTechnologics.CreateAssembly.util.*;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.mojang.logging.LogUtils;
@@ -24,6 +26,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -54,6 +57,8 @@ public class CreateAssembly {
         LightBlocks.register(modEventBus);
         AsmRecipeTypes.register(modEventBus);
         AsmCreativeModTab.register(modEventBus);
+        AsmMenuTypes.register(modEventBus);
+        AsmBlockEntities.register(modEventBus);
 
         // Register creative tab handler
         modEventBus.addListener(this::addCreative);
@@ -142,6 +147,11 @@ public class CreateAssembly {
                 ItemBlockRenderTypes.setRenderLayer(LightBlocks.MAGENTA_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
                 ItemBlockRenderTypes.setRenderLayer(LightBlocks.PINK_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
             });
+        }
+
+        @SubscribeEvent
+        public static void registerScreens(RegisterMenuScreensEvent event) {
+
         }
     }
 }
