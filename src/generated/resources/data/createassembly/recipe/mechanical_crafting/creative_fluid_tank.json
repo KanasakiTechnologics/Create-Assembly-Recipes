@@ -1,0 +1,30 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "createassembly:creative_alloy"
+    },
+    "F": {
+      "item": "create:fluid_tank"
+    },
+    "M": {
+      "item": "createassembly:creative_mechanism"
+    },
+    "S": {
+      "item": "createassembly:creative_sheet"
+    }
+  },
+  "pattern": [
+    "SCCCS",
+    "SFFFS",
+    "SFMFS",
+    "SFFFS",
+    "SCCCS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:creative_fluid_tank"
+  }
+}

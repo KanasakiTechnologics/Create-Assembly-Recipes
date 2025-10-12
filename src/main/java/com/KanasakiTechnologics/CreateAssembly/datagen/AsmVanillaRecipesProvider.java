@@ -6,6 +6,8 @@ import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllItems;
+import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
+import com.simibubi.create.content.processing.recipe.StandardProcessingRecipe;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -19,13 +21,19 @@ import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
+import plus.dragons.createdragonsplus.common.kinetics.fan.ending.EndingRecipe;
+import com.tterrag.registrate.providers.RegistrateRecipeProvider;
 
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+import java.util.function.Function;
 
 import static com.KanasakiTechnologics.CreateAssembly.CreateAssembly.MOD_ID;
+import static net.minecraft.world.item.Items.*;
+import static plus.dragons.createdragonsplus.common.CDPCommon.REGISTRATE;
 
 public class AsmVanillaRecipesProvider extends RecipeProvider implements IConditionBuilder {
     List<ItemLike> TIN_SMELTABLES = List.of(AsmItems.RAW_TIN, AsmBlocks.TIN_ORE,AsmBlocks.DEEPSLATE_TIN_ORE);
@@ -38,6 +46,18 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmBlocks.STAR_BLOCK,1)
+                .pattern("NNN")
+                .pattern("NNN")
+                .pattern("NNN")
+                .define('N', Items.NETHER_STAR)
+                .unlockedBy("has_nether_star",has(Items.NETHER_STAR)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,Items.NETHER_STAR,9)
+                .requires(AsmBlocks.STAR_BLOCK)
+                .unlockedBy("has_nether_star",has(Items.NETHER_STAR))
+                .save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.PACKAGE_FROGPORT,3)
                 .pattern(" S ")
                 .pattern(" I ")

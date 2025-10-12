@@ -1,2 +1,8 @@
-// 1.21.1	2025-09-29T00:02:41.2449979	createassembly's mechanical crafting recipes
+// 1.21.1	2025-10-13T17:10:23.3705749	createassembly's mechanical crafting recipes
+2a35af3208138f11a4213cb4490d8dd959c72a00 data/createassembly/recipe/mechanical_crafting/creative_blaze_cake.json
+7f7f59e3202dcfc616cb6f2dcb16a04d402d66df data/createassembly/recipe/mechanical_crafting/creative_crate.json
+d7fdb3d362bc09dd7a2eeea3b7b88f2be9794abf data/createassembly/recipe/mechanical_crafting/creative_energy.json
+430098a07176320997eb620bf88c37af33067418 data/createassembly/recipe/mechanical_crafting/creative_fluid_tank.json
+ce907ba4d85f3a9ba4eaba79df6344b9eec33a14 data/createassembly/recipe/mechanical_crafting/creative_motor.json
+000b118d9e01c47babc5ced3a0d944e8967987d4 data/createassembly/recipe/mechanical_crafting/handheld_worldshaper.json
 d54b9e12bed273e81d8d47dbdd29b124adeb4c44 data/createassembly/recipe/mechanical_crafting/inactive_blaze_core.json

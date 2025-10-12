@@ -1,0 +1,113 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createassembly:creative_sheet"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "createassembly:creative_mechanism"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_creative_mechanism"
+        },
+        {
+          "item": "create:precision_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_creative_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_creative_mechanism"
+        },
+        {
+          "item": "createassembly:integrated_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_creative_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_creative_mechanism"
+        },
+        {
+          "item": "createassembly:calculation_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_creative_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_creative_mechanism"
+        },
+        {
+          "item": "createassembly:kinetic_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_creative_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_creative_mechanism"
+        },
+        {
+          "item": "createassembly:sealed_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_creative_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createassembly:incomplete_creative_mechanism"
+        },
+        {
+          "item": "createassembly:abstruse_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "createassembly:incomplete_creative_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createassembly:incomplete_creative_mechanism"
+  }
+}

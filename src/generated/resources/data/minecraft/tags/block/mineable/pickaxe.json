@@ -1,6 +1,7 @@
 {
   "values": [
     "minecraft:bedrock",
+    "createassembly:starblock",
     "createassembly:bedrock",
     "createassembly:black_glass_light_block",
     "createassembly:blue_glass_light_block",

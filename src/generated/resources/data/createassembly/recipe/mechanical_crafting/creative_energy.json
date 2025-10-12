@@ -1,0 +1,33 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "createaddition:alternator"
+    },
+    "B": {
+      "item": "createaddition:modular_accumulator"
+    },
+    "C": {
+      "item": "createassembly:creative_alloy"
+    },
+    "M": {
+      "item": "createassembly:creative_mechanism"
+    },
+    "S": {
+      "item": "createassembly:creative_sheet"
+    }
+  },
+  "pattern": [
+    "SCCCS",
+    "SAAAS",
+    "SAMAS",
+    "SABAS",
+    "SCCCS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createaddition:creative_energy"
+  }
+}

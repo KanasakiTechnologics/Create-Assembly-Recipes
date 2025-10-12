@@ -1,0 +1,33 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "createassembly:creative_alloy"
+    },
+    "M": {
+      "item": "createassembly:creative_mechanism"
+    },
+    "N": {
+      "item": "createaddition:electric_motor"
+    },
+    "P": {
+      "item": "create:rotation_speed_controller"
+    },
+    "S": {
+      "item": "createassembly:creative_sheet"
+    }
+  },
+  "pattern": [
+    "SCCCS",
+    "SPCPS",
+    "SPCPS",
+    "SNMNS",
+    "SNSNS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:creative_motor"
+  }
+}

@@ -67,6 +67,11 @@ public class AsmItemModelProvider extends ItemModelProvider {
         basicItem(AsmItems.RADIANT_CATALYST.get());
         basicItem(AsmItems.RAW_RUBBER.get());
         basicItem(AsmItems.RUBBER.get());
+        basicItem(AsmItems.CREATIVE_ALLOY.get());
+        basicItem(AsmItems.PROCESSING_CREATIVE.get());
+        basicItem(AsmItems.INCOMPLETE_CREATIVE_MECHANISM.get());
+        basicItem(AsmItems.CREATIVE_MECHANISM.get());
+        basicItem(AsmItems.CREATIVE_SHEET.get());
 
         handheldItem(AsmItems.SHADOW_PICKAXE.get());
         handheldItem(AsmItems.SHADOW_MATTOCK.get());

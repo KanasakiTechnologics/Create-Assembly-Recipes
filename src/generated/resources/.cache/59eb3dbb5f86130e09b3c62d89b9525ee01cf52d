@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-12T17:00:18.7952974	Loot Tables
+// 1.21.1	2025-10-13T15:17:16.1776505	Loot Tables
 9abdaeaf60f90484b6f156437d0eb136fd0ea03b data/createassembly/loot_table/blocks/bedrock.json
 a0eae0efbc68f57be020f9f483d476623b97f93b data/createassembly/loot_table/blocks/black_glass_light_block.json
 2e24a4f2593b1d83fd2279ada92623ab123d07c2 data/createassembly/loot_table/blocks/black_light_block.json
@@ -45,6 +45,7 @@ f46972c63ccb33530bec0b7cd9aeae0559bb758b data/createassembly/loot_table/blocks/r
 38d52c6a5e01dbba5a76df4a3dab67f306823f7e data/createassembly/loot_table/blocks/red_light_block.json
 0984b569255c02deccaff64634c743ddb1e1872d data/createassembly/loot_table/blocks/silver_block.json
 c53af3666c8018282fdb9e88c22bfe0f8f22de63 data/createassembly/loot_table/blocks/silver_ore.json
+fccf46ebae46de5539e4f84e80d7c6dcaa596b65 data/createassembly/loot_table/blocks/starblock.json
 91e065b9b206418b218b2c8cbdd8a61a8515fde3 data/createassembly/loot_table/blocks/sulfur_ore.json
 e410f8dcef3d34c5f532cced37ecd805bff1246e data/createassembly/loot_table/blocks/tin_block.json
 96463799102e75674cbeef71922082fc78e36152 data/createassembly/loot_table/blocks/tin_ore.json

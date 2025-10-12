@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-12T17:00:18.8051122	Block States: createassembly
+// 1.21.1	2025-10-13T15:17:16.1846472	Block States: createassembly
 d0449c4eb981e44f4d0cc1a9b4aef18ef946d243 assets/createassembly/blockstates/bedrock.json
 27fc0258fa20bf931ff5a2580d6c8992438e6030 assets/createassembly/blockstates/black_glass_light_block.json
 16191637af700eee7981521a37306d78ce4d89fc assets/createassembly/blockstates/black_light_block.json
@@ -45,6 +45,7 @@ d3296fa1abfbd22c34a953a503900b05ed216b02 assets/createassembly/blockstates/raw_t
 716228d0d649feb3184bb67c617629b28621c2ec assets/createassembly/blockstates/red_light_block.json
 8864b55d60610b1780c35670a9d8660f10faa985 assets/createassembly/blockstates/silver_block.json
 44d9d7469be2c7e01e5495e5ceb226db71368740 assets/createassembly/blockstates/silver_ore.json
+fb3ba3a4c85d74e687b9ccaddda90915b811a604 assets/createassembly/blockstates/starblock.json
 4989b3af935886aef3bcc1af90744c521ddb24d7 assets/createassembly/blockstates/sulfur_ore.json
 7f6fb8b78da56af04495a83ee33a34415a8d7d33 assets/createassembly/blockstates/tin_block.json
 99b0fe2b5d35974239c26e6154da3956937c7224 assets/createassembly/blockstates/tin_ore.json
@@ -98,6 +99,7 @@ ca1299d67c39997f9b8f39d8107363e052065198 assets/createassembly/models/block/raw_
 96cea9b87b070c71c7c23a45f80a9f96aca37115 assets/createassembly/models/block/red_light_block.json
 53e0572a763e913ae4f9df9b0bdc05314ec96654 assets/createassembly/models/block/silver_block.json
 ab92c3dd5f9c720e2fbeb2858cf13bff90838c3f assets/createassembly/models/block/silver_ore.json
+fc6d0c03cce786da4f7e390fe9e3a07054fcd2d7 assets/createassembly/models/block/starblock.json
 aaf8cc2c12bf153064a93b165a2e299f72d31bd8 assets/createassembly/models/block/sulfur_ore.json
 74b75d8b9ab1e5f6e924f887377b7ee94e540ef7 assets/createassembly/models/block/tin_block.json
 ad7dfa88c1f4c6f242ba921aa3c9e40232219bfb assets/createassembly/models/block/tin_ore.json
@@ -151,6 +153,7 @@ bcfcb6dd2f953d10a1a269418f9a33c05e3ef4c3 assets/createassembly/models/item/red_g
 2063ac5415cb6f7f3d5c1ef8e0b5604d86c52c1b assets/createassembly/models/item/red_light_block.json
 85c4b83671654679d306c1e785f665d05e8d155b assets/createassembly/models/item/silver_block.json
 7746758ccedbc06cf9b5ef7b32d471efecd0ff00 assets/createassembly/models/item/silver_ore.json
+11312e8a73e55eb97015cb66120f07ad150e7feb assets/createassembly/models/item/starblock.json
 806b253b88b85f12060f6f52831f096e888548eb assets/createassembly/models/item/sulfur_ore.json
 a63f96c345c4daf42f09e5f4dd6ce669a505147d assets/createassembly/models/item/tin_block.json
 ed378463f3b0990b1cde7590bd4dcfc2eeb76204 assets/createassembly/models/item/tin_ore.json

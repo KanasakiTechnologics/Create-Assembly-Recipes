@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createassembly:processing_creative"
+    },
+    {
+      "item": "createassembly:starblock"
+    }
+  ],
+  "keep_held_item": true,
+  "results": [
+    {
+      "id": "createassembly:creative_alloy"
+    }
+  ]
+}

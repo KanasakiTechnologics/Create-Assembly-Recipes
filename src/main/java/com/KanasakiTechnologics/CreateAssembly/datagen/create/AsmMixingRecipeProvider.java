@@ -18,6 +18,8 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
 import net.neoforged.neoforge.common.Tags;
+import plus.dragons.createdragonsplus.common.registry.CDPFluids;
+import plus.dragons.createenchantmentindustry.common.registry.CEIFluids;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -44,6 +46,6 @@ public final class AsmMixingRecipeProvider extends MixingRecipeGen {
     GeneratedRecipe SAP = create("sap",b -> b.requiresHeat(HeatCondition.HEATED).require(AsmItems.SAP_DROP).require(AsmItems.SAP_DROP).require(AsmItems.SAP_DROP).require(AsmItems.SAP_DROP).output(AsmFluid.SAP.get(),100));
     GeneratedRecipe ALCHEMIST_DUST = create("alchemist_dust",b -> b.requiresHeat(HeatCondition.HEATED).require(AllItems.CINDER_FLOUR).require(AllItems.CINDER_FLOUR).require(AllItems.CINDER_FLOUR).require(Items.BLAZE_POWDER).require(Items.BLAZE_POWDER).require(BuiltInRegistries.ITEM.get(AsmMods.ENDERIO.asResource("grains_of_infinity"))).require(BuiltInRegistries.ITEM.get(AsmMods.ENDERIO.asResource("grains_of_infinity"))).require(BuiltInRegistries.ITEM.get(AsmMods.ENDERIO.asResource("grains_of_infinity"))).require(BuiltInRegistries.ITEM.get(AsmMods.ENDERIO.asResource("grains_of_infinity"))).output(AsmItems.ALCHEMIST_DUST,3).whenModLoaded(AsmMods.ENDERIO.getId()));
     GeneratedRecipe FUSED_BLEND = create("fused_blend",b -> b.requiresHeat(HeatCondition.HEATED).require(AllItems.POWDERED_OBSIDIAN).require(AllItems.POWDERED_OBSIDIAN).require(AllItems.CINDER_FLOUR).require(AllItems.CINDER_FLOUR).require(AllItems.CINDER_FLOUR).require(BuiltInRegistries.ITEM.get(AsmMods.ENDERIO.asResource("grains_of_infinity"))).require(BuiltInRegistries.ITEM.get(AsmMods.ENDERIO.asResource("grains_of_infinity"))).require(BuiltInRegistries.ITEM.get(AsmMods.ENDERIO.asResource("grains_of_infinity"))).require(BuiltInRegistries.ITEM.get(AsmMods.ENDERIO.asResource("grains_of_infinity"))).output(AsmItems.FUSED_BLEND,3).whenModLoaded(AsmMods.ENDERIO.getId()));
-
+    GeneratedRecipe PROCESSING_CREATIVE = create("processing_creative",b -> b.requiresHeat(HeatCondition.SUPERHEATED).require(Items.NETHERITE_INGOT).require(Items.CHORUS_FRUIT).require(Items.CHORUS_FRUIT).require(AllItems.REFINED_RADIANCE).require(AllItems.REFINED_RADIANCE).require(AsmItems.FUSED_BLEND).require(AsmItems.FUSED_BLEND).require(CDPFluids.DRAGON_BREATH.get(),500).output(AsmItems.PROCESSING_CREATIVE).whenModLoaded(AsmMods.ENDERIO.getId()));
 
 }

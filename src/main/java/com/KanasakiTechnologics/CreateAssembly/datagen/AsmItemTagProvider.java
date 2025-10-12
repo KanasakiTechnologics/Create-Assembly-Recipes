@@ -108,7 +108,8 @@ public class AsmItemTagProvider extends ItemTagsProvider {
                 .add(AsmBlocks.COMPRESSED_RED_SAND.asItem())
                 .add(AsmBlocks.COMPRESSED_COBBLESTONE.asItem())
                 .add(AsmBlocks.COMPRESSED_COBBLED_DEEPSLATE.asItem())
-                .add(AsmBlocks.COMPRESSED_SOUL_SAND.asItem());
+                .add(AsmBlocks.COMPRESSED_SOUL_SAND.asItem())
+                .add(AsmBlocks.STAR_BLOCK.asItem());
 
         tag(AllTags.AllItemTags.BLAZE_BURNER_FUEL_SPECIAL.tag)
                 .add(AsmItems.SUPERHEATED_BLAZE_CORE.get());
@@ -137,6 +138,8 @@ public class AsmItemTagProvider extends ItemTagsProvider {
                 .add(AsmBlocks.COMPRESSED_COBBLESTONE.asItem());
         tag(AsmTags.ItemTags.COBBLED_DEEPSLATE.tag)
                 .add(AsmBlocks.COMPRESSED_COBBLED_DEEPSLATE.asItem());
+        tag(AsmTags.ItemTags.NETHER_STAR.tag)
+                .add(AsmBlocks.STAR_BLOCK.asItem());
 
         tag(AsmTags.ItemTags.COMPRESSED_SAND.tag)
                 .add(AsmBlocks.COMPRESSED_SAND.asItem())

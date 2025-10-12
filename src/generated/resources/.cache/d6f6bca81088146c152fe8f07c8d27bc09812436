@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-12T18:25:49.8335404	Tags for minecraft:item mod id createassembly
+// 1.21.1	2025-10-13T15:19:55.0277019	Tags for minecraft:item mod id createassembly
 f86ed06ac6958b7557a9fee1e1aa4a43a5d7ef2d data/createassembly/tags/item/complex_mechanism.json
 1c00bf4ef743530083949f0dbd0d1550b7709ac5 data/createassembly/tags/item/compressed_cobblestone.json
 00071bb0fd4887a15b9415989200cd8f90bddeb2 data/createassembly/tags/item/compressed_sand.json
@@ -31,10 +31,11 @@ bc29eb3d8815733d4b42173f43ab5127dca2bcfd data/c/tags/item/rods.json
 bc29eb3d8815733d4b42173f43ab5127dca2bcfd data/c/tags/item/rods/all_metal.json
 bc29eb3d8815733d4b42173f43ab5127dca2bcfd data/c/tags/item/rods/radiant.json
 9f55aa064b233b3f612f05614050fc81f86591c3 data/c/tags/item/shadow_catalyst_required.json
-266fe53b0d8989f32d67a27796f68276141fd9cc data/c/tags/item/storage_blocks.json
+441921fe9abb59d7d684ea7bc9164254d3962f92 data/c/tags/item/storage_blocks.json
 4561e6649b5d46628727928264005eaf277bb761 data/c/tags/item/storage_blocks/cobbled_deepslate.json
 d5beacff958f0bb72e473da3fbdbe9a1170b5cb9 data/c/tags/item/storage_blocks/cobblestone.json
 9f429d68e81f882821b172837335c1bb69467fd5 data/c/tags/item/storage_blocks/gravel.json
+a2c795cc6d4cebfc01a8c3095b0489310ceed2eb data/c/tags/item/storage_blocks/nether_star.json
 99789bb956e9181f8a0dbccfc9fd642c26c4a23c data/c/tags/item/storage_blocks/raw_silver.json
 0069a35a55dc46b10316ab9daf06c0cd19e02f10 data/c/tags/item/storage_blocks/raw_tin.json
 a51740624683f2b33eff07fa8b9be55b9a3954f2 data/c/tags/item/storage_blocks/red_sand.json

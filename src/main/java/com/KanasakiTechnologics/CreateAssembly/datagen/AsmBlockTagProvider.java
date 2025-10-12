@@ -37,6 +37,7 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(Blocks.BEDROCK)
+                .add(AsmBlocks.STAR_BLOCK.get())
                 .add(AsmBlocks.BEDROCK.get())
                 .add(LightBlocks.BLACK_GLASS_LIGHT_BLOCK.get())
                 .add(LightBlocks.BLUE_GLASS_LIGHT_BLOCK.get())
@@ -200,6 +201,9 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(LightBlocks.WHITE_LIGHT_BLOCK.get())
                 .add(LightBlocks.YELLOW_LIGHT_BLOCK.get());
 
+        tag(BlockTags.BEACON_BASE_BLOCKS)
+                .add(AsmBlocks.STAR_BLOCK.get());
+
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(AsmBlocks.ENDER_ORE.get())
                 .add(AsmBlocks.TIN_BLOCK.get())
@@ -241,7 +245,8 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(AsmBlocks.COMPRESSED_RED_SAND.get())
                 .add(AsmBlocks.COMPRESSED_COBBLESTONE.get())
                 .add(AsmBlocks.COMPRESSED_COBBLED_DEEPSLATE.get())
-                .add(AsmBlocks.COMPRESSED_SOUL_SAND.get());
+                .add(AsmBlocks.COMPRESSED_SOUL_SAND.get())
+                .add(AsmBlocks.STAR_BLOCK.get());
 
         tag(AsmTags.BlockTags.RAW_SILVER.tag)
                 .add(AsmBlocks.RAW_SILVER_BLOCK.get());
@@ -264,6 +269,8 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(AsmBlocks.COMPRESSED_COBBLESTONE.get());
         tag(AsmTags.BlockTags.COBBLED_DEEPSLATE.tag)
                 .add(AsmBlocks.COMPRESSED_COBBLED_DEEPSLATE.get());
+        tag(AsmTags.BlockTags.NETHER_STAR.tag)
+                .add(AsmBlocks.STAR_BLOCK.get());
 
         tag(AsmTags.BlockTags.COMPRESSED_SAND.tag)
                 .add(AsmBlocks.COMPRESSED_SAND.get())
@@ -294,6 +301,7 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(Blocks.BEDROCK)
+                .add(AsmBlocks.STAR_BLOCK.get())
                 .add(AsmBlocks.BEDROCK.get());
 
         tag(AsmTags.BlockTags.NEEDS_SHADOW_TOOL.tag)

@@ -1,0 +1,33 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "create:blaze_cake"
+    },
+    "C": {
+      "item": "createassembly:creative_alloy"
+    },
+    "H": {
+      "item": "createassembly:superheated_blaze_core"
+    },
+    "M": {
+      "item": "createassembly:creative_mechanism"
+    },
+    "S": {
+      "item": "createassembly:creative_sheet"
+    }
+  },
+  "pattern": [
+    "SCCCS",
+    "SBHBS",
+    "SBMBS",
+    "SBHBS",
+    "SCCCS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:creative_blaze_cake"
+  }
+}

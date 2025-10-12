@@ -9,6 +9,7 @@
     "createassembly:compressed_red_sand",
     "createassembly:compressed_cobblestone",
     "createassembly:compressed_cobbled_deepslate",
-    "createassembly:compressed_soul_sand"
+    "createassembly:compressed_soul_sand",
+    "createassembly:starblock"
   ]
 }

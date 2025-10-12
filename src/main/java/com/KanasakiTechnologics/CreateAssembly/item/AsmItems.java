@@ -3,10 +3,14 @@ package com.KanasakiTechnologics.CreateAssembly.item;
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
 import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 public class AsmItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(CreateAssembly.MOD_ID);
@@ -17,6 +21,20 @@ public class AsmItems {
     public static final DeferredItem<ShadowMattock> SHADOW_MATTOCK = ITEMS.register("shadow_steel_mattock",
             () -> new ShadowMattock(AsmTags.SHADOW_TIER, new Item.Properties().attributes(ShadowMattock.createAttributes(AsmTags.SHADOW_TIER, 15.0F, -3.0F))));
 
+
+    public static final DeferredItem<Item> CREATIVE_ALLOY = ITEMS.register("creative_alloy",
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
+    public static final DeferredItem<Item> PROCESSING_CREATIVE = ITEMS.register("processing_creative",
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC)){
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    if (Screen.hasShiftDown()) {
+                        tooltipComponents.add(Component.translatable("tooltip.createassembly.processing_creative.shift_down"));
+                    } else {
+                        tooltipComponents.add(Component.translatable("tooltip.createassembly.processing_creative"));
+                    }
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }});
 
     public static final DeferredItem<Item> TIN_INGOT = ITEMS.register("tin_ingot",
             () -> new Item(new Item.Properties()));
@@ -29,6 +47,8 @@ public class AsmItems {
     public static final DeferredItem<Item> TIN_SHEET = ITEMS.register("tin_sheet",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> CREATIVE_SHEET = ITEMS.register("creative_sheet",
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
 
     public static final DeferredItem<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
             () -> new Item(new Item.Properties()));
@@ -82,8 +102,14 @@ public class AsmItems {
     public static final DeferredItem<Item> SEALED_MECHANISM = ITEMS.register("sealed_mechanism",
             () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> INCOMPLETE_ABSTRUSE_MECHANISM = ITEMS.register("incomplete_abstruse_mechanism",
+    public static final DeferredItem<Item> CREATIVE_MECHANISM = ITEMS.register("creative_mechanism",
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
+
+    public static final DeferredItem<Item> INCOMPLETE_CREATIVE_MECHANISM = ITEMS.register("incomplete_creative_mechanism",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> INCOMPLETE_ABSTRUSE_MECHANISM = ITEMS.register("incomplete_abstruse_mechanism",
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
 
     public static final DeferredItem<Item> INCOMPLETE_CALCULATION_MECHANISM = ITEMS.register("incomplete_calculation_mechanism",
             () -> new Item(new Item.Properties()));
@@ -168,7 +194,7 @@ public class AsmItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> INACTIVE_BLAZE_CORE = ITEMS.register("inactive_blaze_core",
-            () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON)));
+            () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
 
     public static final DeferredItem<Item> BLAZE_CORE = ITEMS.register("blaze_core",
             () -> new BlazeCore(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON)));

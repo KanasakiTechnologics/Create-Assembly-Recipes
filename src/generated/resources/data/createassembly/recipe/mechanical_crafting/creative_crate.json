@@ -1,0 +1,30 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "createassembly:creative_alloy"
+    },
+    "I": {
+      "item": "create:item_vault"
+    },
+    "M": {
+      "item": "createassembly:creative_mechanism"
+    },
+    "S": {
+      "item": "createassembly:creative_sheet"
+    }
+  },
+  "pattern": [
+    "SCCCS",
+    "SIIIS",
+    "SIMIS",
+    "SIIIS",
+    "SCCCS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:creative_crate"
+  }
+}

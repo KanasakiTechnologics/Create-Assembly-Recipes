@@ -49,6 +49,7 @@ public class AsmCreativeModTab {
                         output.accept(AsmItems.INTEGRATED_MECHANISM);
                         output.accept(AsmItems.KINETIC_MECHANISM);
                         output.accept(AsmItems.SEALED_MECHANISM);
+                        output.accept(AsmItems.CREATIVE_MECHANISM);
                     }).build());
 
     public static final Supplier<CreativeModeTab> BLAZE_BURNER_FUEL= CREATIVE_MODE_TAB.register("blaze_burner_fuel",
@@ -64,8 +65,13 @@ public class AsmCreativeModTab {
             ()->CreativeModeTab.builder().icon(()->new ItemStack(AsmItems.GLOW_INK_BUCKET.get()))
                     .title(Component.translatable("creativetab.createassembly.create_assembly"))
                     .displayItems((itemDisplayParameters, output) ->{
+                        output.accept(AsmItems.NETHER_STAR_SHARD);
+                        output.accept(AsmBlocks.STAR_BLOCK);
                         output.accept(AsmItems.CLONING_TEMPLATE);
                         output.accept(AsmItems.COPPER_BACKPACK_SMITHING_TEMPLATE);
+                        output.accept(AsmItems.CREATIVE_ALLOY);
+                        output.accept(AsmItems.CREATIVE_SHEET);
+                        output.accept(AsmItems.PROCESSING_CREATIVE);
                         output.accept(AsmItems.LAPIS_ALLOY);
                         output.accept(AsmItems.LAPIS_SHEET);
                         output.accept(AsmItems.COAL_ROD);

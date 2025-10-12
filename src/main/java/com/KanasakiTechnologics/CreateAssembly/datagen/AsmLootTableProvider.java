@@ -74,6 +74,7 @@ public class AsmLootTableProvider extends BlockLootSubProvider {
         dropSelf(AsmBlocks.RAW_SILVER_BLOCK.get());
         dropSelf(AsmBlocks.TIN_BLOCK.get());
         dropSelf(AsmBlocks.RAW_TIN_BLOCK.get());
+        dropSelf(AsmBlocks.STAR_BLOCK.get());
 
         dropSelf(AsmBlocks.COMPRESSED_COBBLESTONE.get());
         dropSelf(AsmBlocks.COMPRESSED_COBBLED_DEEPSLATE.get());

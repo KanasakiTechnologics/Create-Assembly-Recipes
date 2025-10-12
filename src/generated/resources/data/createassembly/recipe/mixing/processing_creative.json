@@ -1,0 +1,43 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "item": "create:refined_radiance"
+    },
+    {
+      "item": "create:refined_radiance"
+    },
+    {
+      "item": "createassembly:fused_blend"
+    },
+    {
+      "item": "createassembly:fused_blend"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 500,
+      "fluid": "create_dragons_plus:dragon_breath"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:processing_creative"
+    }
+  ]
+}

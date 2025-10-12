@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "createassembly:creative_alloy"
+    }
+  ],
+  "results": [
+    {
+      "id": "createassembly:creative_sheet"
+    }
+  ]
+}

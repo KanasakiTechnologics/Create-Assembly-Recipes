@@ -1,0 +1,36 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "createassembly:creative_alloy"
+    },
+    "D": {
+      "item": "create:deployer"
+    },
+    "L": {
+      "item": "create:mechanical_drill"
+    },
+    "M": {
+      "item": "createassembly:creative_mechanism"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "S": {
+      "item": "createassembly:creative_sheet"
+    }
+  },
+  "pattern": [
+    "SLDLS",
+    "  O  ",
+    "  M  ",
+    "  O  ",
+    "  CC "
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:handheld_worldshaper"
+  }
+}

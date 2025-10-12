@@ -1,6 +1,7 @@
 {
   "values": [
     "minecraft:bedrock",
+    "createassembly:starblock",
     "createassembly:bedrock"
   ]
 }

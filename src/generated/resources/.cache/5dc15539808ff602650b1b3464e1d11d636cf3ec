@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-29T21:41:55.3181931	createassembly's processing recipes: mixing
+// 1.21.1	2025-10-13T14:20:19.0081147	createassembly's processing recipes: mixing
 10dc06070a2b4eceab56ab6fe14608095739257c data/createassembly/recipe/mixing/alchemist_dust.json
 898890072bb442e85cf84475a681d2b641914b51 data/createassembly/recipe/mixing/amethyst_block.json
 50716fef789ea140ec81bff6698b97865050facb data/createassembly/recipe/mixing/chromatic_compound.json
@@ -12,6 +12,7 @@ cdae8c97bdb6180157ceec282a8422b2e3fdd6d7 data/createassembly/recipe/mixing/glow_
 6f69ecf8be0c0cc27145fdd8c2cc29825a30a284 data/createassembly/recipe/mixing/lapis_lazuli.json
 d6ea3ab05add71b50500801bccaf991157b34179 data/createassembly/recipe/mixing/netherack.json
 cd945505990695763a51ca3eaf197f3e84d05c7c data/createassembly/recipe/mixing/netherite_dust.json
+e294b9f18400342095b1352a9f9b05b4f55d64c4 data/createassembly/recipe/mixing/processing_creative.json
 ea54eae97b62fdf784f6d65747eeb2079a132d0c data/createassembly/recipe/mixing/rooted_dirt.json
 299251abff202286371d8d8cf5686b01e5f7ac15 data/createassembly/recipe/mixing/sap.json
 6897e6658e2ddb1e4b57aaba31f28e1795cab6f7 data/createassembly/recipe/mixing/soul_lava.json

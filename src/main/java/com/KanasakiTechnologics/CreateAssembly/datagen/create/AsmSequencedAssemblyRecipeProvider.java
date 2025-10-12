@@ -246,4 +246,16 @@ public final class AsmSequencedAssemblyRecipeProvider extends SequencedAssemblyR
             .addStep(DeployerApplicationRecipe::new,rb -> rb.require(AllItems.EXP_NUGGET))
             .addStep(PressingRecipe::new,rb -> rb)
     );
+
+    GeneratedRecipe CREATIVE_MECHANISM = create("creative_mechanism",b -> b.require(AsmItems.CREATIVE_SHEET)
+            .transitionTo(AsmItems.INCOMPLETE_CREATIVE_MECHANISM)
+            .addOutput(AsmItems.CREATIVE_MECHANISM,1)
+            .loops(1)
+            .addStep(DeployerApplicationRecipe::new,rb -> rb.require(AllItems.PRECISION_MECHANISM))
+            .addStep(DeployerApplicationRecipe::new,rb -> rb.require(AsmItems.INTEGRATED_MECHANISM))
+            .addStep(DeployerApplicationRecipe::new,rb -> rb.require(AsmItems.CALCULATION_MECHANISM))
+            .addStep(DeployerApplicationRecipe::new,rb -> rb.require(AsmItems.KINETIC_MECHANISM))
+            .addStep(DeployerApplicationRecipe::new,rb -> rb.require(AsmItems.SEALED_MECHANISM))
+            .addStep(DeployerApplicationRecipe::new,rb -> rb.require(AsmItems.ABSTRUSE_MECHANISM))
+    );
 }
