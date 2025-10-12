@@ -7,6 +7,7 @@ import com.KanasakiTechnologics.CreateAssembly.content.recipes.AsmRecipeTypes;
 import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluidType;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
+import com.KanasakiTechnologics.CreateAssembly.loot.AsmLootModifiers;
 import com.KanasakiTechnologics.CreateAssembly.screen.AsmMenuTypes;
 import com.KanasakiTechnologics.CreateAssembly.util.*;
 import com.simibubi.create.AllBlocks;
@@ -20,6 +21,8 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -62,6 +65,7 @@ public class CreateAssembly {
         AsmCreativeModTab.register(modEventBus);
         AsmMenuTypes.register(modEventBus);
         AsmBlockEntities.register(modEventBus);
+        AsmLootModifiers.register(modEventBus);
 
         // Register creative tab handler
         modEventBus.addListener(this::addCreative);
@@ -92,6 +96,7 @@ public class CreateAssembly {
             event.insertAfter(AllBlocks.RAILWAY_CASING.asStack(), AllBlocks.REFINED_RADIANCE_CASING.asStack(),CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.insertAfter(AllBlocks.REFINED_RADIANCE_CASING.asStack(),AllBlocks.SHADOW_STEEL_CASING.asStack(),CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
+
 
         if (event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
             // Register all light blocks

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "create:item_vault"
+    },
+    "K": {
+      "item": "createassembly:kinetic_mechanism"
+    },
+    "S": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "pattern": [
+    " S ",
+    " I ",
+    " K "
+  ],
+  "result": {
+    "count": 3,
+    "id": "create:package_frogport"
+  }
+}

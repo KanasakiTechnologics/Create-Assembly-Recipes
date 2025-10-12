@@ -43,6 +43,7 @@ public class AsmItemModelProvider extends ItemModelProvider {
         basicItem(AsmItems.SULFUR_CHUNK.get());
         basicItem(AsmItems.SULFUR.get());
         basicItem(AsmItems.CLONING_TEMPLATE.get());
+        basicItem(AsmItems.COPPER_BACKPACK_SMITHING_TEMPLATE.get());
         basicItem(AsmItems.TIN_SHEET.get());
         basicItem(AsmItems.RADIANT_HANDLE.get());
         basicItem(AsmItems.LAPIS_ALLOY.get());

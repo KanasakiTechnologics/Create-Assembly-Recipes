@@ -38,6 +38,25 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.PACKAGE_FROGPORT,3)
+                .pattern(" S ")
+                .pattern(" I ")
+                .pattern(" K ")
+                .define('I', AllBlocks.ITEM_VAULT)
+                .define('S', Items.SLIME_BALL)
+                .define('K', AsmItems.KINETIC_MECHANISM)
+                .unlockedBy("has_kinetic_mechanism",has(AsmItems.KINETIC_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.PACKAGER,4)
+                .pattern("IKI")
+                .pattern("ICI")
+                .pattern("RIR")
+                .define('I', Items.IRON_INGOT)
+                .define('R', Items.REDSTONE)
+                .define('C', AllBlocks.CARDBOARD_BLOCK)
+                .define('K', AsmItems.KINETIC_MECHANISM)
+                .unlockedBy("has_kinetic_mechanism",has(AsmItems.KINETIC_MECHANISM)).save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllItems.VERTICAL_GEARBOX,6)
                 .pattern(" G ")
                 .pattern(" K ")
@@ -45,6 +64,16 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .define('G', AsmTags.ItemTags.GEARBOXES.tag)
                 .define('K', AsmItems.KINETIC_MECHANISM)
                 .unlockedBy("has_kinetic_mechanism",has(AsmItems.KINETIC_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmItems.COPPER_BACKPACK_SMITHING_TEMPLATE,1)
+                .pattern("CIC")
+                .pattern("IBI")
+                .pattern("CIC")
+                .define('C', AllBlocks.COPPER_CASING)
+                .define('I', Items.COPPER_INGOT)
+                .define('B', AsmItems.NETHERRACK_SHARD)
+                .unlockedBy("has_copper_casing",has(AllBlocks.COPPER_CASING)).save(recipeOutput);
+
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.GEARBOX,6)
                 .pattern("   ")
@@ -348,6 +377,7 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
         templateduplicate(recipeOutput, Items.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE);
         templateduplicate(recipeOutput, Items.RAISER_ARMOR_TRIM_SMITHING_TEMPLATE, Items.RAISER_ARMOR_TRIM_SMITHING_TEMPLATE);
         templateduplicate(recipeOutput, Items.HOST_ARMOR_TRIM_SMITHING_TEMPLATE, Items.HOST_ARMOR_TRIM_SMITHING_TEMPLATE);
+        templateduplicate(recipeOutput, AsmItems.COPPER_BACKPACK_SMITHING_TEMPLATE.get(), AsmItems.COPPER_BACKPACK_SMITHING_TEMPLATE.get());
 
         recompressed(recipeOutput,AsmBlocks.COMPRESSED_COBBLESTONE.get(),Blocks.COBBLESTONE);
         recompressed(recipeOutput,AsmBlocks.COMPRESSED_SAND.get(),Blocks.SAND);

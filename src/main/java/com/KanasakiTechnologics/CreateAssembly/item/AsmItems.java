@@ -114,6 +114,8 @@ public class AsmItems {
 
     public static final DeferredItem<Item> CLONING_TEMPLATE = ITEMS.register("cloning_template",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> COPPER_BACKPACK_SMITHING_TEMPLATE = ITEMS.register("copper_backpack_smithing_template",
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> LAPIS_ALLOY = ITEMS.register("lapis_alloy",
             () -> new Item(new Item.Properties()));
