@@ -1,7 +1,7 @@
-# 🌀 Just An Create Mod Addons
+# 🌀 Create Assembly Recipes
 
 ## Mod Overview
-Welcome to **Just An Create Mod Addons** — the chaotic smoothie of *every* Create addon I could find on Modrinth and CurseForge! 🍹  
+Welcome to **Create Assembly Recipes** — the chaotic smoothie of *every* Create addon I could find on Modrinth and CurseForge! 🍹  
 
 If it spins, whirls, crushes, or explodes with gears… it’s probably in here. This mod packs together a buffet of Create-based addons — all mixed into one questionable masterpiece.  
 
