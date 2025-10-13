@@ -37,7 +37,7 @@ import static plus.dragons.createdragonsplus.common.CDPCommon.REGISTRATE;
 
 public class AsmVanillaRecipesProvider extends RecipeProvider implements IConditionBuilder {
     List<ItemLike> TIN_SMELTABLES = List.of(AsmItems.RAW_TIN, AsmBlocks.TIN_ORE,AsmBlocks.DEEPSLATE_TIN_ORE);
-    List<ItemLike> SILVER_SMELTABLES = List.of(AsmItems.RAW_SILVER, AsmBlocks.SILVER_ORE,AsmBlocks.DEEPSLATE_SILVER_ORE);
+    List<ItemLike> SILVER_SMELTABLES = List.of(AsmItems.RAW_SILVER, AsmBlocks.SILVER_ORE,AsmBlocks.DEEPSLATE_SILVER_ORE,AllItems.CRUSHED_SILVER);
     List<ItemLike> RAW_RUBBER = List.of(AsmItems.RAW_RUBBER);
 
     public AsmVanillaRecipesProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {

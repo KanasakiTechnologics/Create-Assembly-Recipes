@@ -34,7 +34,7 @@ public final class AsmCrushingRecipeProvider extends CrushingRecipeGen {
     GeneratedRecipe SCORIA = ensMineralRecycling(AllPaletteStoneTypes.SCORIA,b -> b.duration(200).output(.15f,Items.BLAZE_POWDER,2).output(.25f, AsmItems.SULFUR_CHUNK,3));
     GeneratedRecipe CRYING_OBSIDIAN = create(() -> Blocks.CRYING_OBSIDIAN, b -> b.duration(200).output(AllItems.POWDERED_OBSIDIAN).output(.50f,AllItems.POWDERED_OBSIDIAN).output(.25f, Items.AMETHYST_SHARD));
     GeneratedRecipe COMPRESSED_SAND = create(() -> AsmBlocks.COMPRESSED_GRAVEL, b -> b.duration(200).output(AsmBlocks.COMPRESSED_SAND).output(.30f,Items.FLINT,3).output(.45f, Items.CLAY_BALL,4));
-    GeneratedRecipe COMPRESSED_GRAVEL = create("compressed_cobblestone", b -> b.duration(200).output(AsmBlocks.COMPRESSED_GRAVEL));
+    GeneratedRecipe COMPRESSED_GRAVEL = create("compressed_cobblestone", b -> b.require(Ingredient.of(AsmTags.ItemTags.COMPRESSED_COBBLE.tag)).duration(200).output(AsmBlocks.COMPRESSED_GRAVEL));
     GeneratedRecipe LIFE_CORAL = create("life_coral", b -> b.require(Ingredient.of(AsmTags.ItemTags.LIFE_CORALS.tag)).duration(200).output(.25f,Items.NAUTILUS_SHELL));
 
     GeneratedRecipe TIN_ORE = stoneOre(AsmBlocks.TIN_ORE_ITEM, AllItems.CRUSHED_TIN::get, 1.75f, 250);

@@ -1,6 +1,7 @@
-// 1.21.1	2025-10-12T18:25:49.8355471	createassembly's processing recipes: splashing
+// 1.21.1	2025-10-15T17:56:59.3113996	createassembly's processing recipes: splashing
 369a6b5ad97d7a3baf623d8d2b927ce28821d8c6 data/createassembly/recipe/splashing/ink_sac_from_coal.json
 d32a9bff2f787bd3a8455e41f6b2f0218892cee2 data/create/recipe/splashing/compressed_gravel.json
 6ffb2388dcd847f46e6c5e5e18b71d706da9e3ee data/create/recipe/splashing/compressed_red_sand.json
 a6422c46840dd0f46a5d95177eb14643e2a112b6 data/create/recipe/splashing/compressed_sand.json
 3be665331f448eaaa92ff1178cd0e5d8d50d4a0b data/create/recipe/splashing/compressed_soul_sand.json
+b7277e87cfafe6a674cb62d1353d0f414674b345 data/create/recipe/splashing/crushed_raw_silver.json

@@ -200,6 +200,7 @@ public class AsmTags {
         COMPRESSED_COBBLESTONE(NameSpace.MOD, "compressed_cobblestone"),
         RODS(NameSpace.COMMON, "rods"),
         ORES(NameSpace.COMMON, "ores"),
+        COMPRESSED_COBBLE(NameSpace.COMMON,"compressed_cobble"),
         SHADOW_CATALYST_REQUIRED(NameSpace.COMMON, "shadow_catalyst_required"),
         RADIANCE_CATALYST_REQUIRED(NameSpace.COMMON, "radiance_catalyst_required"),
         RAW_TIN(NameSpace.COMMON, "storage_blocks/raw_tin"),

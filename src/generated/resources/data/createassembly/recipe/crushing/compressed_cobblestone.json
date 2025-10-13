@@ -1,6 +1,10 @@
 {
   "type": "create:crushing",
-  "ingredients": [],
+  "ingredients": [
+    {
+      "tag": "c:compressed_cobble"
+    }
+  ],
   "processing_time": 200,
   "results": [
     {
