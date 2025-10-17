@@ -53,6 +53,48 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .define('N', Items.NETHER_STAR)
                 .unlockedBy("has_nether_star",has(Items.NETHER_STAR)).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmBlocks.COMPRESSED_SAND,1)
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', Blocks.SAND)
+                .unlockedBy("has_sand",has(Blocks.SAND)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmBlocks.COMPRESSED_RED_SAND,1)
+                .pattern("RRR")
+                .pattern("RRR")
+                .pattern("RRR")
+                .define('R', Blocks.RED_SAND)
+                .unlockedBy("has_red_sand",has(Blocks.RED_SAND)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmBlocks.COMPRESSED_SOUL_SAND,1)
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', Blocks.SOUL_SAND)
+                .unlockedBy("has_soul_sand",has(Blocks.SOUL_SAND)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmBlocks.COMPRESSED_COBBLESTONE,1)
+                .pattern("CCC")
+                .pattern("CCC")
+                .pattern("CCC")
+                .define('C', Blocks.COBBLESTONE)
+                .unlockedBy("has_cobblestone",has(Blocks.COBBLESTONE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmBlocks.COMPRESSED_COBBLED_DEEPSLATE,1)
+                .pattern("CCC")
+                .pattern("CCC")
+                .pattern("CCC")
+                .define('C', Blocks.COBBLED_DEEPSLATE)
+                .unlockedBy("has_cobbled_deepslate",has(Blocks.COBBLED_DEEPSLATE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmBlocks.COMPRESSED_GRAVEL,1)
+                .pattern("GGG")
+                .pattern("GGG")
+                .pattern("GGG")
+                .define('G', Blocks.GRAVEL)
+                .unlockedBy("has_gravel",has(Blocks.GRAVEL)).save(recipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,Items.NETHER_STAR,9)
                 .requires(AsmBlocks.STAR_BLOCK)
                 .unlockedBy("has_nether_star",has(Items.NETHER_STAR))
