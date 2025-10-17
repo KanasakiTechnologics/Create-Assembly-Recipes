@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "create:cardboard_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "mekanism:cardboard_box"
+  }
+}

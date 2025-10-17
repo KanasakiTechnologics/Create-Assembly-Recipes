@@ -193,6 +193,18 @@ public class AsmItems {
     public static final DeferredItem<Item> RUBBER = ITEMS.register("rubber",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> ANDESITE_MECHANISM = ITEMS.register("andesite_mechanism",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> INCOMPLETE_ANDESITE_MECHANISM = ITEMS.register("incomplete_andesite_mechanism",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> DRILL_HEAD = ITEMS.register("drill_head",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PRESS_HEAD = ITEMS.register("press_head",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SAW_BLADE = ITEMS.register("saw_blade",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> INACTIVE_BLAZE_CORE = ITEMS.register("inactive_blaze_core",
             () -> new Item(new Item.Properties().rarity(Rarity.COMMON)));
 

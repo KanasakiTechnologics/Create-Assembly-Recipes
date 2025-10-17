@@ -42,6 +42,7 @@ public class AsmCreativeModTab {
             ()->CreativeModeTab.builder().icon(()->new ItemStack(AsmItems.INTEGRATED_CIRCUIT.get()))
                     .title(Component.translatable("creativetab.createassembly.dndesires_mechanisms"))
                     .displayItems((itemDisplayParameters, output) ->{
+                        output.accept(AsmItems.ANDESITE_MECHANISM);
                         output.accept(AsmItems.ABSTRUSE_MECHANISM);
                         output.accept(AsmItems.CALCULATION_MECHANISM);
                         output.accept(AsmItems.INFERNAL_MECHANISM);
@@ -97,6 +98,9 @@ public class AsmCreativeModTab {
                         output.accept(AsmItems.SOUL_LAVA_BUCKET);
                         output.accept(AsmItems.SULFURIC_ACID_BUCKET);
                         output.accept(AsmItems.SAP_BUCKET);
+                        output.accept(AsmItems.SAW_BLADE);
+                        output.accept(AsmItems.DRILL_HEAD);
+                        output.accept(AsmItems.PRESS_HEAD);
                     }).build());
 
     public static void register(IEventBus eventBus){

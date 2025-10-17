@@ -137,12 +137,19 @@
   "item.createassembly.shadow_catalyst": "Shadow Catalyst",
   "item.createassembly.radiant_catalyst": "Radiant Catalyst",
 
+  "item.createassembly.drill_head": "Drill Head",
+  "item.createassembly.saw_blade": "Saw Blade",
+  "item.createassembly.press_head": "Press Head",
+  "item.createassembly.incomplete_andesite_mechanism": "Incomplete Andesite Mechanism",
+  "item.createassembly.andesite_mechanism": "Andesite Mechanism",
+
   "create.recipe.fan_glowing": "Bulk Glowing",
   "block.createassembly.glow_ink": "Glow Ink",
   "fluid_type.createassembly.glow_ink_type": "Glow Ink",
   "fluid_type.createassembly.sulfuric_acid_type": "Sulfuric Acid",
   "block.createassembly.sulfuric_acid": "Sulfuric Acid",
   "fluid_type.createassembly.soul_lava_type": "Soul Lava",
+  "fluid_type.createassembly.sap_type": "Liquid Sap",
   "block.createassembly.soul_lava": "Soul Lava",
 
   "block.createassembly.compressed_cobbled_deepslate": "Compressed Cobbled Deepslate",

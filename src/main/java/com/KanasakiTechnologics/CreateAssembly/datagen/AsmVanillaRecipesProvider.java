@@ -3,11 +3,13 @@ package com.KanasakiTechnologics.CreateAssembly.datagen;
 import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
+import com.KanasakiTechnologics.CreateAssembly.util.AsmMods;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
 import com.simibubi.create.content.processing.recipe.StandardProcessingRecipe;
+import com.simibubi.create.foundation.data.recipe.Mods;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -46,6 +48,88 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmItems.ANDESITE_MECHANISM,1)
+                .pattern("SCL")
+                .pattern("IA ")
+                .pattern("   ")
+                .define('S', ItemTags.SLABS)
+                .define('C', AllBlocks.COGWHEEL)
+                .define('L', AllBlocks.LARGE_COGWHEEL)
+                .define('I', Items.IRON_INGOT)
+                .define('A', Items.SLIME_BALL)
+                .unlockedBy("has_iron_ingot",has(Items.IRON_INGOT)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmItems.DRILL_HEAD,1)
+                .pattern(" A ")
+                .pattern("ACA")
+                .pattern("III")
+                .define('I', Items.IRON_INGOT)
+                .define('C', Items.COPPER_INGOT)
+                .define('A', AllItems.ANDESITE_ALLOY)
+                .unlockedBy("has_iron_ingot",has(Items.IRON_INGOT)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmItems.PRESS_HEAD,1)
+                .pattern(" L ")
+                .pattern("ICI")
+                .pattern("III")
+                .define('I', Items.IRON_INGOT)
+                .define('C', Items.COPPER_INGOT)
+                .define('L', ItemTags.LOGS)
+                .unlockedBy("has_iron_ingot",has(Items.IRON_INGOT)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmItems.SAW_BLADE,1)
+                .pattern("II ")
+                .pattern("ICI")
+                .pattern(" II")
+                .define('I', Items.IRON_INGOT)
+                .define('C', Items.COPPER_INGOT)
+                .unlockedBy("has_iron_ingot",has(Items.IRON_INGOT)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.MECHANICAL_DRILL,1)
+                .pattern(" A ")
+                .pattern(" C ")
+                .pattern(" D ")
+                .define('A', AsmItems.ANDESITE_MECHANISM)
+                .define('C', AllBlocks.ANDESITE_CASING)
+                .define('D', AsmItems.DRILL_HEAD)
+                .unlockedBy("has_andesite_mechanism",has(Items.IRON_INGOT)).save(recipeOutput,"create:crafting/kinetics/mechanical_drill");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.MECHANICAL_PRESS,1)
+                .pattern(" A ")
+                .pattern(" C ")
+                .pattern(" P ")
+                .define('A', AsmItems.ANDESITE_MECHANISM)
+                .define('C', AllBlocks.ANDESITE_CASING)
+                .define('P', AsmItems.PRESS_HEAD)
+                .unlockedBy("has_andesite_mechanism",has(Items.IRON_INGOT)).save(recipeOutput,"create:crafting/kinetics/mechanical_press");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.MECHANICAL_SAW,1)
+                .pattern(" A ")
+                .pattern(" C ")
+                .pattern(" S ")
+                .define('A', AsmItems.ANDESITE_MECHANISM)
+                .define('C', AllBlocks.ANDESITE_CASING)
+                .define('S', AsmItems.SAW_BLADE)
+                .unlockedBy("has_andesite_mechanism",has(Items.IRON_INGOT)).save(recipeOutput,"create:crafting/kinetics/mechanical_saw");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.DEPLOYER,1)
+                .pattern(" A ")
+                .pattern(" C ")
+                .pattern(" B ")
+                .define('A', AsmItems.ANDESITE_MECHANISM)
+                .define('C', AllBlocks.ANDESITE_CASING)
+                .define('B', AllItems.BRASS_HAND)
+                .unlockedBy("has_andesite_mechanism",has(Items.IRON_INGOT)).save(recipeOutput,"create:crafting/kinetics/deployer");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.MECHANICAL_MIXER,1)
+                .pattern(" A ")
+                .pattern(" C ")
+                .pattern(" M ")
+                .define('A', AsmItems.ANDESITE_MECHANISM)
+                .define('C', AllBlocks.ANDESITE_CASING)
+                .define('M', AllItems.WHISK)
+                .unlockedBy("has_andesite_mechanism",has(Items.IRON_INGOT)).save(recipeOutput,"create:crafting/kinetics/mechanical_mixer");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmBlocks.STAR_BLOCK,1)
                 .pattern("NNN")
                 .pattern("NNN")
@@ -171,6 +255,14 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .define('K', AsmItems.KINETIC_MECHANISM)
                 .define('B', ItemTags.BUTTONS)
                 .unlockedBy("has_kinetic_mechanism",has(AsmItems.KINETIC_MECHANISM)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SLIME_BALL,2)
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', AsmItems.SAP_DROP)
+                .unlockedBy("has_sap_drop",has(AsmItems.SAP_DROP)).save(recipeOutput);
+
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.MECHANICAL_ROLLER,3)
                 .pattern(" K ")
@@ -305,7 +397,7 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .pattern("L L")
                 .pattern("LLL")
                 .define('L', ItemTags.LOGS)
-                .unlockedBy("has_logs",has(ItemTags.LOGS)).save(recipeOutput);
+                .unlockedBy("has_logs",has(ItemTags.LOGS)).save(recipeOutput,"minecraft:chest_from_logs");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.ENDER_PEARL)
                 .pattern("FFF")

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sap_drop": {
+      "conditions": {
+        "items": [
+          {
+            "items": "createassembly:sap_drop"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:slime_ball"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sap_drop"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:slime_ball"
+    ]
+  }
+}

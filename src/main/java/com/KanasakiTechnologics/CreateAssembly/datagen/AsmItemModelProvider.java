@@ -72,6 +72,11 @@ public class AsmItemModelProvider extends ItemModelProvider {
         basicItem(AsmItems.INCOMPLETE_CREATIVE_MECHANISM.get());
         basicItem(AsmItems.CREATIVE_MECHANISM.get());
         basicItem(AsmItems.CREATIVE_SHEET.get());
+        basicItem(AsmItems.ANDESITE_MECHANISM.get());
+        basicItem(AsmItems.INCOMPLETE_ANDESITE_MECHANISM.get());
+        basicItem(AsmItems.DRILL_HEAD.get());
+        basicItem(AsmItems.PRESS_HEAD.get());
+        basicItem(AsmItems.SAW_BLADE.get());
 
         handheldItem(AsmItems.SHADOW_PICKAXE.get());
         handheldItem(AsmItems.SHADOW_MATTOCK.get());

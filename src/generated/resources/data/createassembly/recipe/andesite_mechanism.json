@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:slime_ball"
+    },
+    "C": {
+      "item": "create:cogwheel"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "L": {
+      "item": "create:large_cogwheel"
+    },
+    "S": {
+      "tag": "minecraft:slabs"
+    }
+  },
+  "pattern": [
+    "SCL",
+    "IA ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "createassembly:andesite_mechanism"
+  }
+}

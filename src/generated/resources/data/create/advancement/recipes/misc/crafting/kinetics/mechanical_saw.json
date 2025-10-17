@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_logs": {
+    "has_andesite_mechanism": {
       "conditions": {
         "items": [
           {
-            "items": "#minecraft:logs"
+            "items": "minecraft:iron_ingot"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:chest"
+        "recipe": "create:crafting/kinetics/mechanical_saw"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_logs"
+      "has_andesite_mechanism"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:chest"
+      "create:crafting/kinetics/mechanical_saw"
     ]
   }
 }

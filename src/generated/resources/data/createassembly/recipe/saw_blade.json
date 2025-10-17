@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "II ",
+    "ICI",
+    " II"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createassembly:saw_blade"
+  }
+}
