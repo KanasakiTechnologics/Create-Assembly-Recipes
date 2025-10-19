@@ -1,7 +1,6 @@
 package com.KanasakiTechnologics.CreateAssembly.util;
 
-import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
-import com.simibubi.create.AllItems; // <-- Import Create's AllItems
+import com.simibubi.create.AllItems;
 import net.createmod.catnip.lang.Lang;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;

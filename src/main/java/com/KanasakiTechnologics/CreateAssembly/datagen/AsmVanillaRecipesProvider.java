@@ -5,6 +5,7 @@ import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmMods;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
+import com.mrh0.createaddition.index.CAItems;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
@@ -48,6 +49,15 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, AsmItems.IRON_HAMMER,1)
+                .pattern(" IA")
+                .pattern(" SI")
+                .pattern("S  ")
+                .define('S', Items.STICK)
+                .define('I', Items.IRON_INGOT)
+                .define('A', AllItems.ANDESITE_ALLOY)
+                .unlockedBy("has_iron_ingot",has(Items.IRON_INGOT)).save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmItems.ANDESITE_MECHANISM,1)
                 .pattern("SCL")
                 .pattern("IA ")
@@ -211,14 +221,14 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .define('K', AsmItems.KINETIC_MECHANISM)
                 .unlockedBy("has_kinetic_mechanism",has(AsmItems.KINETIC_MECHANISM)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmItems.COPPER_BACKPACK_SMITHING_TEMPLATE,1)
-                .pattern("CIC")
-                .pattern("IBI")
-                .pattern("CIC")
-                .define('C', AllBlocks.COPPER_CASING)
-                .define('I', Items.COPPER_INGOT)
-                .define('B', AsmItems.NETHERRACK_SHARD)
-                .unlockedBy("has_copper_casing",has(AllBlocks.COPPER_CASING)).save(recipeOutput);
+        //ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmItems.COPPER_BACKPACK_SMITHING_TEMPLATE,1)
+            //      .pattern("CIC")
+            //    .pattern("IBI")
+            //    .pattern("CIC")
+            //    .define('C', AllBlocks.COPPER_CASING)
+            //    .define('I', Items.COPPER_INGOT)
+            //    .define('B', AsmItems.NETHERRACK_SHARD)
+            //    .unlockedBy("has_copper_casing",has(AllBlocks.COPPER_CASING)).save(recipeOutput);
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.GEARBOX,6)
@@ -531,7 +541,17 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
         templateduplicate(recipeOutput, Items.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE, Items.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE);
         templateduplicate(recipeOutput, Items.RAISER_ARMOR_TRIM_SMITHING_TEMPLATE, Items.RAISER_ARMOR_TRIM_SMITHING_TEMPLATE);
         templateduplicate(recipeOutput, Items.HOST_ARMOR_TRIM_SMITHING_TEMPLATE, Items.HOST_ARMOR_TRIM_SMITHING_TEMPLATE);
-        templateduplicate(recipeOutput, AsmItems.COPPER_BACKPACK_SMITHING_TEMPLATE.get(), AsmItems.COPPER_BACKPACK_SMITHING_TEMPLATE.get());
+        //templateduplicate(recipeOutput, AsmItems.COPPER_BACKPACK_SMITHING_TEMPLATE.get(), AsmItems.COPPER_BACKPACK_SMITHING_TEMPLATE.get());
+
+        hammerplating(recipeOutput,Items.IRON_INGOT,AllItems.IRON_SHEET.get());
+        hammerplating(recipeOutput,Items.GOLD_INGOT,AllItems.GOLDEN_SHEET.get());
+        hammerplating(recipeOutput,Items.COPPER_INGOT,AllItems.COPPER_SHEET.get());
+        hammerplating(recipeOutput,AllItems.BRASS_INGOT.get(),AllItems.BRASS_SHEET.get());
+        hammerplating(recipeOutput,AsmItems.TIN_INGOT.get(),AsmItems.TIN_SHEET.get());
+        hammerplating(recipeOutput,AsmItems.LAPIS_ALLOY.get(),AsmItems.LAPIS_SHEET.get());
+        hammerplating(recipeOutput,AsmItems.CREATIVE_ALLOY.get(),AsmItems.CREATIVE_SHEET.get());
+        hammerplating(recipeOutput,CAItems.ELECTRUM_INGOT.get(),CAItems.ELECTRUM_SHEET.get());
+        hammerplating(recipeOutput,AllItems.ZINC_INGOT.get(),CAItems.ZINC_SHEET.get());
 
         recompressed(recipeOutput,AsmBlocks.COMPRESSED_COBBLESTONE.get(),Blocks.COBBLESTONE);
         recompressed(recipeOutput,AsmBlocks.COMPRESSED_SAND.get(),Blocks.SAND);
@@ -614,6 +634,17 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .pattern(" G ")
                 .unlockedBy("has_glow_ink", has(Items.GLOW_INK_SAC))
                 .save(out, id("light_block", result));
+    }
+
+    private static void hammerplating(RecipeOutput out,Item ingot,Item result){
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result)
+                .define('H', AsmItems.IRON_HAMMER)
+                .define('I', ingot)
+                .pattern("HII")
+                .pattern("   ")
+                .pattern("   ")
+                .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT))
+                .save(out, ResourceLocation.fromNamespaceAndPath(MOD_ID, "plating_" + BuiltInRegistries.ITEM.getKey(result).getPath()));
     }
 
     public static void templateduplicate(RecipeOutput out, Item template, Item result){

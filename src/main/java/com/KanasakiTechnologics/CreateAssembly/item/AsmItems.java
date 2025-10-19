@@ -5,8 +5,12 @@ import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -21,6 +25,28 @@ public class AsmItems {
     public static final DeferredItem<ShadowMattock> SHADOW_MATTOCK = ITEMS.register("shadow_steel_mattock",
             () -> new ShadowMattock(AsmTags.SHADOW_TIER, new Item.Properties().attributes(ShadowMattock.createAttributes(AsmTags.SHADOW_TIER, 15.0F, -3.0F))));
 
+    public static final DeferredItem<Item> IRON_HAMMER = ITEMS.register("iron_hammer",
+            () -> new PickaxeItem(Tiers.IRON,
+                    new Item.Properties()
+                            .durability(250)
+                            .attributes(PickaxeItem.createAttributes(Tiers.IRON, 1.0F, -3.0F))
+            ) {
+                @Override
+                public boolean hasCraftingRemainingItem(ItemStack stack) {
+                    return true;
+                }
+
+                @Override
+                public ItemStack getCraftingRemainingItem(ItemStack stack) {
+                    ItemStack copy = stack.copy();
+                    copy.setDamageValue(copy.getDamageValue() + 2);
+                    if (copy.getDamageValue() >= copy.getMaxDamage()) {
+                        return ItemStack.EMPTY;
+                    }
+
+                    return copy;
+                }
+            });
 
     public static final DeferredItem<Item> CREATIVE_ALLOY = ITEMS.register("creative_alloy",
             () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
@@ -140,8 +166,8 @@ public class AsmItems {
 
     public static final DeferredItem<Item> CLONING_TEMPLATE = ITEMS.register("cloning_template",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> COPPER_BACKPACK_SMITHING_TEMPLATE = ITEMS.register("copper_backpack_smithing_template",
-            () -> new Item(new Item.Properties()));
+    //public static final DeferredItem<Item> COPPER_BACKPACK_SMITHING_TEMPLATE = ITEMS.register("copper_backpack_smithing_template",
+           //() -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> LAPIS_ALLOY = ITEMS.register("lapis_alloy",
             () -> new Item(new Item.Properties()));

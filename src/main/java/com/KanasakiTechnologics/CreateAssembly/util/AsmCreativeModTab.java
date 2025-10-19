@@ -66,10 +66,11 @@ public class AsmCreativeModTab {
             ()->CreativeModeTab.builder().icon(()->new ItemStack(AsmItems.GLOW_INK_BUCKET.get()))
                     .title(Component.translatable("creativetab.createassembly.create_assembly"))
                     .displayItems((itemDisplayParameters, output) ->{
+                        output.accept(AsmItems.IRON_HAMMER);
                         output.accept(AsmItems.NETHER_STAR_SHARD);
                         output.accept(AsmBlocks.STAR_BLOCK);
                         output.accept(AsmItems.CLONING_TEMPLATE);
-                        output.accept(AsmItems.COPPER_BACKPACK_SMITHING_TEMPLATE);
+                        //output.accept(AsmItems.COPPER_BACKPACK_SMITHING_TEMPLATE);
                         output.accept(AsmItems.CREATIVE_ALLOY);
                         output.accept(AsmItems.CREATIVE_SHEET);
                         output.accept(AsmItems.PROCESSING_CREATIVE);

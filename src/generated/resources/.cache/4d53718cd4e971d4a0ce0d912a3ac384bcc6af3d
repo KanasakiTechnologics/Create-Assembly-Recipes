@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-19T11:36:10.3533428	Item Models: createassembly
+// 1.21.1	2025-10-21T11:18:11.3697679	Item Models: createassembly
 b3ccab5a814c9162ac2aaf58d67933b06942985c assets/createassembly/models/item/abstruse_mechanism.json
 4ea4de641a591b6e97bae39c1f6228be27621591 assets/createassembly/models/item/alchemist_dust.json
 b2b6404279eaf8183d723fe8cd5be895a2712d34 assets/createassembly/models/item/andesite_mechanism.json
@@ -6,7 +6,6 @@ f037ba6c1c654e358c27d257cd28654a709586d8 assets/createassembly/models/item/blank
 0b3df8c3910cb3bdbb134f354561d0392653b14c assets/createassembly/models/item/calculation_mechanism.json
 ef44dc06cace3be21a7f10565f031f1d8f6295d7 assets/createassembly/models/item/cloning_template.json
 0770a62dc3e217cd23bcde05a96e04526a8e3b19 assets/createassembly/models/item/coal_rod.json
-e6abaa9745a28941e276c181f1c52c20bd3429e7 assets/createassembly/models/item/copper_backpack_smithing_template.json
 a2ff0d1e5a336d9134188e63793bd0c34d33704b assets/createassembly/models/item/creative_alloy.json
 2ee2edf3a1b91be3fac59037d07cee56493707f3 assets/createassembly/models/item/creative_mechanism.json
 ce834182ad700dcf2a0d85897a6a1afe02272dcf assets/createassembly/models/item/creative_sheet.json
@@ -28,6 +27,7 @@ eeaa712c98ac6cf91f9fb81db014ca68de7e6944 assets/createassembly/models/item/incom
 5f3a90fcc6c643d7aa29ab3abf09fe0e93893323 assets/createassembly/models/item/infernal_mechanism.json
 16c0b6858995f6cc58b1a47021b196afe0b36dfd assets/createassembly/models/item/integrated_circuit.json
 ee8289f0bed5680d18a3a776627380d556c20737 assets/createassembly/models/item/integrated_mechanism.json
+6200e34c1aed981fc1e3c16e6af61b4d76ee643e assets/createassembly/models/item/iron_hammer.json
 cd7b789afca6da6ba53d87ae9c016a8751da42e1 assets/createassembly/models/item/kinetic_mechanism.json
 afaae299564624c11aba0bde3d2d5254d8c0ce93 assets/createassembly/models/item/lapis_alloy.json
 fbefe68111550eb72df6e545c01603b905d23e28 assets/createassembly/models/item/lapis_sheet.json
