@@ -49,6 +49,13 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, Blocks.COBWEB,1)
+                .pattern("S S")
+                .pattern(" S ")
+                .pattern("S S")
+                .define('S', STRING)
+                .unlockedBy("has_stringt",has(Items.STRING)).save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, AsmItems.IRON_HAMMER,1)
                 .pattern(" IA")
                 .pattern(" SI")

@@ -106,6 +106,8 @@ public class AsmItems {
             ()-> new BucketItem(AsmFluid.SOUL_LAVA.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));
     public static final DeferredItem<Item> SULFURIC_ACID_BUCKET = ITEMS.register("sulfuric_acid_bucket",
             ()-> new BucketItem(AsmFluid.SULFURIC_ACID.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));
+    public static final DeferredItem<Item> MOLTEN_GOLD_BUCKET = ITEMS.register("molten_gold_bucket",
+            () -> new BucketItem(AsmFluid.MOLTEN_GOLD.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));
 
     public static final DeferredItem<Item> ABSTRUSE_MECHANISM = ITEMS.register("abstruse_mechanism",
             () -> new Item(new Item.Properties()));

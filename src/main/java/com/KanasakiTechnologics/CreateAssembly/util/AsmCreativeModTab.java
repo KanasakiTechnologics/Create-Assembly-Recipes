@@ -97,6 +97,7 @@ public class AsmCreativeModTab {
                         output.accept(AsmBlocks.FUSED_COMPRESSED_COAL);
                         output.accept(AsmItems.GLOW_INK_BUCKET);
                         output.accept(AsmItems.SOUL_LAVA_BUCKET);
+                        output.accept(AsmItems.MOLTEN_GOLD_BUCKET);
                         output.accept(AsmItems.SULFURIC_ACID_BUCKET);
                         output.accept(AsmItems.SAP_BUCKET);
                         output.accept(AsmItems.SAW_BLADE);

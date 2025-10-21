@@ -34,6 +34,7 @@ public class AsmItemTagProvider extends ItemTagsProvider {
                 .add(AsmItems.SHADOW_PICKAXE.get());
 
         tag(AsmTags.ItemTags.COMPLEX_MECHANISM.tag)
+                .add(AsmItems.ANDESITE_MECHANISM.get())
                 .add(AsmItems.ABSTRUSE_MECHANISM.get())
                 .add(AsmItems.CALCULATION_MECHANISM.get())
                 .add(AsmItems.INFERNAL_MECHANISM.get())
@@ -41,7 +42,8 @@ public class AsmItemTagProvider extends ItemTagsProvider {
                 .add(AsmItems.INTEGRATED_MECHANISM.get())
                 .add(AsmItems.KINETIC_MECHANISM.get())
                 .add(AllItems.PRECISION_MECHANISM.get())
-                .add(AsmItems.SEALED_MECHANISM.get());
+                .add(AsmItems.SEALED_MECHANISM.get())
+                .add(AsmItems.CREATIVE_MECHANISM.get());
 
         tag(Tags.Items.ORES)
                 .add(AsmBlocks.SILVER_ORE.asItem())

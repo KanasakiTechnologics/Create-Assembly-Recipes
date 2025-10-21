@@ -77,7 +77,11 @@ public class CreateAssembly {
         modContainer.registerConfig(ModConfig.Type.SERVER, Config.SPEC);
     }
 
-    private void commonSetup(FMLCommonSetupEvent event) {}
+    private void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(() ->{
+
+        });
+    }
 
     public static void onRegister(final RegisterEvent event) {
         AsmFanProcessingTypes.init();

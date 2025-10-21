@@ -1,0 +1,7 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "createassembly:block/molten_gold_still",
+    "all": "createassembly:block/molten_gold_still"
+  }
+}

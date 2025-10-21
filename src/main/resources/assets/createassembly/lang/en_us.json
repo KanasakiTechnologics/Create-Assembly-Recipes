@@ -152,6 +152,9 @@
   "fluid_type.createassembly.soul_lava_type": "Soul Lava",
   "fluid_type.createassembly.sap_type": "Liquid Sap",
   "block.createassembly.soul_lava": "Soul Lava",
+  "block.createassembly.molten_gold": "Molten Gold",
+  "fluid_type.createassembly.molten_gold_type": "Molten Gold",
+  "item.createassembly.molten_gold_bucket": "Molten Gold Bucket",
 
   "block.createassembly.compressed_cobbled_deepslate": "Compressed Cobbled Deepslate",
   "block.createassembly.compressed_cobblestone": "Compressed Cobblestone",

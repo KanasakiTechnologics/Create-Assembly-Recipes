@@ -1,6 +1,7 @@
 package com.KanasakiTechnologics.CreateAssembly.block;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
+import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -9,9 +10,11 @@ import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -70,7 +73,8 @@ public class AsmBlocks {
     public static final DeferredBlock<LiquidBlock> SULFURIC_ACID = registerBlock("sulfuric_acid",SulfuricAcidBlock::new);
     public static final DeferredBlock<LiquidBlock> SOUL_LAVA = registerBlock("soul_lava", SoulLavaBlock::new);
     public static final DeferredBlock<LiquidBlock> SAP = registerBlock("sap", SapBlock::new);
-
+    public static final DeferredHolder<Block, LiquidBlock> MOLTEN_GOLD = BLOCKS.register("molten_gold",
+            () -> new MoltenLiquid((FlowingFluid) AsmFluid.MOLTEN_GOLD.get()));
 
     public static final DeferredBlock<Block> HOT_COAL = registerBlock("hot_coal_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));

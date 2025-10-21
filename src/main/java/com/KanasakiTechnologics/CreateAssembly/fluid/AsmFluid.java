@@ -89,6 +89,25 @@ public class AsmFluid {
                 .explosionResistance(0f);
     }
 
+    public static final DeferredHolder<Fluid,Fluid> MOLTEN_GOLD = FLUIDS.register("molten_gold",
+            ()-> new MoltenGold.Source(getMoltenGoldProperties()));
+    public static final DeferredHolder<Fluid,Fluid> FLOWING_MOLTEN_GOLD = FLUIDS.register("flowing_molten_gold",
+            ()-> new MoltenGold.Flowing(getMoltenGoldProperties()));
+
+    private static BaseFlowingFluid.Properties getMoltenGoldProperties() {
+        return new BaseFlowingFluid.Properties(
+                () -> AsmFluidType.MOLTEN_GOLD_TYPE.get(),
+                () -> MOLTEN_GOLD.get(),
+                () -> FLOWING_MOLTEN_GOLD.get()
+        )
+                .bucket(() -> AsmItems.MOLTEN_GOLD_BUCKET.get())
+                .block(() -> AsmBlocks.MOLTEN_GOLD.get())
+                .tickRate(10)
+                .levelDecreasePerBlock(2)
+                .slopeFindDistance(2)
+                .explosionResistance(0f);
+    }
+
     public static void register(IEventBus eventBus)
     {
         FLUIDS.register(eventBus);
