@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "createassembly:iron_hammer"
+    },
+    "I": {
+      "item": "createassembly:lapis_alloy"
+    }
+  },
+  "pattern": [
+    "HII",
+    "   ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "createassembly:lapis_sheet"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "createassembly:iron_hammer"
+    },
+    "I": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "HII",
+    "   ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:golden_sheet"
+  }
+}
