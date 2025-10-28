@@ -87,6 +87,8 @@ public class AsmBlocks {
 
     public static final DeferredBlock<Block> STAR_BLOCK = registerBlock("starblock",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<ReinforcedGlassBlock> REINFORCED_GLASS = registerBlock("reinforced_glass",
+            () -> new ReinforcedGlassBlock());
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

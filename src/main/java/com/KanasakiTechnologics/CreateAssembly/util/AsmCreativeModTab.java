@@ -103,6 +103,7 @@ public class AsmCreativeModTab {
                         output.accept(AsmItems.SAW_BLADE);
                         output.accept(AsmItems.DRILL_HEAD);
                         output.accept(AsmItems.PRESS_HEAD);
+                        output.accept(AsmBlocks.REINFORCED_GLASS);
                     }).build());
 
     public static void register(IEventBus eventBus){

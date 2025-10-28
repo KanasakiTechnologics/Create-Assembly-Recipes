@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-13T15:17:16.1846472	Block States: createassembly
+// 1.21.1	2025-10-28T23:22:38.1276492	Block States: createassembly
 d0449c4eb981e44f4d0cc1a9b4aef18ef946d243 assets/createassembly/blockstates/bedrock.json
 27fc0258fa20bf931ff5a2580d6c8992438e6030 assets/createassembly/blockstates/black_glass_light_block.json
 16191637af700eee7981521a37306d78ce4d89fc assets/createassembly/blockstates/black_light_block.json
@@ -43,6 +43,7 @@ cefffef63259d813dc9ffe27976627e48875a4cd assets/createassembly/blockstates/raw_s
 d3296fa1abfbd22c34a953a503900b05ed216b02 assets/createassembly/blockstates/raw_tin_block.json
 6f2c9bd61789f2204ae8cb17a33cc36a0865bc5b assets/createassembly/blockstates/red_glass_light_block.json
 716228d0d649feb3184bb67c617629b28621c2ec assets/createassembly/blockstates/red_light_block.json
+2f6fad5af467de078deb9146a39502b34b4bd048 assets/createassembly/blockstates/reinforced_glass.json
 8864b55d60610b1780c35670a9d8660f10faa985 assets/createassembly/blockstates/silver_block.json
 44d9d7469be2c7e01e5495e5ceb226db71368740 assets/createassembly/blockstates/silver_ore.json
 fb3ba3a4c85d74e687b9ccaddda90915b811a604 assets/createassembly/blockstates/starblock.json
@@ -97,6 +98,7 @@ ca1299d67c39997f9b8f39d8107363e052065198 assets/createassembly/models/block/raw_
 1508cc667afde9ff99bad71a1f6d4df8c62b63f2 assets/createassembly/models/block/raw_tin_block.json
 35256c68f712aa18cc07699334834d201005a441 assets/createassembly/models/block/red_glass_light_block.json
 96cea9b87b070c71c7c23a45f80a9f96aca37115 assets/createassembly/models/block/red_light_block.json
+ce82195d9783b552c00b1aef12f94b2bb1991ae3 assets/createassembly/models/block/reinforced_glass.json
 53e0572a763e913ae4f9df9b0bdc05314ec96654 assets/createassembly/models/block/silver_block.json
 ab92c3dd5f9c720e2fbeb2858cf13bff90838c3f assets/createassembly/models/block/silver_ore.json
 fc6d0c03cce786da4f7e390fe9e3a07054fcd2d7 assets/createassembly/models/block/starblock.json
@@ -151,6 +153,7 @@ d9a50c58e0217bd81e36b3851b9642313dc9fb28 assets/createassembly/models/item/purpl
 7ae54e919788ffb08d80a082465a5dd2bf5a243e assets/createassembly/models/item/raw_tin_block.json
 bcfcb6dd2f953d10a1a269418f9a33c05e3ef4c3 assets/createassembly/models/item/red_glass_light_block.json
 2063ac5415cb6f7f3d5c1ef8e0b5604d86c52c1b assets/createassembly/models/item/red_light_block.json
+718dbb57691e986e28b986a97457d59d39fbf450 assets/createassembly/models/item/reinforced_glass.json
 85c4b83671654679d306c1e785f665d05e8d155b assets/createassembly/models/item/silver_block.json
 7746758ccedbc06cf9b5ef7b32d471efecd0ff00 assets/createassembly/models/item/silver_ore.json
 11312e8a73e55eb97015cb66120f07ad150e7feb assets/createassembly/models/item/starblock.json

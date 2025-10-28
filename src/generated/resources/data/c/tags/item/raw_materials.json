@@ -1,6 +1,8 @@
 {
   "values": [
     "createassembly:raw_silver",
+    "createassembly:raw_tin",
+    "createassembly:raw_silver",
     "createassembly:raw_tin"
   ]
 }

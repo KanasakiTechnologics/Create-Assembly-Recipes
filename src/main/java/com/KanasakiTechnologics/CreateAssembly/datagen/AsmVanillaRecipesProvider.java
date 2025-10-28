@@ -560,6 +560,18 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
         hammerplating(recipeOutput,CAItems.ELECTRUM_INGOT.get(),CAItems.ELECTRUM_SHEET.get());
         hammerplating(recipeOutput,AllItems.ZINC_INGOT.get(),CAItems.ZINC_SHEET.get());
 
+        orehandcrushing(recipeOutput,AsmTags.commonItemTag("raw_materials/tin"),AllItems.CRUSHED_TIN.get(),2);
+        orehandcrushing(recipeOutput,AsmTags.commonItemTag("raw_materials/silver"),AllItems.CRUSHED_SILVER.get(),2);
+        orehandcrushing(recipeOutput,AsmTags.commonItemTag("raw_materials/lead"),AllItems.CRUSHED_LEAD.get(),2);
+        orehandcrushing(recipeOutput,AsmTags.commonItemTag("raw_materials/osmium"),AllItems.CRUSHED_OSMIUM.get(),2);
+        orehandcrushing(recipeOutput,AsmTags.commonItemTag("raw_materials/uranium"),AllItems.CRUSHED_URANIUM.get(),2);
+        orehandcrushing(recipeOutput,AsmTags.commonItemTag("raw_materials/zinc"),AllItems.CRUSHED_ZINC.get(),2);
+        orehandcrushing(recipeOutput,AsmTags.commonItemTag("raw_materials/nickel"),AllItems.CRUSHED_NICKEL.get(),2);
+        orehandcrushing(recipeOutput,AsmTags.commonItemTag("raw_materials/platinum"),AllItems.CRUSHED_PLATINUM.get(),2);
+        orehandcrushing(recipeOutput,AsmTags.commonItemTag("raw_materials/iron"),AllItems.CRUSHED_IRON.get(),2);
+        orehandcrushing(recipeOutput,AsmTags.commonItemTag("raw_materials/copper"),AllItems.CRUSHED_COPPER.get(),2);
+        orehandcrushing(recipeOutput,AsmTags.commonItemTag("raw_materials/gold"),AllItems.CRUSHED_GOLD.get(),2);
+
         recompressed(recipeOutput,AsmBlocks.COMPRESSED_COBBLESTONE.get(),Blocks.COBBLESTONE);
         recompressed(recipeOutput,AsmBlocks.COMPRESSED_SAND.get(),Blocks.SAND);
         recompressed(recipeOutput,AsmBlocks.COMPRESSED_SOUL_SAND.get(),Blocks.SOUL_SAND);
@@ -647,11 +659,22 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result)
                 .define('H', AsmItems.IRON_HAMMER)
                 .define('I', ingot)
-                .pattern("HII")
+                .pattern("HI ")
+                .pattern("I  ")
                 .pattern("   ")
-                .pattern("   ")
-                .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT))
+                .unlockedBy("has_iron_hammer", has(AsmItems.IRON_HAMMER))
                 .save(out, ResourceLocation.fromNamespaceAndPath(MOD_ID, "plating_" + BuiltInRegistries.ITEM.getKey(result).getPath()));
+    }
+
+    private static void orehandcrushing(RecipeOutput out,TagKey<Item> raw,Item result,int count){
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, count)
+                .define('H', AsmItems.IRON_HAMMER)
+                .define('R', raw)
+                .pattern("HR ")
+                .pattern("   ")
+                .pattern("   ")
+                .unlockedBy("has_iron_hammer", has(AsmItems.IRON_HAMMER))
+                .save(out, ResourceLocation.fromNamespaceAndPath(MOD_ID, "crushing_" + BuiltInRegistries.ITEM.getKey(result).getPath()));
     }
 
     public static void templateduplicate(RecipeOutput out, Item template, Item result){

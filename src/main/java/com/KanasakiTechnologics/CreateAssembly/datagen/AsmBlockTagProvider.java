@@ -72,6 +72,7 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(LightBlocks.RED_LIGHT_BLOCK.get())
                 .add(LightBlocks.WHITE_LIGHT_BLOCK.get())
                 .add(LightBlocks.YELLOW_LIGHT_BLOCK.get())
+                .add(AsmBlocks.REINFORCED_GLASS.get())
 
                 .add(AsmBlocks.ENDER_ORE.get())
                 .add(AsmBlocks.SULFUR_ORE.get())
@@ -184,6 +185,8 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(LightBlocks.WHITE_GLASS_LIGHT_BLOCK.get())
                 .add(LightBlocks.YELLOW_GLASS_LIGHT_BLOCK.get())
 
+                .add(AsmBlocks.REINFORCED_GLASS.get())
+
                 .add(LightBlocks.BLACK_LIGHT_BLOCK.get())
                 .add(LightBlocks.BLUE_LIGHT_BLOCK.get())
                 .add(LightBlocks.BROWN_LIGHT_BLOCK.get())
@@ -205,6 +208,7 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(AsmBlocks.STAR_BLOCK.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(AsmBlocks.REINFORCED_GLASS.get())
                 .add(AsmBlocks.ENDER_ORE.get())
                 .add(AsmBlocks.TIN_BLOCK.get())
                 .add(AsmBlocks.TIN_ORE.get())
@@ -234,6 +238,14 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
         tag(Tags.Blocks.ORES_IN_GROUND_STONE)
                 .add(AsmBlocks.SILVER_ORE.get())
                 .add(AsmBlocks.TIN_ORE.get());
+
+        tag(AsmTags.BlockTags.WITHER_IMMUNE.tag)
+                .add(AsmBlocks.REINFORCED_GLASS.get())
+                .add(AllBlocks.SHADOW_STEEL_CASING.get());
+
+        tag(AsmTags.BlockTags.EXPLOSION_IMMUNE.tag)
+                .add(AsmBlocks.REINFORCED_GLASS.get())
+                .add(AllBlocks.SHADOW_STEEL_CASING.get());
 
         tag(Tags.Blocks.STORAGE_BLOCKS)
                 .add(AsmBlocks.RAW_SILVER_BLOCK.get())

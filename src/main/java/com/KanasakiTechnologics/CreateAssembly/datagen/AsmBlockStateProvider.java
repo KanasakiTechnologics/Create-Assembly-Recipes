@@ -3,12 +3,16 @@ package com.KanasakiTechnologics.CreateAssembly.datagen;
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
 import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
+import com.KanasakiTechnologics.CreateAssembly.block.ReinforcedGlassBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+
+import java.util.Map;
 
 public class AsmBlockStateProvider extends BlockStateProvider {
 
@@ -75,6 +79,8 @@ public class AsmBlockStateProvider extends BlockStateProvider {
         blockWithItem(AsmBlocks.COMPRESSED_RED_SAND);
         blockWithItem(AsmBlocks.COMPRESSED_SOUL_SAND);
         blockWithItemVanillaTexture(AsmBlocks.BEDROCK, "minecraft:block/bedrock");
+        blockWithItemVanillaTexture(AsmBlocks.REINFORCED_GLASS,"minecraft:block/tinted_glass");
+
 
     }
 
@@ -102,8 +108,6 @@ public class AsmBlockStateProvider extends BlockStateProvider {
         simpleBlock(block, model);
         simpleBlockItem(block, model);
     }
-
-
 
 
     private static String name(Block block) {

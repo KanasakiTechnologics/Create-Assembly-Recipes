@@ -101,6 +101,10 @@ public class CreateAssembly {
             event.insertAfter(AllBlocks.REFINED_RADIANCE_CASING.asStack(),AllBlocks.SHADOW_STEEL_CASING.asStack(),CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
 
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(AsmItems.RAW_TIN);
+            event.accept(AsmItems.RAW_SILVER);
+        }
 
         if (event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
             // Register all light blocks
@@ -166,6 +170,7 @@ public class CreateAssembly {
                 ItemBlockRenderTypes.setRenderLayer(LightBlocks.PURPLE_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
                 ItemBlockRenderTypes.setRenderLayer(LightBlocks.MAGENTA_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
                 ItemBlockRenderTypes.setRenderLayer(LightBlocks.PINK_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(AsmBlocks.REINFORCED_GLASS.get(), RenderType.translucent());
             });
         }
 
