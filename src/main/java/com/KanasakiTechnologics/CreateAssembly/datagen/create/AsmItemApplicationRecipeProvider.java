@@ -1,6 +1,7 @@
 package com.KanasakiTechnologics.CreateAssembly.datagen.create;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
+import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.api.data.recipe.ItemApplicationRecipeGen;
@@ -21,4 +22,5 @@ public final class AsmItemApplicationRecipeProvider extends ItemApplicationRecip
     GeneratedRecipe REFINED_RADIANCE_CASING = create("radiance_casing",b -> b.require(Blocks.OBSIDIAN).require(AllItems.REFINED_RADIANCE).output(AllBlocks.REFINED_RADIANCE_CASING));
     GeneratedRecipe ITEM_VAULT = create("item_vault",b -> b.require(Blocks.CHEST).require(AllItems.IRON_SHEET).output(AllBlocks.ITEM_VAULT));
     GeneratedRecipe FLUID_TANK = create("fluid_tank",b -> b.require(Blocks.CHEST).require(AllItems.COPPER_SHEET).output(AllBlocks.FLUID_TANK));
+    GeneratedRecipe REINFORCED_GLASS = create("reinforced_glass",b -> b.require(Blocks.TINTED_GLASS).require(Blocks.OBSIDIAN).output(AsmBlocks.REINFORCED_GLASS));
 }

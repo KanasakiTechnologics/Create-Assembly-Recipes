@@ -63,13 +63,37 @@
   "item.createassembly.creative_alloy": "Creative Alloy",
   "item.createassembly.processing_creative": "Unrefined Creative Alloy",
   "tooltip.createassembly.processing_creative.shift_down": "The Essence of Star from Nether Needed to Refined It",
+  "tooltip.createassembly.reinforced.shift_down": "Indestructible by Wither use Wrench to Pickup",
   "tooltip.createassembly.processing_creative": "Press §eShift§r for more Information",
+  "tooltip.createassembly.reinforced": "Press §eShift§r for more Information",
 
+  "effect.createassembly.cloaking": "Cloaking Invisibility",
   "item.createassembly.inactive_blaze_core": "Inactive Blaze Core",
   "item.createassembly.superheated_blaze_core.description_0": "§7Can be refueled after use",
   "item.createassembly.superheated_blaze_core": "Superheated Blaze Core",
   "item.createassembly.blaze_core": "Blaze Core",
   "item.createassembly.blaze_core.description_0": "§7Can be refueled after use",
+
+  "item.minecraft.potion.effect.clocking": "Potion of Cloaking Invisibility",
+  "item.minecraft.splash_potion.effect.clocking": "Potion of Cloaking Invisibility Splash",
+  "item.minecraft.lingering_potion.effect.clocking": "Potion of Cloaking Invisibility Lingering",
+
+  "item.minecraft.potion.effect.long_clocking": "Potion of Cloaking Invisibility",
+  "item.minecraft.splash_potion.effect.long_clocking": "Potion of Cloaking Invisibility Splash",
+  "item.minecraft.lingering_potion.effect.long_clocking": "Potion of Cloaking Invisibility Lingering",
+
+  "item.minecraft.potion.effect.master_clocking": "Potion of Cloaking Invisibility",
+  "item.minecraft.splash_potion.effect.master_clocking": "Potion of Cloaking Invisibility Splash",
+  "item.minecraft.lingering_potion.effect.master_clocking": "Potion of Cloaking Invisibility Lingering",
+
+  "item.minecraft.potion.effect.wither_potion": "Potion of Wither",
+  "item.minecraft.splash_potion.effect.wither_potion": "Potion of Wither Splash",
+  "item.minecraft.lingering_potion.effect.wither_potion": "Potion of Wither Lingering",
+
+  "item.minecraft.tipped_arrow.effect.wither_potion": "Arrow of Wither",
+  "item.minecraft.tipped_arrow.effect.clocking": "Arrow of Cloaking Invisibility",
+  "item.minecraft.tipped_arrow.effect.long_clocking": "Arrow of Cloaking Invisibility",
+  "item.minecraft.tipped_arrow.effect.master_clocking": "Arrow of Cloaking Invisibility",
 
   "block.createassembly.deepslate_tin_ore": "Deepslate Tin Ore",
   "block.createassembly.tin_ore": "Tin Ore",
@@ -152,6 +176,9 @@
   "fluid_type.createassembly.soul_lava_type": "Soul Lava",
   "fluid_type.createassembly.sap_type": "Liquid Sap",
   "block.createassembly.soul_lava": "Soul Lava",
+  "block.createassembly.molten_gold": "Molten Gold",
+  "fluid_type.createassembly.molten_gold_type": "Molten Gold",
+  "item.createassembly.molten_gold_bucket": "Molten Gold Bucket",
 
   "block.createassembly.compressed_cobbled_deepslate": "Compressed Cobbled Deepslate",
   "block.createassembly.compressed_cobblestone": "Compressed Cobblestone",
@@ -159,6 +186,7 @@
   "block.createassembly.compressed_red_sand": "Compressed Red Sand",
   "block.createassembly.compressed_sand": "Compressed Sand",
   "block.createassembly.compressed_soul_sand": "Compressed Soul Sand",
+  "block.createassembly.reinforced_glass": "Reinforced Glass",
 
   "creativetab.createassembly.dndesires_mechanisms": "DNDesire Mechanisms",
   "creativetab.createassembly.create_assembly": "Create Assembly [Ingredients]",

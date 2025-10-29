@@ -4,6 +4,8 @@ import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
 import com.KanasakiTechnologics.CreateAssembly.block.entity.AsmBlockEntities;
 import com.KanasakiTechnologics.CreateAssembly.content.recipes.AsmRecipeTypes;
+import com.KanasakiTechnologics.CreateAssembly.effect.AsmEffect;
+import com.KanasakiTechnologics.CreateAssembly.effect.AsmPotions;
 import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluidType;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
@@ -15,6 +17,7 @@ import com.simibubi.create.AllCreativeModeTabs;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceKey;
@@ -66,6 +69,8 @@ public class CreateAssembly {
         AsmMenuTypes.register(modEventBus);
         AsmBlockEntities.register(modEventBus);
         AsmLootModifiers.register(modEventBus);
+        AsmEffect.register(modEventBus);
+        AsmPotions.register(modEventBus);
 
         // Register creative tab handler
         modEventBus.addListener(this::addCreative);
@@ -77,7 +82,11 @@ public class CreateAssembly {
         modContainer.registerConfig(ModConfig.Type.SERVER, Config.SPEC);
     }
 
-    private void commonSetup(FMLCommonSetupEvent event) {}
+    private void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(() ->{
+
+        });
+    }
 
     public static void onRegister(final RegisterEvent event) {
         AsmFanProcessingTypes.init();
@@ -97,6 +106,10 @@ public class CreateAssembly {
             event.insertAfter(AllBlocks.REFINED_RADIANCE_CASING.asStack(),AllBlocks.SHADOW_STEEL_CASING.asStack(),CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
 
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(AsmItems.RAW_TIN);
+            event.accept(AsmItems.RAW_SILVER);
+        }
 
         if (event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
             // Register all light blocks
@@ -162,6 +175,11 @@ public class CreateAssembly {
                 ItemBlockRenderTypes.setRenderLayer(LightBlocks.PURPLE_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
                 ItemBlockRenderTypes.setRenderLayer(LightBlocks.MAGENTA_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
                 ItemBlockRenderTypes.setRenderLayer(LightBlocks.PINK_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
+                Minecraft.getInstance().getBlockColors().register(
+                        (state, world, pos, tintIndex) -> 0x55000000, // ARGB = semi-transparent black overlay
+                        AsmBlocks.REINFORCED_GLASS.get()
+                );
+
             });
         }
 

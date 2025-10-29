@@ -32,8 +32,51 @@ public class AsmItemTagProvider extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(ItemTags.PICKAXES)
                 .add(AsmItems.SHADOW_PICKAXE.get());
+        tag(ItemTags.CLUSTER_MAX_HARVESTABLES)
+                .add(AsmItems.SHADOW_PICKAXE.get());
+        tag(ItemTags.MINING_ENCHANTABLE)
+                .add(AsmItems.SHADOW_PICKAXE.get())
+                .add(AsmItems.SHADOW_MATTOCK.get());
+        tag(ItemTags.MINING_LOOT_ENCHANTABLE)
+                .add(AsmItems.SHADOW_PICKAXE.get())
+                .add(AsmItems.SHADOW_MATTOCK.get());
+
+        tag(ItemTags.SHOVELS)
+                .add(AsmItems.SHADOW_MATTOCK.get());
+        tag(ItemTags.AXES)
+                .add(AsmItems.SHADOW_MATTOCK.get());
+        tag(ItemTags.HOES)
+                .add(AsmItems.SHADOW_MATTOCK.get());
+        tag(Tags.Items.MELEE_WEAPON_TOOLS)
+                .add(AsmItems.SHADOW_MATTOCK.get());
+
+
+        tag(ItemTags.SWORDS)
+                .add(AsmItems.SHADOW_SWORD.get());
+        tag(ItemTags.SWORD_ENCHANTABLE)
+                .add(AsmItems.SHADOW_SWORD.get());
+        tag(ItemTags.SHARP_WEAPON_ENCHANTABLE)
+                .add(AsmItems.SHADOW_SWORD.get())
+                .add(AsmItems.SHADOW_MATTOCK.get());
+        tag(Tags.Items.ENCHANTABLES)
+                .add(AsmItems.SHADOW_SWORD.get())
+                .add(AsmItems.SHADOW_PICKAXE.get())
+                .add(AsmItems.SHADOW_MATTOCK.get());
+        tag(Tags.Items.TOOLS)
+                .add(AsmItems.SHADOW_SWORD.get())
+                .add(AsmItems.SHADOW_PICKAXE.get())
+                .add(AsmItems.SHADOW_MATTOCK.get());
+        tag(ItemTags.FIRE_ASPECT_ENCHANTABLE)
+                .add(AsmItems.SHADOW_SWORD.get());
+        tag(ItemTags.DURABILITY_ENCHANTABLE)
+                .add(AsmItems.SHADOW_SWORD.get())
+                .add(AsmItems.SHADOW_PICKAXE.get())
+                .add(AsmItems.SHADOW_MATTOCK.get());
+        tag(ItemTags.WEAPON_ENCHANTABLE)
+                .add(AsmItems.SHADOW_SWORD.get());
 
         tag(AsmTags.ItemTags.COMPLEX_MECHANISM.tag)
+                .add(AsmItems.ANDESITE_MECHANISM.get())
                 .add(AsmItems.ABSTRUSE_MECHANISM.get())
                 .add(AsmItems.CALCULATION_MECHANISM.get())
                 .add(AsmItems.INFERNAL_MECHANISM.get())
@@ -41,7 +84,8 @@ public class AsmItemTagProvider extends ItemTagsProvider {
                 .add(AsmItems.INTEGRATED_MECHANISM.get())
                 .add(AsmItems.KINETIC_MECHANISM.get())
                 .add(AllItems.PRECISION_MECHANISM.get())
-                .add(AsmItems.SEALED_MECHANISM.get());
+                .add(AsmItems.SEALED_MECHANISM.get())
+                .add(AsmItems.CREATIVE_MECHANISM.get());
 
         tag(Tags.Items.ORES)
                 .add(AsmBlocks.SILVER_ORE.asItem())
@@ -91,6 +135,9 @@ public class AsmItemTagProvider extends ItemTagsProvider {
                 .add(AsmBlocks.TIN_ORE.asItem());
 
         tag(Tags.Items.RAW_MATERIALS)
+                .add(AsmItems.RAW_SILVER.get())
+                .add(AsmItems.RAW_TIN.get());
+        tag(AsmTags.ItemTags.RAW_MATERIALS.tag)
                 .add(AsmItems.RAW_SILVER.get())
                 .add(AsmItems.RAW_TIN.get());
         tag(AsmTags.ItemTags.RAW_TIN2.tag)

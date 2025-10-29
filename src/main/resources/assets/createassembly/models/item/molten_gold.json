@@ -1,0 +1,11 @@
+{
+  "variants": {},
+  "multipart": [
+    {
+      "apply": {
+        "model": "decobuild:block/molten_gold",
+        "uvlock": true
+      }
+    }
+  ]
+}

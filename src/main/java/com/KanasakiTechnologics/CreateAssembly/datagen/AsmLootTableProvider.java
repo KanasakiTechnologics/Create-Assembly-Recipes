@@ -82,6 +82,7 @@ public class AsmLootTableProvider extends BlockLootSubProvider {
         dropSelf(AsmBlocks.COMPRESSED_SAND.get());
         dropSelf(AsmBlocks.COMPRESSED_RED_SAND.get());
         dropSelf(AsmBlocks.COMPRESSED_SOUL_SAND.get());
+        dropSelf(AsmBlocks.REINFORCED_GLASS.get());
 
         add(AsmBlocks.BEDROCK.get(), block -> LootTable.lootTable().withPool(createPoolForBedrock()));
         add(AsmBlocks.TIN_ORE.get(),block -> createOreDrop(AsmBlocks.TIN_ORE.get(), AsmItems.RAW_TIN.get()));

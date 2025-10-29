@@ -101,6 +101,8 @@ public class AsmTags {
 
     public enum BlockTags {
         CREATE_WRENCH_PICKUP(NameSpace.CREATE, "wrench_pickup"),
+        WITHER_IMMUNE(NameSpace.MOD,"wither_immune"),
+        EXPLOSION_IMMUNE(NameSpace.MOD,"explosion_immune"),
         TIN_ORES(NameSpace.COMMON, "ores/tin"),
         SILVER_ORES(NameSpace.COMMON, "ores/silver"),
         NEEDS_NETHERITE_TOOL(NameSpace.NEOFORGE, "needs_netherite_tool"),
@@ -217,6 +219,7 @@ public class AsmTags {
         SOUL_SAND2(NameSpace.COMMON, "sands/soul_sand"),
         RAW_SILVER(NameSpace.COMMON, "storage_blocks/raw_silver"),
         RAW_SILVER2(NameSpace.COMMON, "raw_materials/silver"),
+        RAW_MATERIALS(NameSpace.COMMON, "raw_materials"),
         SILVER(NameSpace.COMMON, "storage_blocks/silver"),
         TIN_INGOT(NameSpace.COMMON, "ingots/tin"),
         REFINED_RADIANCE2(NameSpace.COMMON, "ingots/radiant"),
