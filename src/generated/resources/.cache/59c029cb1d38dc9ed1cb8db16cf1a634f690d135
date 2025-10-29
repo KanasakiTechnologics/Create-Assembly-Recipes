@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-29T21:03:13.3148315	createassembly's processing recipes: filling
+// 1.21.1	2025-10-22T21:27:45.5684969	createassembly's processing recipes: filling
 dbd7a04876801947b1c7f5ec8e1bf46517cc744f data/createassembly/recipe/filling/blaze_core.json
 61fb53d8098cd0dba5ce9c0274618ef38d9b090b data/createassembly/recipe/filling/chiseled_copper_to_exposed.json
 e4ebaad564d6e887e4a42d667cc6e612e36d6746 data/createassembly/recipe/filling/copper_block_to_exposed.json
@@ -37,6 +37,8 @@ f761102cf9cb8434bc71e8cda00b43a516d0ae7c data/createassembly/recipe/filling/expo
 454c4390b91609f48415c1aaf2280a6ff1d483a6 data/createassembly/recipe/filling/exposed_cut_copper_stairs_to_weathered.json
 3c61735f52f86b6677b43c53b9525f2959104229 data/createassembly/recipe/filling/exposed_cut_copper_to_weathered.json
 1229074c01a1c11e3b5756b9b9f3e6cc6a0b95bc data/createassembly/recipe/filling/glowstone.json
+f0a6ff560cd309b8872a65fb0371591c89e0d43a data/createassembly/recipe/filling/gold_apple.json
+cdd1a1661ce0047b35082cd6ed208804e2049263 data/createassembly/recipe/filling/gold_carrot.json
 379a8dc5a0c476fe94960e23faaca3492a18b5f3 data/createassembly/recipe/filling/gunpowder.json
 6461147c42c0de2c61e36a40960e9a1fca819310 data/createassembly/recipe/filling/redstone.json
 fe193ed648e7559fdfd28210b9af495d17a1364b data/createassembly/recipe/filling/superheated_blaze_core.json

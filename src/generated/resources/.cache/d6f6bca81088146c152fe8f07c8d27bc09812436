@@ -1,5 +1,5 @@
-// 1.21.1	2025-10-14T23:05:00.5776556	Tags for minecraft:item mod id createassembly
-f86ed06ac6958b7557a9fee1e1aa4a43a5d7ef2d data/createassembly/tags/item/complex_mechanism.json
+// 1.21.1	2025-10-28T21:08:20.7246557	Tags for minecraft:item mod id createassembly
+c42a508c965da519c88e95bb114f68061fb21d23 data/createassembly/tags/item/complex_mechanism.json
 1c00bf4ef743530083949f0dbd0d1550b7709ac5 data/createassembly/tags/item/compressed_cobblestone.json
 00071bb0fd4887a15b9415989200cd8f90bddeb2 data/createassembly/tags/item/compressed_sand.json
 fcc9cc8a4a0b40964b0ce5e89795d52fd4d5b5b3 data/createassembly/tags/item/ender_powder.json
@@ -11,6 +11,7 @@ c54c7c9c885a90233ab46702be8c322aa5a08ed6 data/createassembly/tags/item/prismarin
 0b2df930c57daf0530c37d83a4fdd1e31e4ef4ca data/create/tags/item/gearboxes.json
 8f98585858391d83e0e3fc16e1dec0468c2c7098 data/create/tags/item/upright_on_belt.json
 1c00bf4ef743530083949f0dbd0d1550b7709ac5 data/c/tags/item/compressed_cobble.json
+dbbe05677b5947d04eb319eb8c6abe3dbf42d934 data/c/tags/item/enchantables.json
 d3954950b53a6d7372bbe89e033a6329ea4670d2 data/c/tags/item/ingots.json
 1acf8c8ed194ea8e5c76b0226e6c65b02bce6a9c data/c/tags/item/ingots/radiant.json
 c97f0eea9486d81187e17c98d3aecd25a5fa2f18 data/c/tags/item/ingots/silver.json
@@ -25,7 +26,7 @@ f06e6bee4e8f79a219b20c797d9de7db7a373848 data/c/tags/item/nuggets/tin.json
 a367c8aa1312f933df9ca2b157b41ad78ebf555c data/c/tags/item/plates/lapis.json
 0ca9204dfe7437d752f84593788c1053878ebdad data/c/tags/item/plates/tin.json
 1acf8c8ed194ea8e5c76b0226e6c65b02bce6a9c data/c/tags/item/radiance_catalyst_required.json
-172eb8a98cc2699d60ab72ef9700ee026ffc6b82 data/c/tags/item/raw_materials.json
+1420baa9127f27731da232e9cc086c1ea4c9b7ff data/c/tags/item/raw_materials.json
 18ee56ce915134ab9091c0ef41704f2fc88e4904 data/c/tags/item/raw_materials/silver.json
 161047052842fcde8796a3c9cd0ddf34b872c67d data/c/tags/item/raw_materials/tin.json
 bc29eb3d8815733d4b42173f43ab5127dca2bcfd data/c/tags/item/rods.json
@@ -44,5 +45,19 @@ a51740624683f2b33eff07fa8b9be55b9a3954f2 data/c/tags/item/storage_blocks/red_san
 46631f12ca822b91cf54a372c1e28c5f39af291f data/c/tags/item/storage_blocks/silver.json
 43ce164d3b64237729e516ff929a4096c6decceb data/c/tags/item/storage_blocks/soul_sand.json
 ae682650171baf3a8f74171d6cc93c75e72fc09d data/c/tags/item/storage_blocks/tin.json
+dbbe05677b5947d04eb319eb8c6abe3dbf42d934 data/c/tags/item/tools.json
+4be9089142df0d1e11027c07690808cc6ef30ee5 data/c/tags/item/tools/melee_weapon.json
+4be9089142df0d1e11027c07690808cc6ef30ee5 data/minecraft/tags/item/axes.json
+1364d803c3c79b238c89e1fa3036d482b9f03660 data/minecraft/tags/item/cluster_max_harvestables.json
+dbbe05677b5947d04eb319eb8c6abe3dbf42d934 data/minecraft/tags/item/enchantable/durability.json
+8f2686c5dd0c67bdb5858779231e28828a8f5268 data/minecraft/tags/item/enchantable/fire_aspect.json
+81208274ea4f6af0c74e7a2ef023a2ccfd11a15f data/minecraft/tags/item/enchantable/mining.json
+81208274ea4f6af0c74e7a2ef023a2ccfd11a15f data/minecraft/tags/item/enchantable/mining_loot.json
+506bb2809e33936c0925c1c375c0d212db1b7485 data/minecraft/tags/item/enchantable/sharp_weapon.json
+8f2686c5dd0c67bdb5858779231e28828a8f5268 data/minecraft/tags/item/enchantable/sword.json
+8f2686c5dd0c67bdb5858779231e28828a8f5268 data/minecraft/tags/item/enchantable/weapon.json
+4be9089142df0d1e11027c07690808cc6ef30ee5 data/minecraft/tags/item/hoes.json
 d5aebde1fd1141df86b6ed4ace3f720504b32ab2 data/minecraft/tags/item/nether_soul.json
 1364d803c3c79b238c89e1fa3036d482b9f03660 data/minecraft/tags/item/pickaxes.json
+4be9089142df0d1e11027c07690808cc6ef30ee5 data/minecraft/tags/item/shovels.json
+8f2686c5dd0c67bdb5858779231e28828a8f5268 data/minecraft/tags/item/swords.json

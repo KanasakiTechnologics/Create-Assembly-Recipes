@@ -17,6 +17,8 @@ public class AsmFluidType {
             ()-> new SapFluidType(FluidType.Properties.create().density(3000).viscosity(4000).canDrown(false)));
     public static final DeferredHolder<FluidType, FluidType> SOUL_LAVA_TYPE = FLUID_TYPE.register("soul_lava_type",
             ()-> new SoulLavaFluidType(FluidType.Properties.create().lightLevel(10).temperature(1300).viscosity(4000).density(3000).canDrown(true).supportsBoating(false)));
+    public static final DeferredHolder<FluidType, FluidType> MOLTEN_GOLD_TYPE = FLUID_TYPE.register("molten_gold_type",
+            ()-> new MoltenGoldType(FluidType.Properties.create().lightLevel(10).temperature(1300).viscosity(4000).density(3000).canDrown(false).supportsBoating(false)));
 
     public static void register(IEventBus eventBus)
     {

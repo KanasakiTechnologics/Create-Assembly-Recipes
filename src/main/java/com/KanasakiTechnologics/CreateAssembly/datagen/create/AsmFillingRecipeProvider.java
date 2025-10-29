@@ -64,6 +64,14 @@ public final class AsmFillingRecipeProvider extends FillingRecipeGen {
             .output(Items.REDSTONE,3)
             .whenModLoaded(AsmMods.ENDERIO.getId())
     );
+    GeneratedRecipe GOLDEN_CARROT = create("gold_carrot",b->b.require(AsmFluid.MOLTEN_GOLD.get(),500)
+            .require(Items.CARROT)
+            .output(Items.GOLDEN_CARROT)
+    );
+    GeneratedRecipe GOLDEN_APPLE = create("gold_apple",b->b.require(AsmFluid.MOLTEN_GOLD.get(),500)
+            .require(Items.APPLE)
+            .output(Items.GOLDEN_APPLE)
+    );
 
     // For vanilla
     private void copperOxidation(String baseName, Block normal, Block exposed, Block weathered, Block oxidized) {
