@@ -39,6 +39,7 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(Blocks.BEDROCK)
                 .add(AsmBlocks.STAR_BLOCK.get())
                 .add(AsmBlocks.BEDROCK.get())
+                .add(AsmBlocks.REINFORCED_GLASS.get())
                 .add(LightBlocks.BLACK_GLASS_LIGHT_BLOCK.get())
                 .add(LightBlocks.BLUE_GLASS_LIGHT_BLOCK.get())
                 .add(LightBlocks.BROWN_GLASS_LIGHT_BLOCK.get())
@@ -72,7 +73,6 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(LightBlocks.RED_LIGHT_BLOCK.get())
                 .add(LightBlocks.WHITE_LIGHT_BLOCK.get())
                 .add(LightBlocks.YELLOW_LIGHT_BLOCK.get())
-                .add(AsmBlocks.REINFORCED_GLASS.get())
 
                 .add(AsmBlocks.ENDER_ORE.get())
                 .add(AsmBlocks.SULFUR_ORE.get())
@@ -97,6 +97,7 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(AsmBlocks.COMPRESSED_COAL.get())
                 .add(AsmBlocks.FUSED_COMPRESSED_COAL.get())
                 .add(AsmBlocks.HOT_COMPRESSED_COAL.get())
+                .add(AsmBlocks.REINFORCED_GLASS.get())
                 .add(LightBlocks.BLACK_GLASS_LIGHT_BLOCK.get())
                 .add(LightBlocks.BLUE_GLASS_LIGHT_BLOCK.get())
                 .add(LightBlocks.BROWN_GLASS_LIGHT_BLOCK.get())
@@ -208,7 +209,6 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(AsmBlocks.STAR_BLOCK.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(AsmBlocks.REINFORCED_GLASS.get())
                 .add(AsmBlocks.ENDER_ORE.get())
                 .add(AsmBlocks.TIN_BLOCK.get())
                 .add(AsmBlocks.TIN_ORE.get())

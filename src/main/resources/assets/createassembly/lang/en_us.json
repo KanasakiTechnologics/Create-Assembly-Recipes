@@ -63,7 +63,9 @@
   "item.createassembly.creative_alloy": "Creative Alloy",
   "item.createassembly.processing_creative": "Unrefined Creative Alloy",
   "tooltip.createassembly.processing_creative.shift_down": "The Essence of Star from Nether Needed to Refined It",
+  "tooltip.createassembly.reinforced.shift_down": "Indestructible by Wither use Wrench to Pickup",
   "tooltip.createassembly.processing_creative": "Press §eShift§r for more Information",
+  "tooltip.createassembly.reinforced": "Press §eShift§r for more Information",
 
   "item.createassembly.inactive_blaze_core": "Inactive Blaze Core",
   "item.createassembly.superheated_blaze_core.description_0": "§7Can be refueled after use",
