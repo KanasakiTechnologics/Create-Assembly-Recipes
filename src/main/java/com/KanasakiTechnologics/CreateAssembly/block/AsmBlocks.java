@@ -2,10 +2,15 @@ package com.KanasakiTechnologics.CreateAssembly.block;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
 import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -18,6 +23,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.List;
 import java.util.function.Supplier;
 
 import static com.KanasakiTechnologics.CreateAssembly.item.AsmItems.ITEMS;
@@ -88,7 +94,17 @@ public class AsmBlocks {
     public static final DeferredBlock<Block> STAR_BLOCK = registerBlock("starblock",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
     public static final DeferredBlock<ReinforcedGlassBlock> REINFORCED_GLASS = registerBlock("reinforced_glass",
-            () -> new ReinforcedGlassBlock());
+            () -> new ReinforcedGlassBlock(ResourceLocation.fromNamespaceAndPath("createassembly", "reinforced_glass"), "block/reinforced_glass", true){
+                @Override
+                public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    if(Screen.hasShiftDown()) {
+                        tooltipComponents.add(Component.translatable("tooltip.createassembly.reinforced.shift_down"));
+                    } else {
+                        tooltipComponents.add(Component.translatable("tooltip.createassembly.reinforced"));
+                    }
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -15,6 +15,7 @@ import com.simibubi.create.AllCreativeModeTabs;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceKey;
@@ -170,7 +171,11 @@ public class CreateAssembly {
                 ItemBlockRenderTypes.setRenderLayer(LightBlocks.PURPLE_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
                 ItemBlockRenderTypes.setRenderLayer(LightBlocks.MAGENTA_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
                 ItemBlockRenderTypes.setRenderLayer(LightBlocks.PINK_GLASS_LIGHT_BLOCK.get(), RenderType.translucent());
-                ItemBlockRenderTypes.setRenderLayer(AsmBlocks.REINFORCED_GLASS.get(), RenderType.translucent());
+                Minecraft.getInstance().getBlockColors().register(
+                        (state, world, pos, tintIndex) -> 0x55000000, // ARGB = semi-transparent black overlay
+                        AsmBlocks.REINFORCED_GLASS.get()
+                );
+
             });
         }
 
