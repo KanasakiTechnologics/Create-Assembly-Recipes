@@ -4,6 +4,8 @@ import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
 import com.KanasakiTechnologics.CreateAssembly.block.entity.AsmBlockEntities;
 import com.KanasakiTechnologics.CreateAssembly.content.recipes.AsmRecipeTypes;
+import com.KanasakiTechnologics.CreateAssembly.effect.AsmEffect;
+import com.KanasakiTechnologics.CreateAssembly.effect.AsmPotions;
 import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluidType;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
@@ -67,6 +69,8 @@ public class CreateAssembly {
         AsmMenuTypes.register(modEventBus);
         AsmBlockEntities.register(modEventBus);
         AsmLootModifiers.register(modEventBus);
+        AsmEffect.register(modEventBus);
+        AsmPotions.register(modEventBus);
 
         // Register creative tab handler
         modEventBus.addListener(this::addCreative);

@@ -6,10 +6,16 @@
     "ChromaticCompoundItemMixin",
     "MysteriousItemConversionCategoryMixin",
     "BlazeBurnerBlockEntityMixin",
-    "BlazeBurnerAccessor"
+    "BlazeBurnerAccessor",
+    "CloakingDetectionMixin",
+    "CloakingFootstepMixin"
   ],
-  "client": [],
+  "client": [
+    "CloakingArmorMixin",
+    "CloakingModelMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
-  }
+  },
+  "refmap": "createassembly.refmap.json"
 }
