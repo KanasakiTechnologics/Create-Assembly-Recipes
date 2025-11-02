@@ -17,6 +17,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluids;
 
 import java.util.concurrent.CompletableFuture;
@@ -38,9 +39,9 @@ public final class AsmCompactingRecipeProvider extends CompactingRecipeGen {
     GeneratedRecipe VERIDIUM = create("veridium",b -> b.require(Items.GRAVEL).require(Items.GRAVEL).require(Items.GRAVEL).require(AllItems.COPPER_NUGGET).require(AllItems.COPPER_NUGGET).require(AllItems.COPPER_NUGGET).require(AllItems.COPPER_NUGGET).require(Fluids.LAVA,250).output(AllPaletteStoneTypes.VERIDIUM.getBaseBlock().get()));
     GeneratedRecipe OCHRUM  = create("ochrum",b -> b.require(Items.GRAVEL).require(Items.GRAVEL).require(Items.GRAVEL).require(Items.GOLD_NUGGET).require(Items.GOLD_NUGGET).require(Items.GOLD_NUGGET).require(Items.GOLD_NUGGET).require(Fluids.LAVA,250).output(AllPaletteStoneTypes.OCHRUM.getBaseBlock().get()));
     GeneratedRecipe ASURINE  = create("asurine",b -> b.require(Items.GRAVEL).require(Items.GRAVEL).require(Items.GRAVEL).require(AllItems.ZINC_NUGGET).require(AllItems.ZINC_NUGGET).require(AllItems.ZINC_NUGGET).require(AllItems.ZINC_NUGGET).require(Fluids.LAVA,250).output(AllPaletteStoneTypes.ASURINE.getBaseBlock().get()));
-    GeneratedRecipe GOLD_BLOCK = create("gold_molten_block",b -> b.require(AsmItems.FUSED_BLEND).require(AsmItems.FUSED_BLEND).require(AsmFluid.MOLTEN_GOLD.get(),500).output(Items.GOLD_BLOCK));
-    GeneratedRecipe SLIME  = create("slime",b -> b.require(AsmFluid.SAP.get(),125).output(Items.SLIME_BALL,3));
-    GeneratedRecipe RAW_RUBBER  = create("raw_rubber",b -> b.require(AsmFluid.SAP.get(),250).output(AsmItems.RAW_RUBBER));
+    GeneratedRecipe GOLD_BLOCK = create("gold_molten_block",b -> b.require(AsmItems.FUSED_BLEND).require(AsmItems.FUSED_BLEND).require((FlowingFluid)AsmFluid.MOLTEN_GOLD.get(),500).output(Items.GOLD_BLOCK));
+    GeneratedRecipe SLIME  = create("slime",b -> b.require((FlowingFluid)AsmFluid.SAP.get(),125).output(Items.SLIME_BALL,3));
+    GeneratedRecipe RAW_RUBBER  = create("raw_rubber",b -> b.require((FlowingFluid)AsmFluid.SAP.get(),250).output(AsmItems.RAW_RUBBER));
     GeneratedRecipe COAL_BLOCK  = create("coal_block",b -> b.require(BuiltInRegistries.ITEM.get(Mods.MEK.asResource("block_charcoal"))).require(BuiltInRegistries.ITEM.get(Mods.MEK.asResource("block_charcoal"))).require(BuiltInRegistries.ITEM.get(Mods.MEK.asResource("block_charcoal"))).require(BuiltInRegistries.ITEM.get(Mods.MEK.asResource("block_charcoal"))).output(Blocks.COAL_BLOCK).whenModLoaded(Mods.MEK.getId()));
 
     //GeneratedRecipe SAND = create("sand", b -> b.require(Blocks.SAND).require(Blocks.SAND).require(Blocks.SAND).require(Blocks.SAND).require(Blocks.SAND).require(Blocks.SAND).require(Blocks.SAND).require(Blocks.SAND).require(Blocks.SAND).output(AsmBlocks.COMPRESSED_SAND));

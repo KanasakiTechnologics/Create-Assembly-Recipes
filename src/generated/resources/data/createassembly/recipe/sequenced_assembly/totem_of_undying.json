@@ -3,7 +3,6 @@
   "ingredient": {
     "item": "createassembly:electrum_jewel"
   },
-  "loops": 1,
   "results": [
     {
       "id": "minecraft:totem_of_undying"
@@ -46,7 +45,7 @@
           "item": "createassembly:uncompleted_totem_of_undying"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "amount": 1000,
           "fluid": "minecraft:lava"
         }
@@ -93,7 +92,7 @@
           "item": "createassembly:uncompleted_totem_of_undying"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "amount": 500,
           "fluid": "create_enchantment_industry:experience"
         }

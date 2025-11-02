@@ -1,5 +1,6 @@
 package com.KanasakiTechnologics.CreateAssembly.util;
 
+import com.simibubi.create.content.kinetics.fan.processing.*;
 import com.simibubi.create.content.kinetics.fan.processing.FanProcessingType;
 import com.simibubi.create.foundation.recipe.RecipeApplier;
 import com.KanasakiTechnologics.CreateAssembly.content.recipes.AsmRecipeTypes;
@@ -15,12 +16,15 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.Recipe;
+import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.crafting.SingleRecipeInput;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
+import java.util.Optional;
 
 public class GlowingType implements FanProcessingType {
     @Override
@@ -36,7 +40,7 @@ public class GlowingType implements FanProcessingType {
 
     @Override
     public int getPriority() {
-        return 1000; // lower than DragonBreathingType
+        return 1000;
     }
 
     @Override
@@ -44,10 +48,13 @@ public class GlowingType implements FanProcessingType {
         return AsmRecipeTypes.GLOWING.find(new SingleRecipeInput(stack), level).isPresent();
     }
 
+
     @Override
-    public @Nullable List<ItemStack> process(ItemStack stack, Level level) {
+    @Nullable
+    public List<ItemStack> process(ItemStack stack, Level level) {
         return AsmRecipeTypes.GLOWING.find(new SingleRecipeInput(stack), level)
-                .map(recipe -> RecipeApplier.applyRecipeOn(level, stack, recipe))
+                .map(RecipeHolder::value)
+                .map(r -> RecipeApplier.applyRecipeOn(level, stack, r, true))
                 .orElse(null);
     }
 

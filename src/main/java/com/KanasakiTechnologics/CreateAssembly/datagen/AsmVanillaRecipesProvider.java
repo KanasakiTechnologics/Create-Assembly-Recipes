@@ -391,6 +391,26 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .unlockedBy("has_calculation_mechanism",has(AsmItems.CALCULATION_MECHANISM))
                 .save(recipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Blocks.COPPER_BLOCK,4)
+                .requires(Blocks.CUT_COPPER)
+                .requires(Blocks.CUT_COPPER)
+                .requires(Blocks.CUT_COPPER)
+                .requires(Blocks.CUT_COPPER)
+                .requires(Blocks.CUT_COPPER)
+                .requires(Blocks.CUT_COPPER)
+                .requires(Blocks.CUT_COPPER)
+                .requires(Blocks.CUT_COPPER)
+                .unlockedBy("has_cut_copper",has(Blocks.CUT_COPPER))
+                .save(recipeOutput,"minecraft:uncraft_cut_copper");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Blocks.COPPER_BLOCK,2)
+                .requires(Blocks.CUT_COPPER)
+                .requires(Blocks.CUT_COPPER)
+                .requires(Blocks.CUT_COPPER)
+                .requires(Blocks.CUT_COPPER)
+                .unlockedBy("has_cut_copper",has(Blocks.CUT_COPPER))
+                .save(recipeOutput,"minecraft:uncraft_cut_copper2");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.ENDER_CHEST,2)
                 .pattern("OAO")
                 .pattern("OCO")

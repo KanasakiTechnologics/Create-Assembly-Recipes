@@ -54,7 +54,7 @@
           "item": "createassembly:incomplete_elytra"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:components",
           "amount": 250,
           "components": {
             "create:potion_fluid_bottle_type": "regular",
@@ -62,7 +62,7 @@
               "potion": "minecraft:slow_falling"
             }
           },
-          "fluid": "create:potion"
+          "fluids": "create:potion"
         }
       ],
       "results": [

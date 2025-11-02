@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-28T20:31:42.69056	Recipes
+// 1.21.1	2025-11-01T19:30:55.4939896	Recipes
 70489b7b1bd0576d447a86f42be60defafe2a67a data/createassembly/advancement/recipes/building_blocks/light_block/black_light_block.json
 75ee8c37be49f00611158f88824058249dfe892e data/createassembly/advancement/recipes/building_blocks/light_block/blue_light_block.json
 dc659356b388986b8eb1b1998f6fd20bd0ae3058 data/createassembly/advancement/recipes/building_blocks/light_block/brown_light_block.json
@@ -300,6 +300,8 @@ f874217fb2878efa8724d7e2179adf5ff331cb5f data/minecraft/advancement/recipes/misc
 f1bab031f6918421462a88614bc939a2ca028409 data/minecraft/advancement/recipes/misc/tin_ingot_from_smelting_deepslate_tin_ore.json
 08a1c7cd7efe5773f90616e8983b81d31995825b data/minecraft/advancement/recipes/misc/tin_ingot_from_smelting_raw_tin.json
 2be6bcf2f6723ef9ee9a6c9b3ce900eb8b6b9bde data/minecraft/advancement/recipes/misc/tin_ingot_from_smelting_tin_ore.json
+7b9d8760baf4c3d3802626add0bb432e695d5bfa data/minecraft/advancement/recipes/misc/uncraft_cut_copper.json
+a62804179712704e0d14eab9e2ed5620912986f3 data/minecraft/advancement/recipes/misc/uncraft_cut_copper2.json
 e96be01c8c5a1c4a2978b90e114e169e5f5ec675 data/minecraft/advancement/recipes/tools/cobweb.json
 ebe66ff4476c21ed56989c7414f2b4c1e47c0992 data/minecraft/recipe/chest_from_logs.json
 86ffbf3d20c03c8ef27f501271e865d0903cc205 data/minecraft/recipe/cobweb.json
@@ -327,3 +329,5 @@ f8d8b8b39378db784c09f12e2f34858581e12341 data/minecraft/recipe/tin_ingot_from_bl
 7e3ad3a204ea8dadf4945d1363e2ecc0c1182aef data/minecraft/recipe/tin_ingot_from_smelting_deepslate_tin_ore.json
 8e000775a4f0ae94f933eeb700e4cf41a139a13e data/minecraft/recipe/tin_ingot_from_smelting_raw_tin.json
 a4938f65ac7b769de3f7c20a4c3fa8162ff2c91e data/minecraft/recipe/tin_ingot_from_smelting_tin_ore.json
+3856a504966a947913c05b1697666a139b07a18b data/minecraft/recipe/uncraft_cut_copper.json
+4b62c9cd31d3d6f93f960d90dc772797d37138c0 data/minecraft/recipe/uncraft_cut_copper2.json

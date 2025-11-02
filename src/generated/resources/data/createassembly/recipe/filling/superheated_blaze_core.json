@@ -5,7 +5,7 @@
       "item": "createassembly:inactive_blaze_core"
     },
     {
-      "type": "fluid_stack",
+      "type": "neoforge:single",
       "amount": 1000,
       "fluid": "createassembly:soul_lava"
     }

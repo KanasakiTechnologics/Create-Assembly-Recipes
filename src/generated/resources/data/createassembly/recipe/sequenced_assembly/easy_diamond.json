@@ -22,7 +22,7 @@
           "item": "createassembly:hot_compressed_coal_block"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "amount": 750,
           "fluid": "minecraft:lava"
         }

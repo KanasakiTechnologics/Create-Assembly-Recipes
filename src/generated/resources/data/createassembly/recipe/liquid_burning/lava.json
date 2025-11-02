@@ -3,9 +3,9 @@
   "burn_time": 2400,
   "ingredients": [
     {
-      "type": "fluid_tag",
+      "type": "neoforge:tag",
       "amount": 1000,
-      "fluid_tag": "c:soul_lava"
+      "tag": "c:soul_lava"
     }
   ],
   "results": [],

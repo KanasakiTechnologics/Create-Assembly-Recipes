@@ -16,6 +16,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluids;
 import net.neoforged.neoforge.common.Tags;
 import plus.dragons.createdragonsplus.common.registry.CDPFluids;
@@ -30,7 +31,7 @@ public final class AsmMixingRecipeProvider extends MixingRecipeGen {
     }
 
     GeneratedRecipe GLOW_INK_FLUID = create("glow_ink_fluid",b -> b.require(Items.GLOW_INK_SAC).require(Fluids.WATER,250).output(AsmFluid.GLOW_INK.get(), 250));
-    GeneratedRecipe GLOW_INK_SAC = create("glow_ink_sac",b -> b.requiresHeat(HeatCondition.HEATED).require(AsmFluid.GLOW_INK.get(), 250).output(Items.GLOW_INK_SAC));
+    GeneratedRecipe GLOW_INK_SAC = create("glow_ink_sac",b -> b.requiresHeat(HeatCondition.HEATED).require((FlowingFluid)AsmFluid.GLOW_INK.get(), 250).output(Items.GLOW_INK_SAC));
     GeneratedRecipe HOT_COAL = create("hot_coal",b -> b.requiresHeat(HeatCondition.SUPERHEATED).require(Blocks.COAL_BLOCK).output(AsmBlocks.HOT_COAL));
     GeneratedRecipe AMETHYST_BLOCK = create("amethyst_block",b -> b.require(Items.AMETHYST_SHARD).require(Items.AMETHYST_SHARD).require(Items.AMETHYST_SHARD).require(Fluids.WATER,150).output(Blocks.AMETHYST_BLOCK));
     GeneratedRecipe CHROMATIC_COMPOUND = create("chromatic_compound",b -> b.require(Items.GLOWSTONE_DUST).require(Items.GLOWSTONE_DUST).require(Items.GLOWSTONE_DUST).require(AllItems.POWDERED_OBSIDIAN).require(AllItems.POWDERED_OBSIDIAN).require(AllItems.POWDERED_OBSIDIAN).require(AllItems.POLISHED_ROSE_QUARTZ).requiresHeat(HeatCondition.SUPERHEATED).output(AllItems.CHROMATIC_COMPOUND));

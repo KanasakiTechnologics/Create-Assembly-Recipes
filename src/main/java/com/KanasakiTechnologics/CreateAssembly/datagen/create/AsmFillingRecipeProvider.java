@@ -16,6 +16,7 @@ import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.WeatheringCopper.WeatherState;
+import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluids;
 import net.neoforged.neoforge.common.Tags;
 
@@ -43,7 +44,10 @@ public final class AsmFillingRecipeProvider extends FillingRecipeGen {
         registerCopperSet(AllBlocks.COPPER_TILES);
     }
 
-    GeneratedRecipe SUPERHEATED_BLAZE_CORE = create("superheated_blaze_core", b -> b.require(AsmFluid.SOUL_LAVA.get(), 1000)
+    FlowingFluid soulLavaFluid = (FlowingFluid) AsmFluid.SOUL_LAVA.get();
+    FlowingFluid moltengoldFluid = (FlowingFluid) AsmFluid.MOLTEN_GOLD.get();
+
+    GeneratedRecipe SUPERHEATED_BLAZE_CORE = create("superheated_blaze_core", b -> b.require(soulLavaFluid, 1000)
             .require(AsmItems.INACTIVE_BLAZE_CORE)
             .output(AsmItems.SUPERHEATED_BLAZE_CORE));
     GeneratedRecipe BLAZE_CORE = create("blaze_core", b -> b.require(Fluids.LAVA, 1000)
@@ -64,11 +68,11 @@ public final class AsmFillingRecipeProvider extends FillingRecipeGen {
             .output(Items.REDSTONE,3)
             .whenModLoaded(AsmMods.ENDERIO.getId())
     );
-    GeneratedRecipe GOLDEN_CARROT = create("gold_carrot",b->b.require(AsmFluid.MOLTEN_GOLD.get(),500)
+    GeneratedRecipe GOLDEN_CARROT = create("gold_carrot",b->b.require(moltengoldFluid,500)
             .require(Items.CARROT)
             .output(Items.GOLDEN_CARROT)
     );
-    GeneratedRecipe GOLDEN_APPLE = create("gold_apple",b->b.require(AsmFluid.MOLTEN_GOLD.get(),500)
+    GeneratedRecipe GOLDEN_APPLE = create("gold_apple",b->b.require(moltengoldFluid,500)
             .require(Items.APPLE)
             .output(Items.GOLDEN_APPLE)
     );

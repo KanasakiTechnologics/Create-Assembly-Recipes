@@ -24,7 +24,9 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluids;
+import net.neoforged.neoforge.common.Tags;
 import plus.dragons.createdragonsplus.common.registry.CDPFluids;
 import plus.dragons.createenchantmentindustry.common.registry.CEIFluids;
 
@@ -189,7 +191,7 @@ public final class AsmSequencedAssemblyRecipeProvider extends SequencedAssemblyR
             .addStep(DeployerApplicationRecipe::new,rb -> rb.require(AllBlocks.COGWHEEL))
             .addStep(DeployerApplicationRecipe::new,rb -> rb.require(Items.DRIED_KELP))
             .addStep(DeployerApplicationRecipe::new,rb -> rb.require(AllItems.COPPER_SHEET))
-            .addStep(DeployerApplicationRecipe::new, rb -> rb.require(Ingredient.of(AllTags.commonItemTag("glass_blocks/colorless"))))
+            .addStep(DeployerApplicationRecipe::new, rb -> rb.require(Ingredient.of(Tags.Items.GLASS_BLOCKS_COLORLESS)))
 
     );
 
@@ -232,7 +234,7 @@ public final class AsmSequencedAssemblyRecipeProvider extends SequencedAssemblyR
             .addOutput(AsmItems.RADIANT_CATALYST,1)
             .loops(1)
             .addStep(FillingRecipe::new,rb ->rb.require(Fluids.LAVA,250))
-            .addStep(FillingRecipe::new,rb -> rb.require(AsmFluid.GLOW_INK.get(),250))
+            .addStep(FillingRecipe::new,rb -> rb.require((FlowingFluid)AsmFluid.GLOW_INK.get(),250))
             .addStep(DeployerApplicationRecipe::new,rb -> rb.require(AllItems.EXP_NUGGET))
             .addStep(PressingRecipe::new,rb -> rb)
     );
@@ -242,7 +244,7 @@ public final class AsmSequencedAssemblyRecipeProvider extends SequencedAssemblyR
             .addOutput(AsmItems.SHADOW_CATALYST,1)
             .loops(1)
             .addStep(FillingRecipe::new,rb ->rb.require(Fluids.LAVA,250))
-            .addStep(FillingRecipe::new,rb -> rb.require(BuiltInRegistries.FLUID.get(AsmMods.TRIALNERROR.asResource("ominous_bile")),250).whenModLoaded(AsmMods.TRIALNERROR.getId()))
+            .addStep(FillingRecipe::new,rb -> rb.require((FlowingFluid) BuiltInRegistries.FLUID.get(AsmMods.TRIALNERROR.asResource("ominous_bile")),250).whenModLoaded(AsmMods.TRIALNERROR.getId()))
             .addStep(DeployerApplicationRecipe::new,rb -> rb.require(AllItems.EXP_NUGGET))
             .addStep(PressingRecipe::new,rb -> rb)
     );

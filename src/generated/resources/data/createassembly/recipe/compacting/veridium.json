@@ -23,7 +23,7 @@
       "item": "create:copper_nugget"
     },
     {
-      "type": "fluid_stack",
+      "type": "neoforge:single",
       "amount": 250,
       "fluid": "minecraft:lava"
     }

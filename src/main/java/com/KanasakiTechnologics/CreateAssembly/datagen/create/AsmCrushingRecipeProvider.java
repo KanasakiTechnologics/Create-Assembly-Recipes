@@ -22,8 +22,8 @@ import java.util.concurrent.CompletableFuture;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.SILVER;
-import static com.simibubi.create.foundation.data.recipe.CompatMetals.TIN;
+import static com.simibubi.create.foundation.data.recipe.CommonMetal.SILVER;
+import static com.simibubi.create.foundation.data.recipe.CommonMetal.TIN;
 
 @SuppressWarnings("unused")
 public final class AsmCrushingRecipeProvider extends CrushingRecipeGen {

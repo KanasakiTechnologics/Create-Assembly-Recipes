@@ -26,7 +26,7 @@
           "item": "createassembly:unprocessed_netherite_dust"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "amount": 250,
           "fluid": "create_enchantment_industry:experience"
         }
@@ -44,7 +44,7 @@
           "item": "createassembly:unprocessed_netherite_dust"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "amount": 250,
           "fluid": "minecraft:lava"
         }

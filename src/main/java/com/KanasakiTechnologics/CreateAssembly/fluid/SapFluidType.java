@@ -27,6 +27,7 @@ public class SapFluidType extends FluidType {
         );
     }
 
+    @SuppressWarnings("deprecated")
     @Override
     public void initializeClient(@NotNull Consumer<IClientFluidTypeExtensions> consumer) {
         consumer.accept(new IClientFluidTypeExtensions() {

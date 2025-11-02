@@ -17,7 +17,7 @@
           "item": "create:chromatic_compound"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "amount": 250,
           "fluid": "minecraft:lava"
         }
@@ -51,7 +51,7 @@
           "item": "create:chromatic_compound"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "amount": 250,
           "fluid": "create_enchantment_industry:experience"
         }

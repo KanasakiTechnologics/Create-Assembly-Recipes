@@ -3,7 +3,6 @@
   "ingredient": {
     "item": "createassembly:blank_catalyst"
   },
-  "loops": 1,
   "results": [
     {
       "id": "createassembly:shadow_catalyst"
@@ -17,7 +16,7 @@
           "item": "createassembly:blank_catalyst"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "amount": 250,
           "fluid": "minecraft:lava"
         }
@@ -35,7 +34,7 @@
           "item": "createassembly:blank_catalyst"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "amount": 250,
           "fluid": "trialanderror:ominous_bile"
         }

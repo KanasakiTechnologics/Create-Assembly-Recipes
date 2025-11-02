@@ -11,7 +11,7 @@
       "item": "createassembly:alchemist_dust"
     },
     {
-      "type": "fluid_stack",
+      "type": "neoforge:components",
       "amount": 750,
       "components": {
         "create:potion_fluid_bottle_type": "regular",
@@ -19,7 +19,7 @@
           "potion": "minecraft:night_vision"
         }
       },
-      "fluid": "create:potion"
+      "fluids": "create:potion"
     }
   ],
   "results": [

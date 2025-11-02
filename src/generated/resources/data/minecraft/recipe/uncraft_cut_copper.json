@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:cut_copper"
+    },
+    {
+      "item": "minecraft:cut_copper"
+    },
+    {
+      "item": "minecraft:cut_copper"
+    },
+    {
+      "item": "minecraft:cut_copper"
+    },
+    {
+      "item": "minecraft:cut_copper"
+    },
+    {
+      "item": "minecraft:cut_copper"
+    },
+    {
+      "item": "minecraft:cut_copper"
+    },
+    {
+      "item": "minecraft:cut_copper"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:copper_block"
+  }
+}

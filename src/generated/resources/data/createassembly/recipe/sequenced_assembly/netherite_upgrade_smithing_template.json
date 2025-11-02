@@ -3,7 +3,6 @@
   "ingredient": {
     "item": "createassembly:netherrack_shard"
   },
-  "loops": 1,
   "results": [
     {
       "id": "minecraft:netherite_upgrade_smithing_template"
@@ -17,7 +16,7 @@
           "item": "createassembly:uncompleted_template"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "amount": 250,
           "fluid": "minecraft:lava"
         }
@@ -51,7 +50,7 @@
           "item": "createassembly:uncompleted_template"
         },
         {
-          "type": "fluid_stack",
+          "type": "neoforge:single",
           "amount": 250,
           "fluid": "create_enchantment_industry:experience"
         }

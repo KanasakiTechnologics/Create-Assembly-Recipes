@@ -14,8 +14,8 @@ public final class AsmPressingRecipeProvider extends PressingRecipeGen {
         super(output, registries, CreateAssembly.MOD_ID);
     }
 
-    GeneratedRecipe LAPIS_SHEET = create(() -> AsmItems.LAPIS_ALLOY.get(),b->b.output(AsmItems.LAPIS_SHEET));
-    GeneratedRecipe TIN_SHEET = create(() -> AsmItems.TIN_SHEET.get(),b->b.output(AsmItems.TIN_SHEET));
-    GeneratedRecipe CREATIVE_ALLOY = create(() -> AsmItems.CREATIVE_ALLOY.get(),b->b.output(AsmItems.CREATIVE_SHEET));
+    GeneratedRecipe LAPIS_SHEET = create(() -> AsmItems.LAPIS_ALLOY,b->b.output(AsmItems.LAPIS_SHEET));
+    GeneratedRecipe TIN_SHEET = create(() -> AsmItems.TIN_SHEET,b->b.output(AsmItems.TIN_SHEET));
+    GeneratedRecipe CREATIVE_ALLOY = create(() -> AsmItems.CREATIVE_ALLOY,b->b.output(AsmItems.CREATIVE_SHEET));
 
 }

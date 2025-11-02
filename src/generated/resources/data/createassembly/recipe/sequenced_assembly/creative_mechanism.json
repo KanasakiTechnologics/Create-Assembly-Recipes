@@ -3,7 +3,6 @@
   "ingredient": {
     "item": "createassembly:creative_sheet"
   },
-  "loops": 1,
   "results": [
     {
       "id": "createassembly:creative_mechanism"
