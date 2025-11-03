@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "createassembly:drill_head"
+  },
+  "base": {
+    "item": "create:andesite_casing"
+  },
+  "result": {
+    "count": 1,
+    "id": "create:mechanical_drill"
+  },
+  "template": {
+    "item": "createassembly:andesite_mechanism"
+  }
+}

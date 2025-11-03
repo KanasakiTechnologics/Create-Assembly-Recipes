@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "create:whisk"
+  },
+  "base": {
+    "item": "create:andesite_casing"
+  },
+  "result": {
+    "count": 1,
+    "id": "create:mechanical_mixer"
+  },
+  "template": {
+    "item": "createassembly:andesite_mechanism"
+  }
+}

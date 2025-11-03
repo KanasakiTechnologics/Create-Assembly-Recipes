@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_saw_blade": {
+      "conditions": {
+        "items": [
+          {
+            "items": "createassembly:saw_blade"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "create:component/mechanical_saw"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_saw_blade"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "create:component/mechanical_saw"
+    ]
+  }
+}

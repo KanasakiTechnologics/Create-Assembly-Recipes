@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_brass_hand": {
+      "conditions": {
+        "items": [
+          {
+            "items": "create:brass_hand"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "create:component/deployer"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_brass_hand"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "create:component/deployer"
+    ]
+  }
+}
