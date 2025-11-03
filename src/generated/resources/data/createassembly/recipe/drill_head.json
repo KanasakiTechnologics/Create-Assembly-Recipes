@@ -2,9 +2,6 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "create:andesite_alloy"
-    },
     "C": {
       "item": "minecraft:copper_ingot"
     },
@@ -13,9 +10,9 @@
     }
   },
   "pattern": [
-    " A ",
-    "ACA",
-    "III"
+    " I ",
+    "ICI",
+    "ICI"
   ],
   "result": {
     "count": 1,

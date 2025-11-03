@@ -8,6 +8,7 @@ import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
 import com.mrh0.createaddition.index.CAItems;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllItems;
+import com.simibubi.create.Create;
 import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
 import com.simibubi.create.content.processing.recipe.StandardProcessingRecipe;
 import com.simibubi.create.foundation.data.recipe.Mods;
@@ -77,12 +78,11 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .unlockedBy("has_iron_ingot",has(Items.IRON_INGOT)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmItems.DRILL_HEAD,1)
-                .pattern(" A ")
-                .pattern("ACA")
-                .pattern("III")
+                .pattern(" I ")
+                .pattern("ICI")
+                .pattern("ICI")
                 .define('I', Items.IRON_INGOT)
                 .define('C', Items.COPPER_INGOT)
-                .define('A', AllItems.ANDESITE_ALLOY)
                 .unlockedBy("has_iron_ingot",has(Items.IRON_INGOT)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmItems.PRESS_HEAD,1)
@@ -102,50 +102,6 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .define('C', Items.COPPER_INGOT)
                 .unlockedBy("has_iron_ingot",has(Items.IRON_INGOT)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.MECHANICAL_DRILL,1)
-                .pattern(" A ")
-                .pattern(" C ")
-                .pattern(" D ")
-                .define('A', AsmItems.ANDESITE_MECHANISM)
-                .define('C', AllBlocks.ANDESITE_CASING)
-                .define('D', AsmItems.DRILL_HEAD)
-                .unlockedBy("has_andesite_mechanism",has(Items.IRON_INGOT)).save(recipeOutput,"create:crafting/kinetics/mechanical_drill");
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.MECHANICAL_PRESS,1)
-                .pattern(" A ")
-                .pattern(" C ")
-                .pattern(" P ")
-                .define('A', AsmItems.ANDESITE_MECHANISM)
-                .define('C', AllBlocks.ANDESITE_CASING)
-                .define('P', AsmItems.PRESS_HEAD)
-                .unlockedBy("has_andesite_mechanism",has(Items.IRON_INGOT)).save(recipeOutput,"create:crafting/kinetics/mechanical_press");
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.MECHANICAL_SAW,1)
-                .pattern(" A ")
-                .pattern(" C ")
-                .pattern(" S ")
-                .define('A', AsmItems.ANDESITE_MECHANISM)
-                .define('C', AllBlocks.ANDESITE_CASING)
-                .define('S', AsmItems.SAW_BLADE)
-                .unlockedBy("has_andesite_mechanism",has(Items.IRON_INGOT)).save(recipeOutput,"create:crafting/kinetics/mechanical_saw");
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.DEPLOYER,1)
-                .pattern(" A ")
-                .pattern(" C ")
-                .pattern(" B ")
-                .define('A', AsmItems.ANDESITE_MECHANISM)
-                .define('C', AllBlocks.ANDESITE_CASING)
-                .define('B', AllItems.BRASS_HAND)
-                .unlockedBy("has_andesite_mechanism",has(Items.IRON_INGOT)).save(recipeOutput,"create:crafting/kinetics/deployer");
-
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AllBlocks.MECHANICAL_MIXER,1)
-                .pattern(" A ")
-                .pattern(" C ")
-                .pattern(" M ")
-                .define('A', AsmItems.ANDESITE_MECHANISM)
-                .define('C', AllBlocks.ANDESITE_CASING)
-                .define('M', AllItems.WHISK)
-                .unlockedBy("has_andesite_mechanism",has(Items.IRON_INGOT)).save(recipeOutput,"create:crafting/kinetics/mechanical_mixer");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmBlocks.STAR_BLOCK,1)
                 .pattern("NNN")
@@ -649,6 +605,12 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
         glassLight(recipeOutput, Items.PURPLE_STAINED_GLASS, LightBlocks.PURPLE_GLASS_LIGHT_BLOCK.get());
         glassLight(recipeOutput, Items.MAGENTA_STAINED_GLASS, LightBlocks.MAGENTA_GLASS_LIGHT_BLOCK.get());
         glassLight(recipeOutput, Items.PINK_STAINED_GLASS, LightBlocks.PINK_GLASS_LIGHT_BLOCK.get());
+
+        createcomponent(recipeOutput, AsmItems.ANDESITE_MECHANISM.get(),AllBlocks.ANDESITE_CASING.asItem(), AsmItems.SAW_BLADE.get(),AllBlocks.MECHANICAL_SAW.get());
+        createcomponent(recipeOutput, AsmItems.ANDESITE_MECHANISM.get(),AllBlocks.ANDESITE_CASING.asItem(), AsmItems.DRILL_HEAD.get(),AllBlocks.MECHANICAL_DRILL.get());
+        createcomponent(recipeOutput, AsmItems.ANDESITE_MECHANISM.get(),AllBlocks.ANDESITE_CASING.asItem(), AsmItems.PRESS_HEAD.get(),AllBlocks.MECHANICAL_PRESS.get());
+        createcomponent(recipeOutput, AsmItems.ANDESITE_MECHANISM.get(),AllBlocks.ANDESITE_CASING.asItem(), AllItems.WHISK.get(),AllBlocks.MECHANICAL_MIXER.get());
+        createcomponent(recipeOutput, AsmItems.ANDESITE_MECHANISM.get(),AllBlocks.ANDESITE_CASING.asItem(), AllItems.BRASS_HAND.get(),AllBlocks.DEPLOYER.get());
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
@@ -695,6 +657,43 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .pattern("   ")
                 .unlockedBy("has_iron_hammer", has(AsmItems.IRON_HAMMER))
                 .save(out, ResourceLocation.fromNamespaceAndPath(MOD_ID, "crushing_" + BuiltInRegistries.ITEM.getKey(result).getPath()));
+    }
+
+    private static void createcomponent(RecipeOutput out, Item component, Object base, Object addition, Object result) {
+        Ingredient baseIngredient = toIngredient(base);
+        Ingredient additionIngredient = toIngredient(addition);
+        Item resultItem = toItem(result);
+
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(component),
+                        baseIngredient,
+                        additionIngredient,
+                        RecipeCategory.MISC,
+                        resultItem
+                )
+                .unlocks("has_" + getRegistryPath(toItem(addition)), has(toItem(addition)))
+                .save(out, ResourceLocation.fromNamespaceAndPath(Create.ID, "component/" + getRegistryPath(resultItem)));
+    }
+
+    private static Ingredient toIngredient(Object obj) {
+        if (obj instanceof Item item) return Ingredient.of(item);
+        if (obj instanceof Block block) return Ingredient.of(block.asItem());
+        return Ingredient.EMPTY;
+    }
+
+    private static Item toItem(Object obj) {
+        if (obj instanceof Item item) return item;
+        if (obj instanceof Block block) return block.asItem();
+        return Items.AIR;
+    }
+
+    private static String getRegistryPath(Object obj) {
+        if (obj instanceof Item item) {
+            return BuiltInRegistries.ITEM.getKey(item).getPath();
+        } else if (obj instanceof Block block) {
+            return BuiltInRegistries.BLOCK.getKey(block).getPath();
+        }
+        return "unknown";
     }
 
     public static void templateduplicate(RecipeOutput out, Item template, Item result){
