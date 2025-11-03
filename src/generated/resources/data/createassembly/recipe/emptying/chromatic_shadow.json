@@ -1,0 +1,17 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "create:shadow_steel"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:chromatic_compound"
+    },
+    {
+      "amount": 100,
+      "id": "createassembly:shadow_steel"
+    }
+  ]
+}

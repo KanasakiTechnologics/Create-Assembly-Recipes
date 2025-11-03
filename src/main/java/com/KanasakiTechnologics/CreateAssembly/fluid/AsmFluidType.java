@@ -10,7 +10,7 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 public class AsmFluidType {
     public static final DeferredRegister<FluidType> FLUID_TYPE = DeferredRegister.create(NeoForgeRegistries.Keys.FLUID_TYPES, CreateAssembly.MOD_ID);;
     public static final DeferredHolder<FluidType, FluidType> GLOW_INK_TYPE = FLUID_TYPE.register("glow_ink_type",
-            ()-> new GlowInkFluidType(FluidType.Properties.create().lightLevel(10).viscosity(1000).density(1000).canDrown(false).supportsBoating(true)));
+            ()-> new GlowInkFluidType(FluidType.Properties.create().lightLevel(10).viscosity(1000).density(1000).canDrown(false)));
     public static final DeferredHolder<FluidType,FluidType>SULFURIC_ACID_TYPE = FLUID_TYPE.register("sulfuric_acid_type",
             ()-> new SulfuricAcidFluidType(FluidType.Properties.create().density(1000).viscosity(1000).canDrown(false)));
     public static final DeferredHolder<FluidType,FluidType>SAP_TYPE = FLUID_TYPE.register("sap_type",
@@ -19,6 +19,10 @@ public class AsmFluidType {
             ()-> new SoulLavaFluidType(FluidType.Properties.create().lightLevel(10).temperature(1300).viscosity(4000).density(3000).canDrown(true).supportsBoating(false)));
     public static final DeferredHolder<FluidType, FluidType> MOLTEN_GOLD_TYPE = FLUID_TYPE.register("molten_gold_type",
             ()-> new MoltenGoldType(FluidType.Properties.create().lightLevel(10).temperature(1300).viscosity(4000).density(3000).canDrown(false).supportsBoating(false)));
+    public static final DeferredHolder<FluidType,FluidType>SHADOW_STEEL_TYPE = FLUID_TYPE.register("shadow_steel_type",
+            ()-> new ShadowSteelFluidType(FluidType.Properties.create().density(1000).viscosity(1000).canDrown(false)));
+    public static final DeferredHolder<FluidType,FluidType>REFINED_RADIANCE_TYPE = FLUID_TYPE.register("refined_radiance_type",
+            ()-> new RefinedRadianceFluidType(FluidType.Properties.create().density(1000).viscosity(1000).canDrown(false)));
 
     public static void register(IEventBus eventBus)
     {

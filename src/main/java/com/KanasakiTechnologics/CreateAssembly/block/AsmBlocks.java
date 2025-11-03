@@ -44,8 +44,8 @@ public class AsmBlocks {
     public static final DeferredBlock<Block> COMPRESSED_COBBLED_DEEPSLATE = registerBlock("compressed_cobbled_deepslate",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DEEPSLATE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.DEEPSLATE)));
 
-    public static final DeferredBlock<Block> ENDER_ORE = registerBlock("ender_ore",
-            () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    //public static final DeferredBlock<Block> ENDER_ORE = registerBlock("ender_ore",
+    //        () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> SULFUR_ORE = registerBlock("sulfur_ore",
             () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
@@ -79,6 +79,8 @@ public class AsmBlocks {
     public static final DeferredBlock<LiquidBlock> SULFURIC_ACID = registerBlock("sulfuric_acid",SulfuricAcidBlock::new);
     public static final DeferredBlock<LiquidBlock> SOUL_LAVA = registerBlock("soul_lava", SoulLavaBlock::new);
     public static final DeferredBlock<LiquidBlock> SAP = registerBlock("sap", SapBlock::new);
+    public static final DeferredBlock<LiquidBlock> REFINED_RADIANCE = registerBlock("refined_radiance", RefinedRadianceLiquid::new);
+    public static final DeferredBlock<LiquidBlock> SHADOW_STEEL = registerBlock("shadow_steel", ShadowSteelLiquid::new);
     public static final DeferredHolder<Block, LiquidBlock> MOLTEN_GOLD = BLOCKS.register("molten_gold",
             () -> new MoltenLiquid((FlowingFluid) AsmFluid.MOLTEN_GOLD.get()));
 

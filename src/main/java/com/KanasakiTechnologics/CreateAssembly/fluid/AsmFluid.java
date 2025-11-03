@@ -108,6 +108,44 @@ public class AsmFluid {
                 .explosionResistance(0f);
     }
 
+    public static final DeferredHolder<Fluid,Fluid> REFINED_RADIANCE = FLUIDS.register("refined_radiance",
+            ()-> new RefinedRadianceFluid.Source(getRefinedRadianceProperties()));
+    public static final DeferredHolder<Fluid,Fluid> FLOWING_REFINED_RADIANCE = FLUIDS.register("flowing_refined_radiance",
+            ()-> new RefinedRadianceFluid.Flowing(getRefinedRadianceProperties()));
+
+    private static BaseFlowingFluid.Properties getRefinedRadianceProperties() {
+        return new BaseFlowingFluid.Properties(
+                () -> AsmFluidType.REFINED_RADIANCE_TYPE.get(),
+                () -> REFINED_RADIANCE.get(),
+                () -> FLOWING_REFINED_RADIANCE.get()
+        )
+                .bucket(() -> AsmItems.REFINED_RADIANCE_BUCKET.get())
+                .block(() -> AsmBlocks.REFINED_RADIANCE.get())
+                .tickRate(10)
+                .levelDecreasePerBlock(2)
+                .slopeFindDistance(2)
+                .explosionResistance(0f);
+    }
+
+    public static final DeferredHolder<Fluid,Fluid> SHADOW_STEEL = FLUIDS.register("shadow_steel",
+            ()-> new ShadowSteelFluid.Source(getShadowSteelProperties()));
+    public static final DeferredHolder<Fluid,Fluid> FLOWING_SHADOW_STEEL = FLUIDS.register("flowing_shadow_steel",
+            ()-> new ShadowSteelFluid.Flowing(getShadowSteelProperties()));
+
+    private static BaseFlowingFluid.Properties getShadowSteelProperties() {
+        return new BaseFlowingFluid.Properties(
+                () -> AsmFluidType.SHADOW_STEEL_TYPE.get(),
+                () -> SHADOW_STEEL.get(),
+                () -> FLOWING_SHADOW_STEEL.get()
+        )
+                .bucket(() -> AsmItems.SHADOW_STEEL_BUCKET.get())
+                .block(() -> AsmBlocks.SHADOW_STEEL.get())
+                .tickRate(10)
+                .levelDecreasePerBlock(2)
+                .slopeFindDistance(2)
+                .explosionResistance(0f);
+    }
+
     public static void register(IEventBus eventBus)
     {
         FLUIDS.register(eventBus);

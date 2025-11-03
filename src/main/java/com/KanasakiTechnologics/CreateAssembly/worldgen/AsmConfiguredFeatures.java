@@ -42,7 +42,7 @@ public class AsmConfiguredFeatures {
                 OreConfiguration.target(deepslateReplaceables, AsmBlocks.DEEPSLATE_TIN_ORE.get().defaultBlockState()));
 
         register(context, OVERWORLD_TIN_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTinOres, 9));
-        register(context, OVERWORLD_ENDER_ORE_KEY, Feature.ORE, new OreConfiguration(stoneReplaceables, AsmBlocks.ENDER_ORE.get().defaultBlockState(), 9));
+        //register(context, OVERWORLD_ENDER_ORE_KEY, Feature.ORE, new OreConfiguration(stoneReplaceables, AsmBlocks.ENDER_ORE.get().defaultBlockState(), 9));
         register(context, OVERWORLD_SULFUR_ORE_KEY, Feature.ORE, new OreConfiguration(stoneReplaceables, AsmBlocks.SULFUR_ORE.get().defaultBlockState(), 9));
 
     }

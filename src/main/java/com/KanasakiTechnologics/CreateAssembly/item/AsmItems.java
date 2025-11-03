@@ -109,6 +109,11 @@ public class AsmItems {
     public static final DeferredItem<Item> MOLTEN_GOLD_BUCKET = ITEMS.register("molten_gold_bucket",
             () -> new BucketItem(AsmFluid.MOLTEN_GOLD.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));
 
+    public static final DeferredItem<Item> REFINED_RADIANCE_BUCKET = ITEMS.register("refined_radiance_bucket",
+            () -> new BucketItem(AsmFluid.REFINED_RADIANCE.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));
+    public static final DeferredItem<Item> SHADOW_STEEL_BUCKET = ITEMS.register("shadow_steel_bucket",
+            () -> new BucketItem(AsmFluid.SHADOW_STEEL.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));
+
     public static final DeferredItem<Item> ABSTRUSE_MECHANISM = ITEMS.register("abstruse_mechanism",
             () -> new Item(new Item.Properties()));
 

@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-28T22:42:15.8317369	Loot Tables
+// 1.21.1	2025-11-12T11:49:31.8707031	Loot Tables
 9abdaeaf60f90484b6f156437d0eb136fd0ea03b data/createassembly/loot_table/blocks/bedrock.json
 a0eae0efbc68f57be020f9f483d476623b97f93b data/createassembly/loot_table/blocks/black_glass_light_block.json
 2e24a4f2593b1d83fd2279ada92623ab123d07c2 data/createassembly/loot_table/blocks/black_light_block.json
@@ -17,7 +17,6 @@ fdb40ac7d294d0533a8224645b65d84fd1ff2cc7 data/createassembly/loot_table/blocks/c
 73b35bfe87b316d82b4d70795baaaea132c356a4 data/createassembly/loot_table/blocks/cyan_light_block.json
 67d8d04246b61037db3f78bb842ff9dc3cd37e21 data/createassembly/loot_table/blocks/deepslate_silver_ore.json
 14e31028775362c3a5d52923e827d08f8b9a716c data/createassembly/loot_table/blocks/deepslate_tin_ore.json
-347ec01477f1abc2f25d0e55c0b95fcb6efd8b0a data/createassembly/loot_table/blocks/ender_ore.json
 aa3bf160ef7be6d64b26713065f86218db675d29 data/createassembly/loot_table/blocks/fused_compressed_coal_block.json
 c91d11593f12b967917bfeec47f8654a2d520ebb data/createassembly/loot_table/blocks/gray_glass_light_block.json
 12e369cfc46f1923c76dc63e1544e90aaaf1f1b3 data/createassembly/loot_table/blocks/gray_light_block.json

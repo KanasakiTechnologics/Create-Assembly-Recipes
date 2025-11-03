@@ -1,0 +1,11 @@
+{
+  "variants": {},
+  "multipart": [
+    {
+      "apply": {
+        "model": "createassembly:block/refined_radiance",
+        "uvlock": true
+      }
+    }
+  ]
+}

@@ -31,8 +31,8 @@ public class AsmPlacedFeatures {
         register(context, TIN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(AsmConfiguredFeatures.OVERWORLD_TIN_ORE_KEY),
                 AsmOrePlacement.commonOrePlacement(12, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
-        register(context, ENDER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(AsmConfiguredFeatures.OVERWORLD_ENDER_ORE_KEY),
-                AsmOrePlacement.commonOrePlacement(12, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+        //register(context, ENDER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(AsmConfiguredFeatures.OVERWORLD_ENDER_ORE_KEY),
+        //        AsmOrePlacement.commonOrePlacement(12, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
         register(context, SULFUR_ORE_PLACED_KEY, configuredFeatures.getOrThrow(AsmConfiguredFeatures.OVERWORLD_SULFUR_ORE_KEY),
                 AsmOrePlacement.commonOrePlacement(12, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 

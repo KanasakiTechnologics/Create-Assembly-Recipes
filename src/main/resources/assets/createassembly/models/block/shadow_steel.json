@@ -1,0 +1,7 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "createassembly:block/shadow_steel_still",
+    "all": "createassembly:block/shadow_steel_still"
+  }
+}

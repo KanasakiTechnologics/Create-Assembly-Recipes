@@ -47,6 +47,16 @@
   "block.createassembly.sap": "Sap",
   "fluid_type.createassembly.sap": "Sap",
 
+  "item.createassembly.refined_radiance": "Refined Radiance Bucket",
+  "block.createassembly.refined_radiance": "Refined Radiance",
+  "fluid_type.createassembly.refined_radiance": "Refined Radiance",
+  "fluid_type.createassembly.refined_radiance_type": "Refined Radiance",
+
+  "item.createassembly.shadow_steel_bucket": "Shadow Steel Bucket",
+  "block.createassembly.shadow_steel": "Shadow Steel",
+  "fluid_type.createassembly.shadow_steel": "Shadow Steel",
+  "fluid_type.createassembly.shadow_steel_type": "Shadow Steel",
+
   "item.createassembly.glow_ink_bucket": "Glow Ink Bucket",
   "item.createassembly.sulfuric_acid_bucket": "Sulfuric Acid Bucket",
   "item.createassembly.soul_lava_bucket": "Soul Lava Bucket",

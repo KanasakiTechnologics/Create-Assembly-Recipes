@@ -1,0 +1,17 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "create:refined_radiance"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:chromatic_compound"
+    },
+    {
+      "amount": 100,
+      "id": "createassembly:refined_radiance"
+    }
+  ]
+}

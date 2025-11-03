@@ -55,7 +55,7 @@ public class AsmBlockStateProvider extends BlockStateProvider {
         glassWithItem(LightBlocks.MAGENTA_GLASS_LIGHT_BLOCK);
         glassWithItem(LightBlocks.PINK_GLASS_LIGHT_BLOCK);
 
-        blockWithItem(AsmBlocks.ENDER_ORE);
+        //blockWithItem(AsmBlocks.ENDER_ORE);
         blockWithItem(AsmBlocks.SULFUR_ORE);
         blockWithItem(AsmBlocks.SILVER_BLOCK);
         blockWithItem(AsmBlocks.TIN_BLOCK);

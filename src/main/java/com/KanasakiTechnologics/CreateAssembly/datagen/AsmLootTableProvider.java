@@ -89,7 +89,7 @@ public class AsmLootTableProvider extends BlockLootSubProvider {
         add(AsmBlocks.DEEPSLATE_TIN_ORE.get(),block -> createOreDrop(AsmBlocks.DEEPSLATE_TIN_ORE.get(), AsmItems.RAW_TIN.get()));
         add(AsmBlocks.SILVER_ORE.get(),block -> createOreDrop(AsmBlocks.SILVER_ORE.get(), AsmItems.RAW_SILVER.get()));
         add(AsmBlocks.DEEPSLATE_SILVER_ORE.get(),block -> createOreDrop(AsmBlocks.DEEPSLATE_SILVER_ORE.get(), AsmItems.RAW_SILVER.get()));
-        add(AsmBlocks.ENDER_ORE.get(),block -> createMultipleOreDrops(AsmBlocks.ENDER_ORE.get(), AsmItems.ENDER_PEARL_FRAGMENT.get(), 2, 5));
+        //add(AsmBlocks.ENDER_ORE.get(),block -> createMultipleOreDrops(AsmBlocks.ENDER_ORE.get(), AsmItems.ENDER_PEARL_FRAGMENT.get(), 2, 5));
         add(AsmBlocks.SULFUR_ORE.get(),block -> createMultipleOreDrops(AsmBlocks.SULFUR_ORE.get(), AsmItems.SULFUR_CHUNK.get(), 1, 4));
     }
 

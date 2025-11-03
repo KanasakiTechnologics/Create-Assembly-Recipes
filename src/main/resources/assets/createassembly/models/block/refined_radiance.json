@@ -1,0 +1,7 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "createassembly:block/refined_radiance_still",
+    "all": "createassembly:block/refined_radiance_still"
+  }
+}

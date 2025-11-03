@@ -74,7 +74,7 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(LightBlocks.WHITE_LIGHT_BLOCK.get())
                 .add(LightBlocks.YELLOW_LIGHT_BLOCK.get())
 
-                .add(AsmBlocks.ENDER_ORE.get())
+                //.add(AsmBlocks.ENDER_ORE.get())
                 .add(AsmBlocks.SULFUR_ORE.get())
                 .add(AsmBlocks.TIN_BLOCK.get())
                 .add(AsmBlocks.TIN_ORE.get())
@@ -209,7 +209,7 @@ public class AsmBlockTagProvider extends BlockTagsProvider {
                 .add(AsmBlocks.STAR_BLOCK.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(AsmBlocks.ENDER_ORE.get())
+                //.add(AsmBlocks.ENDER_ORE.get())
                 .add(AsmBlocks.TIN_BLOCK.get())
                 .add(AsmBlocks.TIN_ORE.get())
                 .add(AsmBlocks.RAW_TIN_BLOCK.get())

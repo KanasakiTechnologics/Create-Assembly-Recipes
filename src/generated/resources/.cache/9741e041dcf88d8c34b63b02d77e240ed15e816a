@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-29T13:48:24.8751225	Tags for minecraft:block mod id createassembly
+// 1.21.1	2025-11-12T11:49:31.8767337	Tags for minecraft:block mod id createassembly
 c882f1fc924c7ace24f2ece6ec48f727ede793e9 data/createassembly/tags/block/colored_concrete.json
 b628d70e4fe477242d507bd905a0080bc3546047 data/createassembly/tags/block/colored_glass.json
 1c00bf4ef743530083949f0dbd0d1550b7709ac5 data/createassembly/tags/block/compressed_cobblestone.json
@@ -28,9 +28,9 @@ a51740624683f2b33eff07fa8b9be55b9a3954f2 data/c/tags/block/storage_blocks/red_sa
 43ce164d3b64237729e516ff929a4096c6decceb data/c/tags/block/storage_blocks/soul_sand.json
 ae682650171baf3a8f74171d6cc93c75e72fc09d data/c/tags/block/storage_blocks/tin.json
 a2c795cc6d4cebfc01a8c3095b0489310ceed2eb data/minecraft/tags/block/beacon_base_blocks.json
-083d7f543597fab2bb88a5dad44cd653c5ba66e2 data/minecraft/tags/block/mineable/pickaxe.json
+3fedbe5b5e7e739904643308cbf0fd3a61fb3981 data/minecraft/tags/block/mineable/pickaxe.json
 953bbc3588f22524c1bdf1c248e9b97f155b03eb data/minecraft/tags/block/mineable/shovel.json
 e6a19c5a2c7dbcdeb7997e004ede7872458e678f data/minecraft/tags/block/needs_diamond_tool.json
-a22a475bd055760c4053b0c69fd6f860bed61441 data/minecraft/tags/block/needs_iron_tool.json
+b4ce0c955df0e75a955be88ea15af2a120e0e62b data/minecraft/tags/block/needs_iron_tool.json
 c0005426b72415f69893340e0bb635c35cf59171 data/minecraft/tags/block/needs_stone_tool.json
 d5aebde1fd1141df86b6ed4ace3f720504b32ab2 data/minecraft/tags/block/nether_soul.json

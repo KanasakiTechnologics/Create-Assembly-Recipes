@@ -47,6 +47,7 @@ public final class AsmCrushingRecipeProvider extends CrushingRecipeGen {
     GeneratedRecipe RAW_SILVER = moddedRawOre(SILVER, AllItems.CRUSHED_SILVER::get);
     GeneratedRecipe RAW_TIN_BLOCK = moddedRawOreBlock(TIN, AllItems.CRUSHED_TIN::get);
     GeneratedRecipe RAW_SILVER_BLOCK = moddedRawOreBlock(SILVER, AllItems.CRUSHED_SILVER::get);
+    GeneratedRecipe ENDER_FRAGMENT = create(() -> Items.ECHO_SHARD,b -> b.duration(150).output(AsmItems.ENDER_PEARL_FRAGMENT,3).output(0.50f,AsmItems.ENDER_PEARL_FRAGMENT).output(0.75f,AllItems.EXP_NUGGET.get()));
 
 
 

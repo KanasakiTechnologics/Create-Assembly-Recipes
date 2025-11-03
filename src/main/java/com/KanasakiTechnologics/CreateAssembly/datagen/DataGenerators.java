@@ -42,6 +42,7 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new AsmGlowingFanRecipeProvider(packOutput,lookupProvider));
 
         generator.addProvider(event.includeServer(), new AsmPressingRecipeProvider(packOutput,lookupProvider));
+        generator.addProvider(event.includeServer(), new AsmEmptyingRecipeProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new AsmPolishingRecipeProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new AsmCrushingRecipeProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new AsmAdditionRollingRecipeProvider(packOutput,lookupProvider));
