@@ -16,9 +16,11 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.FlowingFluid;
@@ -68,6 +70,9 @@ public final class AsmMixingRecipeProvider extends MixingRecipeGen {
     GeneratedRecipe ZINC_DOUBLE = create("zinc_double", b -> b.require((FlowingFluid) AsmFluid.REFINED_RADIANCE.get(),10).require(AllItems.ZINC_INGOT).output(AllItems.ZINC_INGOT,2));
     GeneratedRecipe TIN_DOUBLE_ASM = create("tin_double_asm", b -> b.require((FlowingFluid) AsmFluid.REFINED_RADIANCE.get(),10).require(AsmItems.TIN_INGOT).output(AsmItems.TIN_INGOT,2));
     GeneratedRecipe SILVER_DOUBLE = create("silver_double", b -> b.require((FlowingFluid) AsmFluid.REFINED_RADIANCE.get(),10).require(AsmItems.SILVER_INGOT).output(AsmItems.SILVER_INGOT,2));
+
+    GeneratedRecipe WET_SPONGE = create("wet_sponge", b -> b.require(Ingredient.of(ItemTags.WOOL)).require(Blocks.DRIED_KELP_BLOCK).require(Fluids.WATER,500).output(Items.WET_SPONGE,2));
+    GeneratedRecipe OBSIDIAN = create("obsidian", b -> b.require(Items.BLUE_ICE).require(Fluids.WATER,500).require(Fluids.LAVA,500).output(Items.OBSIDIAN));
 
 }
 
