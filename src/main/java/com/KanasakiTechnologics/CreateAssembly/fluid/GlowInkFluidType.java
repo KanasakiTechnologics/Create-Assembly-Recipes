@@ -28,7 +28,7 @@ public class GlowInkFluidType extends FluidType {
 
     @Override
     public void initializeClient(@NotNull Consumer<IClientFluidTypeExtensions> consumer) {
-        int tintColor = 0x3AB5B2;
+        int tintColor = 0xFF3AB5B2;
         consumer.accept(new IClientFluidTypeExtensions() {
             @Override
             public ResourceLocation getStillTexture() {
@@ -44,6 +44,7 @@ public class GlowInkFluidType extends FluidType {
             public int getTintColor() {
                 return tintColor;
             }
+
         });
     }
 

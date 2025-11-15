@@ -75,8 +75,7 @@ public class AsmBlocks {
     public static final Supplier<ItemLike> SILVER_ORE_ITEM = () -> AsmBlocks.SILVER_ORE.get().asItem();
     public static final Supplier<ItemLike> DEEPSLATE_SILVER_ORE_ITEM = () -> AsmBlocks.DEEPSLATE_SILVER_ORE.get().asItem();
 
-    public static final DeferredBlock<LiquidBlock> GLOW_INK = registerBlock("glow_ink",
-            () -> new GlowInkBlock((FlowingFluid) AsmFluid.GLOW_INK.get()));
+    public static final DeferredBlock<LiquidBlock> GLOW_INK = registerBlock("glow_ink",GlowInkBlock::new);
     public static final DeferredBlock<LiquidBlock> SULFURIC_ACID = registerBlock("sulfuric_acid",SulfuricAcidBlock::new);
     public static final DeferredBlock<LiquidBlock> SOUL_LAVA = registerBlock("soul_lava", SoulLavaBlock::new);
     public static final DeferredBlock<LiquidBlock> SAP = registerBlock("sap", SapBlock::new);

@@ -71,6 +71,8 @@ public final class AsmMixingRecipeProvider extends MixingRecipeGen {
     GeneratedRecipe WET_SPONGE = create("wet_sponge", b -> b.require(Ingredient.of(ItemTags.WOOL)).require(Blocks.DRIED_KELP_BLOCK).require(Fluids.WATER,500).output(Items.WET_SPONGE,2));
     GeneratedRecipe OBSIDIAN = create("obsidian", b -> b.require(Items.BLUE_ICE).require(Fluids.WATER,500).require(Fluids.LAVA,500).output(Items.OBSIDIAN));
 
+    GeneratedRecipe MOLTEN_DUST_REDSTONE = create("molten_dust", b -> b.requiresHeat(HeatCondition.HEATED).require(Fluids.WATER,50).require(Items.REDSTONE).output(AsmFluid.MOLTEN_REDSTONE.get(),100));
+    GeneratedRecipe MOLTEN_BLOCK_REDSTONE = create("molten_block", b -> b.requiresHeat(HeatCondition.HEATED).require(Fluids.WATER,450).require(Items.REDSTONE_BLOCK).output(AsmFluid.MOLTEN_REDSTONE.get(),900));
 }
 
 

@@ -57,7 +57,6 @@
   "fluid_type.createassembly.shadow_steel": "Shadow Steel",
   "fluid_type.createassembly.shadow_steel_type": "Shadow Steel",
 
-  "item.createassembly.glow_ink_bucket": "Glow Ink Bucket",
   "item.createassembly.sulfuric_acid_bucket": "Sulfuric Acid Bucket",
   "item.createassembly.soul_lava_bucket": "Soul Lava Bucket",
 
@@ -179,8 +178,6 @@
   "item.createassembly.iron_hammer": "Iron Hammer",
 
   "create.recipe.fan_glowing": "Bulk Glowing",
-  "block.createassembly.glow_ink": "Glow Ink",
-  "fluid_type.createassembly.glow_ink_type": "Glow Ink",
   "fluid_type.createassembly.sulfuric_acid_type": "Sulfuric Acid",
   "block.createassembly.sulfuric_acid": "Sulfuric Acid",
   "fluid_type.createassembly.soul_lava_type": "Soul Lava",
@@ -190,6 +187,10 @@
   "block.createassembly.molten_redstone": "Molten Redstone",
   "fluid_type.createassembly.molten_redstone_type": "Molten Redstone",
   "item.createassembly.molten_redstone_bucket": "Molten Redstone Bucket",
+
+  "block.createassembly.glow_ink": "Glow Ink",
+  "fluid_type.createassembly.glow_ink_type": "Glow Ink",
+  "item.createassembly.glow_ink_bucket": "Glow Ink Bucket",
 
   "block.createassembly.compressed_cobbled_deepslate": "Compressed Cobbled Deepslate",
   "block.createassembly.compressed_cobblestone": "Compressed Cobblestone",

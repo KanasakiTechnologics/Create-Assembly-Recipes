@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-15T23:19:34.9248211	createassembly's processing recipes: mixing
+// 1.21.1	2025-11-16T02:22:15.5432643	createassembly's processing recipes: mixing
 10dc06070a2b4eceab56ab6fe14608095739257c data/createassembly/recipe/mixing/alchemist_dust.json
 e952cfec9174468acebc15e87cce1888d9e38112 data/createassembly/recipe/mixing/amethyst_block.json
 50716fef789ea140ec81bff6698b97865050facb data/createassembly/recipe/mixing/chromatic_compound.json
@@ -13,6 +13,8 @@ f90f0374c58b81514e51d87bc396b8df10832f05 data/createassembly/recipe/mixing/glow_
 192e33e622bb4aa6c755e64d8025f87ec2ff4979 data/createassembly/recipe/mixing/iron_double.json
 61ad65f0d5cbed8d72f2b80fd28761ceb36e69c1 data/createassembly/recipe/mixing/lapis_alloy.json
 6f69ecf8be0c0cc27145fdd8c2cc29825a30a284 data/createassembly/recipe/mixing/lapis_lazuli.json
+39032c9da7d85cfed6f12e781e8973cf0e7bdfd8 data/createassembly/recipe/mixing/molten_block.json
+7adcb14fe70e0beb673c833fbb93265b98e64d62 data/createassembly/recipe/mixing/molten_dust.json
 d6ea3ab05add71b50500801bccaf991157b34179 data/createassembly/recipe/mixing/netherack.json
 cd945505990695763a51ca3eaf197f3e84d05c7c data/createassembly/recipe/mixing/netherite_dust.json
 f116f62367bbe9b1cb1e413c217483892a95321d data/createassembly/recipe/mixing/obsidian.json
