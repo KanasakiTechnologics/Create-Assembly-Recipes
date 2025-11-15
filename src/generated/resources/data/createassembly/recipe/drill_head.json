@@ -7,12 +7,15 @@
     },
     "I": {
       "item": "minecraft:iron_ingot"
+    },
+    "N": {
+      "item": "minecraft:iron_nugget"
     }
   },
   "pattern": [
-    " I ",
-    "ICI",
-    "ICI"
+    "NN ",
+    "NII",
+    " IC"
   ],
   "result": {
     "count": 1,

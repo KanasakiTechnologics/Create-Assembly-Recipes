@@ -78,11 +78,12 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .unlockedBy("has_iron_ingot",has(Items.IRON_INGOT)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmItems.DRILL_HEAD,1)
-                .pattern(" I ")
-                .pattern("ICI")
-                .pattern("ICI")
+                .pattern("NN ")
+                .pattern("NII")
+                .pattern(" IC")
                 .define('I', Items.IRON_INGOT)
                 .define('C', Items.COPPER_INGOT)
+                .define('N', Items.IRON_NUGGET)
                 .unlockedBy("has_iron_ingot",has(Items.IRON_INGOT)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AsmItems.PRESS_HEAD,1)
@@ -391,6 +392,12 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .pattern("LLL")
                 .define('L', ItemTags.LOGS)
                 .unlockedBy("has_logs",has(ItemTags.LOGS)).save(recipeOutput,"minecraft:chest_from_logs");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.STICK,16)
+                .pattern("L")
+                .pattern("L")
+                .define('L', ItemTags.LOGS)
+                .unlockedBy("has_logs",has(ItemTags.LOGS)).save(recipeOutput,"minecraft:stick_from_logs");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.ENDER_PEARL)
                 .pattern("FFF")
