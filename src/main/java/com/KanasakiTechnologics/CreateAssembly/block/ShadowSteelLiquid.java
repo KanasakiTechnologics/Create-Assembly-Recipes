@@ -15,7 +15,7 @@ import net.minecraft.world.level.material.MapColor;
 
 public class ShadowSteelLiquid extends LiquidBlock {
     public ShadowSteelLiquid() {
-        super((FlowingFluid) AsmFluid.SHADOW_STEEL.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).lightLevel(p ->2).noCollission().strength(100.00f).noLootTable().replaceable());
+        super((FlowingFluid) AsmFluid.SHADOW_STEEL.get(), Properties.of().mapColor(MapColor.WATER).lightLevel(p ->15).noCollission().strength(100.00f).noLootTable().replaceable());
     }
 
     @Override

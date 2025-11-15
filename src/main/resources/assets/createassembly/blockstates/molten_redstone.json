@@ -3,7 +3,7 @@
   "multipart": [
     {
       "apply": {
-        "model": "decobuild:block/molten_gold",
+        "model": "createassembly:block/molten_redstone",
         "uvlock": true
       }
     }

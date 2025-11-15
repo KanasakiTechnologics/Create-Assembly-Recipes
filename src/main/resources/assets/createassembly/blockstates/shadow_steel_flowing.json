@@ -1,8 +1,5 @@
 {
-  "parent": "block/block",
-  "textures": {
-    "particle": "createassembly:block/shadow_steel_flow",
-    "all": "createassembly:block/shadow_steel_flow"
+  "variants": {
+    "": { "model": "createassembly:block/shadow_steel_flow" }
   }
 }
-

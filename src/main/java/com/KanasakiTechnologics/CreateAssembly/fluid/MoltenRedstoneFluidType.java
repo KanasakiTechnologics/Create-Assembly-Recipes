@@ -14,19 +14,21 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Consumer;
 
-public class MoltenGoldType extends FluidType {
-    private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath("createassembly", "block/molten_gold_still");
-    private static final ResourceLocation FLOWING = ResourceLocation.fromNamespaceAndPath("createassembly", "block/molten_gold_flow");
-    
-    public MoltenGoldType(Properties properties) {
+public class MoltenRedstoneFluidType extends FluidType {
+    private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath("createassembly", "block/universal_molten_still");
+    private static final ResourceLocation FLOWING = ResourceLocation.fromNamespaceAndPath("createassembly", "block/universal_molten_flow");
+
+    public MoltenRedstoneFluidType(Properties properties) {
         super(properties
                 .lightLevel(10)
                 .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
-                .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY));
+                .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
+        );
     }
 
     @Override
     public void initializeClient(@NotNull Consumer<IClientFluidTypeExtensions> consumer) {
+        int tintColor = 0xFFfc0000;
         consumer.accept(new IClientFluidTypeExtensions() {
             @Override
             public ResourceLocation getStillTexture() {
@@ -36,6 +38,11 @@ public class MoltenGoldType extends FluidType {
             @Override
             public ResourceLocation getFlowingTexture() {
                 return FLOWING;
+            }
+
+            @Override
+            public int getTintColor() {
+                return tintColor;
             }
         });
     }

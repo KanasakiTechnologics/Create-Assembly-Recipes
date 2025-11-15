@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "createassembly:block/universal_fluid_flow"
+    "layer0": "createassembly:block/universal_molten_flow"
   }
 }

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "createassembly:block/molten_redstone_flow" }
+  }
+}

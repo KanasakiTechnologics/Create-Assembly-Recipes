@@ -15,7 +15,7 @@ import net.minecraft.world.level.material.MapColor;
 
 public class RefinedRadianceLiquid extends LiquidBlock {
     public RefinedRadianceLiquid() {
-        super((FlowingFluid) AsmFluid.REFINED_RADIANCE.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).lightLevel(p_50872 ->15).noCollission().strength(100f).noLootTable().replaceable());
+        super((FlowingFluid) AsmFluid.REFINED_RADIANCE.get(), Properties.of().mapColor(MapColor.WATER).lightLevel(p ->15).noCollission().strength(100.00f).noLootTable().replaceable());
     }
 
     @Override

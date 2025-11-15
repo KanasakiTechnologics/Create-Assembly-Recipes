@@ -14,8 +14,8 @@ import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.MapColor;
 
 public class GlowInkBlock extends LiquidBlock {
-    public GlowInkBlock() {
-        super((FlowingFluid) AsmFluid.GLOW_INK.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).lightLevel(p_50872 ->15).noCollission().strength(100f).noLootTable().replaceable());
+    public GlowInkBlock(FlowingFluid fluid) {
+        super(fluid, Properties.of().mapColor(MapColor.WATER).lightLevel(p ->15).noCollission().strength(100.00f).noLootTable().replaceable());
     }
 
     @Override

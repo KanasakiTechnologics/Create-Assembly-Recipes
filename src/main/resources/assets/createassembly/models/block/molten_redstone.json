@@ -1,0 +1,9 @@
+{
+  "parent": "block/liquid",
+  "textures": {
+    "particle": "createassembly:block/universal_molten_flow",
+    "flow": "createassembly:block/universal_molten_flow",
+    "still": "createassembly:block/universal_molten_still"
+  }
+}
+

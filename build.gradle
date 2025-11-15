@@ -73,6 +73,7 @@ configurations {
 
 repositories {
     maven {url = "https://cursemaven.com"}
+    maven { url = "https://api.modrinth.com/maven" }
     maven { url = "https://maven.createmod.net" }
     maven { url "https://maven.dragons.plus/releases" }
     maven { url "https://maven.fallenbreath.me/releases" }
@@ -86,6 +87,8 @@ dependencies {
     implementation("net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_version}")
     compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}")
     runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}")
+    compileOnly "maven.modrinth:jade:${project.jade_version}"
+    runtimeOnly "maven.modrinth:jade:${project.jade_version}"
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
     implementation "curse.maven:createaddition-439890:7179893"
     implementation("curse.maven:fusion-854949:7058347")
@@ -109,6 +112,7 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             mod_version            : mod_version,
             mod_authors            : mod_authors,
             jei_version            : jei_version,
+            jade_version           : jade_version,
             create_dragons_plus_version_range  : create_dragons_plus_version_range,
             create_enchantment_industry_version        : create_enchantment_industry_version,
             create_enchantment_industry_version_range  : create_enchantment_industry_version_range,

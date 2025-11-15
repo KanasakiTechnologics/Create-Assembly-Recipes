@@ -102,12 +102,12 @@ public class AsmItems {
 
     public static final DeferredItem<Item> GLOW_INK_BUCKET = ITEMS.register("glow_ink_bucket",
             ()-> new BucketItem(AsmFluid.GLOW_INK.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));
+    public static final DeferredItem<Item> MOLTEN_REDSTONE_BUCKET = ITEMS.register("molten_redstone_bucket",
+            ()-> new BucketItem(AsmFluid.MOLTEN_REDSTONE.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));
     public static final DeferredItem<Item> SOUL_LAVA_BUCKET = ITEMS.register("soul_lava_bucket",
             ()-> new BucketItem(AsmFluid.SOUL_LAVA.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));
     public static final DeferredItem<Item> SULFURIC_ACID_BUCKET = ITEMS.register("sulfuric_acid_bucket",
             ()-> new BucketItem(AsmFluid.SULFURIC_ACID.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));
-    public static final DeferredItem<Item> MOLTEN_GOLD_BUCKET = ITEMS.register("molten_gold_bucket",
-            () -> new BucketItem(AsmFluid.MOLTEN_GOLD.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));
 
     public static final DeferredItem<Item> REFINED_RADIANCE_BUCKET = ITEMS.register("refined_radiance_bucket",
             () -> new BucketItem(AsmFluid.REFINED_RADIANCE.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).durability(0)));

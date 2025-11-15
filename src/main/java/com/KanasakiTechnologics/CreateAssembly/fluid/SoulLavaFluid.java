@@ -2,7 +2,7 @@ package com.KanasakiTechnologics.CreateAssembly.fluid;
 
 import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 
-public class SoulLavaFluid {
+public abstract class SoulLavaFluid {
     public static class Source extends BaseFlowingFluid.Source {
         public Source(Properties props) {
             super(props);

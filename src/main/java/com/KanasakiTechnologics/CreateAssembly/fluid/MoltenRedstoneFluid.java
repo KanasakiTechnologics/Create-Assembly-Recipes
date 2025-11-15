@@ -2,7 +2,7 @@ package com.KanasakiTechnologics.CreateAssembly.fluid;
 
 import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 
-public class MoltenGold {
+public abstract class MoltenRedstoneFluid {
     public static class Source extends BaseFlowingFluid.Source {
         public Source(Properties props) {
             super(props);

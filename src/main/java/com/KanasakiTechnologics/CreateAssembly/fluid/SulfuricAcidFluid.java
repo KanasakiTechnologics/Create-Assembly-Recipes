@@ -2,7 +2,7 @@ package com.KanasakiTechnologics.CreateAssembly.fluid;
 
 import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 
-public class SulfuricAcidFluid {
+public abstract class SulfuricAcidFluid {
     public static class Source extends BaseFlowingFluid.Source {
         public Source(Properties props) {
             super(props);

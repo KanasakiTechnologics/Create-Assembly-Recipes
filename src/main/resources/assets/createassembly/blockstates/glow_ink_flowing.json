@@ -1,8 +1,5 @@
 {
-  "parent": "block/block",
-  "textures": {
-    "particle": "createassembly:block/glow_ink_flow",
-    "all": "createassembly:block/glow_ink_flow"
+  "variants": {
+    "": { "model": "createassembly:block/glow_ink_flow" }
   }
 }
-

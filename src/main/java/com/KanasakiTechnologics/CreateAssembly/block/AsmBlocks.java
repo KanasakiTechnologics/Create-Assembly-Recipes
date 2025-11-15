@@ -75,14 +75,15 @@ public class AsmBlocks {
     public static final Supplier<ItemLike> SILVER_ORE_ITEM = () -> AsmBlocks.SILVER_ORE.get().asItem();
     public static final Supplier<ItemLike> DEEPSLATE_SILVER_ORE_ITEM = () -> AsmBlocks.DEEPSLATE_SILVER_ORE.get().asItem();
 
-    public static final DeferredBlock<LiquidBlock> GLOW_INK = registerBlock("glow_ink",GlowInkBlock::new);
+    public static final DeferredBlock<LiquidBlock> GLOW_INK = registerBlock("glow_ink",
+            () -> new GlowInkBlock((FlowingFluid) AsmFluid.GLOW_INK.get()));
     public static final DeferredBlock<LiquidBlock> SULFURIC_ACID = registerBlock("sulfuric_acid",SulfuricAcidBlock::new);
     public static final DeferredBlock<LiquidBlock> SOUL_LAVA = registerBlock("soul_lava", SoulLavaBlock::new);
     public static final DeferredBlock<LiquidBlock> SAP = registerBlock("sap", SapBlock::new);
     public static final DeferredBlock<LiquidBlock> REFINED_RADIANCE = registerBlock("refined_radiance", RefinedRadianceLiquid::new);
     public static final DeferredBlock<LiquidBlock> SHADOW_STEEL = registerBlock("shadow_steel", ShadowSteelLiquid::new);
-    public static final DeferredHolder<Block, LiquidBlock> MOLTEN_GOLD = BLOCKS.register("molten_gold",
-            () -> new MoltenLiquid((FlowingFluid) AsmFluid.MOLTEN_GOLD.get()));
+    public static final DeferredHolder<Block, LiquidBlock> MOLTEN_REDSTONE = BLOCKS.register("molten_redstone",
+           () -> new MoltenLiquid((FlowingFluid) AsmFluid.MOLTEN_REDSTONE.get()));
 
     public static final DeferredBlock<Block> HOT_COAL = registerBlock("hot_coal_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));

@@ -11,8 +11,8 @@ import java.util.function.Consumer;
 
 public class RefinedRadianceFluidType extends FluidType {
 
-    private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath("createassembly", "block/refined_radiance_still");
-    private static final ResourceLocation FLOWING = ResourceLocation.fromNamespaceAndPath("createassembly", "block/refined_radiance_flow");
+    private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath("createassembly", "block/universal_fluid_still");
+    private static final ResourceLocation FLOWING = ResourceLocation.fromNamespaceAndPath("createassembly", "block/universal_fluid_flow");
 
     public RefinedRadianceFluidType(Properties properties) {
         super(properties
@@ -23,6 +23,7 @@ public class RefinedRadianceFluidType extends FluidType {
 
     @Override
     public void initializeClient(@NotNull Consumer<IClientFluidTypeExtensions> consumer) {
+        int tintColor = 0xFFFFFFF6;
         consumer.accept(new IClientFluidTypeExtensions() {
             @Override
             public ResourceLocation getStillTexture() {
@@ -32,6 +33,11 @@ public class RefinedRadianceFluidType extends FluidType {
             @Override
             public ResourceLocation getFlowingTexture() {
                 return FLOWING;
+            }
+
+            @Override
+            public int getTintColor() {
+                return tintColor;
             }
         });
     }

@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-15T20:12:54.0955979	createassembly's processing recipes: mixing
+// 1.21.1	2025-11-15T23:19:34.9248211	createassembly's processing recipes: mixing
 10dc06070a2b4eceab56ab6fe14608095739257c data/createassembly/recipe/mixing/alchemist_dust.json
 e952cfec9174468acebc15e87cce1888d9e38112 data/createassembly/recipe/mixing/amethyst_block.json
 50716fef789ea140ec81bff6698b97865050facb data/createassembly/recipe/mixing/chromatic_compound.json
@@ -8,10 +8,7 @@ b25ef256d6b8ecbcfc918de89d5b2192cb0786cb data/createassembly/recipe/mixing/diori
 194a13b3c887c07294bb07805dcc7afe0b564a05 data/createassembly/recipe/mixing/fused_blend.json
 026420120cf1de905c9f240c40cbe18cfc6080eb data/createassembly/recipe/mixing/glow_ink_fluid.json
 f90f0374c58b81514e51d87bc396b8df10832f05 data/createassembly/recipe/mixing/glow_ink_sac.json
-a52fe09731c0ad9f3ccf28ffff0b9ac2e81d2b2c data/createassembly/recipe/mixing/gold_block_melting.json
 8593d779a7349ab52e77bc862f6417b91d4a6b98 data/createassembly/recipe/mixing/gold_double.json
-e587d1db6aab89192e14deb0c8ede25b89ead759 data/createassembly/recipe/mixing/gold_ingot_melting.json
-9157ac98a855c36335e70677da68b64fffa1ee51 data/createassembly/recipe/mixing/gold_nugget_melting.json
 1e0e51e379227ee2a621db0046ca373453d4ac11 data/createassembly/recipe/mixing/hot_coal.json
 192e33e622bb4aa6c755e64d8025f87ec2ff4979 data/createassembly/recipe/mixing/iron_double.json
 61ad65f0d5cbed8d72f2b80fd28761ceb36e69c1 data/createassembly/recipe/mixing/lapis_alloy.json

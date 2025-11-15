@@ -52,9 +52,9 @@ public class AsmFluid {
     }
 
     public static final DeferredHolder<Fluid,Fluid> SOUL_LAVA = FLUIDS.register("soul_lava",
-            ()-> new SulfuricAcidFluid.Source(getSoulLavaProperties()));
+            ()-> new SoulLavaFluid.Source(getSoulLavaProperties()));
     public static final DeferredHolder<Fluid,Fluid> FLOWING_SOUL_LAVA = FLUIDS.register("flowing_soul_lava",
-            ()-> new SulfuricAcidFluid.Flowing(getSoulLavaProperties()));
+            ()-> new SoulLavaFluid.Flowing(getSoulLavaProperties()));
 
     private static BaseFlowingFluid.Properties getSoulLavaProperties() {
         return new BaseFlowingFluid.Properties(
@@ -64,6 +64,25 @@ public class AsmFluid {
         )
                 .bucket(() -> AsmItems.SOUL_LAVA_BUCKET.get())
                 .block(() -> AsmBlocks.SOUL_LAVA.get())
+                .tickRate(10)
+                .levelDecreasePerBlock(2)
+                .slopeFindDistance(2)
+                .explosionResistance(0f);
+    }
+
+    public static final DeferredHolder<Fluid,Fluid> MOLTEN_REDSTONE = FLUIDS.register("molten_redstone",
+            ()-> new MoltenRedstoneFluid.Source(getMoltenRedstoneProperties()));
+    public static final DeferredHolder<Fluid,Fluid> FLOWING_MOLTEN_REDSTONE = FLUIDS.register("flowing_molten_redstone",
+            ()-> new MoltenRedstoneFluid.Flowing(getMoltenRedstoneProperties()));
+
+    private static BaseFlowingFluid.Properties getMoltenRedstoneProperties() {
+        return new BaseFlowingFluid.Properties(
+                () -> AsmFluidType.MOLTEN_REDSTONE_TYPE.get(),
+                () -> MOLTEN_REDSTONE.get(),
+                () -> FLOWING_MOLTEN_REDSTONE.get()
+        )
+                .bucket(() -> AsmItems.MOLTEN_REDSTONE_BUCKET.get())
+                .block(() -> AsmBlocks.MOLTEN_REDSTONE.get())
                 .tickRate(10)
                 .levelDecreasePerBlock(2)
                 .slopeFindDistance(2)
@@ -89,24 +108,6 @@ public class AsmFluid {
                 .explosionResistance(0f);
     }
 
-    public static final DeferredHolder<Fluid,Fluid> MOLTEN_GOLD = FLUIDS.register("molten_gold",
-            ()-> new MoltenGold.Source(getMoltenGoldProperties()));
-    public static final DeferredHolder<Fluid,Fluid> FLOWING_MOLTEN_GOLD = FLUIDS.register("flowing_molten_gold",
-            ()-> new MoltenGold.Flowing(getMoltenGoldProperties()));
-
-    private static BaseFlowingFluid.Properties getMoltenGoldProperties() {
-        return new BaseFlowingFluid.Properties(
-                () -> AsmFluidType.MOLTEN_GOLD_TYPE.get(),
-                () -> MOLTEN_GOLD.get(),
-                () -> FLOWING_MOLTEN_GOLD.get()
-        )
-                .bucket(() -> AsmItems.MOLTEN_GOLD_BUCKET.get())
-                .block(() -> AsmBlocks.MOLTEN_GOLD.get())
-                .tickRate(10)
-                .levelDecreasePerBlock(2)
-                .slopeFindDistance(2)
-                .explosionResistance(0f);
-    }
 
     public static final DeferredHolder<Fluid,Fluid> REFINED_RADIANCE = FLUIDS.register("refined_radiance",
             ()-> new RefinedRadianceFluid.Source(getRefinedRadianceProperties()));

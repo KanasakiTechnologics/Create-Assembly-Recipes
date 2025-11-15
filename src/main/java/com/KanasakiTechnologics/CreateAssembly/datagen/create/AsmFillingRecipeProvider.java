@@ -45,7 +45,6 @@ public final class AsmFillingRecipeProvider extends FillingRecipeGen {
     }
 
     FlowingFluid soulLavaFluid = (FlowingFluid) AsmFluid.SOUL_LAVA.get();
-    FlowingFluid moltengoldFluid = (FlowingFluid) AsmFluid.MOLTEN_GOLD.get();
 
     GeneratedRecipe SUPERHEATED_BLAZE_CORE = create("superheated_blaze_core", b -> b.require(soulLavaFluid, 1000)
             .require(AsmItems.INACTIVE_BLAZE_CORE)
@@ -67,14 +66,6 @@ public final class AsmFillingRecipeProvider extends FillingRecipeGen {
             .require(AsmItems.ALCHEMIST_DUST)
             .output(Items.REDSTONE,3)
             .whenModLoaded(AsmMods.ENDERIO.getId())
-    );
-    GeneratedRecipe GOLDEN_CARROT = create("gold_carrot",b->b.require(moltengoldFluid,500)
-            .require(Items.CARROT)
-            .output(Items.GOLDEN_CARROT)
-    );
-    GeneratedRecipe GOLDEN_APPLE = create("gold_apple",b->b.require(moltengoldFluid,500)
-            .require(Items.APPLE)
-            .output(Items.GOLDEN_APPLE)
     );
 
     // For vanilla

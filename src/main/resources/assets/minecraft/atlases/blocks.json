@@ -2,11 +2,19 @@
   "sources": [
     {
       "type": "single",
-      "resource": "createassembly:fluid/glow_ink_still"
+      "resource": "createassembly:fluid/universal_fluid_still"
     },
     {
       "type": "single",
-      "resource": "createassembly:fluid/glow_ink_flow"
+      "resource": "createassembly:fluid/universal_fluid_flow"
+    },
+    {
+      "type": "single",
+      "resource": "createassembly:fluid/universal_molten_still"
+    },
+    {
+      "type": "single",
+      "resource": "createassembly:fluid/universal_molten_flow"
     }
   ]
 }
