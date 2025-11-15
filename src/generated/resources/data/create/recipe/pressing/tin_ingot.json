@@ -2,7 +2,7 @@
   "type": "create:pressing",
   "ingredients": [
     {
-      "item": "createassembly:tin_sheet"
+      "item": "createassembly:tin_ingot"
     }
   ],
   "results": [

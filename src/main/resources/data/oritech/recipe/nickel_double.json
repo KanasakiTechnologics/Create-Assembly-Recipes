@@ -2,13 +2,13 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "mekanism"
+      "modid": "oritech"
     }
   ],
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "oritech:platinum_ingot"
+      "item": "oritech:nickel_ingot"
     },
     {
       "type": "neoforge:single",
@@ -19,7 +19,7 @@
   "results": [
     {
       "count": 2,
-      "id": "oritech:platinum_ingot"
+      "id": "oritech:nickel_ingot"
     }
   ]
 }

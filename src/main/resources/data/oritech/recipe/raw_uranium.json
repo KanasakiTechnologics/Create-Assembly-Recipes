@@ -2,7 +2,7 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "mekanism"
+      "modid": "oritech"
     }
   ],
   "type": "create:crushing",
@@ -15,7 +15,7 @@
   "results": [
     {
       "count": 4,
-      "id": "mekanism:ingot_uranium"
+      "id": "mekanism:raw_uranium"
     }
   ]
 }

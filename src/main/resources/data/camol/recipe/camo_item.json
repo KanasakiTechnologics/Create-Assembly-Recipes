@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "camol"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "D #",
+    " W ",
+    "# D"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:dyes"
+    },
+    "D": {
+      "tag": "c:dyes"
+    },
+    "W": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "result": {
+    "id": "camol:camo_item",
+    "count": 4
+  }
+}
