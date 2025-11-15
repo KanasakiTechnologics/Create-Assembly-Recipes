@@ -54,6 +54,7 @@ public class CreateAssembly {
     public CreateAssembly(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
+        //./gradlew build --warning-mode=all
         // Register events and game objects
         NeoForge.EVENT_BUS.register(this);
         REGISTRATE.registerEventListeners(modEventBus);
