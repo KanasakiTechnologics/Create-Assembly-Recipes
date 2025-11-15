@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "mekanism:ingot_tin"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 10,
+      "fluid": "createassembly:refined_radiance"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "mekanism:ingot_tin"
+    }
+  ]
+}

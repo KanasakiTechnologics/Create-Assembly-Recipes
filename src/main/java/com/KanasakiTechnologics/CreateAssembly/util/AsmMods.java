@@ -7,7 +7,9 @@ public enum AsmMods {
     ENDERIO("enderio"),
     CREATE_D2D("create_d2d"),
     AQUACULTURE("aquaculture"),
-    TRIALNERROR("trialanderror")
+    TRIALNERROR("trialanderror"),
+    ORITECH("oritech"),
+    CREATEADD("createaddition")
     ;
 
     private final String id;

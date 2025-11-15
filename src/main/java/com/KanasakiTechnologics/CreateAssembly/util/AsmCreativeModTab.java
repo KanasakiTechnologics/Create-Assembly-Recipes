@@ -100,6 +100,8 @@ public class AsmCreativeModTab {
                         output.accept(AsmItems.MOLTEN_GOLD_BUCKET);
                         output.accept(AsmItems.SULFURIC_ACID_BUCKET);
                         output.accept(AsmItems.SAP_BUCKET);
+                        output.accept(AsmItems.REFINED_RADIANCE_BUCKET);
+                        output.accept(AsmItems.SHADOW_STEEL_BUCKET);
                         output.accept(AsmItems.SAW_BLADE);
                         output.accept(AsmItems.DRILL_HEAD);
                         output.accept(AsmItems.PRESS_HEAD);

@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "oritech:uranium_crystal"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "count": 4,
+      "id": "mekanism:ingot_uranium"
+    }
+  ]
+}

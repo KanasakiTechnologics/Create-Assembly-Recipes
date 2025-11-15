@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createassembly:tin_ingot"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 10,
+      "fluid": "createassembly:refined_radiance"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "createassembly:tin_ingot"
+    }
+  ]
+}

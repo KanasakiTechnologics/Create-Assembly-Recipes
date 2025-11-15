@@ -9,20 +9,30 @@ import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.api.data.recipe.MixingRecipeGen;
 import com.simibubi.create.content.processing.recipe.HeatCondition;
+import com.simibubi.create.foundation.data.recipe.CommonMetal;
 import com.simibubi.create.foundation.data.recipe.CreateRecipeProvider;
+import com.simibubi.create.foundation.data.recipe.Mods;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluids;
 import net.neoforged.neoforge.common.Tags;
+import net.neoforged.neoforge.common.conditions.NotCondition;
+import net.neoforged.neoforge.common.conditions.TagEmptyCondition;
 import plus.dragons.createdragonsplus.common.registry.CDPFluids;
 import plus.dragons.createenchantmentindustry.common.registry.CEIFluids;
 
 import java.util.concurrent.CompletableFuture;
+import java.util.function.Supplier;
+
+import static com.simibubi.create.foundation.data.recipe.CommonMetal.*;
 
 @SuppressWarnings("unused")
 public final class AsmMixingRecipeProvider extends MixingRecipeGen {
@@ -51,4 +61,14 @@ public final class AsmMixingRecipeProvider extends MixingRecipeGen {
     GeneratedRecipe GOLD_NUGGET_MELTING = create("gold_nugget_melting", b -> b.require(Items.GOLD_NUGGET).output(AsmFluid.MOLTEN_GOLD.get(), 10).requiresHeat(HeatCondition.SUPERHEATED));
     GeneratedRecipe GOLD_INGOT_MELTING = create("gold_ingot_melting", b -> b.require(Items.GOLD_INGOT).output(AsmFluid.MOLTEN_GOLD.get(), 100).requiresHeat(HeatCondition.SUPERHEATED));
     GeneratedRecipe GOLD_BLOCK_MELTING = create("gold_block_melting", b -> b.require(Blocks.GOLD_BLOCK).output(AsmFluid.MOLTEN_GOLD.get(), 900).requiresHeat(HeatCondition.SUPERHEATED));
+
+    GeneratedRecipe IRON_DOUBLE = create("iron_double", b -> b.require((FlowingFluid) AsmFluid.REFINED_RADIANCE.get(),10).require(Items.IRON_INGOT).output(Items.IRON_INGOT,2));
+    GeneratedRecipe GOLD_DOUBLE = create("gold_double", b -> b.require((FlowingFluid) AsmFluid.REFINED_RADIANCE.get(),10).require(Items.GOLD_INGOT).output(Items.GOLD_INGOT,2));
+    GeneratedRecipe COPPER_DOUBLE = create("copper_double", b -> b.require((FlowingFluid) AsmFluid.REFINED_RADIANCE.get(),10).require(Items.COPPER_INGOT).output(Items.COPPER_INGOT,2));
+    GeneratedRecipe ZINC_DOUBLE = create("zinc_double", b -> b.require((FlowingFluid) AsmFluid.REFINED_RADIANCE.get(),10).require(AllItems.ZINC_INGOT).output(AllItems.ZINC_INGOT,2));
+    GeneratedRecipe TIN_DOUBLE_ASM = create("tin_double_asm", b -> b.require((FlowingFluid) AsmFluid.REFINED_RADIANCE.get(),10).require(AsmItems.TIN_INGOT).output(AsmItems.TIN_INGOT,2));
+    GeneratedRecipe SILVER_DOUBLE = create("silver_double", b -> b.require((FlowingFluid) AsmFluid.REFINED_RADIANCE.get(),10).require(AsmItems.SILVER_INGOT).output(AsmItems.SILVER_INGOT,2));
+
 }
+
+

@@ -1,16 +1,19 @@
-// 1.21.1	2025-11-03T11:22:09.8002405	createassembly's processing recipes: mixing
+// 1.21.1	2025-11-15T16:34:57.3507033	createassembly's processing recipes: mixing
 10dc06070a2b4eceab56ab6fe14608095739257c data/createassembly/recipe/mixing/alchemist_dust.json
 e952cfec9174468acebc15e87cce1888d9e38112 data/createassembly/recipe/mixing/amethyst_block.json
 50716fef789ea140ec81bff6698b97865050facb data/createassembly/recipe/mixing/chromatic_compound.json
+dc6695cddcee6b25e49e9c551349fca62610babd data/createassembly/recipe/mixing/copper_double.json
 b25ef256d6b8ecbcfc918de89d5b2192cb0786cb data/createassembly/recipe/mixing/diorite.json
 52ba90bd01c6c5287141ab9413cc107823f63244 data/createassembly/recipe/mixing/echo_shard.json
 194a13b3c887c07294bb07805dcc7afe0b564a05 data/createassembly/recipe/mixing/fused_blend.json
 026420120cf1de905c9f240c40cbe18cfc6080eb data/createassembly/recipe/mixing/glow_ink_fluid.json
 f90f0374c58b81514e51d87bc396b8df10832f05 data/createassembly/recipe/mixing/glow_ink_sac.json
 a52fe09731c0ad9f3ccf28ffff0b9ac2e81d2b2c data/createassembly/recipe/mixing/gold_block_melting.json
+8593d779a7349ab52e77bc862f6417b91d4a6b98 data/createassembly/recipe/mixing/gold_double.json
 e587d1db6aab89192e14deb0c8ede25b89ead759 data/createassembly/recipe/mixing/gold_ingot_melting.json
 9157ac98a855c36335e70677da68b64fffa1ee51 data/createassembly/recipe/mixing/gold_nugget_melting.json
 1e0e51e379227ee2a621db0046ca373453d4ac11 data/createassembly/recipe/mixing/hot_coal.json
+192e33e622bb4aa6c755e64d8025f87ec2ff4979 data/createassembly/recipe/mixing/iron_double.json
 61ad65f0d5cbed8d72f2b80fd28761ceb36e69c1 data/createassembly/recipe/mixing/lapis_alloy.json
 6f69ecf8be0c0cc27145fdd8c2cc29825a30a284 data/createassembly/recipe/mixing/lapis_lazuli.json
 d6ea3ab05add71b50500801bccaf991157b34179 data/createassembly/recipe/mixing/netherack.json
@@ -18,5 +21,8 @@ cd945505990695763a51ca3eaf197f3e84d05c7c data/createassembly/recipe/mixing/nethe
 c13122ea804ef8f5dc98139886cb376b1711fd3a data/createassembly/recipe/mixing/processing_creative.json
 ea54eae97b62fdf784f6d65747eeb2079a132d0c data/createassembly/recipe/mixing/rooted_dirt.json
 299251abff202286371d8d8cf5686b01e5f7ac15 data/createassembly/recipe/mixing/sap.json
+ca864c1f26cc79a966f9172345f3848027f4f754 data/createassembly/recipe/mixing/silver_double.json
 4e7c51c0c3a06ea5ecf10a4d0e9b4d03e18d16a5 data/createassembly/recipe/mixing/soul_lava.json
+43e63aed6751b49b83be4d65092629b3419642fc data/createassembly/recipe/mixing/tin_double_asm.json
 241c8dff675150df7aa00065578d063cc159d8ee data/createassembly/recipe/mixing/tuff.json
+57dee656ea84302c40e50a8e913b4b83c10a25ad data/createassembly/recipe/mixing/zinc_double.json

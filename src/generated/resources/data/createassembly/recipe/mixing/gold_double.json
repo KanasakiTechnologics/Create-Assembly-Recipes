@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 10,
+      "fluid": "createassembly:refined_radiance"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "minecraft:gold_ingot"
+    }
+  ]
+}
