@@ -1,0 +1,14 @@
+{
+  "type": "createassembly:add_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:gameplay/piglin_bartering"
+    },
+    {
+      "chance": 0.45,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "createassembly:nether_spawn_egg"
+}

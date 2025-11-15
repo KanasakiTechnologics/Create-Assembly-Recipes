@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 
+@SuppressWarnings("removal")
 @EventBusSubscriber(modid = CreateAssembly.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
     @SubscribeEvent
@@ -54,6 +55,7 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new AsmItemApplicationRecipeProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new AsmFillingRecipeProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new AsmDeployingRecipeProvider(packOutput,lookupProvider));
+        generator.addProvider(event.includeServer(), new AsmEnrichingFanRecipeProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new AsmSequencedAssemblyRecipeProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new AsmMechanicalCraftingRecipeProvider(packOutput,lookupProvider));
         generator.addProvider(event.includeServer(), new AsmFuelBurningRecipeProvider(packOutput,lookupProvider));

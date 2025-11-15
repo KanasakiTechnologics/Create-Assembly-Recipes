@@ -23,7 +23,7 @@ public class ShadowSteelLiquid extends LiquidBlock {
         super.entityInside(state, level, pos, entity);
 
         if (entity instanceof LivingEntity livingEntity) {
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 30, 0, false, false));
+            livingEntity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 60, 0, false, false));
         }
     }
 }

@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-21T11:18:11.3697679	Item Models: createassembly
+// 1.21.1	2025-11-17T19:18:45.3935325	Item Models: createassembly
 b3ccab5a814c9162ac2aaf58d67933b06942985c assets/createassembly/models/item/abstruse_mechanism.json
 4ea4de641a591b6e97bae39c1f6228be27621591 assets/createassembly/models/item/alchemist_dust.json
 b2b6404279eaf8183d723fe8cd5be895a2712d34 assets/createassembly/models/item/andesite_mechanism.json
@@ -12,6 +12,7 @@ ce834182ad700dcf2a0d85897a6a1afe02272dcf assets/createassembly/models/item/creat
 1b1e891614f3bfe3e89a288f28680d8dd5540be9 assets/createassembly/models/item/drill_head.json
 3bc6832c83f1dc26680a4ea2d7c50db7de6e54dd assets/createassembly/models/item/electrum_jewel.json
 b61cbcf19dcb6f6539e8699e3fcb27d9b402feac assets/createassembly/models/item/ender_pearl_fragment.json
+8473dae5627fe5e41e1320fcd6e4544723f5a525 assets/createassembly/models/item/end_spawn_egg.json
 59eccd617b4f03f7897457a95eea2f8bfbd574d3 assets/createassembly/models/item/fused_blend.json
 e769766e6798d5ae7655750e740bb97a09bf10d1 assets/createassembly/models/item/incomplete_abstruse_mechanism.json
 7070efc1ce4f4f4541d8429f6aad1ccd4ce8317b assets/createassembly/models/item/incomplete_andesite_mechanism.json
@@ -33,7 +34,9 @@ afaae299564624c11aba0bde3d2d5254d8c0ce93 assets/createassembly/models/item/lapis
 fbefe68111550eb72df6e545c01603b905d23e28 assets/createassembly/models/item/lapis_sheet.json
 d9e224ba10c994a99617d5e8c698b82e32750572 assets/createassembly/models/item/netherite_dust.json
 12546642475c0da47cfd9c1acd3baed7ffaa5fbf assets/createassembly/models/item/netherrack_shard.json
+f62cd76439b9bed59d66a0820c9313439e661ddc assets/createassembly/models/item/nether_spawn_egg.json
 29c1864dd3b53617560a5ca8e64c74e6d618a602 assets/createassembly/models/item/nether_star_shard.json
+7d9674ec790e345598dd277c703ea0a07f96a148 assets/createassembly/models/item/overworld_spawn_egg.json
 aa6730976c9c9c0a818830750c4ab0d72adc8e18 assets/createassembly/models/item/polished_diamond.json
 2e8baaa96ab2d6180ba21b94955d699d4371705d assets/createassembly/models/item/press_head.json
 957b0e11e679b5d0bd0b0ab2d393b1ed30717287 assets/createassembly/models/item/processing_creative.json

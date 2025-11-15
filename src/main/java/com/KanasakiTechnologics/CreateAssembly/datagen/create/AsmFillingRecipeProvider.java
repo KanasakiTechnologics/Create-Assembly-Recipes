@@ -5,6 +5,7 @@ import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmMods;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
+import com.simibubi.create.AllItems;
 import com.simibubi.create.api.data.recipe.FillingRecipeGen;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.content.fluids.potion.PotionFluidHandler;
@@ -66,6 +67,11 @@ public final class AsmFillingRecipeProvider extends FillingRecipeGen {
             .require(AsmItems.ALCHEMIST_DUST)
             .output(Items.REDSTONE,3)
             .whenModLoaded(AsmMods.ENDERIO.getId())
+    );
+
+    GeneratedRecipe ROSE_QUARTZ = create("rose_quartz", b -> b.require((FlowingFluid) AsmFluid.MOLTEN_REDSTONE.get(),500)
+            .require(Items.QUARTZ)
+            .output(AllItems.ROSE_QUARTZ)
     );
 
     // For vanilla

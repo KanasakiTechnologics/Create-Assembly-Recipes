@@ -1,3 +1,5 @@
-// 1.21.1	2025-09-28T21:17:18.9325443	Tags for minecraft:fluid mod id createassembly
+// 1.21.1	2025-11-17T20:10:40.9823506	Tags for minecraft:fluid mod id createassembly
+f17391dc4bb752b9df55e75349ea88cd6717b53d data/createassembly/tags/fluid/fan_processing_catalysts/enriching.json
 b9041e9872b9bd3c23b57fc73b66a95581e514d5 data/createassembly/tags/fluid/fan_processing_catalysts/glowing.json
+f1ba6a28212274d4efead687fc13f602698835f7 data/createassembly/tags/fluid/fan_processing_catalysts/shadowing.json
 7d40ef8bfe7a23f3c7529f2420039bd34bf40b51 data/c/tags/fluid/soul_lava.json

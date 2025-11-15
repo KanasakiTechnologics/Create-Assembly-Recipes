@@ -77,6 +77,9 @@ public class AsmItemModelProvider extends ItemModelProvider {
         basicItem(AsmItems.DRILL_HEAD.get());
         basicItem(AsmItems.PRESS_HEAD.get());
         basicItem(AsmItems.SAW_BLADE.get());
+        basicItem(AsmItems.OVERWORLD_EGG_SPAWN.get());
+        basicItem(AsmItems.NETHER_EGG_SPAWN.get());
+        basicItem(AsmItems.END_EGG_SPAWN.get());
 
         handheldItem(AsmItems.SHADOW_PICKAXE.get());
         handheldItem(AsmItems.SHADOW_MATTOCK.get());

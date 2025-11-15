@@ -1,0 +1,58 @@
+{
+  "type": "createassembly:enriching",
+  "ingredients": [
+    {
+      "item": "createassembly:overworld_spawn_egg"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.1,
+      "id": "minecraft:allay_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:armadillo_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:axolotl_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:bat_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:camel_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:cat_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:chicken_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:cow_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:donkey_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:fox_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:frog_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:goat_spawn_egg"
+    }
+  ]
+}

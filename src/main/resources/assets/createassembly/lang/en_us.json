@@ -37,6 +37,10 @@
   "item.createassembly.integrated_mechanism": "Integrated Mechanism",
   "item.createassembly.kinetic_mechanism": "Kinetic Mechanism",
 
+  "item.createassembly.overworld_spawn_egg": "§2Overworld Spawn Egg",
+  "item.createassembly.nether_spawn_egg": "§4Nether Spawn Egg",
+  "item.createassembly.end_spawn_egg": "§fEnd Spawn Egg",
+
   "item.createassembly.tin_ingot": "Tin Ingot",
   "item.createassembly.tin_sheet": "Tin Sheet",
   "item.createassembly.creative_sheet": "Creative Sheet",
@@ -178,6 +182,7 @@
   "item.createassembly.iron_hammer": "Iron Hammer",
 
   "create.recipe.fan_glowing": "Bulk Glowing",
+  "create.recipe.fan_enriching": "Bulk Enriching",
   "fluid_type.createassembly.sulfuric_acid_type": "Sulfuric Acid",
   "block.createassembly.sulfuric_acid": "Sulfuric Acid",
   "fluid_type.createassembly.soul_lava_type": "Soul Lava",

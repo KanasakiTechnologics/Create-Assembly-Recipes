@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-15T23:19:34.9248211	createassembly's processing recipes: filling
+// 1.21.1	2025-11-17T18:13:03.0024818	createassembly's processing recipes: filling
 88b085347d3b8a1196bf346176d290597d74aad0 data/createassembly/recipe/filling/blaze_core.json
 b923430a701f47ba411790cff60631f2232aff53 data/createassembly/recipe/filling/chiseled_copper_to_exposed.json
 d6aa0c71286d81757799f4771cca53b7b1c2cbc4 data/createassembly/recipe/filling/copper_block_to_exposed.json
@@ -39,6 +39,7 @@ b37a543e5102169e75899e68c3c8d150d76c83ba data/createassembly/recipe/filling/expo
 f3c1fa4e22462417b39088accbf5b290edc093f9 data/createassembly/recipe/filling/glowstone.json
 6ff558fa8aca55c0b2976de1f4dbf5fcc7f0d583 data/createassembly/recipe/filling/gunpowder.json
 6cea5bc7522c4a7107c23354956e1aead73b366e data/createassembly/recipe/filling/redstone.json
+c8bcf7ee3ef543e0b042d18838ed46f40b48d350 data/createassembly/recipe/filling/rose_quartz.json
 761a505713600fb72142f67ad32f4172f1a24d35 data/createassembly/recipe/filling/superheated_blaze_core.json
 3d3cb9df151357ef48aefa02af3093e4652497ba data/createassembly/recipe/filling/weathered_chiseled_copper_to_oxidized.json
 4d25cc468588a0e9668b5d2d1c141f9f361ceb5d data/createassembly/recipe/filling/weathered_copper_block_to_oxidized.json

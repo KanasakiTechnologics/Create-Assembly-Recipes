@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "enderio:powdered_iron",
+      "required": false
+    },
+    {
+      "id": "mekanism:dust_iron",
+      "required": false
+    },
+    {
+      "id": "oritech:iron_dust",
+      "required": false
+    }
+  ]
+}

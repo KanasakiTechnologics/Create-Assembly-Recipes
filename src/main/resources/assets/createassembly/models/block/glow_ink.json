@@ -1,9 +1,9 @@
 {
   "parent": "block/liquid",
   "textures": {
-    "particle": "createassembly:block/universal_fluid_flow",
-    "flow": "createassembly:block/universal_fluid_flow",
-    "still": "createassembly:block/universal_fluid_still"
+    "particle": "createassembly:block/glow_ink_flow",
+    "flow": "createassembly:block/glow_ink_flow",
+    "still": "createassembly:block/glow_ink_still"
   }
 }
 

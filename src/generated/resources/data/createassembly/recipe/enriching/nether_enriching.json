@@ -1,0 +1,22 @@
+{
+  "type": "createassembly:enriching",
+  "ingredients": [
+    {
+      "item": "createassembly:nether_spawn_egg"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.1,
+      "id": "minecraft:strider_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:piglin_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:zombified_piglin_spawn_egg"
+    }
+  ]
+}

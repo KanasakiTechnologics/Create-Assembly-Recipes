@@ -21,7 +21,8 @@ import java.util.function.Supplier;
 
 @SuppressWarnings("unused")
 public enum AsmRecipeTypes implements IRecipeTypeInfo, StringRepresentable {
-    GLOWING(GlowingRecipe::new);
+    GLOWING(GlowingRecipe::new),
+    ENRICHING(EnrichingRecipe::new);
 
     public final ResourceLocation id;
     public final Supplier<RecipeSerializer<?>> serializerSupplier;

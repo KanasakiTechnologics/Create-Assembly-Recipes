@@ -68,5 +68,18 @@ public class AsmGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("entities/wither_skeleton")).build(),
                         LootItemRandomChanceCondition.randomChance(0.50f).build()
                 },AsmItems.CLONING_TEMPLATE.get()));
+
+        this.add("end_city_spawn_egg",
+                new AddItemModifier(new LootItemCondition[]{
+                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("chests/end_city_treasure")).build(),
+                        LootItemRandomChanceCondition.randomChance(0.45f).build()
+                },AsmItems.END_EGG_SPAWN.get()));
+
+        this.add("bartering_spawn_egg",
+                new AddItemModifier(new LootItemCondition[]{
+                        new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("gameplay/piglin_bartering")).build(),
+                        LootItemRandomChanceCondition.randomChance(0.45f).build()
+                },AsmItems.NETHER_EGG_SPAWN.get()));
+
     }
 }

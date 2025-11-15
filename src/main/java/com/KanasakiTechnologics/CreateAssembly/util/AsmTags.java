@@ -132,6 +132,7 @@ public class AsmTags {
         INCORRECT_FOR_SHADOW_TOOL(NameSpace.COMMON, "incorrect_for_shadow_tool"),
         MINEABLE_WITH_SHADOW_MATTOCK(NameSpace.MOD,"mineable_with_shadow_mattock"),
         NETHER_SOUL(NameSpace.MINECRAFT,"nether_soul"),
+        FAN_PROCESSING_CATALYSTS_ENRICHING(NameSpace.MOD, "fan_processing_catalysts/enriching"),
         FAN_PROCESSING_CATALYSTS_GLOWING(NameSpace.MOD, "fan_processing_catalysts/glowing");
 
         public final TagKey<Block> tag;
@@ -187,6 +188,7 @@ public class AsmTags {
     }
 
     public enum ItemTags {
+        CAN_ENRICHING(NameSpace.MOD,"can_enriching"),
         COMPLEX_MECHANISM(NameSpace.MOD, "complex_mechanism"),
         UPRIGHT_ON_BELT(NameSpace.CREATE,"upright_on_belt"),
         TIN_PLATES(NameSpace.COMMON, "plates/tin"),
@@ -213,6 +215,9 @@ public class AsmTags {
         SAND(NameSpace.COMMON, "storage_blocks/sand"),
         RED_SAND(NameSpace.COMMON, "storage_blocks/red_sand"),
         SOUL_SAND(NameSpace.COMMON, "storage_blocks/soul_sand"),
+        GOLDS(NameSpace.COMMON,"dusts/gold"),
+        IRON(NameSpace.COMMON,"dusts/iron"),
+        TIN3(NameSpace.COMMON,"dusts/tin"),
         SANDS(NameSpace.COMMON,"sands"),
         SAND2(NameSpace.COMMON, "sands/sand"),
         RED_SAND2(NameSpace.COMMON, "sands/red_sand"),
@@ -273,6 +278,8 @@ public class AsmTags {
 
     public enum FluidTags {
         FAN_PROCESSING_CATALYSTS_GLOWING(NameSpace.MOD, "fan_processing_catalysts/glowing"),
+        FAN_PROCESSING_CATALYSTS_SHADOWING(NameSpace.MOD, "fan_processing_catalysts/shadowing"),
+        FAN_PROCESSING_CATALYSTS_ENRICHING(NameSpace.MOD, "fan_processing_catalysts/enriching"),
         SOUL_LAVA(NameSpace.COMMON,"soul_lava");
 
         public final TagKey<Fluid> tag;

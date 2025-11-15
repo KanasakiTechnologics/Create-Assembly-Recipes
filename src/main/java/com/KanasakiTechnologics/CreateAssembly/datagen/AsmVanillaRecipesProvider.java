@@ -39,6 +39,7 @@ import static com.KanasakiTechnologics.CreateAssembly.CreateAssembly.MOD_ID;
 import static net.minecraft.world.item.Items.*;
 import static plus.dragons.createdragonsplus.common.CDPCommon.REGISTRATE;
 
+@SuppressWarnings("removal")
 public class AsmVanillaRecipesProvider extends RecipeProvider implements IConditionBuilder {
     List<ItemLike> TIN_SMELTABLES = List.of(AsmItems.RAW_TIN, AsmBlocks.TIN_ORE,AsmBlocks.DEEPSLATE_TIN_ORE);
     List<ItemLike> SILVER_SMELTABLES = List.of(AsmItems.RAW_SILVER, AsmBlocks.SILVER_ORE,AsmBlocks.DEEPSLATE_SILVER_ORE,AllItems.CRUSHED_SILVER);
@@ -729,6 +730,17 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
                 .save(out, id("light_glass_block", result));
     }
 
+    private static void egg_double(RecipeOutput out, Item egg, Item result){
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result)
+                .define('E', Items.EGG)
+                .define('S', egg)
+                .pattern(" E ")
+                .pattern("ESE")
+                .pattern(" E ")
+                .unlockedBy("has_egg",has(Items.EGG))
+                .save(out, ResourceLocation.fromNamespaceAndPath(MOD_ID, "spawn_egg_" + BuiltInRegistries.ITEM.getKey(result).getPath()));
+    }
+
 
     private static ResourceLocation id(String folder, Block result) {
         ResourceLocation key = BuiltInRegistries.BLOCK.getKey(result);
@@ -737,4 +749,5 @@ public class AsmVanillaRecipesProvider extends RecipeProvider implements ICondit
         }
         return ResourceLocation.fromNamespaceAndPath(MOD_ID, folder + "/" + key.getPath());
     }
+
 }

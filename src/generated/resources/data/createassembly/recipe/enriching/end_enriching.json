@@ -1,0 +1,14 @@
+{
+  "type": "createassembly:enriching",
+  "ingredients": [
+    {
+      "item": "createassembly:end_spawn_egg"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.1,
+      "id": "minecraft:enderman_spawn_egg"
+    }
+  ]
+}

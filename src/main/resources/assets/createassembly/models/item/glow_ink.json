@@ -1,6 +1,6 @@
 {
-  "parent": "item/generated",
+  "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "createassembly:block/universal_fluid_still"
+    "layer0": "createassembly:block/glow_ink_flow"
   }
 }

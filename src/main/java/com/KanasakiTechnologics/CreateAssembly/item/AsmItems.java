@@ -247,6 +247,13 @@ public class AsmItems {
     public static final DeferredItem<Item> SUPERHEATED_BLAZE_CORE = ITEMS.register("superheated_blaze_core",
             () -> new BlazeCore(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON)));
 
+    public static final DeferredItem<Item> OVERWORLD_EGG_SPAWN = ITEMS.register("overworld_spawn_egg",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NETHER_EGG_SPAWN = ITEMS.register("nether_spawn_egg",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> END_EGG_SPAWN = ITEMS.register("end_spawn_egg",
+            () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus){ITEMS.register(eventBus);}
 }

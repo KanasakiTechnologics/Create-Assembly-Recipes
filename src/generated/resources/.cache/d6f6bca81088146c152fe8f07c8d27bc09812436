@@ -1,4 +1,5 @@
-// 1.21.1	2025-10-28T21:08:20.7246557	Tags for minecraft:item mod id createassembly
+// 1.21.1	2025-11-17T21:12:55.8909408	Tags for minecraft:item mod id createassembly
+a5954dc7557ed753b2bceeeaa456afe0a19ace95 data/createassembly/tags/item/can_enriching.json
 c42a508c965da519c88e95bb114f68061fb21d23 data/createassembly/tags/item/complex_mechanism.json
 1c00bf4ef743530083949f0dbd0d1550b7709ac5 data/createassembly/tags/item/compressed_cobblestone.json
 00071bb0fd4887a15b9415989200cd8f90bddeb2 data/createassembly/tags/item/compressed_sand.json
@@ -11,6 +12,9 @@ c54c7c9c885a90233ab46702be8c322aa5a08ed6 data/createassembly/tags/item/prismarin
 0b2df930c57daf0530c37d83a4fdd1e31e4ef4ca data/create/tags/item/gearboxes.json
 8f98585858391d83e0e3fc16e1dec0468c2c7098 data/create/tags/item/upright_on_belt.json
 1c00bf4ef743530083949f0dbd0d1550b7709ac5 data/c/tags/item/compressed_cobble.json
+6caeabf10f01a530bbb1fbba08acfee2f99328e6 data/c/tags/item/dusts/gold.json
+f394535dd6637949665a9a43e43913f2935df345 data/c/tags/item/dusts/iron.json
+b7f6b5f0d310518aed1ead02fd190976a55072db data/c/tags/item/dusts/tin.json
 dbbe05677b5947d04eb319eb8c6abe3dbf42d934 data/c/tags/item/enchantables.json
 d3954950b53a6d7372bbe89e033a6329ea4670d2 data/c/tags/item/ingots.json
 1acf8c8ed194ea8e5c76b0226e6c65b02bce6a9c data/c/tags/item/ingots/radiant.json

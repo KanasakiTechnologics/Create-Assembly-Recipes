@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "createassembly:enriching",
+  "ingredients": [
+    {
+      "tag": "c:dusts/gold"
+    }
+  ],
+  "results": [
+    {
+      "id": "mekanism:enriched_gold"
+    }
+  ]
+}

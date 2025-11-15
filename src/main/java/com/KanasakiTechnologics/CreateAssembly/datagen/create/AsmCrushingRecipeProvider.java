@@ -5,6 +5,7 @@ import com.KanasakiTechnologics.CreateAssembly.block.AsmBlocks;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmMods;
 import com.KanasakiTechnologics.CreateAssembly.util.AsmTags;
+import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.api.data.recipe.CrushingRecipeGen;
 import com.simibubi.create.content.decoration.palettes.AllPaletteStoneTypes;
@@ -50,6 +51,7 @@ public final class AsmCrushingRecipeProvider extends CrushingRecipeGen {
     GeneratedRecipe RAW_TIN_BLOCK = moddedRawOreBlock(TIN, AllItems.CRUSHED_TIN::get);
     GeneratedRecipe RAW_SILVER_BLOCK = moddedRawOreBlock(SILVER, AllItems.CRUSHED_SILVER::get);
     GeneratedRecipe ENDER_FRAGMENT = create(() -> Items.ECHO_SHARD,b -> b.duration(150).output(AsmItems.ENDER_PEARL_FRAGMENT,3).output(0.50f,AsmItems.ENDER_PEARL_FRAGMENT).output(0.75f,AllItems.EXP_NUGGET.get()));
+    GeneratedRecipe ROSE_QUARTZ = create("rose_quartz_recycle", b -> b.require(AllBlocks.ROSE_QUARTZ_BLOCK).output(0.50F,AllItems.ROSE_QUARTZ));
 
 
 

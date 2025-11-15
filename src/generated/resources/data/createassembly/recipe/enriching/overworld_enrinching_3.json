@@ -1,0 +1,42 @@
+{
+  "type": "createassembly:enriching",
+  "ingredients": [
+    {
+      "item": "createassembly:overworld_spawn_egg"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.1,
+      "id": "minecraft:wandering_trader_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:trader_llama_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:bee_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:dolphin_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:enderman_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:llama_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:wolf_spawn_egg"
+    },
+    {
+      "chance": 0.1,
+      "id": "minecraft:polar_bear_spawn_egg"
+    }
+  ]
+}

@@ -15,8 +15,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.function.Consumer;
 
 public class GlowInkFluidType extends FluidType {
-    private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath("createassembly", "block/universal_fluid_still");
-    private static final ResourceLocation FLOWING = ResourceLocation.fromNamespaceAndPath("createassembly", "block/universal_fluid_flow");
+    private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath("createassembly", "block/glow_ink_still");
+    private static final ResourceLocation FLOWING = ResourceLocation.fromNamespaceAndPath("createassembly", "block/glow_ink_flow");
 
     public GlowInkFluidType(Properties properties) {
         super(properties
@@ -44,7 +44,6 @@ public class GlowInkFluidType extends FluidType {
             public int getTintColor() {
                 return tintColor;
             }
-
         });
     }
 

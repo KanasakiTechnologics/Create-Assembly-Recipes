@@ -24,8 +24,6 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -42,6 +40,7 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.RegisterEvent;
 import org.slf4j.Logger;
 
+@SuppressWarnings("removal")
 @Mod(CreateAssembly.MOD_ID)
 public class CreateAssembly {
 
@@ -50,6 +49,7 @@ public class CreateAssembly {
 
     public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MOD_ID)
             .defaultCreativeTab((ResourceKey<CreativeModeTab>) null);
+
 
     public CreateAssembly(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
@@ -107,9 +107,16 @@ public class CreateAssembly {
             event.insertAfter(AllBlocks.REFINED_RADIANCE_CASING.asStack(),AllBlocks.SHADOW_STEEL_CASING.asStack(),CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
 
+
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(AsmItems.RAW_TIN);
             event.accept(AsmItems.RAW_SILVER);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.SPAWN_EGGS){
+            event.accept(AsmItems.OVERWORLD_EGG_SPAWN);
+            event.accept(AsmItems.NETHER_EGG_SPAWN);
+            event.accept(AsmItems.END_EGG_SPAWN);
         }
 
         if (event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {

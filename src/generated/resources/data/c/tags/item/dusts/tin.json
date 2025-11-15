@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "mekanism:dust_tin",
+      "required": false
+    },
+    {
+      "id": "enderio:powdered_tin",
+      "required": false
+    }
+  ]
+}

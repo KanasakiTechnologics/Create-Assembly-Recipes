@@ -241,6 +241,25 @@ public class AsmItemTagProvider extends ItemTagsProvider {
                 .add(Blocks.DARK_PRISMARINE_SLAB.asItem())
                 .add(Blocks.DARK_PRISMARINE_STAIRS.asItem());
 
+        tag(AsmTags.ItemTags.CAN_ENRICHING.tag)
+                .add(AsmItems.OVERWORLD_EGG_SPAWN.get())
+                .add(AsmItems.NETHER_EGG_SPAWN.get())
+                .add(AsmItems.END_EGG_SPAWN.get());
+
+        tag(AsmTags.ItemTags.GOLDS.tag)
+                .addOptional(ResourceLocation.fromNamespaceAndPath("enderio", "powdered_gold"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("mekanism", "dust_gold"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("oritech", "gold_dust"));
+
+        tag(AsmTags.ItemTags.IRON.tag)
+                .addOptional(ResourceLocation.fromNamespaceAndPath("enderio", "powdered_iron"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("mekanism", "dust_iron"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("oritech", "iron_dust"));
+
+        tag(AsmTags.ItemTags.TIN3.tag)
+                .addOptional(ResourceLocation.fromNamespaceAndPath("mekanism", "dust_tin"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("enderio", "powdered_tin"));
+
         tag(AsmTags.ItemTags.ENDER_POWDER.tag)
                 .add(AsmItems.ENDER_PEARL_FRAGMENT.get())
                 .addOptional(ResourceLocation.fromNamespaceAndPath("enderio", "powdered_ender_pearl"))

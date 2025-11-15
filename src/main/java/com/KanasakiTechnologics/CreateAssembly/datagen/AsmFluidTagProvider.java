@@ -22,6 +22,14 @@ public class AsmFluidTagProvider extends FluidTagsProvider {
                 .add(AsmFluid.GLOW_INK.get())
                 .add(AsmFluid.FLOWING_GLOW_INK.get());
 
+        tag(AsmTags.FluidTags.FAN_PROCESSING_CATALYSTS_ENRICHING.tag)
+                .add(AsmFluid.REFINED_RADIANCE.get())
+                .add(AsmFluid.FLOWING_REFINED_RADIANCE.get());
+
+        tag(AsmTags.FluidTags.FAN_PROCESSING_CATALYSTS_SHADOWING.tag)
+                .add(AsmFluid.SHADOW_STEEL.get())
+                .add(AsmFluid.FLOWING_SHADOW_STEEL.get());
+
         tag(AsmTags.FluidTags.SOUL_LAVA.tag)
                 .add(AsmFluid.SOUL_LAVA.get())
                 .add(AsmFluid.FLOWING_SOUL_LAVA.get());

@@ -8,7 +8,9 @@
     "createassembly:radiant_catalyst_from_ominous_common",
     "createassembly:cloning_template_from_reward_common",
     "createassembly:shadow_catalyst_from_warden",
-    "createassembly:cloning_template_from_wither_skeleton"
+    "createassembly:cloning_template_from_wither_skeleton",
+    "createassembly:end_city_spawn_egg",
+    "createassembly:bartering_spawn_egg"
   ],
   "replace": false
 }

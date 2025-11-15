@@ -1,8 +1,10 @@
 package com.KanasakiTechnologics.CreateAssembly.compat.jei;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
+import com.KanasakiTechnologics.CreateAssembly.compat.jei.category.EnrichingCategory;
 import com.KanasakiTechnologics.CreateAssembly.compat.jei.category.GlowingCategory;
 import com.KanasakiTechnologics.CreateAssembly.content.recipes.AsmRecipeTypes;
+import com.KanasakiTechnologics.CreateAssembly.content.recipes.EnrichingRecipe;
 import com.KanasakiTechnologics.CreateAssembly.content.recipes.GlowingRecipe;
 import com.KanasakiTechnologics.CreateAssembly.item.AsmItems;
 import com.simibubi.create.AllBlocks;
@@ -48,6 +50,13 @@ public class AsmJEI implements IModPlugin {
                 .doubleItemIcon(AllItems.PROPELLER.get(), AsmItems.GLOW_INK_BUCKET)
                 .emptyBackground(178, 72)
                 .build("fan_glowing", GlowingCategory::new);
+
+        CreateRecipeCategory<?> enriching = builder(EnrichingRecipe.class)
+                .addTypedRecipes(AsmRecipeTypes.ENRICHING)
+                .catalystStack(getFan("fan_enriching","Fan behind Refined Radiance"))
+                .doubleItemIcon(AllItems.PROPELLER.get(), AsmItems.REFINED_RADIANCE_BUCKET)
+                .emptyBackground(178, 72)
+                .build("fan_enriching", EnrichingCategory::new);
     }
 
 

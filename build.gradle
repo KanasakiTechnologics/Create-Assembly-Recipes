@@ -92,6 +92,8 @@ dependencies {
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
     implementation "curse.maven:createaddition-439890:7179893"
     implementation("curse.maven:fusion-854949:7058347")
+    compileOnly("curse.maven:connected-947914:7201950")
+    runtimeOnly("curse.maven:connected-947914:7201950")
     implementation("plus.dragons.createenchantmentindustry:create-enchantment-industry-${minecraft_version}:${create_enchantment_industry_version}")
     implementation("plus.dragons.createdragonsplus:create-dragons-plus-${minecraft_version}:${create_dragons_plus_version}")
     compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")

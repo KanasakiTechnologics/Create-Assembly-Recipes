@@ -1,6 +1,5 @@
 package com.KanasakiTechnologics.CreateAssembly.fluid;
 
-
 import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 
 public abstract class GlowInkFluid {

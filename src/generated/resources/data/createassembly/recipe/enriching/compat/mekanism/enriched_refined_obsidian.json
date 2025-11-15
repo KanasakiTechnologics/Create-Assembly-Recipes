@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "createassembly:enriching",
+  "ingredients": [
+    {
+      "type": "neoforge:compound",
+      "ingredients": [
+        {
+          "item": "mekanism:dust_refined_obsidian"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "mekanism:enriched_refined_obsidian"
+    }
+  ]
+}

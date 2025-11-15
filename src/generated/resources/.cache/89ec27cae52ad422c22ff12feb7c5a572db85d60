@@ -1,10 +1,11 @@
-// 1.21.1	2025-11-12T11:58:29.5983703	createassembly's processing recipes: crushing
+// 1.21.1	2025-11-17T18:23:58.1622406	createassembly's processing recipes: crushing
 14b363a2014b8b99bed7bcf9b0ec31711402cf2a data/createassembly/recipe/crushing/compressed_cobblestone.json
 808fb2b1dcfba2a78057faa3ad4051232a491c4a data/createassembly/recipe/crushing/life_coral.json
 ad174f153c5c55bf61cb5fb01635725bf993804e data/createassembly/recipe/crushing/raw_silver.json
 f0640c2f7ef3e8a2bdb261b1c16ecb03e3dfefb2 data/createassembly/recipe/crushing/raw_silver_block.json
 b009cc7151c97c6b96c492d3e9da7307d872a84b data/createassembly/recipe/crushing/raw_tin.json
 a4d4e579804ae784177ae93f994072a1f9238033 data/createassembly/recipe/crushing/raw_tin_block.json
+472f5bab3bc805ec3a3003af80029bae994fa360 data/createassembly/recipe/crushing/rose_quartz_recycle.json
 d19b99231846088d6d24cc518fdd227a14f21e50 data/createassembly/recipe/crushing/scoria_recycling.json
 5508220336ccad4da01da732b9151672501e8096 data/createassembly/recipe/crushing/silver_ore.json
 f5d886a24b8cd06b81472480273ed19e3b6691e1 data/createassembly/recipe/crushing/tin_ore.json

@@ -2,7 +2,17 @@ package com.KanasakiTechnologics.CreateAssembly.block;
 
 import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
 import com.KanasakiTechnologics.CreateAssembly.fluid.AsmFluid;
+import com.hlysine.create_connected.CCBlocks;
+import com.hlysine.create_connected.CreateConnected;
+import com.hlysine.create_connected.compat.Mods;
+import com.hlysine.create_connected.config.FeatureToggle;
+import com.hlysine.create_connected.content.WrenchableBlock;
+import com.simibubi.create.AllTags;
+import com.simibubi.create.foundation.data.AssetLookup;
+import com.simibubi.create.foundation.data.CreateRegistrate;
+import com.tterrag.registrate.util.entry.BlockEntry;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.ColorRGBA;
@@ -27,6 +37,8 @@ import java.util.List;
 import java.util.function.Supplier;
 
 import static com.KanasakiTechnologics.CreateAssembly.item.AsmItems.ITEMS;
+import static com.simibubi.create.foundation.data.ModelGen.customItemModel;
+import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
 
 public class AsmBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(CreateAssembly.MOD_ID);
@@ -107,6 +119,7 @@ public class AsmBlocks {
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

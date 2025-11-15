@@ -1,5 +1,6 @@
 package com.KanasakiTechnologics.CreateAssembly.datagen;
 
+import com.KanasakiTechnologics.CreateAssembly.CreateAssembly;
 import com.KanasakiTechnologics.CreateAssembly.block.LightBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -47,6 +48,6 @@ public class AsmGlowingFanRecipeProvider extends AsmGlowingRecipeGen {
     GeneratedRecipe PINK_GLASS_LIGHT_BLOCK = convert(Items.PINK_STAINED_GLASS, LightBlocks.PINK_GLASS_LIGHT_BLOCK);
 
     public AsmGlowingFanRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, MOD_ID);
+        super(output, registries, CreateAssembly.MOD_ID);
     }
 }
