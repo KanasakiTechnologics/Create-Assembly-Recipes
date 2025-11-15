@@ -2,7 +2,7 @@
   "type": "create:cutting",
   "ingredients": [
     {
-      "tag": "minecraft:logs"
+      "tag": "c:chests/wooden"
     }
   ],
   "processing_time": 100,

@@ -8,6 +8,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
+import net.neoforged.neoforge.common.Tags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -17,5 +18,5 @@ public final class AsmCuttingRecipeProvider extends CuttingRecipeGen {
         super(output, registries, CreateAssembly.MOD_ID);
     }
 
-    GeneratedRecipe BARREL = create(("logs"),b -> b.require(Ingredient.of(ItemTags.LOGS)).duration(100).output(Blocks.BARREL,1));
+    GeneratedRecipe BARREL = create(("barrel_from_chests"),b -> b.require(Ingredient.of(Tags.Items.CHESTS_WOODEN)).duration(100).output(Blocks.BARREL,1));
 }
